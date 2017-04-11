@@ -59,9 +59,14 @@
 <p>点击任一个伪透明应用图标均会跳到本说明页。</p>
 <h1 id="不足之处"><a href="#不足之处" class="headerlink" title="不足之处"></a>不足之处</h1><ul>
 <li>设置壁纸时只能选择<strong>静止</strong>不能选择<strong>透视</strong></li>
+<li>主屏幕选择时会暴露伪透明应用图标的本质</li>
 <li>切换页面时会暴露伪透明应用图标的本质</li>
 <li>双击 Home 键切换应用时会暴露伪透明应用图标的本质</li>
 <li>从其它应用回到主屏幕时会暴露伪透明应用图标的本质</li>
+</ul>
+<h1 id="兼容性"><a href="#兼容性" class="headerlink" title="兼容性"></a>兼容性</h1><ul>
+<li>只测试过 iPhone 5/6/7 三款屏幕部分系统的标准模式和放大模式，而且未对横屏做支持</li>
+<li>如有用户想添加未支持的设备，请发送至少有两行应用图标的主屏幕截图给我 demojameson#gmail.com</li>
 </ul>
 ]]></content>
     

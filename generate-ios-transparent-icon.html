@@ -90,6 +90,10 @@
                 var column = 1;
                 var config = configs[wallpaperImage.naturalHeight];
 
+				if (!config) {
+					alert("尚未对该分辨率的设备进行适配");
+				}
+				
                 while (row <= config.maxRow) {
                     var x = config.marginLeft + (config.sideLength + config.dividerWidth) * (column - 1);
                     var y = config.marginTop + (config.sideLength + config.dividerHeight) * (row - 1);
@@ -130,6 +134,10 @@
                 var config = configs[wallpaperImage.naturalHeight];
                 var y = wallpaperImage.naturalHeight - config.marginBottom - config.sideLength;
 
+				if (!config) {
+					return;
+				}
+				
                 while (column <= maxBottomColumn) {
                     var x = 0;
                     switch (maxBottomColumn) {
