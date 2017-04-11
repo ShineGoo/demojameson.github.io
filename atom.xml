@@ -29,14 +29,14 @@
 <h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><table>
 <thead>
 <tr>
+<th><strong>图标制作工具</strong></th>
 <th><strong>效果图</strong></th>
-<th><strong>实际图标分布</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td><img src="/2017/04/11/generate-ios-transparent-icon/ios_icon_editor.png" alt="ios_icon_editor.png" title=""></td>
 <td><img src="/2017/04/11/generate-ios-transparent-icon/ios_wallpaper.png" alt="ios_wallpaper.png" title=""></td>
-<td><img src="/2017/04/11/generate-ios-transparent-icon/ios_wallpaper_edit.png" alt="ios_wallpaper_edit.png" title=""></td>
 </tr>
 </tbody>
 </table>
