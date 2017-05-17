@@ -1,0 +1,1050 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/cine/HeroDeath.hx:82
+msgid "Corps détruit"
+msgstr ""
+
+#: src/en/Hero.hx:507
+msgid "Trop loin"
+msgstr ""
+
+#: src/en/Hero.hx:1305
+msgid "Inutile"
+msgstr ""
+
+#: src/en/inter/BuyableChest.hx:53 src/en/inter/ShopBooth.hx:71
+msgid "Coffre mystère"
+msgstr ""
+
+#: src/en/inter/BuyableChest.hx:54 src/en/inter/ShopBooth.hx:73
+msgid "Vous devez payer ::n:: OR pour ouvrir ce coffre."
+msgstr ""
+
+#: src/en/inter/BuyableChest.hx:55 src/en/inter/ShopBooth.hx:74
+msgid "Payer"
+msgstr ""
+
+#: src/en/inter/BuyableChest.hx:115 src/en/inter/ShopBooth.hx:142
+msgid "Pas assez d'or !"
+msgstr ""
+
+#: src/en/inter/Door.hx:267
+msgid "Porte"
+msgstr ""
+
+#: src/en/inter/Door.hx:268 src/en/inter/ShopBooth.hx:77
+#: src/en/inter/TreasureChest.hx:155
+msgid "Ouvrir"
+msgstr ""
+
+#: src/en/inter/Fountain.hx:53
+msgid "La fontaine est vide"
+msgstr ""
+
+#: src/en/inter/Fountain.hx:59
+msgid "Fontaine de soin"
+msgstr ""
+
+#: src/en/inter/Fountain.hx:61
+msgid "Permet de remplir vos fioles de soins"
+msgstr ""
+
+#: src/en/inter/Fountain.hx:62 src/en/inter/HealPotion.hx:45
+#: src/en/inter/Upgrader.hx:63
+msgid "Utiliser"
+msgstr ""
+
+#: src/en/inter/Fountain.hx:64
+msgid "Vide."
+msgstr ""
+
+#: src/en/inter/HealPotion.hx:29
+msgid "Inutile pour l'instant"
+msgstr ""
+
+#: src/en/inter/HealPotion.hx:33
+msgid "Potion de soin (::n:: PV)"
+msgstr ""
+
+#: src/en/inter/HealPotion.hx:43
+msgid "Potion de soin"
+msgstr ""
+
+#: src/en/inter/HealPotion.hx:44
+msgid "Régénère ::n:: points de santé."
+msgstr ""
+
+#: src/en/inter/ItemDrop.hx:45 src/en/inter/ShopBooth.hx:68
+#: src/en/loot/UpgradeFragment.hx:97
+msgid "Ramasser"
+msgstr ""
+
+#: src/en/inter/LockedDoor.hx:40
+msgid "Déverrouiller"
+msgstr ""
+
+#: src/en/inter/LockedDoor.hx:42
+msgid "Accès réservé"
+msgstr ""
+
+#: src/en/inter/LockedDoor.hx:44
+msgid "Il faut une clé pour ouvrir cette porte"
+msgstr ""
+
+#: src/en/inter/LockedDoor.hx:53
+msgid "Clé utilisée !"
+msgstr ""
+
+#: src/en/inter/Merchant.hx:41
+msgid "Marchand itinérant"
+msgstr ""
+
+#: src/en/inter/Merchant.hx:42
+msgid "Parler"
+msgstr ""
+
+#: src/en/inter/Merchant.hx:51
+msgid "Tout est à vendre !"
+msgstr ""
+
+#: src/en/inter/Merchant.hx:52
+msgid "Qu'est-ce qu'il vous faut ?"
+msgstr ""
+
+#: src/en/inter/Merchant.hx:53
+msgid "Dites, ça va finir par me gonfler..."
+msgstr ""
+
+#: src/en/inter/Merchant.hx:54
+msgid "Fallait que je tombe sur l'idiot du donjon."
+msgstr ""
+
+#: src/en/inter/Merchant.hx:55
+msgid "Bon vous m'achetez quelque chose ??"
+msgstr ""
+
+#: src/en/inter/Merchant.hx:58
+msgid "..."
+msgstr ""
+
+#: src/en/inter/ShopBooth.hx:66
+msgid "Acheter"
+msgstr ""
+
+#: src/en/inter/ShopBooth.hx:123
+msgid "Acheté : ::item::"
+msgstr ""
+
+#: src/en/inter/Teleport.hx:64
+msgid "Téléporteur"
+msgstr ""
+
+#: src/en/inter/Teleport.hx:66
+msgid "Aucune destination disponible."
+msgstr ""
+
+#: src/en/inter/Teleport.hx:68
+msgid "Se téléporter"
+msgstr ""
+
+#: src/en/inter/TreasureChest.hx:154
+msgid "Trésor oublié"
+msgstr ""
+
+#: src/en/inter/Upgrader.hx:61
+msgid "Bureau Alchimique"
+msgstr ""
+
+#: src/en/inter/Upgrader.hx:62
+msgid "Débloquez de l'équipement dans le Château"
+msgstr ""
+
+#: src/en/loot/UpgradeFragment.hx:95
+msgid "Cellule de ::mob::"
+msgstr ""
+
+#: src/en/loot/UpgradeFragment.hx:96
+msgid "Permet de débloquer de nouveaux contenus lors de futures explorations"
+msgstr ""
+
+#: src/en/Mob.hx:750 src/en/Mob.hx:757
+msgid "Yolo!"
+msgstr ""
+
+#: src/en/UsableBody.hx:31
+msgid "Corps décapité"
+msgstr ""
+
+#: src/en/UsableBody.hx:32
+msgid "Pénétrer"
+msgstr ""
+
+#: src/pr/AdminIntro.hx:20
+msgid "Jouer !"
+msgstr ""
+
+#: src/pr/AdminIntro.hx:27
+msgid "Reset les UserSave et jouer"
+msgstr ""
+
+#: src/pr/EndDemo.hx:19
+msgid "FÉLICITATIONS"
+msgstr ""
+
+#: src/pr/EndDemo.hx:24
+msgid "Retrouvez nous sur :"
+msgstr ""
+
+#: src/pr/EndDemo.hx:36
+msgid "Revenir à l'écran-titre"
+msgstr ""
+
+#: src/pr/Game.hx:189
+msgid "Tutorial"
+msgstr ""
+
+#: src/pr/Game.hx:193
+msgid "Descendre"
+msgstr ""
+
+#: src/pr/Game.hx:194
+msgid "Appuyez sur A + BAS."
+msgstr ""
+
+#: src/pr/Game.hx:196
+msgid "Double saut"
+msgstr ""
+
+#: src/pr/Game.hx:197
+msgid "Appuyez sur 2 fois rapidement sur A."
+msgstr ""
+
+#: src/pr/Game.hx:208
+msgid "Ascenseur"
+msgstr ""
+
+#: src/pr/Game.hx:208
+msgid "Un des engrenages est cassé."
+msgstr ""
+
+#: src/pr/Game.hx:210
+msgid "Bibliothèque"
+msgstr ""
+
+#: src/pr/Game.hx:210
+msgid "Il me manque quelque chose pour pouvoir lire."
+msgstr ""
+
+#: src/pr/Game.hx:332
+msgid "Expérience ::n::"
+msgstr ""
+
+#: src/pr/Game.hx:389 src/ui/LifeBarBoss.hx:39
+msgid "The Incomplete One"
+msgstr ""
+
+#: src/pr/Game.hx:694
+msgid "Vous avez vaincu le Boss !"
+msgstr ""
+
+#: src/pr/Game.hx:822
+msgid "Appuyez sur X à nouveau pour abandonner !"
+msgstr ""
+
+#: src/pr/TitleLogo.hx:68
+msgid "Appuyer sur Start pour commencer"
+msgstr ""
+
+#: src/tool/InventItem.hx:109
+msgid "Objet spécial"
+msgstr ""
+
+#: src/tool/InventItem.hx:111
+msgid "Compétence active (LT ou RT)"
+msgstr ""
+
+#: src/tool/InventItem.hx:112
+msgid "Armement"
+msgstr ""
+
+#: src/tool/InventItem.hx:113
+msgid "Capacité passive"
+msgstr ""
+
+#: src/tool/weap/Shield.hx:28
+msgid "Bloqué !"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:43
+msgid "Revenir au jeu"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:193 src/ui/CharacSheet.hx:434
+msgid "Armes"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:213 src/ui/CharacSheet.hx:234
+#: src/ui/CharacSheet.hx:448 src/ui/CharacSheet.hx:465
+#: src/ui/ReplaceItem.hx:135
+msgid "Inverser"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:216 src/ui/CharacSheet.hx:451
+msgid "Compétences"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:426
+msgid "Santé"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:431
+msgid "::act:: / ::max::"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:642 src/ui/CharacSheet.hx:885
+msgid "Pas encore de cellules !"
+msgstr ""
+
+#: src/ui/CharacSheet.hx:771
+msgid "Pas encore de transmutations !"
+msgstr ""
+
+#: src/ui/ControlLabel.hx:64 src/ui/ControlLabel.hx:72
+msgid "(MAINTENU)"
+msgstr ""
+
+#: src/ui/DemoAutoPause.hx:8
+msgid "Pause"
+msgstr ""
+
+#: src/ui/DemoAutoPause.hx:9
+msgid "Nouvelle partie"
+msgstr ""
+
+#: src/ui/ItemManager.hx:181
+msgid "Piège"
+msgstr ""
+
+#: src/ui/ItemManager.hx:182
+msgid "Attaque"
+msgstr ""
+
+#: src/ui/ItemManager.hx:183
+msgid "Esquive"
+msgstr ""
+
+#: src/ui/ItemManager.hx:184
+msgid "Globale"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:49
+msgid "Equiper"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:50
+msgid "Ranger dans le sac"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:108
+msgid "X pour utiliser"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:110
+msgid "Y pour utiliser"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:114
+msgid "Appuyez sur LT pour l'utiliser"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:116
+msgid "Appuyez sur RT pour l'utiliser"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:119
+msgid "Nouvelle capacité passivée"
+msgstr ""
+
+#: src/ui/ItemPopUp.hx:124
+msgid "Objet rangé (appuyez sur START pour ouvrir votre sac)"
+msgstr ""
+
+#: src/ui/MemoryPopUp.hx:51
+msgid "Vous avez découvert un nouveau souvenir !"
+msgstr ""
+
+#: src/ui/MemoryPopUp.hx:64
+msgid "Une fois complet, vous débloquerez"
+msgstr ""
+
+#: src/ui/MemoryPopUp.hx:81 src/ui/MemoryUnlock.hx:47 src/ui/Upgrade.hx:92
+msgid "Ok"
+msgstr ""
+
+#: src/ui/MemoryUnlock.hx:45
+msgid "\"Je me souviens avoir vu un ::nameObject:: quelque part...\""
+msgstr ""
+
+#: src/ui/notif/MemoryNotif.hx:79
+msgid "Nouveau souvenir : ::object::"
+msgstr ""
+
+#: src/ui/notif/MemoryNotif.hx:81
+msgid "Souvenir complet : ::object::"
+msgstr ""
+
+#: src/ui/ReplaceItem.hx:82
+msgid "Vous avez ramassé"
+msgstr ""
+
+#: src/ui/ReplaceItem.hx:94
+msgid "Quel objet remplacer ?"
+msgstr ""
+
+#: src/ui/ReplaceItem.hx:123 src/ui/Window.hx:84
+msgid "Annuler"
+msgstr ""
+
+#: src/ui/ReplaceItem.hx:129
+msgid "Valider"
+msgstr ""
+
+#: src/ui/Upgrade.hx:97
+msgid "Défiler"
+msgstr ""
+
+#: src/ui/Upgrade.hx:109
+msgid "Upgrader"
+msgstr ""
+
+#: src/ui/Upgrade.hx:113
+msgid ""
+"Cet écran est super important, même si on comprend pas vraiment pourquoi"
+msgstr ""
+
+#: src/ui/Upgrade.hx:437
+msgid " débloqué !"
+msgstr ""
+
+#. HorizontalTurret
+#: res/data.cdb:item/#0.name
+msgid "Tourelle horizontale"
+msgstr ""
+
+#. FireTurret
+#: res/data.cdb:item/#1.name
+msgid "Tourelle lance-flammes"
+msgstr ""
+
+#. Curser
+#: res/data.cdb:item/#2.name
+msgid "Skeletal Scourge"
+msgstr ""
+
+#. GroundSaw
+#: res/data.cdb:item/#3.name
+msgid "Hachoir"
+msgstr ""
+
+#. StoneWall
+#: res/data.cdb:item/#4.name
+msgid "Mur de pierre"
+msgstr ""
+
+#. Lantern
+#: res/data.cdb:item/#5.name
+msgid "Lumière divine"
+msgstr ""
+
+#. RootTrap
+#: res/data.cdb:item/#6.name
+msgid "Piège à loups"
+msgstr ""
+
+#. Crusher
+#: res/data.cdb:item/#7.name
+msgid "Ecraseur"
+msgstr ""
+
+#. MeatBomb
+#: res/data.cdb:item/#8.name
+msgid "Meat bomb"
+msgstr ""
+
+#. MeatBait
+#: res/data.cdb:item/#9.name
+msgid "Meat bait"
+msgstr ""
+
+#. DeepTest
+#: res/data.cdb:item/#10.name
+msgid "Test Seb"
+msgstr ""
+
+#. ExplosiveGrenade
+#: res/data.cdb:item/#11.name
+msgid "Grenade"
+msgstr ""
+
+#. StunningGrenade
+#: res/data.cdb:item/#12.name
+msgid "Grenade étourdissante"
+msgstr ""
+
+#. SideTurret
+#: res/data.cdb:item/#13.name
+msgid "\"Agression\" (allié)"
+msgstr ""
+
+#. SideRoot
+#: res/data.cdb:item/#14.name
+msgid "\"Paralysie\" (allié)"
+msgstr ""
+
+#. KnivesCircle
+#: res/data.cdb:item/#15.name
+msgid "Danse des couteaux"
+msgstr ""
+
+#. SlowBullets
+#: res/data.cdb:item/#16.name
+msgid "Bullet stopper"
+msgstr ""
+
+#. PowerBumper
+#: res/data.cdb:item/#17.name
+msgid "Projection"
+msgstr ""
+
+#. DamageBuff
+#: res/data.cdb:item/#18.name
+msgid "Dégâts"
+msgstr ""
+
+#. CriticalBuff
+#: res/data.cdb:item/#19.name
+msgid "Coups critiques"
+msgstr ""
+
+#. GlobalShield
+#: res/data.cdb:item/#20.name
+msgid "Immunité"
+msgstr ""
+
+#. Invisibility
+#: res/data.cdb:item/#21.name
+msgid "Invisibilité"
+msgstr ""
+
+#. PowerQuake
+#: res/data.cdb:item/#22.name
+msgid "Quake"
+msgstr ""
+
+#. SlowOrb
+#: res/data.cdb:item/#23.name
+msgid "Orbe de mort"
+msgstr ""
+
+#. StartSword
+#: res/data.cdb:item/#24.name
+msgid "Désespoir"
+msgstr ""
+
+#. BackStabber
+#: res/data.cdb:item/#25.name
+msgid "Dague d'assassin"
+msgstr ""
+
+#. Saber
+#: res/data.cdb:item/#26.name
+msgid "Bain de sang"
+msgstr ""
+
+#. DualDaggers
+#: res/data.cdb:item/#27.name
+msgid "Dagues jumelles"
+msgstr ""
+
+#. BroadSword
+#: res/data.cdb:item/#28.name
+msgid "Epée large"
+msgstr ""
+
+#. BloodSword
+#: res/data.cdb:item/#29.name
+msgid "Lame sadique"
+msgstr ""
+
+#. LongBow
+#: res/data.cdb:item/#30.name
+msgid "Arc long"
+msgstr ""
+
+#. FastBow
+#: res/data.cdb:item/#31.name
+msgid "Arc court"
+msgstr ""
+
+#. FrostBow
+#: res/data.cdb:item/#32.name
+msgid "Arc de glace"
+msgstr ""
+
+#. CrossBow
+#: res/data.cdb:item/#33.name
+msgid "Arbalète lourde"
+msgstr ""
+
+#. ThrowingKnife
+#: res/data.cdb:item/#34.name
+msgid "Couteau de lancer"
+msgstr ""
+
+#. Shield
+#: res/data.cdb:item/#35.name
+msgid "Bouclier"
+msgstr ""
+
+#. Key
+#: res/data.cdb:item/#36.name
+msgid "Clé"
+msgstr ""
+
+#. HorizontalTurret
+#: res/data.cdb:item/#0.desc
+msgid "Rapidly fires arrows to the left and the right."
+msgstr ""
+
+#. FireTurret
+#: res/data.cdb:item/#1.desc
+msgid "Brûle les ennemis qui s'en approchent."
+msgstr ""
+
+#. GroundSaw
+#: res/data.cdb:item/#3.desc
+msgid "Inflige des dégâts aux ennemis qui posent le pied dessus."
+msgstr ""
+
+#. StoneWall
+#: res/data.cdb:item/#4.desc
+msgid "Bloque à peu près tout. Oui, vous y compris."
+msgstr ""
+
+#. Lantern
+#: res/data.cdb:item/#5.desc
+msgid "Ralenti tous les mouvements des ennemis proches."
+msgstr ""
+
+#. RootTrap
+#: res/data.cdb:item/#6.desc
+msgid "Paralyse une cible et augmente tous les dégâts subis de ::n::%."
+msgstr ""
+
+#. Crusher
+#: res/data.cdb:item/#7.desc
+msgid "Ecrase violemment les ennemis pris dans sa zone d'effet."
+msgstr ""
+
+#. ExplosiveGrenade
+#: res/data.cdb:item/#11.desc
+msgid "Explodes and hopefully, kills."
+msgstr ""
+
+#. StunningGrenade
+#: res/data.cdb:item/#12.desc
+msgid "Stuns every enemies around"
+msgstr ""
+
+#. SideTurret
+#: res/data.cdb:item/#13.desc
+msgid "Invoque un allié attaquant les ennemis proches."
+msgstr ""
+
+#. SideRoot
+#: res/data.cdb:item/#14.desc
+msgid "Invoque un allié immobilisant les ennemis proches."
+msgstr ""
+
+#. KnivesCircle
+#: res/data.cdb:item/#15.desc
+msgid "Lance tout autour de vous des couteaux provoquant des Saignements."
+msgstr ""
+
+#. SlowBullets
+#: res/data.cdb:item/#16.desc
+msgid "Slow down every bullets or arrows around you."
+msgstr ""
+
+#. PowerBumper
+#: res/data.cdb:item/#17.desc
+msgid "Repousse les ennemis proches."
+msgstr ""
+
+#. DamageBuff
+#: res/data.cdb:item/#18.desc
+msgid "Augmente de 50% les dégâts que vous infligez."
+msgstr ""
+
+#. CriticalBuff
+#: res/data.cdb:item/#19.desc
+msgid "Toutes vos attaques sont des Coups Critiques pendant quelques secondes."
+msgstr ""
+
+#. GlobalShield
+#: res/data.cdb:item/#20.desc
+msgid "Vous protège de tout, y compris de vous même."
+msgstr ""
+
+#. Invisibility
+#: res/data.cdb:item/#21.desc
+msgid "Vous devenez invisible."
+msgstr ""
+
+#. PowerQuake
+#: res/data.cdb:item/#22.desc
+msgid "Launch Quake on each side"
+msgstr ""
+
+#. SlowOrb
+#: res/data.cdb:item/#23.desc
+msgid "Invoque une orbe dévastatrice qui se déplace lentement."
+msgstr ""
+
+#. StartSword
+#: res/data.cdb:item/#24.desc
+msgid ""
+"Une arme rouillée dont la puissance se révèle dans les moments difficiles."
+msgstr ""
+
+#. BackStabber
+#: res/data.cdb:item/#25.desc
+msgid "Légère mais mortelle si elle maniée comme il faut."
+msgstr ""
+
+#. Saber
+#: res/data.cdb:item/#26.desc
+msgid "Une lame dentelée qui provoque des Saignements."
+msgstr ""
+
+#. DualDaggers
+#: res/data.cdb:item/#27.desc
+msgid "Deux dagues pour le prix d'une, toujours plus de violence."
+msgstr ""
+
+#. BroadSword
+#: res/data.cdb:item/#28.desc
+msgid "Une arme lourde et lente infligeant des dégâts élevés."
+msgstr ""
+
+#. BloodSword
+#: res/data.cdb:item/#29.desc
+msgid "Une lame forgée dans le sang."
+msgstr ""
+
+#. LongBow
+#: res/data.cdb:item/#30.desc
+msgid "Un arc conçu pour les tirs à longue portée."
+msgstr ""
+
+#. FastBow
+#: res/data.cdb:item/#31.desc
+msgid "Un arc rapide à manier, idéal à courte portée."
+msgstr ""
+
+#. FrostBow
+#: res/data.cdb:item/#32.desc
+msgid "Un arc magique capable de congeler les ennemis."
+msgstr ""
+
+#. CrossBow
+#: res/data.cdb:item/#33.desc
+msgid ""
+"Une arbalète tirant plusieurs carreaux à la fois, dévastatrice à courte "
+"portée."
+msgstr ""
+
+#. ThrowingKnife
+#: res/data.cdb:item/#34.desc
+msgid ""
+"Lance un couteau provoquant des Saignements. L'attaque cible automatiquement "
+"l'ennemi le plus proche."
+msgstr ""
+
+#. Shield
+#: res/data.cdb:item/#35.desc
+msgid "Permet de bloquer les attaques."
+msgstr ""
+
+#. Key
+#: res/data.cdb:item/#36.desc
+msgid "Opens door"
+msgstr ""
+
+#. StartSword
+#: res/data.cdb:item/#24.extraDesc
+msgid "Inflige un COUP CRITIQUE si vous avez subi des dégâts récemment."
+msgstr ""
+
+#. BackStabber
+#: res/data.cdb:item/#25.extraDesc
+msgid "Inflige un COUP CRITIQUE lorsque vous frappez dans le dos."
+msgstr ""
+
+#. DualDaggers
+#: res/data.cdb:item/#27.extraDesc
+msgid "Inflige un COUP CRITIQUE au 3ème coup consécutif."
+msgstr ""
+
+#. BloodSword
+#: res/data.cdb:item/#29.extraDesc
+msgid "Inflige un COUP CRITIQUE si la cible est victime d'un Saignement."
+msgstr ""
+
+#. LongBow
+#: res/data.cdb:item/#30.extraDesc
+msgid "Inflige un COUP CRITIQUE lorsque vous tirez à longue portée."
+msgstr ""
+
+#. FastBow
+#: res/data.cdb:item/#31.extraDesc
+msgid "Inflige un COUP CRITIQUE lorsque vous tirez à courte portée."
+msgstr ""
+
+#. Zombie
+#: res/data.cdb:mob/#0.name
+msgid "Zombie"
+msgstr ""
+
+#. Grenader
+#: res/data.cdb:mob/#1.name
+msgid "Grenadier"
+msgstr ""
+
+#. Archer
+#: res/data.cdb:mob/#2.name
+msgid "Archer mort-vivant"
+msgstr ""
+
+#. Runner
+#: res/data.cdb:mob/#3.name
+msgid "Coureur"
+msgstr ""
+
+#. Behemoth
+#: res/data.cdb:mob/#4.name
+msgid "Boss"
+msgstr ""
+
+#. Shield
+#: res/data.cdb:mob/#5.name
+msgid "Porteur de bouclier"
+msgstr ""
+
+#. Worm
+#: res/data.cdb:mob/#6.name
+msgid "Ver dégoutant"
+msgstr ""
+
+#. BatDasher
+#: res/data.cdb:mob/#7.name
+msgid "Chauve-souris"
+msgstr ""
+
+#. BatKamikaze
+#: res/data.cdb:mob/#8.name
+msgid "Kamikaze"
+msgstr ""
+
+#. Scarecrow
+#: res/data.cdb:mob/#9.name
+msgid "Scarecrow"
+msgstr ""
+
+#. Shielder
+#: res/data.cdb:mob/#10.name
+msgid "Protecteur"
+msgstr ""
+
+#. Test
+#: res/data.cdb:mob/#14.name
+msgid "Monstre de test (admin)"
+msgstr ""
+
+#. FireDodge
+#: res/data.cdb:card/#0.name
+msgid "Roulades enflammées"
+msgstr ""
+
+#. BoostDamage
+#: res/data.cdb:card/#1.name
+msgid "Puissance"
+msgstr ""
+
+#. CadaverDamage
+#: res/data.cdb:card/#2.name
+msgid "Cadavre explosif"
+msgstr ""
+
+#. FrozenCadaver
+#: res/data.cdb:card/#3.name
+msgid "Congélation cadavérique"
+msgstr ""
+
+#. CadaverAlly
+#: res/data.cdb:card/#4.name
+msgid "Allié macabre"
+msgstr ""
+
+#. TripleJump
+#: res/data.cdb:card/#5.name
+msgid "Triple saut"
+msgstr ""
+
+#. ReduceDamage
+#: res/data.cdb:card/#6.name
+msgid "Armure"
+msgstr ""
+
+#. Sesame
+#: res/data.cdb:card/#7.name
+msgid "Sésame, ouvre toi !"
+msgstr ""
+
+#. BombJump
+#: res/data.cdb:card/#8.name
+msgid "Saut piégé"
+msgstr ""
+
+#. FireDeath
+#: res/data.cdb:card/#9.name
+msgid "Déflagration"
+msgstr ""
+
+#. BleedPropagation
+#: res/data.cdb:card/#10.name
+msgid "Saigner à blanc"
+msgstr ""
+
+#. DiveAttackStun
+#: res/data.cdb:card/#11.name
+msgid "Choc sismique"
+msgstr ""
+
+#. PiercingArrows
+#: res/data.cdb:card/#12.name
+msgid "Flèches perçantes"
+msgstr ""
+
+#. FireDodge
+#: res/data.cdb:card/#0.desc
+msgid "Vos esquives enflamment les ennemis."
+msgstr ""
+
+#. BoostDamage
+#: res/data.cdb:card/#1.desc
+msgid "Vous infligez plus de dégâts."
+msgstr ""
+
+#. CadaverDamage
+#: res/data.cdb:card/#2.desc
+msgid ""
+"Quand un ennemi meurt, ses restes infligent des dégâts aux ennemis proches."
+msgstr ""
+
+#. FrozenCadaver
+#: res/data.cdb:card/#3.desc
+msgid "Quand un ennemi meurt, ses restes congèlent les ennemis proches."
+msgstr ""
+
+#. CadaverAlly
+#: res/data.cdb:card/#4.desc
+msgid ""
+"Quand un ennemi meurt, il y a une chance qu'un allié sorte de son cadavre."
+msgstr ""
+
+#. TripleJump
+#: res/data.cdb:card/#5.desc
+msgid "Vous bénéficiez d'un saut supplémentaire dans les airs."
+msgstr ""
+
+#. ReduceDamage
+#: res/data.cdb:card/#6.desc
+msgid "Vous subissez moins de dégâts."
+msgstr ""
+
+#. Sesame
+#: res/data.cdb:card/#7.desc
+msgid "Vous pouvez ouvrir les portes verrouillées magiquement."
+msgstr ""
+
+#. BombJump
+#: res/data.cdb:card/#8.desc
+msgid ""
+"Vous laissez une bombe au sol quand vous sautez (cet effet a un temps de "
+"recharge)."
+msgstr ""
+
+#. FireDeath
+#: res/data.cdb:card/#9.desc
+msgid ""
+"Si un ennemi meurt alors qu'il est enflammé, il explose et inflige des "
+"dégâts aux ennemis proches."
+msgstr ""
+
+#. BleedPropagation
+#: res/data.cdb:card/#10.desc
+msgid ""
+"Si un ennemi meurt alors qu'il est sous Saignement, le Saignement s'applique "
+"à tous les ennemis proches."
+msgstr ""
+
+#. DiveAttackStun
+#: res/data.cdb:card/#11.desc
+msgid ""
+"Vos attaques plongeantes étourdissent les ennemis si elles sont faites de "
+"suffisamment haut."
+msgstr ""
+
+#. PiercingArrows
+#: res/data.cdb:card/#12.desc
+msgid "Vos flèches traversent la première cible qu'elles touchent."
+msgstr ""
+
+#.
+#: res/data.cdb:level/#0.name
+msgid "Prison Depths"
+msgstr ""
+
+#.
+#: res/data.cdb:level/#1.name
+msgid "Debug Pascal"
+msgstr ""
+
+#.
+#: res/data.cdb:level/#2.name
+msgid "Debug Tipyx"
+msgstr ""
+
+#.
+#: res/data.cdb:level/#3.name
+msgid "Debug Seb"
+msgstr ""
+
+#~ msgid "Weapon:"
+#~ msgstr "Arme :"
+
+#~ msgid "Bloody saber"
+#~ msgstr "Sabre sanglant"

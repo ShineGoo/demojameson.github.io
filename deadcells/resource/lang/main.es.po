@@ -1,0 +1,5003 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+
+#. --------
+#. msgid "+::n:: pt"
+#: src/Fx.hx:4242
+msgid "+::n:: pt"
+msgstr ""
+
+#. --------
+#. msgid "+::n:: pts"
+#: src/Fx.hx:4242
+msgid "+::n:: pts"
+msgstr ""
+
+#. --------
+#. msgid "Pas besoin de soin"
+#: src/Fx.hx:9118
+msgid "Your health is already full"
+msgstr ""
+
+#. --------
+#. msgid "::s::s"
+#: src/Lang.hx:135
+msgid "::s::s"
+msgstr ""
+
+#. --------
+#. msgid "::m::m ::s::s"
+#: src/Lang.hx:137
+msgid "::m::m ::s::s"
+msgstr ""
+
+#. --------
+#. msgid "::h::h ::m::m ::s::s"
+#: src/Lang.hx:139
+msgid "::h::h ::m::m ::s::s"
+msgstr ""
+
+#. --------
+#. msgid "::s:: seconde(s)"
+#: src/Lang.hx:143
+msgid "::s:: second(s)"
+msgstr ""
+
+#. --------
+#. msgid "::m:: minute(s) ::s:: seconde(s)"
+#: src/Lang.hx:145
+msgid "::m:: minute(s) ::s:: second(s)"
+msgstr ""
+
+#. --------
+#. msgid "::h:: heure(s) ::m:: minute(s) ::s:: seconde(s)"
+#: src/Lang.hx:147
+msgid "::h:: hour(s) ::m:: minute(s) ::s:: second(s)"
+msgstr ""
+
+#. Backspace key
+#.
+#. --------
+#. msgid "Retour"
+#: src/Options.hx:217 src/ui/Options.hx:145
+msgid "Back"
+msgstr ""
+
+#. --------
+#. msgid "Tab"
+#: src/Options.hx:218
+msgid "Tab"
+msgstr ""
+
+#. --------
+#. msgid "Entrée"
+#. --------
+#. msgid "Traverser"
+#. --------
+#. msgid "Franchir"
+#: src/Options.hx:219
+msgid "Enter"
+msgstr ""
+
+#. Escape key
+#.
+#. --------
+#. msgid "Echap"
+#: src/Options.hx:220
+msgid "Esc"
+msgstr ""
+
+#. --------
+#. msgid "Espace"
+#: src/Options.hx:221
+msgid "Space"
+msgstr ""
+
+#. --------
+#. msgid "Page préc."
+#: src/Options.hx:222
+msgid "Previous page."
+msgstr ""
+
+#. --------
+#. msgid "Page suiv."
+#: src/Options.hx:223
+msgid "Next page."
+msgstr ""
+
+#. End key
+#.
+#. --------
+#. msgid "Fin"
+#: src/Options.hx:224
+msgid "End"
+msgstr ""
+
+#. Home key
+#.
+#. --------
+#. msgid "Début"
+#: src/Options.hx:225
+msgid "Home"
+msgstr ""
+
+#. --------
+#. msgid "Gauche"
+#: src/Options.hx:226 src/ui/Options.hx:235
+msgid "Left"
+msgstr ""
+
+#. --------
+#. msgid "Haut"
+#: src/Options.hx:227 src/ui/Options.hx:234
+msgid "Up"
+msgstr ""
+
+#. --------
+#. msgid "Droite"
+#: src/Options.hx:228 src/ui/Options.hx:237
+msgid "Right"
+msgstr ""
+
+#. --------
+#. msgid "Bas"
+#: src/Options.hx:229 src/ui/Options.hx:236
+msgid "Down"
+msgstr ""
+
+#. --------
+#. msgid "Insér."
+#: src/Options.hx:230
+msgid "Insert."
+msgstr ""
+
+#. --------
+#. msgid "Suppr."
+#: src/Options.hx:231
+msgid "Del."
+msgstr ""
+
+#. --------
+#. msgid "Num. 0"
+#: src/Options.hx:242
+msgid "Num. 0"
+msgstr ""
+
+#. --------
+#. msgid "Num. 1"
+#: src/Options.hx:243
+msgid "Num. 1"
+msgstr ""
+
+#. --------
+#. msgid "Num. 2"
+#: src/Options.hx:244
+msgid "Num. 2"
+msgstr ""
+
+#. --------
+#. msgid "Num. 3"
+#: src/Options.hx:245
+msgid "Num. 3"
+msgstr ""
+
+#. --------
+#. msgid "Num. 4"
+#: src/Options.hx:246
+msgid "Num. 4"
+msgstr ""
+
+#. --------
+#. msgid "Num. 5"
+#: src/Options.hx:247
+msgid "Num. 5"
+msgstr ""
+
+#. --------
+#. msgid "Num. 6"
+#: src/Options.hx:248
+msgid "Num. 6"
+msgstr ""
+
+#. --------
+#. msgid "Num. 7"
+#: src/Options.hx:249
+msgid "Num. 7"
+msgstr ""
+
+#. --------
+#. msgid "Num. 8"
+#: src/Options.hx:250
+msgid "Num. 8"
+msgstr ""
+
+#. --------
+#. msgid "Num. 9"
+#: src/Options.hx:251
+msgid "Num. 9"
+msgstr ""
+
+#. --------
+#. msgid "Num. *"
+#: src/Options.hx:290
+msgid "Num. *"
+msgstr ""
+
+#. --------
+#. msgid "Num. +"
+#: src/Options.hx:291
+msgid "Num. +"
+msgstr ""
+
+#. --------
+#. msgid "Num. Entrée"
+#: src/Options.hx:292
+msgid "Num. Entrée"
+msgstr ""
+
+#. --------
+#. msgid "Num. -"
+#: src/Options.hx:293
+msgid "Num. -"
+msgstr ""
+
+#. --------
+#. msgid "Num. ."
+#: src/Options.hx:294
+msgid "Num. ."
+msgstr ""
+
+#. --------
+#. msgid "Num. /"
+#: src/Options.hx:295
+msgid "Num. /"
+msgstr ""
+
+#. Shift key
+#.
+#. --------
+#. msgid "Maj"
+#: src/Options.hx:296
+msgid "Shift"
+msgstr ""
+
+#. Ctrl key
+#.
+#. --------
+#. msgid "Ctrl"
+#: src/Options.hx:297
+msgid "Ctrl"
+msgstr ""
+
+#. Alt key
+#.
+#. --------
+#. msgid "Alt"
+#: src/Options.hx:298
+msgid "Alt"
+msgstr ""
+
+#. Left shift key
+#.
+#. --------
+#. msgid "Maj. G."
+#: src/Options.hx:299
+msgid "Shift. L."
+msgstr ""
+
+#. Right shift key
+#.
+#. --------
+#. msgid "Maj. D."
+#: src/Options.hx:300
+msgid "Shift. R."
+msgstr ""
+
+#. Left control key
+#.
+#. --------
+#. msgid "Ctrl G."
+#: src/Options.hx:301
+msgid "Ctrl L."
+msgstr ""
+
+#. Right control key
+#.
+#. --------
+#. msgid "Ctrl D."
+#: src/Options.hx:302
+msgid "Ctrl R."
+msgstr ""
+
+#. Left Alt key
+#.
+#. --------
+#. msgid "Alt G."
+#: src/Options.hx:303
+msgid "Alt L."
+msgstr ""
+
+#. Right Alt key
+#.
+#. --------
+#. msgid "Alt D."
+#: src/Options.hx:304
+msgid "Alt R."
+msgstr ""
+
+#. Mouse left click
+#.
+#. --------
+#. msgid "Clic G."
+#: src/Options.hx:305
+msgid "Left click."
+msgstr ""
+
+#. Mouse right click
+#.
+#. --------
+#. msgid "Clic D."
+#: src/Options.hx:306
+msgid "Right click."
+msgstr ""
+
+#. Mouse middle click
+#.
+#. --------
+#. msgid "Clic M."
+#: src/Options.hx:307
+msgid "Middle click."
+msgstr ""
+
+#. Mouse forward click
+#.
+#. --------
+#. msgid "Clic Suiv."
+#: src/Options.hx:308
+msgid "Forward click."
+msgstr ""
+
+#. Mouse back click
+#.
+#. --------
+#. msgid "Clic Préc."
+#: src/Options.hx:309
+msgid "Back click."
+msgstr ""
+
+#. --------
+#. msgid "Rôôôôômmff....Le vaisseau qui doit t'emmener n'est pas encore là..."
+#: src/cine/EndGame.hx:30
+msgid "Ohhh ho ho... The vessel you're looking for hasn't docked yet..."
+msgstr ""
+
+#. --------
+#. msgid "Rôôôôômmff....tu n'as rien à faire ici, étranger..."
+#: src/cine/EndGame.hx:33
+msgid "Ohh ho ho ho... There's nothing for you here, outsider..."
+msgstr ""
+
+#. --------
+#. msgid "ADIEU, petit être... Rôôôôômmff..."
+#: src/cine/EndGame.hx:36
+msgid "Goodbye, for no... Ohh ho ho ho ho..."
+msgstr ""
+
+#. --------
+#. msgid "Fiole de soin remplie et santé restaurée"
+#: src/cine/HealFountain.hx:40
+msgid "Health flask refilled and health restored"
+msgstr ""
+
+#. --------
+#. msgid "Santé restaurée"
+#: src/cine/HealFountain.hx:42
+msgid "Health restored"
+msgstr ""
+
+#. --------
+#. msgid "Fiole de soin remplie"
+#: src/cine/HealFountain.hx:44
+msgid "Health flask refilled"
+msgstr ""
+
+#. --------
+#. msgid "Corps détruit"
+#: src/cine/HeroDeath.hx:106
+msgid "Body Desecrated"
+msgstr ""
+
+#. --------
+#. msgid "C'est parti !"
+#: src/cine/HomunculusAnal.hx:131
+msgid "Go!"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Tout ce que tu achètes chez moi est PERMANENT. Même la mort ne saurait t'en "
+#. "priver."
+#: src/cine/LeaveCollector.hx:24
+msgid ""
+"Everything you buy here is yours FOREVER. Not even Death can take it from "
+"you."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Autant dire que tu as tout intérêt à me ramener d'autres cellules si tu veux "
+#. "plus de puissance."
+#: src/cine/LeaveCollector.hx:27
+msgid "Simply put, if you want more power, then bring me more cells!"
+msgstr ""
+
+#. --------
+#. msgid "Bon. Et maintenant, prisonnier..."
+#: src/cine/LeaveCollector.hx:30
+msgid "Now... Prisoner."
+msgstr ""
+
+#. --------
+#. msgid "HORS DE MA VUE ! Ta présence m'ennuie."
+#: src/cine/LeaveCollector.hx:33
+msgid "OUT OF MY SIGHT! Your presence grows tiring."
+msgstr ""
+
+#. --------
+#. msgid "Regardez qui voilà..."
+#: src/cine/MeetCollector.hx:22
+msgid "You again... Interesting..."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "On m'appelle le Collecteur. Je suis ce qui se rapproche le plus d'un type "
+#. "fréquentable ici-bas."
+#: src/cine/MeetCollector.hx:25
+msgid ""
+"I am the Collector and I'm about the closest thing to company you will get "
+"down here."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "En échange des CELLULES trouvées sur tes ennemis, je peux t'obtenir quelques "
+#. "petites choses utiles..."
+#: src/cine/MeetCollector.hx:28
+msgid ""
+"In exchange for the CELLS you pillage from your foes, I can provide you with "
+"a few useful items..."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Et si tu trouves des SCHEMAS, je te donnerai accès à des objets plus... "
+#. "expérimentaux, dirons-nous."
+#: src/cine/MeetCollector.hx:31
+msgid ""
+"If you uncover any BLUEPRINTS, I may be able to provide you with some "
+"more... experimental items."
+msgstr ""
+
+#. --------
+#. msgid "Portail secret découvert"
+#: src/cine/SecretExitOpening.hx:47
+msgid "Secret area found"
+msgstr ""
+
+#. --------
+#. msgid "+::n:: OR"
+#: src/en/Hero.hx:497
+msgid "+::n:: GOLD"
+msgstr ""
+
+#. --------
+#. msgid "-::n:: OR"
+#: src/en/Hero.hx:501
+msgid "-::n:: GOLD"
+msgstr ""
+
+#. --------
+#. msgid "Artefact meta déjà obtenu."
+#: src/en/Hero.hx:715
+msgid "You already have this meta item."
+msgstr ""
+
+#. --------
+#. msgid "Santé augmentée !"
+#: src/en/Hero.hx:729
+msgid "Health increased!"
+msgstr ""
+
+#. --------
+#. msgid "Dégâts des armes augmentés !"
+#: src/en/Hero.hx:733
+msgid "Weapon damage increased!"
+msgstr ""
+
+#. --------
+#. msgid "Dégâts et délais des compétences actives améliorés !"
+#: src/en/Hero.hx:739
+msgid "Skill power and cooldown improved!"
+msgstr ""
+
+#. --------
+#. msgid "::n:: OR retrouvé (::pct::%)"
+#: src/en/Hero.hx:773
+msgid "::n:: GOLD recovered (::pct::%)"
+msgstr ""
+
+#. --------
+#. msgid "Mort par malédiction !"
+#: src/en/Hero.hx:815
+msgid "Death by curse!"
+msgstr ""
+
+#. --------
+#. msgid "Esquiver"
+#. --------
+#. msgid "Roulade"
+#: src/en/Hero.hx:893 src/en/Hero.hx:896
+msgid "Roll"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez offensé les Dieux !"
+#: src/en/Hero.hx:903
+msgid "You have outraged the gods!"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Un seul coup reçu... et vous êtes MORT. Eliminez ::n:: ennemis pour lever "
+#. "cette malédiction."
+#: src/en/Hero.hx:904
+msgid ""
+"Take one little hit... and you're DEAD. Eliminate ::n:: enemies to lift the "
+"curse."
+msgstr ""
+
+#. --------
+#. msgid "Mort évitée."
+#: src/en/Hero.hx:925
+msgid "Death cheated."
+msgstr ""
+
+#. --------
+#. msgid "Défense brisée !"
+#: src/en/Hero.hx:960 src/en/mob/Shield.hx:85
+msgid "Defence breached!"
+msgstr ""
+
+#. --------
+#. msgid "Bloqué !"
+#: src/en/Hero.hx:963
+msgid "Blocked!"
+msgstr ""
+
+#. --------
+#. msgid "Annulé"
+#: src/en/Hero.hx:1464
+msgid "Canceled"
+msgstr ""
+
+#. --------
+#. msgid "Maintenir pour se soigner"
+#: src/en/Hero.hx:2314
+msgid "Hold to heal"
+msgstr ""
+
+#. --------
+#. msgid "Double saut"
+#: src/en/Hero.hx:2854 src/en/inter/EventTrigger.hx:31
+msgid "Double jump"
+msgstr ""
+
+#. --------
+#. msgid "Sauter"
+#: src/en/Hero.hx:2884 src/ui/Options.hx:219 src/ui/Options.hx:238
+msgid "Jump"
+msgstr ""
+
+#. --------
+#. msgid "Arme principale"
+#: src/en/Hero.hx:2887 src/ui/Options.hx:221 src/ui/Options.hx:240
+msgid "Main weapon"
+msgstr ""
+
+#. --------
+#. msgid "Arme secondaire"
+#: src/en/Hero.hx:2890 src/ui/Options.hx:222 src/ui/Options.hx:241
+msgid "Secondary weapon"
+msgstr ""
+
+#. --------
+#. msgid "Se soigner"
+#: src/en/Hero.hx:2894 src/ui/Options.hx:226 src/ui/Options.hx:245
+msgid "Heal"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez mis fin à votre malédiction."
+#: src/en/Hero.hx:3168
+msgid "Curse lifted."
+msgstr ""
+
+#. --------
+#. msgid "Ralenti"
+#: src/en/Mob.hx:877 src/en/Mob.hx:891 src/en/Mob.hx:898
+msgid "Slowed down"
+msgstr ""
+
+#. --------
+#. msgid "Yolo!"
+#: src/en/Mob.hx:1192 src/en/Mob.hx:1198
+msgid "Yolo!"
+msgstr ""
+
+#. --------
+#. msgid "Corps décapité"
+#: src/en/UsableBody.hx:36
+msgid "Decapitated corpse"
+msgstr ""
+
+#. --------
+#. msgid "Pénétrer"
+#: src/en/UsableBody.hx:37
+msgid "Inhabit"
+msgstr ""
+
+#. --------
+#. msgid "Tout va bien se passer !"
+#: src/pr/BetaDisclaimer.hx:51
+msgid "Don't panic!"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Dead Cells est en accès anticipé ! Cela signifie que tout un tas de choses "
+#. "risque de se produire. Des choses amusantes (finir la tête dans un mur, "
+#. "sauter sur 10km...), et d'autres moins (perdre toute votre sauvegarde)."
+#: src/pr/BetaDisclaimer.hx:56
+msgid ""
+"Dead Cells is in Early Access! This means there will be bugs... Hopefully "
+"not too many though... Some will be funny (getting your head stuck in a "
+"wall, falling through the floor etc), others won't be (losing your save in a "
+"crash and the like)."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "L'important, c'est que vous vous amusiez pendant que nous, on s'occupe de "
+#. "corriger les problèmes."
+#: src/pr/BetaDisclaimer.hx:58
+msgid ""
+"The important part is that you have fun playing the game, while we get to "
+"work adding new content and fixing any problems..."
+msgstr ""
+
+#. --------
+#. msgid "Accepter"
+#. --------
+#. msgid "Valider"
+#: src/pr/BetaDisclaimer.hx:71
+msgid "OK"
+msgstr ""
+
+#. --------
+#. msgid "Félicitations !"
+#: src/pr/EndGame.hx:52
+msgid "Congratulations!"
+msgstr ""
+
+#. --------
+#. msgid "Vous êtes venus à bout du dernier Boss... pour l'instant !"
+#: src/pr/EndGame.hx:57
+msgid "You've made it past the last boss... for now..."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "En effet, d'autres niveaux viendront ci-après durant l'Accès Anticipé !\n"
+#. "Mais en attendant, avez-vous déja visité tout ceux existant ?"
+#: src/pr/EndGame.hx:59
+msgid ""
+"We'll be adding new levels and bosses throughout the Early Access!\n"
+"While you wait, have you unlocked and explored all the side levels?"
+msgstr ""
+
+#. --------
+#. msgid "Revenir au menu principal"
+#. --------
+#. msgid "Retour à l'écran titre"
+#: src/pr/EndGame.hx:72
+msgid "Return to the main menu"
+msgstr ""
+
+#. --------
+#. msgid "Mode classement"
+#: src/pr/Game.hx:262
+msgid "Competitive mode"
+msgstr ""
+
+#. --------
+#. msgid "Appuyez sur S à nouveau pour démarrer le mode Score EGX!"
+#: src/pr/Game.hx:718
+msgid "Press S again to start the EGX score mode!"
+msgstr ""
+
+#. --------
+#. msgid "Appuyez sur F9 à nouveau pour revenir au menu principal !"
+#: src/pr/Game.hx:730
+msgid "Press F9 again to return to the main menu!"
+msgstr ""
+
+#. --------
+#. msgid "Version non optimisée"
+#: src/pr/IntelDisclaimer.hx:52
+msgid "This version has not been optimized"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Nous avons detecté que vous utilisez un processeur graphique Intel HD "
+#. "Graphics."
+#: src/pr/IntelDisclaimer.hx:57
+msgid "We've detected that you're using an Intel HD Graphics card."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Dead Cells n'est pas encore optimisé pour ce type de processeur graphique, "
+#. "il est possible que vous rencontriez quelques bugs."
+#: src/pr/IntelDisclaimer.hx:59
+msgid ""
+"Dead Cells has not been optimized for this type of graphics card for the "
+"moment, it's possible that you will experience some bugs."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Si votre ordinateur dispose d'un autre processeur graphique, nous vous "
+#. "conseillons de forcer son utilisation pour Dead Cells dans vos paramètres de "
+#. "carte vidéo."
+#: src/pr/IntelDisclaimer.hx:61
+msgid ""
+"If you're computer has a dedicated 3rd party graphics card, we strongly "
+"recommend that you force the game to run on that card in the card's settings."
+msgstr ""
+
+#. --------
+#. msgid "Continuer"
+#. --------
+#. msgid "Continuer la partie en cours"
+#: src/pr/IntelDisclaimer.hx:74 src/pr/TitleScreen.hx:217
+#: src/ui/ModalPopUp.hx:49
+msgid "Continue"
+msgstr ""
+
+#. --------
+#. msgid "Ascenseur"
+#: src/pr/Level.hx:135
+msgid "Elevator"
+msgstr ""
+
+#. --------
+#. msgid "Un des engrenages est cassé."
+#: src/pr/Level.hx:135
+msgid "It's missing some parts"
+msgstr ""
+
+#. --------
+#. msgid "Bibliothèque"
+#: src/pr/Level.hx:137
+msgid "Library"
+msgstr ""
+
+#. --------
+#. msgid "Il me manque quelque chose pour pouvoir lire."
+#: src/pr/Level.hx:137
+msgid "I don't have a head, remember?"
+msgstr ""
+
+#. --------
+#. msgid "\"Travaux en cours\", impossible de continuer par là."
+#: src/pr/Level.hx:139
+msgid "Under construction! You can't go any further for now."
+msgstr ""
+
+#. --------
+#. msgid "Défi réussi !"
+#: src/pr/SecretLevelManager.hx:78 src/pr/SecretLevelManager.hx:149
+msgid "Challenge succeed!"
+msgstr ""
+
+#. --------
+#. msgid "Défi raté !"
+#: src/pr/SecretLevelManager.hx:81 src/pr/SecretLevelManager.hx:120
+msgid "Challenge failed!"
+msgstr ""
+
+#. --------
+#. msgid "La porte a été condamné..."
+#: src/pr/SecretLevelManager.hx:81 src/pr/SecretLevelManager.hx:120
+msgid "This door is sealed for now..."
+msgstr ""
+
+#. --------
+#. msgid "Temps restant :"
+#: src/pr/SecretLevelManager.hx:93
+msgid "Time left:"
+msgstr ""
+
+#. --------
+#. msgid "Nouveau défi"
+#: src/pr/SecretLevelManager.hx:100
+msgid "New challenge"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Atteindre la sortie en ayant éliminé tout les ennemis sans subir de dégâts !"
+#: src/pr/SecretLevelManager.hx:100 src/pr/SecretLevelManager.hx:175
+msgid "Kill all the enemies and make it to the exit without getting hit!"
+msgstr ""
+
+#. --------
+#. msgid "Accès anticipé (::date:: - ::git::)"
+#: src/pr/TitleScreen.hx:170
+msgid "Early access (::date:: - ::git::)"
+msgstr ""
+
+#. --------
+#. msgid "Il est fortement conseillé de jouer à Dead Cells avec une manette !"
+#: src/pr/TitleScreen.hx:174
+msgid "Playing Dead Cells with a controller is strongly advised!"
+msgstr ""
+
+#. --------
+#. msgid "Changer"
+#: src/pr/TitleScreen.hx:188
+msgid "Change"
+msgstr ""
+
+#. --------
+#. msgid "Slot ::index::"
+#: src/pr/TitleScreen.hx:190 src/pr/TitleScreen.hx:243
+msgid "Slot ::index::"
+msgstr ""
+
+#. --------
+#. msgid "Annuler"
+#: src/pr/TitleScreen.hx:195 src/pr/TitleScreen.hx:204
+#: src/pr/TitleScreen.hx:208 src/pr/TitleScreen.hx:275
+#: src/ui/ReplaceItem.hx:112 src/ui/ReplaceTalisman.hx:103 src/ui/Window.hx:94
+msgid "Cancel"
+msgstr ""
+
+#. --------
+#. msgid "Réinitialiser"
+#: src/pr/TitleScreen.hx:198
+msgid "Reset"
+msgstr ""
+
+#. --------
+#. msgid "Confirmer"
+#: src/pr/TitleScreen.hx:200 src/ui/CollectorPanel.hx:887 src/ui/Options.hx:288
+msgid "Confirm"
+msgstr ""
+
+#. --------
+#. msgid "Effaçer toute la progression de cette sauvegarde"
+#: src/pr/TitleScreen.hx:206
+msgid "Wipe ALL the progression of this save file"
+msgstr ""
+
+#. --------
+#. msgid "Nouvelle partie"
+#: src/pr/TitleScreen.hx:223
+msgid "New game"
+msgstr ""
+
+#. --------
+#. msgid "Mode Time Attack"
+#: src/pr/TitleScreen.hx:236
+msgid "Time Attack Mode"
+msgstr ""
+
+#. --------
+#. msgid "Sauvegarde : ::name::"
+#: src/pr/TitleScreen.hx:244
+msgid "Save ::name::"
+msgstr ""
+
+#. --------
+#. msgid "Options"
+#: src/pr/TitleScreen.hx:247 src/ui/CharacSheet.hx:748 src/ui/Options.hx:132
+msgid "Settings"
+msgstr ""
+
+#. --------
+#. msgid "Forum Accès anticipé"
+#: src/pr/TitleScreen.hx:255
+msgid "Early Access Forum"
+msgstr ""
+
+#. --------
+#. msgid "Quitter le jeu"
+#: src/pr/TitleScreen.hx:261
+msgid "Quit"
+msgstr ""
+
+#. --------
+#. msgid "Abandonner la partie en cours"
+#: src/pr/TitleScreen.hx:269
+msgid "Abort Current Game"
+msgstr ""
+
+#. --------
+#. msgid "Capacité active"
+#: src/tool/InventItem.hx:414
+msgid "Active skills"
+msgstr ""
+
+#. --------
+#. msgid "Arme"
+#: src/tool/InventItem.hx:415
+msgid "Weapon"
+msgstr ""
+
+#. --------
+#. msgid "Pendentif"
+#: src/tool/InventItem.hx:416
+msgid "Pendant"
+msgstr ""
+
+#. --------
+#. msgid "Divers"
+#: src/tool/InventItem.hx:417 src/ui/Options.hx:135 src/ui/Options.hx:186
+msgid "Misc"
+msgstr ""
+
+#. --------
+#. msgid "Mutation"
+#: src/tool/InventItem.hx:418
+msgid "Mutation"
+msgstr ""
+
+#. --------
+#. msgid "Consommable"
+#: src/tool/InventItem.hx:419
+msgid "Consumable"
+msgstr ""
+
+#. --------
+#. msgid "Récompense"
+#: src/tool/InventItem.hx:420
+msgid "Reward"
+msgstr ""
+
+#. --------
+#. msgid "Amélioration générale"
+#: src/tool/InventItem.hx:421
+msgid "General improvement"
+msgstr ""
+
+#. --------
+#. msgid "Plus de munitions"
+#: src/tool/Weapon.hx:208
+msgid "Out of ammo"
+msgstr ""
+
+#. --------
+#. msgid "Revenir au jeu"
+#: src/ui/CharacSheet.hx:38
+msgid "Return to the game"
+msgstr ""
+
+#. --------
+#. msgid "Runes"
+#: src/ui/CharacSheet.hx:199
+msgid "Runes"
+msgstr ""
+
+#. --------
+#. msgid "Aucune"
+#: src/ui/CharacSheet.hx:220
+msgid "None"
+msgstr ""
+
+#. --------
+#. msgid "Armes"
+#: src/ui/CharacSheet.hx:275
+msgid "Weapons"
+msgstr ""
+
+#. --------
+#. msgid "Inverser"
+#: src/ui/CharacSheet.hx:290 src/ui/CharacSheet.hx:314
+#: src/ui/ReplaceItem.hx:120
+msgid "Swap"
+msgstr ""
+
+#. --------
+#. msgid "Compétences"
+#: src/ui/CharacSheet.hx:300
+msgid "Skills"
+msgstr ""
+
+#. --------
+#. msgid "Amulette"
+#: src/ui/CharacSheet.hx:598
+msgid "Amulet"
+msgstr ""
+
+#. --------
+#. msgid "Schémas trouvés"
+#: src/ui/CharacSheet.hx:622
+msgid "Blueprints found"
+msgstr ""
+
+#. --------
+#. msgid "Amenez vos Schémas au Collecteur pour débloquer de nouveaux objets."
+#: src/ui/CharacSheet.hx:643
+msgid "Take your blueprints to the Collector to unlock new items."
+msgstr ""
+
+#. --------
+#. msgid "Vide !"
+#: src/ui/CharacSheet.hx:703
+msgid "Nada!"
+msgstr ""
+
+#. --------
+#. msgid "Pause"
+#: src/ui/CharacSheet.hx:726 src/ui/DemoAutoPause.hx:8 src/ui/HUD.hx:611
+#: src/ui/Options.hx:227 src/ui/Options.hx:246
+msgid "Pause/Inventory"
+msgstr ""
+
+#. --------
+#. msgid "Reprendre"
+#: src/ui/CharacSheet.hx:745
+msgid "Resume"
+msgstr ""
+
+#. --------
+#. msgid "Se suicider"
+#: src/ui/CharacSheet.hx:762
+msgid "Suicide"
+msgstr ""
+
+#. --------
+#. msgid "Attention !"
+#: src/ui/CharacSheet.hx:775
+msgid "Caution!"
+msgstr ""
+
+#. --------
+#. msgid "Vous perdrez votre progression depuis le début du niveau en cours"
+#: src/ui/CharacSheet.hx:776
+msgid "You will lose your progress from the beginning of the current level"
+msgstr ""
+
+#. --------
+#. msgid "Investir des cellules (maintenir)"
+#: src/ui/CollectorPanel.hx:177
+msgid "Invest cells (hold A)"
+msgstr ""
+
+#. --------
+#. msgid "Tri : Défaut"
+#: src/ui/CollectorPanel.hx:184 src/ui/CollectorPanel.hx:983
+msgid "Sort order: Default"
+msgstr ""
+
+#. --------
+#. msgid "Cacher les éléments indisponibles"
+#: src/ui/CollectorPanel.hx:191 src/ui/CollectorPanel.hx:973
+msgid "Hide the unavailable items"
+msgstr ""
+
+#. --------
+#. msgid "Filtrer par catégorie"
+#: src/ui/CollectorPanel.hx:199
+msgid "Filter by category"
+msgstr ""
+
+#. --------
+#. msgid "Fermer"
+#: src/ui/CollectorPanel.hx:206 src/ui/hud/map/MapFrame.hx:105
+msgid "Close"
+msgstr ""
+
+#. --------
+#. msgid "Pas de SCHEMA disponible!"
+#: src/ui/CollectorPanel.hx:350
+msgid "No blueprints available."
+msgstr ""
+
+#. --------
+#. msgid "Pas de SCHEMA méta disponible !"
+#: src/ui/CollectorPanel.hx:351
+msgid "No meta blueprints available."
+msgstr ""
+
+#. --------
+#. msgid "Pas de SCHEMA d'arme disponible !"
+#: src/ui/CollectorPanel.hx:352
+msgid "No weapon blueprints available."
+msgstr ""
+
+#. --------
+#. msgid "Pas de SCHEMA d'actif disponible !"
+#: src/ui/CollectorPanel.hx:353
+msgid "No active skill blueprints available."
+msgstr ""
+
+#. --------
+#. msgid "::n:: cellules restantes"
+#: src/ui/CollectorPanel.hx:578
+msgid "::n:: cells left"
+msgstr ""
+
+#. --------
+#. msgid "::n:: cellule restante"
+#: src/ui/CollectorPanel.hx:578
+msgid "::n:: cell left"
+msgstr ""
+
+#. --------
+#. msgid "Condition non remplie : débloquer \"::name::\""
+#: src/ui/CollectorPanel.hx:597 src/ui/CollectorPanel.hx:606
+msgid "Condition not met: unlock \"::name::\""
+msgstr ""
+
+#. --------
+#. msgid "Condition non remplie : débloquer ::n:: objets supplémentaires"
+#: src/ui/CollectorPanel.hx:601
+msgid "Condition not met: unlock ::n:: more items"
+msgstr ""
+
+#. --------
+#. msgid "Condition non remplie : débloquer 1 objet supplémentaire"
+#: src/ui/CollectorPanel.hx:603
+msgid "Condition not met: unlock 1 more item"
+msgstr ""
+
+#. --------
+#. msgid "Augmenter les dégâts :"
+#: src/ui/CollectorPanel.hx:613
+msgid "Increase damage:"
+msgstr ""
+
+#. --------
+#. msgid "Amélioration permanente obtenue !"
+#: src/ui/CollectorPanel.hx:813
+msgid "Permanent improvement unlocked!"
+msgstr ""
+
+#. --------
+#. msgid "Nouvelle arme débloquée !"
+#: src/ui/CollectorPanel.hx:814
+msgid "New weapon unlocked!"
+msgstr ""
+
+#. --------
+#. msgid "Nouvel objet débloqué !"
+#: src/ui/CollectorPanel.hx:815
+msgid "New item unlocked!"
+msgstr ""
+
+#. --------
+#. msgid "Niveau supplémentaire !"
+#: src/ui/CollectorPanel.hx:820
+msgid "Extra level!"
+msgstr ""
+
+#. --------
+#. msgid "Arme amélioré !"
+#: src/ui/CollectorPanel.hx:821
+msgid "Weapon improved!"
+msgstr ""
+
+#. --------
+#. msgid "Objet amélioré !"
+#: src/ui/CollectorPanel.hx:822
+msgid "Item improved!"
+msgstr ""
+
+#. --------
+#. msgid "Bonus aux dégâts :"
+#: src/ui/CollectorPanel.hx:858
+msgid "Damage bonus:"
+msgstr ""
+
+#. --------
+#. msgid "Vous pourrez aussi augmenter sa puissance !"
+#: src/ui/CollectorPanel.hx:876
+msgid "You could also increase its power!"
+msgstr ""
+
+#. --------
+#. msgid "Afficher les éléments indisponibles"
+#: src/ui/CollectorPanel.hx:973
+msgid "Show unavailable items"
+msgstr ""
+
+#. --------
+#. msgid "Tri : Coût"
+#: src/ui/CollectorPanel.hx:984
+msgid "Sort order: cost"
+msgstr ""
+
+#. --------
+#. msgid "Tri : Taux de complétion"
+#: src/ui/CollectorPanel.hx:985
+msgid "Sort order: Completion"
+msgstr ""
+
+#. --------
+#. msgid "Tri : Niveau croissant"
+#: src/ui/CollectorPanel.hx:986
+msgid "Sort order: Level, increasing"
+msgstr ""
+
+#. --------
+#. msgid "Tri : Niveau décroissant"
+#: src/ui/CollectorPanel.hx:987
+msgid "Sort order: Level, decreasing"
+msgstr ""
+
+#. --------
+#. msgid "(MAINTENU)"
+#: src/ui/ControlLabel.hx:19 src/ui/ControlLabel.hx:34
+msgid "(HOLD)"
+msgstr ""
+
+#. --------
+#. msgid "Retour au menu"
+#: src/ui/DemoAutoPause.hx:10
+msgid "Back to menu"
+msgstr ""
+
+#. --------
+#. msgid "Version demo"
+#: src/ui/Disclaimer.hx:16
+msgid "Demo version"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Cette version du jeu peut être amenée à changer. Signalez les bugs sur le "
+#. "forum Steam. Merci pour votre soutien :)"
+#: src/ui/Disclaimer.hx:21
+msgid ""
+"This version of the game is subject to change (lots of it). Please report "
+"bugs on the Steam forum. Thanks for your help! :)"
+msgstr ""
+
+#. --------
+#. msgid "Dead Cells Alpha [build ::build::]"
+#: src/ui/Disclaimer.hx:31
+msgid "Dead Cells Alpha [build ::build::]"
+msgstr ""
+
+#. --------
+#. msgid "Partie terminée!"
+#: src/ui/EndScoreMode.hx:14
+msgid "Game over!"
+msgstr ""
+
+#. --------
+#. msgid "Temps : ::time::"
+#: src/ui/EndScoreMode.hx:15 src/ui/HUD.hx:588
+msgid "Time: ::time::"
+msgstr ""
+
+#. --------
+#. msgid "Score : ::score::"
+#: src/ui/EndScoreMode.hx:16 src/ui/HUD.hx:589
+msgid "Score : ::score::"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez échoué..."
+#: src/ui/EndScoreMode.hx:19
+msgid "You failed."
+msgstr ""
+
+#. --------
+#. msgid "Réessayer"
+#: src/ui/EndScoreMode.hx:21
+msgid "Retry"
+msgstr ""
+
+#. --------
+#. msgid "Revenir à l'écran-titre"
+#: src/ui/EndScoreMode.hx:28
+msgid "Return to the title screen"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez perdu ::n:: cellules !"
+#: src/ui/GameOver.hx:35
+msgid "You lost ::n:: cells!"
+msgstr ""
+
+#. --------
+#. msgid "Vous n'avez perdu qu'une cellule."
+#: src/ui/GameOver.hx:35
+msgid "You lost one cell."
+msgstr ""
+
+#. --------
+#. msgid "::d:: dég/s"
+#. --------
+#. msgid "::d:: dégâts/sec"
+#: src/ui/ItemDesc.hx:48
+msgid "::d:: damage/s"
+msgstr ""
+
+#. --------
+#. msgid "::val:: (::crit::) dég/s"
+#: src/ui/ItemDesc.hx:48 src/ui/ItemDesc.hx:70
+msgid "::val:: (::crit::) damage/s"
+msgstr ""
+
+#. --------
+#. msgid "Munitions: ::n::"
+#: src/ui/ItemDesc.hx:53 src/ui/ItemDesc.hx:92
+msgid "Ammo: ::n::"
+msgstr ""
+
+#. --------
+#. msgid "::d:: sec de rechargement"
+#: src/ui/ItemDesc.hx:78
+msgid "::d:: seconds recharge time"
+msgstr ""
+
+#. --------
+#. msgid "Arme secondaire uniquement."
+#: src/ui/ItemDesc.hx:109
+msgid "Secondary weapon only."
+msgstr ""
+
+#. --------
+#. msgid "Dégâts +::n::%"
+#: src/ui/ItemDesc.hx:114
+msgid "Damage +::n::%"
+msgstr ""
+
+#. --------
+#. msgid "The Incomplete One"
+#: src/ui/LifeBarBoss.hx:39
+msgid "The Incomplete One"
+msgstr ""
+
+#. --------
+#. msgid "::name:: !"
+#: src/ui/LogManager.hx:103
+msgid "::name::!"
+msgstr ""
+
+#. --------
+#. msgid "Schéma RARE obtenu :"
+#: src/ui/LogManager.hx:175
+msgid "You found a RARE blueprint:"
+msgstr ""
+
+#. --------
+#. msgid "Schéma obtenu :"
+#: src/ui/LogManager.hx:175
+msgid "Blueprint acquired:"
+msgstr ""
+
+#. --------
+#. msgid "Rune permanente obtenue"
+#: src/ui/LogManager.hx:199
+msgid "Permanent rune acquired"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez débloqué"
+#: src/ui/LogManager.hx:223
+msgid "You unlocked"
+msgstr ""
+
+#. --------
+#. msgid "Manette"
+#: src/ui/Options.hx:133 src/ui/Options.hx:181
+msgid "Controller"
+msgstr ""
+
+#. --------
+#. msgid "Clavier"
+#: src/ui/Options.hx:134 src/ui/Options.hx:183
+msgid "Keyboard"
+msgstr ""
+
+#. --------
+#. msgid "Sons"
+#: src/ui/Options.hx:136 src/ui/Options.hx:184
+msgid "Sounds"
+msgstr ""
+
+#. --------
+#. msgid "Langue"
+#: src/ui/Options.hx:137 src/ui/Options.hx:185
+msgid "Language"
+msgstr ""
+
+#. --------
+#. msgid "Plein écran"
+#: src/ui/Options.hx:188
+msgid "Full screen mode"
+msgstr ""
+
+#. --------
+#. msgid "Capturer souris"
+#: src/ui/Options.hx:193
+msgid "Mouse capture (mouse can't leave the game screen)."
+msgstr ""
+
+#. --------
+#. msgid "Tutorial contrôles"
+#: src/ui/Options.hx:196
+msgid "Show a tutorial for the controls"
+msgstr ""
+
+#. --------
+#. msgid "Affiche les explications des commandes de jeu en début de partie."
+#: src/ui/Options.hx:196
+msgid "Show the controls at the beginning of the game."
+msgstr ""
+
+#. --------
+#. msgid "Roulade prête"
+#: src/ui/Options.hx:199
+msgid "Show the roll cooldown feedback"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Affiche un léger feedback vous indiquant que votre compétence d'esquive est "
+#. "prête."
+#: src/ui/Options.hx:199
+msgid "Displays a light visual feedback when you can roll again."
+msgstr ""
+
+#. --------
+#. msgid "Annonce d'attaques"
+#: src/ui/Options.hx:202
+msgid "Show attack warning marker"
+msgstr ""
+
+#. --------
+#. msgid "Affiche un \"!\" lorsqu'un ennemi s'apprête à vous attaquer."
+#: src/ui/Options.hx:202
+msgid "Displays a \"!\" when an enemy is about to strike."
+msgstr ""
+
+#. --------
+#. msgid "Masquer contrôles"
+#: src/ui/Options.hx:205
+msgid "Hide controls in UI"
+msgstr ""
+
+#. --------
+#. msgid "Masquer les noms des boutons dans l'interface."
+#: src/ui/Options.hx:205
+msgid "Hides button names in the interface."
+msgstr ""
+
+#. --------
+#. msgid "Activer VSync"
+#: src/ui/Options.hx:208
+msgid "Enable VSync"
+msgstr ""
+
+#. --------
+#. msgid "Options par défaut"
+#: src/ui/Options.hx:211 src/ui/Options.hx:212
+msgid "Restore default options"
+msgstr ""
+
+#. --------
+#. msgid "Restaurer les valeurs par défaut pour toutes les options"
+#: src/ui/Options.hx:211
+msgid "Restores default values  for all options"
+msgstr ""
+
+#. --------
+#. msgid "Compétence gauche"
+#: src/ui/Options.hx:223 src/ui/Options.hx:242
+msgid "Left trigger skill"
+msgstr ""
+
+#. --------
+#. msgid "Compétence droite"
+#: src/ui/Options.hx:224 src/ui/Options.hx:243
+msgid "Right trigger skill"
+msgstr ""
+
+#. --------
+#. msgid "Utiliser"
+#: src/ui/Options.hx:225 src/ui/Options.hx:244 src/en/inter/Elevator.hx:132
+#: src/en/inter/Fountain.hx:96 src/en/inter/HealPotion.hx:52
+#: src/en/inter/RedTeleporter.hx:40 src/en/inter/VineLadder.hx:130
+msgid "Use/Interact"
+msgstr ""
+
+#. --------
+#. msgid "Voir la carte"
+#: src/ui/Options.hx:228 src/ui/Options.hx:247
+msgid "Map"
+msgstr ""
+
+#. --------
+#. msgid "Se déplacer avec le D-Pad"
+#: src/ui/Options.hx:229
+msgid "Use the D-Pad to move"
+msgstr ""
+
+#. --------
+#. msgid "Active l'utilisation des flèches directionnelle pour se déplacer"
+#: src/ui/Options.hx:229
+msgid "Enable arrow keys to move "
+msgstr ""
+
+#. --------
+#. msgid "Configuration par défaut"
+#: src/ui/Options.hx:248 src/ui/Options.hx:249
+msgid "Restore default configuration"
+msgstr ""
+
+#. --------
+#. msgid "Restaurer la configuration clavier par défaut"
+#: src/ui/Options.hx:248
+msgid "Restore the default keyboard configuration"
+msgstr ""
+
+#. --------
+#. msgid "Muet"
+#: src/ui/Options.hx:267
+msgid "Mute"
+msgstr ""
+
+#. --------
+#. msgid "Volume principal"
+#: src/ui/Options.hx:271
+msgid "Main volume"
+msgstr ""
+
+#. --------
+#. msgid "Volume musique"
+#: src/ui/Options.hx:275
+msgid "Music volume"
+msgstr ""
+
+#. --------
+#. msgid "Volume effets"
+#: src/ui/Options.hx:279
+msgid "SFX volume"
+msgstr ""
+
+#. --------
+#. msgid "Volume ambiance"
+#: src/ui/Options.hx:283
+msgid "Ambient noise volume"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez ramassé"
+#: src/ui/ReplaceItem.hx:82
+msgid "You've looted"
+msgstr ""
+
+#. --------
+#. msgid "Vous pouvez acheter pour ::price::"
+#: src/ui/ReplaceItem.hx:85
+msgid "You can buy for ::price::"
+msgstr ""
+
+#. --------
+#. msgid "Quel objet remplacer ?"
+#: src/ui/ReplaceItem.hx:96
+msgid "Swap which item?"
+msgstr ""
+
+#. --------
+#. msgid "Annuler l'achat"
+#: src/ui/ReplaceItem.hx:112
+msgid "Cancel the purchase"
+msgstr ""
+
+#. --------
+#. msgid "Valider l'achat"
+#: src/ui/ReplaceItem.hx:116
+msgid "Confirm the purchase"
+msgstr ""
+
+#. --------
+#. msgid "Nouvelle amulette :"
+#: src/ui/ReplaceTalisman.hx:51
+msgid "New amulet:"
+msgstr ""
+
+#. --------
+#. msgid "Nouvelle amulette (::price:: OR) :"
+#: src/ui/ReplaceTalisman.hx:53
+msgid "New amulet (::price:: Gold):"
+msgstr ""
+
+#. --------
+#. msgid "Ancienne amulette :"
+#: src/ui/ReplaceTalisman.hx:73
+msgid "Old amulet:"
+msgstr ""
+
+#. --------
+#. msgid "Equiper"
+#: src/ui/ReplaceTalisman.hx:97
+msgid "Equip"
+msgstr ""
+
+#. --------
+#. msgid "Acheter pour ::price:: OR"
+#: src/ui/ReplaceTalisman.hx:97
+msgid "Buy for ::price:: GOLD"
+msgstr ""
+
+#. --------
+#. msgid "Hé ! Vous là ! Ouvrez moi !"
+#: src/en/inter/CursedChest.hx:72
+msgid "Hey! You there! Open me!"
+msgstr ""
+
+#. --------
+#. msgid "J'ai été TRÈS vilain."
+#: src/en/inter/CursedChest.hx:73
+msgid "I've been naughty."
+msgstr ""
+
+#. --------
+#. msgid "Ouvrez moi FORT !"
+#: src/en/inter/CursedChest.hx:74
+msgid "Hit me real HARD!"
+msgstr ""
+
+#. --------
+#. msgid "Je suis un vilain coffre qui mérite d'être puni..."
+#: src/en/inter/CursedChest.hx:75
+msgid "I'm a naughty chest. I deserve to be punished."
+msgstr ""
+
+#. --------
+#. msgid "Hmmm... J'ai tant à vous donner..."
+#: src/en/inter/CursedChest.hx:76
+msgid "Ohhh.... I've got so much to give you..."
+msgstr ""
+
+#. --------
+#. msgid "Je suis un coffre très cachotier vous savez."
+#: src/en/inter/CursedChest.hx:77
+msgid "You know I'm hiding a lot inside..."
+msgstr ""
+
+#. --------
+#. msgid "Vous ne voulez pas voir ce que je vous réserve ?"
+#: src/en/inter/CursedChest.hx:78
+msgid "You don't want to see what I've got for you?"
+msgstr ""
+
+#. --------
+#. msgid "Allez... Je mérite bien une petite fessée..."
+#: src/en/inter/CursedChest.hx:79
+msgid "Come on... Just a little slap..."
+msgstr ""
+
+#. --------
+#. msgid "MAIS FRAPPEZ MOI BON SANG !!"
+#: src/en/inter/CursedChest.hx:80
+msgid "HIT ME GODDAMIT!"
+msgstr ""
+
+#. --------
+#. msgid "Ouvrir"
+#: src/en/inter/CursedChest.hx:276 src/en/inter/TreasureChest.hx:200
+#: src/en/inter/TreasureChest.hx:214 src/en/inter/door/BasicDoor.hx:36
+#: src/en/inter/door/BossDoor.hx:34 src/en/inter/door/MetaDoor.hx:59
+#: src/en/inter/door/TimedDoor.hx:58 src/en/inter/door/TriggeredDoor.hx:68
+msgid "Open"
+msgstr ""
+
+#. --------
+#. msgid "Trésor maudit découvert"
+#: src/en/inter/CursedChest.hx:395
+msgid "Cursed treasure found"
+msgstr ""
+
+#. --------
+#. msgid "Retourner à l'entrée"
+#: src/en/inter/EntranceTeleporter.hx:30
+msgid "Return to the entry"
+msgstr ""
+
+#. --------
+#. msgid "Ca ne semble pas fonctionner."
+#: src/en/inter/EntranceTeleporter.hx:61
+msgid "It does not seem to work."
+msgstr ""
+
+#. --------
+#. msgid "Descendre"
+#: src/en/inter/EventTrigger.hx:26
+msgid "Drop down"
+msgstr ""
+
+#. --------
+#. msgid "Sortir"
+#: src/en/inter/Exit.hx:68
+msgid "Leave"
+msgstr ""
+
+#. --------
+#. msgid "Eliminez d'abord les ennemis proches !"
+#: src/en/inter/Exit.hx:73 src/en/inter/Npc.hx:103
+msgid "Kill all nearby enemies first!"
+msgstr ""
+
+#. --------
+#. msgid "Je n'en ai pas besoin pour l'instant."
+#: src/en/inter/Fountain.hx:58
+msgid "I don't need that now."
+msgstr ""
+
+#. --------
+#. msgid "La fontaine est vide"
+#: src/en/inter/Fountain.hx:87
+msgid "The fountain is empty"
+msgstr ""
+
+#. --------
+#. msgid "Briser"
+#: src/en/inter/GoldNugget.hx:115 src/en/inter/GoldNugget.hx:119
+#: src/en/inter/GoldNugget.hx:122
+msgid "Break"
+msgstr ""
+
+#. --------
+#. msgid "Inutile pour l'instant"
+#: src/en/inter/HealPotion.hx:36
+msgid "Can't do that right now"
+msgstr ""
+
+#. --------
+#. msgid "Potion de soin (::n:: PV)"
+#: src/en/inter/HealPotion.hx:40
+msgid "Health potion (::n:: HP)"
+msgstr ""
+
+#. --------
+#. msgid "Potion de soin"
+#: src/en/inter/HealPotion.hx:50
+msgid "Health potion"
+msgstr ""
+
+#. --------
+#. msgid "Régénère ::n:: points de santé."
+#: src/en/inter/HealPotion.hx:51
+msgid "Regenerates ::n:: health."
+msgstr ""
+
+#. --------
+#. msgid "Secret découvert"
+#: src/en/inter/HiddenBlock.hx:85 src/en/inter/HiddenTrigger.hx:58
+msgid "Secret discovered"
+msgstr ""
+
+#. --------
+#. msgid "ERROR: no target"
+#: src/en/inter/HiddenTrigger.hx:45 src/en/inter/PressurePlate.hx:100
+msgid "ERROR: no target"
+msgstr ""
+
+#. --------
+#. msgid "A suivre..."
+#: src/en/inter/HiddenTrigger.hx:52
+msgid "To continue..."
+msgstr ""
+
+#. --------
+#. msgid "Félicitations ! Vous avez atteint la fin de cette demo !"
+#: src/en/inter/HiddenTrigger.hx:52
+msgid "Congratulations! You have reached the end of the demo!"
+msgstr ""
+
+#. --------
+#. msgid "Ramasser"
+#: src/en/inter/ItemDrop.hx:95 src/en/inter/ShopBooth.hx:97
+#: src/en/inter/UpgradeShrine.hx:80 src/en/loot/Blueprint.hx:48
+msgid "Pick up"
+msgstr ""
+
+#. --------
+#. msgid "Pas utile pour l'instant"
+#: src/en/inter/ItemDrop.hx:162 src/en/inter/ShopBooth.hx:149
+msgid "Not useful for now"
+msgstr ""
+
+#. --------
+#. msgid "Parler"
+#: src/en/inter/Merchant.hx:32 src/en/inter/Npc.hx:94
+#: src/en/inter/npc/Collector.hx:48
+msgid "Talk"
+msgstr ""
+
+#. --------
+#. msgid "Tout est à vendre !"
+#: src/en/inter/Merchant.hx:40
+msgid "Everything is for sale!"
+msgstr ""
+
+#. --------
+#. msgid "Qu'est-ce qu'il vous faut ?"
+#: src/en/inter/Merchant.hx:41
+msgid "What can I do for you?"
+msgstr ""
+
+#. --------
+#. msgid "Vous achetez quelque chose ou bien ?"
+#: src/en/inter/Merchant.hx:42
+msgid "Are you going to buy something, or are you just hanging around?"
+msgstr ""
+
+#. --------
+#. msgid "Dites, ça va finir par me gonfler..."
+#: src/en/inter/Merchant.hx:43
+msgid "You know, this is going to get old..."
+msgstr ""
+
+#. --------
+#. msgid "..."
+#: src/en/inter/Merchant.hx:44 src/en/inter/Merchant.hx:49
+msgid "..."
+msgstr ""
+
+#. --------
+#. msgid "BON ! Vous m'achetez quelque chose ?!"
+#: src/en/inter/Merchant.hx:45
+msgid "BUY SOMETHING OR GET OUT OF HERE!"
+msgstr ""
+
+#. --------
+#. msgid "Fallait que je tombe sur l'idiot de l'île."
+#: src/en/inter/Merchant.hx:46
+msgid "He's got his head... In the clouds! Oh eh ha he haw..."
+msgstr ""
+
+#. --------
+#. msgid "Vers la salle des fioles inférieure"
+#: src/en/inter/MiniTP.hx:85
+msgid "To the lower room"
+msgstr ""
+
+#. --------
+#. msgid "Vers la salle des fioles supérieure"
+#: src/en/inter/MiniTP.hx:85
+msgid "To the upper room"
+msgstr ""
+
+#. --------
+#. msgid "Frotter"
+#: src/en/inter/RedTeleporter.hx:36
+msgid "Rub"
+msgstr ""
+
+#. --------
+#. msgid "Utiliser la rune"
+#: src/en/inter/SecretLever.hx:64
+msgid "Use the rune"
+msgstr ""
+
+#. --------
+#. msgid "Acheter"
+#: src/en/inter/ShopBooth.hx:95
+msgid "Buy"
+msgstr ""
+
+#. --------
+#. msgid "Pas assez d'or !"
+#: src/en/inter/ShopBooth.hx:164
+msgid "Not enough gold!"
+msgstr ""
+
+#. --------
+#. msgid "Téléporteur"
+#: src/en/inter/Teleport.hx:116
+msgid "Teleporter"
+msgstr ""
+
+#. --------
+#. msgid "Aucune destination disponible."
+#: src/en/inter/Teleport.hx:117
+msgid "You haven't unlocked another teleporter yet."
+msgstr ""
+
+#. --------
+#. msgid "Se téléporter"
+#: src/en/inter/Teleport.hx:121
+msgid "Teleport"
+msgstr ""
+
+#. --------
+#. msgid "Coffre condamné"
+#: src/en/inter/TreasureChest.hx:203
+msgid "Sealed chest"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez échoué lors de ce défi, le coffre n'est plus accessible."
+#: src/en/inter/TreasureChest.hx:204
+msgid "You failed. The treasure has been sealed. Forever."
+msgstr ""
+
+#. --------
+#. msgid "Coffre verrouillé"
+#: src/en/inter/TreasureChest.hx:208
+msgid "Locked chest"
+msgstr ""
+
+#. --------
+#. msgid "Terminez le défi afin de l'ouvrir."
+#: src/en/inter/TreasureChest.hx:209
+msgid "You must to complete the challenge first."
+msgstr ""
+
+#. --------
+#. msgid "Chatouiller"
+#: src/en/inter/VineLadder.hx:126
+msgid "Tickle"
+msgstr ""
+
+#. --------
+#. msgid "Examiner"
+#: src/en/inter/WorkInProgress.hx:31 src/en/inter/npc/Knight.hx:40
+msgid "Look"
+msgstr ""
+
+#. --------
+#. msgid "Schéma déjà obtenu (::name::)"
+#: src/en/loot/Blueprint.hx:86
+msgid "You already have the ::name:: blueprint."
+msgstr ""
+
+#. --------
+#. msgid "Vous êtes ici !"
+#: src/ui/hud/MiniMap.hx:148
+msgid "You are here!"
+msgstr ""
+
+#. --------
+#. msgid "Déverrouiller"
+#: src/en/inter/door/LockedDoor.hx:91
+msgid "Unlock"
+msgstr ""
+
+#. --------
+#. msgid "Il me faut une clé..."
+#: src/en/inter/door/LockedDoor.hx:99
+msgid "I need a key..."
+msgstr ""
+
+#. --------
+#. msgid "Ouvert avec : ::key:: !"
+#: src/en/inter/door/LockedDoor.hx:108
+msgid "Opened with: ::key::!"
+msgstr ""
+
+#. --------
+#. msgid "Nécessite : ::name::"
+#: src/en/inter/door/MetaDoor.hx:43
+msgid "::name:: needed"
+msgstr ""
+
+#. --------
+#. msgid "Utilisé : ::name::"
+#: src/en/inter/door/MetaDoor.hx:49
+msgid "::name:: used"
+msgstr ""
+
+#. --------
+#. msgid "\"Payez le tribut, ou retournez sur vos pas !\""
+#: src/en/inter/door/MoneyDoor.hx:84
+msgid "\"Pay the tribute, or be gone!\""
+msgstr ""
+
+#. --------
+#. msgid "Payer ::price:: OR"
+#: src/en/inter/door/MoneyDoor.hx:85
+msgid "Pay ::price:: GOLD"
+msgstr ""
+
+#. --------
+#. msgid "Cette porte a été condamnée il y a ::time::. Dommage..."
+#: src/en/inter/door/TimedDoor.hx:51
+msgid "This door was sealed ::time:: ago. Too bad..."
+msgstr ""
+
+#. --------
+#. msgid "Porte minutée déverrouillée !"
+#: src/en/inter/door/TimedDoor.hx:71
+msgid "Timed door unlocked!"
+msgstr ""
+
+#. --------
+#. msgid "Cette porte ne s'ouvrira pas si j'ai encore des cellules sur moi."
+#: src/en/inter/door/TriggeredDoor.hx:33
+msgid "This door won't open if you're still carrying cells."
+msgstr ""
+
+#. --------
+#. msgid "Cette porte s'ouvre depuis un autre endroit."
+#: src/en/inter/door/TriggeredDoor.hx:36
+msgid "This door can't be opened from this side."
+msgstr ""
+
+#. --------
+#. msgid "Je ne peux pas l'ouvrir d'ici."
+#: src/en/inter/door/TriggeredDoor.hx:37
+msgid "I cannot open it from here."
+msgstr ""
+
+#. --------
+#. msgid "Cette porte est bloquée..."
+#: src/en/inter/door/TriggeredDoor.hx:38
+msgid "This door is blocked..."
+msgstr ""
+
+#. --------
+#. msgid "Un mécanisme bloque la porte."
+#: src/en/inter/door/TriggeredDoor.hx:39
+msgid "Something is blocking the door."
+msgstr ""
+
+#. --------
+#. msgid "Porte ouverte"
+#: src/en/inter/door/TriggeredDoor.hx:49
+msgid "Door opened"
+msgstr ""
+
+#. --------
+#. msgid "Déjà de retour ?"
+#: src/en/inter/npc/AfterFirstDeath.hx:25 src/en/inter/npc/Knight.hx:148
+msgid "Back already?"
+msgstr ""
+
+#. --------
+#. msgid "Tiens, tiens. Mais qui voilà..."
+#: src/en/inter/npc/Collector.hx:71
+msgid "Well well well, you're back..."
+msgstr ""
+
+#. --------
+#. msgid "Vous ne seriez pas le prisonnier décapité vous ?"
+#: src/en/inter/npc/First.hx:29
+msgid "Are you the same one?"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez perdu votre langue ?"
+#: src/en/inter/npc/First.hx:42 src/en/inter/npc/Knight.hx:83
+msgid "Well? Nothing to say for yourself?"
+msgstr ""
+
+#. --------
+#. msgid "Oh. Oui, pardon. Vous AVEZ perdu votre langue."
+#: src/en/inter/npc/First.hx:45
+msgid "I guess my usual gag is not use here..."
+msgstr ""
+
+#. --------
+#. msgid "Cela doit être étrange de revenir d'entre les morts."
+#: src/en/inter/npc/First.hx:49 src/en/inter/npc/Knight.hx:91
+msgid "I suppose you didn't think to find yourself back here..."
+msgstr ""
+
+#. --------
+#. msgid "Vous avez sûrement remarqué non ?"
+#: src/en/inter/npc/First.hx:56 src/en/inter/npc/Knight.hx:98
+msgid "But surely, you must have noticed!?"
+msgstr ""
+
+#. --------
+#. msgid "Vous ne pouvez plus mourir."
+#: src/en/inter/npc/First.hx:59 src/en/inter/npc/Knight.hx:107
+msgid "You can no longer die."
+msgstr ""
+
+#. --------
+#. msgid "J'ignore pourquoi..."
+#: src/en/inter/npc/First.hx:62 src/en/inter/npc/Knight.hx:110
+msgid "I still don't understand..."
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Mais vous n'êtes pas le premier dans ce cas là, si c'est votre question..."
+#: src/en/inter/npc/First.hx:65 src/en/inter/npc/Knight.hx:113
+msgid "It was like this with the others, for a while..."
+msgstr ""
+
+#. --------
+#. msgid "Vous avez mieux à faire..."
+#: src/en/inter/npc/First.hx:89 src/en/inter/npc/Knight.hx:53
+msgid "You can do better than this..."
+msgstr ""
+
+#. --------
+#. msgid "Oh. Bonjour."
+#: src/en/inter/npc/First.hx:94
+msgid "Oh. Hello."
+msgstr ""
+
+#. --------
+#. msgid "Ca sera sûrement très joli quand toutes ces flasques seront illuminées."
+#: src/en/inter/npc/Flasks.hx:30
+msgid "It's going to be a sight to see when all of these flasks are lit up..."
+msgstr ""
+
+#. --------
+#. msgid "Vous y travaillez, n'est-ce pas ?"
+#: src/en/inter/npc/Flasks.hx:40 src/en/inter/npc/Knight.hx:205
+msgid "It's your doing this isn't it?"
+msgstr ""
+
+#. --------
+#. msgid "Oui..."
+#: src/en/inter/npc/Flasks.hx:45
+msgid "Yes..."
+msgstr ""
+
+#. --------
+#. msgid "Evidemment que vous y travaillez."
+#: src/en/inter/npc/Flasks.hx:52
+msgid "of course it is..."
+msgstr ""
+
+#. --------
+#. msgid "Drôle d'endroit, tout de même."
+#: src/en/inter/npc/Flasks.hx:68 src/en/inter/npc/Knight.hx:192
+msgid "This is a strange place..."
+msgstr ""
+
+#. --------
+#. msgid "Il est mort."
+#: src/en/inter/npc/Knight.hx:51
+msgid "He's dead."
+msgstr ""
+
+#. --------
+#. msgid "Vous ne seriez pas le prisonnier décapité, vous ?"
+#: src/en/inter/npc/Knight.hx:70
+msgid "Lost our head now did we..."
+msgstr ""
+
+#. --------
+#. msgid "Oh. Oui, pardon. Vous N'AVEZ PLUS de langue."
+#: src/en/inter/npc/Knight.hx:86
+msgid "Oh... Well. Yes, I see the problem..."
+msgstr ""
+
+#. --------
+#. msgid "Ca n'a pas l'air de s'être très bien passé pour vous on dirait."
+#: src/en/inter/npc/Knight.hx:150
+msgid "Well it doesn't seem to be going all that well  for you..."
+msgstr ""
+
+#. --------
+#. msgid "Vous avez remarqué que tout semble différent à chaque fois ?"
+#: src/en/inter/npc/Knight.hx:160
+msgid "Have you noticed how everything seems a little different each time?"
+msgstr ""
+
+#. --------
+#. msgid "On croirait presque que cette île est vivante."
+#: src/en/inter/npc/Knight.hx:169
+msgid "One could think the island is alive..."
+msgstr ""
+
+#. --------
+#. msgid "C'est ridicule, n'est-ce pas ?"
+#: src/en/inter/npc/Knight.hx:172
+msgid "I wonder if... What do you make of all this?"
+msgstr ""
+
+#. --------
+#. msgid ""
+#. "Ca sera sûrement très joli, quand toutes ces flasques seront remplies avec "
+#. "l'aide du Collecteur."
+#: src/en/inter/npc/Knight.hx:194
+msgid "This is going to be very pretty when it's done..."
+msgstr ""
+
+#. --------
+#. msgid "Ah ah, oui... Evidemment que vous y travaillez."
+#: src/en/inter/npc/Knight.hx:214
+msgid "Ahhh, yes... Of course you're working on it."
+msgstr ""
+
+#. --------
+#. msgid "Comme tous les autres."
+#: src/en/inter/npc/Knight.hx:219
+msgid "Like all the rest, I guess."
+msgstr ""
+
+#. --------
+#. msgid "Il est MORT."
+#: src/en/inter/npc/Knight.hx:242
+msgid "He's DEAD."
+msgstr ""
+
+#. --------
+#. msgid "Et c'est récent..."
+#: src/en/inter/npc/Knight.hx:250
+msgid "And that's recent..."
+msgstr ""
+
+#. --------
+#. msgid "Oh... Intéressant !"
+#: src/en/inter/npc/Knight.hx:269
+msgid "Oh... Interesting!"
+msgstr ""
+
+#. --------
+#. msgid "Mort depuis un moment."
+#: src/en/inter/npc/Knight.hx:289
+msgid "Dead for a while now."
+msgstr ""
+
+#. --------
+#. msgid "Je sais ce que vous avez fait."
+#: src/en/inter/npc/Scribe.hx:32
+msgid "I know what you've done."
+msgstr ""
+
+#. --------
+#. msgid "Oui. Je connais TOUS vos petits secrets."
+#: src/en/inter/npc/Scribe.hx:40
+msgid "Yes... I know of ALL your little secrets."
+msgstr ""
+
+#. --------
+#. msgid "Et je les consigne dans mon grimoire."
+#: src/en/inter/npc/Scribe.hx:43
+msgid "And I'm noting it all down in my little book."
+msgstr ""
+
+#. --------
+#. msgid "C'est mon travail."
+#: src/en/inter/npc/Scribe.hx:46
+msgid "That's my job."
+msgstr ""
+
+#. --------
+#. msgid "Vous tuez des trucs, je note."
+#: src/en/inter/npc/Scribe.hx:49
+msgid "You've been killing things I see."
+msgstr ""
+
+#. --------
+#. msgid "Statistiques de jeu"
+#: src/en/inter/npc/Scribe.hx:70
+msgid "Game stats"
+msgstr ""
+
+#. --------
+#. msgid "Bientôt disponibles..."
+#: src/en/inter/npc/Scribe.hx:71
+msgid "Coming soon..."
+msgstr ""
+
+#. --------
+#. msgid "Encore mort ?"
+#: src/en/inter/npc/Scribe.hx:77 src/en/inter/npc/Scribe.hx:83
+msgid "Dead again eh?"
+msgstr ""
+
+#. --------
+#. msgid "Vous avez été lamentable."
+#: src/en/inter/npc/Scribe.hx:80
+msgid "You weren't all that good."
+msgstr ""
+
+#. --------
+#. msgid "J'ai noté vos \"exploits\". Enfin si on peut appeler ça comme ça."
+#: src/en/inter/npc/Scribe.hx:81
+msgid "I noticed your, \"achievements\". Well if we can call them that."
+msgstr ""
+
+#. --------
+#. msgid "Vous revoila. Evidemment."
+#: src/en/inter/npc/Scribe.hx:82
+msgid "You. Back again. Of course."
+msgstr ""
+
+#. --------
+#. msgid "Vous mourez de plus en plus vite à ce que je vois."
+#: src/en/inter/npc/Scribe.hx:84
+msgid "You're dying faster and faster I see..."
+msgstr ""
+
+#. --------
+#. msgid "Vous avez vaincu le Boss !"
+#: src/en/mob/boss/Behemoth.hx:59
+msgid "You vanquished the boss!"
+msgstr ""
+
+#. --------
+#. msgid "Sélectionner"
+#: src/ui/hud/map/MapFrame.hx:103
+msgid "Select"
+msgstr ""
+
+#. HorizontalTurret (name)
+#.
+#. --------
+#. msgid "Tourelle horizontale"
+#: res/data.cdb:item/#0.name
+msgid "Horizontal turret"
+msgstr ""
+
+#. HorizontalTurret (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Tire rapidement sur tous les ennemis proches, infligeant ::+dps:: dégâts/sec."
+#: res/data.cdb:item/#0.gameplayDesc
+msgid "Rapid fires on nearby enemies, inflicting ::+dps:: damage/s."
+msgstr ""
+
+#. CeilTurret (name)
+#.
+#. --------
+#. msgid "Tourelle de plafond"
+#: res/data.cdb:item/#1.name
+msgid "Ceiling turret"
+msgstr ""
+
+#. CeilTurret (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Tire rapidement sur tous les ennemis qui passent en dessous, infligeant ::"
+#. "+dps:: dégâts/sec."
+#: res/data.cdb:item/#1.gameplayDesc
+msgid ""
+"Fires rapidly on any enemies passing below inflicting ::+dps:: damage/s."
+msgstr ""
+
+#. FireTurret (name)
+#.
+#. --------
+#. msgid "Tourelle lance-flammes"
+#: res/data.cdb:item/#2.name
+msgid "Flamethrower turret"
+msgstr ""
+
+#. FireTurret (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Brûle les ennemis proches pendant ::duration:: secondes (::+fire:: dégâts / "
+#. "sec)."
+#: res/data.cdb:item/#2.gameplayDesc
+msgid "Burns nearby enemies for ::duration:: seconds (::+fire:: damage/s)."
+msgstr ""
+
+#. GroundSaw (name)
+#.
+#. --------
+#. msgid "Hachoir"
+#: res/data.cdb:item/#3.name res/data.cdb:mob/#22.name
+msgid "Meat grinder"
+msgstr ""
+
+#. GroundSaw (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige ::+dps:: dégâts/sec aux ennemis qui posent le pied dessus."
+#: res/data.cdb:item/#3.gameplayDesc
+msgid "Inflicts ::+dps:: damage/s to the enemies walking on it."
+msgstr ""
+
+#. RootTrap (name)
+#.
+#. --------
+#. msgid "Piège à loups"
+#: res/data.cdb:item/#4.name
+msgid "Bear trap"
+msgstr ""
+
+#. RootTrap (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Immobilise une cible pendant ::duration:: secondes et augmente tous les "
+#. "dégâts qu'elle subit de ::prct::%."
+#: res/data.cdb:item/#4.gameplayDesc
+msgid ""
+"Immobilizes a target for ::duration:: seconds and increases damage done by ::"
+"prct::%."
+msgstr ""
+
+#. Crusher (name)
+#.
+#. --------
+#. msgid "Ecraseur"
+#: res/data.cdb:item/#5.name
+msgid "Crusher"
+msgstr ""
+
+#. Crusher (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Ecrase violemment (::+power:: dégâts) les ennemis pris dans sa zone d'effet."
+#: res/data.cdb:item/#5.gameplayDesc
+msgid "Violently crushes enemies in its area of effect (::+power:: damage)."
+msgstr ""
+
+#. ExplosiveGrenade (name)
+#.
+#. --------
+#. msgid "Grenade"
+#: res/data.cdb:item/#6.name
+msgid "Grenade"
+msgstr ""
+
+#. ExplosiveGrenade (gameplayDesc)
+#.
+#. --------
+#. msgid "Explose en infligeant ::+power:: dégâts."
+#: res/data.cdb:item/#6.gameplayDesc
+msgid "Explodes, inflicting ::+power:: damage."
+msgstr ""
+
+#. ClusterBomb (name)
+#.
+#. --------
+#. msgid "Grappe explosive"
+#: res/data.cdb:item/#7.name
+msgid "Cluster bomb"
+msgstr ""
+
+#. ClusterBomb (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Explose en ::count:: petites bombes infligeant ::+power:: dégâts chacune."
+#: res/data.cdb:item/#7.gameplayDesc
+msgid "Explodes into ::count:: mini bombs inflicting ::+power:: damage each."
+msgstr ""
+
+#. MagnetGrenade (name)
+#.
+#. --------
+#. msgid "Grenade magnétique"
+#: res/data.cdb:item/#8.name
+msgid "Magnetic grenade"
+msgstr ""
+
+#. MagnetGrenade (gameplayDesc)
+#.
+#. --------
+#. msgid "Attire tout ce qui est proche et inflige ::+dps:: dégâts/sec."
+#: res/data.cdb:item/#8.gameplayDesc
+msgid "Attracts anything close to it and deals ::+dps:: damage/s."
+msgstr ""
+
+#. StunningGrenade (name)
+#.
+#. --------
+#. msgid "Grenade étourdissante"
+#: res/data.cdb:item/#9.name
+msgid "Flashbang"
+msgstr ""
+
+#. StunningGrenade (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Inflige ::+power:: dégâts et étourdit les ennemis proches pendant ::"
+#. "duration:: secondes."
+#: res/data.cdb:item/#9.gameplayDesc
+msgid ""
+"Inflicts ::+power:: damage and stuns nearby enemies for ::duration:: seconds."
+msgstr ""
+
+#. IceBomb (name)
+#.
+#. --------
+#. msgid "Bombe givrante"
+#: res/data.cdb:item/#10.name
+msgid "Ice grenade"
+msgstr ""
+
+#. IceBomb (gameplayDesc)
+#.
+#. --------
+#. msgid "Explose en infligeant ::+power:: dégâts. Gèle les victimes."
+#: res/data.cdb:item/#10.gameplayDesc
+msgid "Explodes freezing nearby enemies and inflicting ::+power:: damage."
+msgstr ""
+
+#. FireBomb (name)
+#.
+#. --------
+#. msgid "Bombe incendiaire"
+#: res/data.cdb:item/#11.name
+msgid "Fire grenade"
+msgstr ""
+
+#. FireBomb (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Inflige ::+power:: dégats et enflamme les ennemis proches pendant ::"
+#. "duration:: secondes (::+dps:: dégâts / sec)."
+#: res/data.cdb:item/#11.gameplayDesc
+msgid ""
+"Inflicts ::+power:: damage and burns nearby enemies for ::duration:: seconds "
+"(::+dps:: damage/s)."
+msgstr ""
+
+#. RootBomb (name)
+#.
+#. --------
+#. msgid "Bombe de lière"
+#: res/data.cdb:item/#12.name
+msgid "Ivy grenade"
+msgstr ""
+
+#. RootBomb (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Immobilise toutes les cibles proches pendant ::duration:: secondes. Elles "
+#. "subissent ::+dps:: dégâts / sec tant qu'elles sont emprisonnées."
+#: res/data.cdb:item/#12.gameplayDesc
+msgid ""
+"Immobilizes all nearby enemies for ::duration:: seconds and inflicts ::"
+"+dps::  damage/s while they are trapped."
+msgstr ""
+
+#. OilBomb (name)
+#.
+#. --------
+#. msgid "Bombe à huile"
+#: res/data.cdb:item/#13.name
+msgid "Oil grenade"
+msgstr ""
+
+#. OilBomb (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Inflige ::+power:: dégâts et applique de l'huile inflammable aux ennemis "
+#. "proches pendant ::duration:: secondes."
+#: res/data.cdb:item/#13.gameplayDesc
+msgid "Inflicts ::+power:: damage and covers enemies in flammable oil."
+msgstr ""
+
+#. SideBomb (name)
+#.
+#. --------
+#. msgid "Nuée"
+#: res/data.cdb:item/#14.name
+msgid "Biter swarm"
+msgstr ""
+
+#. SideBomb (gameplayDesc)
+#.
+#. --------
+#. msgid "Invoque un groupe de créatures à votre service."
+#: res/data.cdb:item/#14.gameplayDesc
+msgid "Summons a swarm of small biting creatures to attack for you."
+msgstr ""
+
+#.
+#: res/data.cdb:item/#15.name
+msgid "\"Agression\" (allié)"
+msgstr ""
+
+#. SideTurret (gameplayDesc)
+#.
+#. --------
+#. msgid "Invoque un allié attaquant les ennemis proches."
+#: res/data.cdb:item/#15.gameplayDesc
+msgid "Conjures an apparition that attacks nearby enemies."
+msgstr ""
+
+#. SlowOrb (name)
+#.
+#. --------
+#. msgid "Orbe de mort"
+#: res/data.cdb:item/#16.name
+msgid "Death orb"
+msgstr ""
+
+#. SlowOrb (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Invoque une orbe dévastatrice (::+dps:: dégâts/sec) qui se déplace lentement."
+#: res/data.cdb:item/#16.gameplayDesc
+msgid ""
+"Summons a slow moving but devastating orb of energy (::+dps:: damage/s)."
+msgstr ""
+
+#. KnivesCircle (name)
+#.
+#. --------
+#. msgid "Danse des couteaux"
+#: res/data.cdb:item/#17.name
+msgid "Knife storm"
+msgstr ""
+
+#. KnivesCircle (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Lance tout autour de vous des couteaux provoquant des Saignements pendant ::"
+#. "duration:: secondes (::+dps:: dégâts/sec)."
+#: res/data.cdb:item/#17.gameplayDesc
+msgid ""
+"Launches a storm of knives around you which cause bleed damage for ::"
+"duration:: seconds (::+dps:: damage/s)."
+msgstr ""
+
+#. DamageBuff (name)
+#.
+#. --------
+#. msgid "Dégâts"
+#: res/data.cdb:item/#18.name
+msgid "Damage buffer"
+msgstr ""
+
+#. DamageBuff (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Inflige ::+power:: dégâts supplémentaires à chaque attaque pendant ::"
+#. "duration:: secondes."
+#: res/data.cdb:item/#18.gameplayDesc
+msgid "Adds ::+power:: damage to each attack for ::duration:: secondes."
+msgstr ""
+
+#. BulletKiller (name)
+#.
+#. --------
+#. msgid "Déflecteur"
+#: res/data.cdb:item/#19.name
+msgid "Deflector"
+msgstr ""
+
+#. BulletKiller (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Détruit tous les projectiles proches. Le lanceur de ce projectile subit ::"
+#. "+power:: dégâts et est étourdit ::effectCharge:: secondes."
+#: res/data.cdb:item/#19.gameplayDesc
+msgid ""
+"Destroys all nearby projectiles, stuns the source for ::effectCharge:: "
+"seconds and inflicts ::+power:: damage."
+msgstr ""
+
+#. Hook (name)
+#.
+#. --------
+#. msgid "Grappin"
+#: res/data.cdb:item/#20.name
+msgid "Grappling hook"
+msgstr ""
+
+#. Hook (gameplayDesc)
+#.
+#. --------
+#. msgid "Attire un ennemi à vous."
+#: res/data.cdb:item/#20.gameplayDesc
+msgid "Latches on to an enemy and hauls it towards you. Deals some damage."
+msgstr ""
+
+#. Hook (ambiantDesc)
+#.
+#. --------
+#. msgid "Oui, comme Scorpion dans Mortal Kombat."
+#: res/data.cdb:item/#20.ambiantDesc
+msgid "Yes, just like Scorpion..."
+msgstr ""
+
+#. BackBlink (name)
+#.
+#. --------
+#. msgid "Déphasage"
+#: res/data.cdb:item/#21.name
+msgid "Phaser"
+msgstr ""
+
+#. BackBlink (gameplayDesc)
+#.
+#. --------
+#. msgid "Vous vous téléportez quelques mètres en arrière."
+#: res/data.cdb:item/#21.gameplayDesc
+msgid "Teleports you backwards for a small distance. Useful in a pinch..."
+msgstr ""
+
+#. TimeDistorsion (name)
+#.
+#. --------
+#. msgid "Distorsion temporelle"
+#: res/data.cdb:item/#22.name
+msgid "Time bender"
+msgstr ""
+
+#. TimeDistorsion (gameplayDesc)
+#.
+#. --------
+#. msgid "Ralenti tous les ennemis pendant ::duration::s."
+#: res/data.cdb:item/#22.gameplayDesc
+msgid "Slows the movement of all nearby enemies for ::duration::s."
+msgstr ""
+
+#. StartSword (name)
+#.
+#. --------
+#. msgid "Epée rouillée"
+#: res/data.cdb:item/#23.name
+msgid "Rusty sword"
+msgstr ""
+
+#. StartSword (ambiantDesc)
+#.
+#. --------
+#. msgid "Peut servir à tuer des gens."
+#: res/data.cdb:item/#23.ambiantDesc
+msgid "Kills things. Sometimes..."
+msgstr ""
+
+#. RevengeSword (name)
+#.
+#. --------
+#. msgid "Désespoir"
+#: res/data.cdb:item/#24.name
+msgid "Spiteful sword"
+msgstr ""
+
+#. RevengeSword (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE si vous avez subi des dégâts récemment."
+#: res/data.cdb:item/#24.gameplayDesc
+msgid "Inflicts a CRITICAL BLOW if you have been hurt recently."
+msgstr ""
+
+#. RevengeSword (ambiantDesc)
+#.
+#. --------
+#. msgid ""
+#. "Une arme rouillée dont la puissance se révèle dans les moments difficiles."
+#: res/data.cdb:item/#24.ambiantDesc
+msgid "A rusty old weapon that gets more dangerous in a pinch..."
+msgstr ""
+
+#. BackStabber (name)
+#.
+#. --------
+#. msgid "Dague d'assassin"
+#: res/data.cdb:item/#25.name
+msgid "Assassin's dagger"
+msgstr ""
+
+#. BackStabber (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE lorsque vous frappez dans le dos."
+#: res/data.cdb:item/#25.gameplayDesc
+msgid "Inflicts a CRITICAL BLOW when you backstab your enemies."
+msgstr ""
+
+#. BackStabber (ambiantDesc)
+#.
+#. --------
+#. msgid "Légère mais mortelle si elle maniée comme il faut."
+#: res/data.cdb:item/#25.ambiantDesc
+msgid "Small, but deadly if you know where to stick it."
+msgstr ""
+
+#. Bleeder (name)
+#.
+#. --------
+#. msgid "Bain de sang"
+#: res/data.cdb:item/#26.name
+msgid "Blood sword"
+msgstr ""
+
+#. Bleeder (gameplayDesc)
+#.
+#. --------
+#. msgid "Provoque des Saignements (::+dps:: dégâts/sec)."
+#: res/data.cdb:item/#26.gameplayDesc
+msgid "Causes bleeding (::+dps:: damage/s)."
+msgstr ""
+
+#. DualDaggers (name)
+#.
+#. --------
+#. msgid "Dagues jumelles"
+#: res/data.cdb:item/#27.name
+msgid "Twin daggers"
+msgstr ""
+
+#. DualDaggers (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE à la 3ème attaque consécutive."
+#: res/data.cdb:item/#27.gameplayDesc
+msgid "Inflicts a CRITICAL BLOW on the third consecutive hit."
+msgstr ""
+
+#. DualDaggers (ambiantDesc)
+#.
+#. --------
+#. msgid "Deux dagues pour le prix d'une, toujours plus de violence."
+#: res/data.cdb:item/#27.ambiantDesc
+msgid "Two knives for the price of one, more violence for your dollar!"
+msgstr ""
+
+#. BroadSword (name)
+#.
+#. --------
+#. msgid "Epée large"
+#: res/data.cdb:item/#28.name
+msgid "Broad sword"
+msgstr ""
+
+#. BroadSword (gameplayDesc)
+#.
+#. --------
+#. msgid "Fait de très gros dégâts."
+#: res/data.cdb:item/#28.gameplayDesc
+msgid "Does massive damage."
+msgstr ""
+
+#. BroadSword (ambiantDesc)
+#.
+#. --------
+#. msgid "Lourde et lente, mais tellement violente."
+#: res/data.cdb:item/#28.ambiantDesc
+msgid "Slow and heavy, but looks badass. The best way to compensate."
+msgstr ""
+
+#. EvilSword (name)
+#.
+#. --------
+#. msgid "Epée maudite"
+#: res/data.cdb:item/#29.name
+msgid "Cursed sword"
+msgstr ""
+
+#. EvilSword (gameplayDesc)
+#.
+#. --------
+#. msgid "Si vous subissez le moindre dégât, vous mourrez immédiatement."
+#: res/data.cdb:item/#29.gameplayDesc
+msgid "If you're hit, you're dead."
+msgstr ""
+
+#. BleedCrit (name)
+#.
+#. --------
+#. msgid "Lame sadique"
+#: res/data.cdb:item/#30.name
+msgid "Sadist's sword"
+msgstr ""
+
+#. BleedCrit (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE si la cible est victime d'un Saignement."
+#: res/data.cdb:item/#30.gameplayDesc
+msgid "Inflicts a CRITICAL BLOW if the victim is bleeding."
+msgstr ""
+
+#. BleedCrit (ambiantDesc)
+#.
+#. --------
+#. msgid "Une lame forgée dans le sang."
+#: res/data.cdb:item/#30.ambiantDesc
+msgid "A blade tempered in blood."
+msgstr ""
+
+#. StartBow (name)
+#.
+#. --------
+#. msgid "Arc du fils du geolier"
+#: res/data.cdb:item/#31.name
+msgid "Beginner's bow"
+msgstr ""
+
+#. StartBow (ambiantDesc)
+#.
+#. --------
+#. msgid ""
+#. "C'est le jouet du fils du geolier. On doit bien pouvoir tuer quelques trucs "
+#. "avec ça."
+#: res/data.cdb:item/#31.ambiantDesc
+msgid "The Jailer's son was getting pretty good at hunting rats with this..."
+msgstr ""
+
+#. InfiniteBow (name)
+#.
+#. --------
+#. msgid "Arc et carquois sans fond"
+#: res/data.cdb:item/#32.name
+msgid "Bow and infinite arrows"
+msgstr ""
+
+#. InfiniteBow (gameplayDesc)
+#.
+#. --------
+#. msgid "Munitions illimitées."
+#: res/data.cdb:item/#32.gameplayDesc
+msgid "Unlimited ammo."
+msgstr ""
+
+#. InfiniteBow (ambiantDesc)
+#.
+#. --------
+#. msgid "On n'a jamais trop de flèches - Legolas"
+#: res/data.cdb:item/#32.ambiantDesc
+msgid "There is no such thing as \"too many arrows\"."
+msgstr ""
+
+#. LongBow (name)
+#.
+#. --------
+#. msgid "Arc long de chasseur"
+#: res/data.cdb:item/#33.name
+msgid "Hunter's longbow"
+msgstr ""
+
+#. LongBow (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE lorsque vous tirez à longue portée."
+#: res/data.cdb:item/#33.gameplayDesc
+msgid "Inflicts a CRITICAL BLOW if you strike from far away."
+msgstr ""
+
+#. LongBow (ambiantDesc)
+#.
+#. --------
+#. msgid "Dévastateur à longue portée, c'est le sniper en bois."
+#: res/data.cdb:item/#33.ambiantDesc
+msgid "Slow, but devastating at longe range."
+msgstr ""
+
+#. CloseCombatBow (name)
+#.
+#. --------
+#. msgid "Arc de fantassin"
+#: res/data.cdb:item/#34.name
+msgid "Infantry bow"
+msgstr ""
+
+#. CloseCombatBow (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE lorsque vous tirez à courte portée."
+#: res/data.cdb:item/#34.gameplayDesc
+msgid "Inflicts a CRITICAL BLOW  when you strike at close range."
+msgstr ""
+
+#. CloseCombatBow (ambiantDesc)
+#.
+#. --------
+#. msgid "Un arc spécialement conçu pour le corps à corps."
+#: res/data.cdb:item/#34.ambiantDesc
+msgid "A bow designed for close combat."
+msgstr ""
+
+#. FastBow (name)
+#.
+#. --------
+#. msgid "Arc rapide"
+#: res/data.cdb:item/#35.name
+msgid "Quick bow"
+msgstr ""
+
+#. FastBow (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Inflige un COUP CRITIQUE si la cible a ::count:: flèches ou plus plantées "
+#. "dans le corps."
+#: res/data.cdb:item/#35.gameplayDesc
+msgid ""
+"Inflicts a CRITICAL HIT if the target has ::count:: or more arrows in its "
+"body."
+msgstr ""
+
+#. FastBow (ambiantDesc)
+#.
+#. --------
+#. msgid "La rapidité au détriment de la précision."
+#: res/data.cdb:item/#35.ambiantDesc
+msgid "Speed at the detriment of accuracy. "
+msgstr ""
+
+#. FrostBow (name)
+#.
+#. --------
+#. msgid "Arc de glace"
+#: res/data.cdb:item/#36.name
+msgid "Ice bow"
+msgstr ""
+
+#. FrostBow (gameplayDesc)
+#.
+#. --------
+#. msgid "Congèle les ennemis."
+#: res/data.cdb:item/#36.gameplayDesc
+msgid "Freezes enemies struck by your arrows."
+msgstr ""
+
+#. CrossBow (name)
+#.
+#. --------
+#. msgid "Arbalète lourde"
+#: res/data.cdb:item/#37.name
+msgid "Heavy crossbow"
+msgstr ""
+
+#. CrossBow (gameplayDesc)
+#.
+#. --------
+#. msgid "Tire plusieurs carreaux à la fois."
+#: res/data.cdb:item/#37.gameplayDesc
+msgid "Shoots multiple bolts at once."
+msgstr ""
+
+#. CrossBow (ambiantDesc)
+#.
+#. --------
+#. msgid "Un carnage à courte portée."
+#: res/data.cdb:item/#37.ambiantDesc
+msgid "For short range bloodshed."
+msgstr ""
+
+#. ThrowingKnife (name)
+#.
+#. --------
+#. msgid "Couteau de lancer"
+#: res/data.cdb:item/#38.name
+msgid "Throwing knife"
+msgstr ""
+
+#. ThrowingKnife (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Provoque des Saignements (::+dps:: dégâts/sec pendant ::duration:: sec). "
+#. "L'attaque cible automatiquement l'ennemi le plus proche."
+#: res/data.cdb:item/#38.gameplayDesc
+msgid ""
+"Causes bleeding (::+dps:: damage/s for ::duration:: seconds). The attack "
+"automatically targets the closest enemy."
+msgstr ""
+
+#. StartShield (name)
+#.
+#. --------
+#. msgid "Vieux bouclier en bois"
+#: res/data.cdb:item/#39.name
+msgid "Good ol' wooden shield"
+msgstr ""
+
+#. StartShield (gameplayDesc)
+#.
+#. --------
+#. msgid "Permet de bloquer les attaques."
+#: res/data.cdb:item/#39.gameplayDesc
+msgid "Blocks attacks."
+msgstr ""
+
+#. HoldShield (name)
+#.
+#. --------
+#. msgid "Bouclier maintenu"
+#: res/data.cdb:item/#40.name
+msgid "Held Shield"
+msgstr ""
+
+#. HoldShield (gameplayDesc)
+#.
+#. --------
+#. msgid "Maintenez pour bloquer les attaques."
+#: res/data.cdb:item/#40.gameplayDesc
+msgid "Hold to block attacks."
+msgstr ""
+
+#. Shield (name)
+#.
+#. --------
+#. msgid "Bouclier solide"
+#: res/data.cdb:item/#41.name
+msgid "Sturdy shield"
+msgstr ""
+
+#. Shield (gameplayDesc)
+#.
+#. --------
+#. msgid "Permet de bloquer les attaques et d'étourdir les ennemis."
+#: res/data.cdb:item/#41.gameplayDesc
+msgid "Blocks attacks and stuns the attacker."
+msgstr ""
+
+#. Rampart (name)
+#.
+#. --------
+#. msgid "Rempart"
+#: res/data.cdb:item/#42.name
+msgid "Force shield"
+msgstr ""
+
+#. Rampart (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Permet de bloquer les attaques. Génère un champ de force quand vous y "
+#. "parvenez."
+#: res/data.cdb:item/#42.gameplayDesc
+msgid "Triggers a force field when you parry."
+msgstr ""
+
+#. DashShield (name)
+#.
+#. --------
+#. msgid "Bouclier d'assaut"
+#: res/data.cdb:item/#43.name
+msgid "Assault Shield"
+msgstr ""
+
+#. DashShield (gameplayDesc)
+#.
+#. --------
+#. msgid "Bloque les attaques tout en chargeant en avant."
+#: res/data.cdb:item/#43.gameplayDesc
+msgid "Causes you to charge forward while blocking."
+msgstr ""
+
+#. BloodShield (name)
+#.
+#. --------
+#. msgid "Bouclier sanguinaire"
+#: res/data.cdb:item/#44.name
+msgid "Blood shield"
+msgstr ""
+
+#. BloodShield (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Bloque les attaques, tout  en infligeant des Saignements (::+dps:: dégâts/"
+#. "sec pendant ::duration:: sec) à tous les ennemis proches."
+#: res/data.cdb:item/#44.gameplayDesc
+msgid ""
+"Blocks attacks and causes bleeding (::+dps:: damage/s for ::duration:: "
+"seconds) on all nearby enemies."
+msgstr ""
+
+#. GreedShield (name)
+#.
+#. --------
+#. msgid "Bouclier Greedy"
+#: res/data.cdb:item/#45.name
+msgid "Greed shield"
+msgstr ""
+
+#. GreedShield (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Bloque les attaques et fait tomber les dents de vos ennemis (une fois max "
+#. "par ennemi)."
+#: res/data.cdb:item/#45.gameplayDesc
+msgid ""
+"Blocks attacks and shakes out any loose gold from your enemy's teeth (once "
+"per enemy)."
+msgstr ""
+
+#. SpikeShield (name)
+#.
+#. --------
+#. msgid "Bouclier à pointes"
+#: res/data.cdb:item/#46.name
+msgid "Spiked shield"
+msgstr ""
+
+#. SpikeShield (gameplayDesc)
+#.
+#. --------
+#. msgid "Bloque les attaques et inflige d'importants dégâts."
+#: res/data.cdb:item/#46.gameplayDesc
+msgid "Blocks attacks and inflicts heavy damage."
+msgstr ""
+
+#. FireBall (name)
+#.
+#. --------
+#. msgid "NOT IMPLEMENTED"
+#: res/data.cdb:item/#47.name res/data.cdb:item/#47.gameplayDesc
+msgid "NOT IMPLEMENTED"
+msgstr ""
+
+#. Lightning (name)
+#.
+#. --------
+#. msgid "Eclair"
+#: res/data.cdb:item/#48.name
+msgid "Lightning bolt"
+msgstr ""
+
+#. Lightning (gameplayDesc)
+#.
+#. --------
+#. msgid "Maintenez longtemps pour infliger des coups critiques."
+#: res/data.cdb:item/#48.gameplayDesc
+msgid ""
+"Continuously casting deals critical hits. But be wary of too much power..."
+msgstr ""
+
+#. Lightning (ambiantDesc)
+#.
+#. --------
+#. msgid "Devenez Palpatine."
+#: res/data.cdb:item/#48.ambiantDesc res/data.cdb:item/#49.ambiantDesc
+msgid "Join the dark side."
+msgstr ""
+
+#. LightningWhip (name)
+#.
+#. --------
+#. msgid "Fouet électrique"
+#: res/data.cdb:item/#49.name
+msgid "Electric whip"
+msgstr ""
+
+#. LightningWhip (gameplayDesc)
+#.
+#. --------
+#. msgid "Vise automatiquement les enemis proches."
+#: res/data.cdb:item/#49.gameplayDesc
+msgid "Automatically targets the closest enemy."
+msgstr ""
+
+#. FlameThrower (name)
+#.
+#. --------
+#. msgid "Lance-flammes"
+#: res/data.cdb:item/#50.name
+msgid "Fire torrent"
+msgstr ""
+
+#. FlameThrower (ambiantDesc)
+#.
+#. --------
+#. msgid "Cuisson à coeur."
+#: res/data.cdb:item/#50.ambiantDesc
+msgid "Rare, medium or well-done?"
+msgstr ""
+
+#. Freeze (name)
+#.
+#. --------
+#. msgid "Congélation"
+#: res/data.cdb:item/#51.name
+msgid "Frost blast"
+msgstr ""
+
+#. Freeze (gameplayDesc)
+#.
+#. --------
+#. msgid "Congèle les ennemis devant vous."
+#: res/data.cdb:item/#51.gameplayDesc
+msgid "Freezes enemies hit by the blast."
+msgstr ""
+
+#. Spear (name)
+#.
+#. --------
+#. msgid "Lance"
+#: res/data.cdb:item/#52.name
+msgid "Spear"
+msgstr ""
+
+#. Spear (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Inflige un COUP CRITIQUE lorsque vous touchez plusieurs cibles à la fois."
+#: res/data.cdb:item/#52.gameplayDesc
+msgid "Inflicts a CRITICAL HIT when you strike several enemies."
+msgstr ""
+
+#. Spear (ambiantDesc)
+#.
+#. --------
+#. msgid "Une arme offrant une grande allonge au détriment de la rapidité."
+#: res/data.cdb:item/#52.ambiantDesc
+msgid "Trade some speed for range."
+msgstr ""
+
+#. Rapier (name)
+#.
+#. --------
+#. msgid "Rapière"
+#: res/data.cdb:item/#53.name
+msgid "Rapier"
+msgstr ""
+
+#. Rapier (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE juste après une roulade."
+#: res/data.cdb:item/#53.gameplayDesc
+msgid "Inflicts a CRITICAL HIT immediately after rolling."
+msgstr ""
+
+#. Rapier (ambiantDesc)
+#.
+#. --------
+#. msgid "Tout en finesse."
+#: res/data.cdb:item/#53.ambiantDesc
+msgid "It's all in the wrist..."
+msgstr ""
+
+#. Whip (name)
+#.
+#. --------
+#. msgid "Fouet"
+#: res/data.cdb:item/#54.name
+msgid "Whip"
+msgstr ""
+
+#. Whip (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Ignore les boucliers. Inflige un COUP CRITIQUE si le coup est porté par "
+#. "l'extrêmité du fouet."
+#: res/data.cdb:item/#54.gameplayDesc
+msgid "Ignores shields and deals a CRITICAL HIT when striking at maximum rage."
+msgstr ""
+
+#. Whip (ambiantDesc)
+#.
+#. --------
+#. msgid ""
+#. "Une arme simple en apparence, mais dévastatrice entre des mains expertes."
+#: res/data.cdb:item/#54.ambiantDesc
+msgid "Deadly when in the right hands..."
+msgstr ""
+
+#. OilSword (name)
+#.
+#. --------
+#. msgid "Epée huileuse"
+#: res/data.cdb:item/#55.name
+msgid "Flammable sword"
+msgstr ""
+
+#. OilSword (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Applique de l'huile de palme inflammable sur vos ennemis, provoquant de "
+#. "terribles dégâts en cas de combustion..."
+#: res/data.cdb:item/#55.gameplayDesc
+msgid ""
+"Covers enemies with flammable oil. Inflicts massive damage if introduced to "
+"a flame..."
+msgstr ""
+
+#. Burner (name)
+#.
+#. --------
+#. msgid "Masse enflammée"
+#: res/data.cdb:item/#56.name
+msgid "Burning mace"
+msgstr ""
+
+#. Burner (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Enflamme vos ennemis et inflige ::+dps:: dégâts/sec pendant ::duration:: sec)"
+#: res/data.cdb:item/#56.gameplayDesc
+msgid ""
+"Ignites your enemies and inflicts ::+dps:: damage/sec for ::duration:: "
+"seconds"
+msgstr ""
+
+#. Burner (ambiantDesc)
+#.
+#. --------
+#. msgid "Ambiance garantie."
+#: res/data.cdb:item/#56.ambiantDesc
+msgid "Sure to warm up the crowd."
+msgstr ""
+
+#. LowHealth (name)
+#.
+#. --------
+#. msgid "Charognarde"
+#: res/data.cdb:item/#57.name
+msgid "Frantic sword"
+msgstr ""
+
+#. LowHealth (gameplayDesc)
+#.
+#. --------
+#. msgid "Inflige un COUP CRITIQUE lorsque vous avez moins de ::prct::% de vie."
+#: res/data.cdb:item/#57.gameplayDesc
+msgid "Inflicts a CRITICAL HIT when you're below ::prct::% health."
+msgstr ""
+
+#. LowHealth (ambiantDesc)
+#.
+#. --------
+#. msgid "L'arme de choix des combattants qui aiment vivre dangereusement."
+#: res/data.cdb:item/#57.ambiantDesc
+msgid "The weapon of choice for those who like to live dangerously."
+msgstr ""
+
+#. PrisonerCloth (name)
+#.
+#. --------
+#. msgid "Collier de prisonnier"
+#: res/data.cdb:item/#58.name
+msgid "Prisoner's collar"
+msgstr ""
+
+#. PrisonerCloth (ambiantDesc)
+#.
+#. --------
+#. msgid "Rien de notable, si ce n'est une odeur persistante de rat crevé."
+#: res/data.cdb:item/#58.ambiantDesc
+msgid "Nothing worth mentioning, except maybe a vague whiff of dead rat..."
+msgstr ""
+
+#. Talisman1 (name)
+#.
+#. --------
+#. msgid "Talisman de rubis"
+#: res/data.cdb:item/#59.name
+msgid "Ruby amulet"
+msgstr ""
+
+#. Talisman1 (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Les pendentifs n'occupent pas d'emplacement d'équipement, mais vous ne "
+#. "pouvez en avoir qu'un à la fois."
+#: res/data.cdb:item/#59.gameplayDesc res/data.cdb:item/#60.gameplayDesc
+#: res/data.cdb:item/#61.gameplayDesc res/data.cdb:item/#62.gameplayDesc
+#: res/data.cdb:item/#63.gameplayDesc
+msgid ""
+"You may only equip one amulet at a time, but their effects are powerful..."
+msgstr ""
+
+#. Talisman1 (ambiantDesc)
+#.
+#. --------
+#. msgid ""
+#. "Un bel objet habilement dissimilué sous vos vêtements, pour que les "
+#. "graphistes aient moins de boulot."
+#: res/data.cdb:item/#59.ambiantDesc res/data.cdb:item/#60.ambiantDesc
+#: res/data.cdb:item/#61.ambiantDesc res/data.cdb:item/#62.ambiantDesc
+#: res/data.cdb:item/#63.ambiantDesc
+msgid ""
+"A fine object, adroitly hidden under your clothes to make less work for the "
+"artists."
+msgstr ""
+
+#. Talisman2 (name)
+#.
+#. --------
+#. msgid "Talisman de glace"
+#: res/data.cdb:item/#60.name
+msgid "Ice amulet"
+msgstr ""
+
+#. Talisman3 (name)
+#.
+#. --------
+#. msgid "Talisman de saphir"
+#: res/data.cdb:item/#61.name
+msgid "Sapphire amulet"
+msgstr ""
+
+#. Talisman4 (name)
+#.
+#. --------
+#. msgid "Talisman aurifère"
+#: res/data.cdb:item/#62.name
+msgid "Golden amulet"
+msgstr ""
+
+#. Talisman5 (name)
+#.
+#. --------
+#. msgid "Talisman de pierre de lune"
+#: res/data.cdb:item/#63.name
+msgid "Moonstone amulet"
+msgstr ""
+
+#.
+#: res/data.cdb:item/#64.name
+msgid "\"Ygdar Orus Li Ox !\""
+msgstr ""
+
+#. Immortality (gameplayDesc)
+#.
+#. --------
+#. msgid "Vous sauve la vie UNE fois (inefficace contre les Malédictions)."
+#: res/data.cdb:item/#64.gameplayDesc
+msgid "Saves your life ONCE. Does NOT work against Curses."
+msgstr ""
+
+#. Immortality (ambiantDesc)
+#.
+#. --------
+#. msgid "Qui a dit qu'on ne pouvait pas tromper la mort ?"
+#: res/data.cdb:item/#64.ambiantDesc
+msgid "Who says you can't cheat Death?"
+msgstr ""
+
+#. GenericKey (name)
+#.
+#. --------
+#. msgid "Clé"
+#: res/data.cdb:item/#65.name
+msgid "Key"
+msgstr ""
+
+#. GenericKey (gameplayDesc)
+#.
+#. --------
+#. msgid "Ouvre les portes verrouillées (original, non ?)"
+#: res/data.cdb:item/#65.gameplayDesc
+msgid "Unlocks doors. Who would have guessed?"
+msgstr ""
+
+#. CemeteryKey (name)
+#.
+#. --------
+#. msgid "Clé de la crypte"
+#: res/data.cdb:item/#66.name
+msgid "Crypt key"
+msgstr ""
+
+#. CemeteryKey (gameplayDesc)
+#.
+#. --------
+#. msgid "Ouvre les portes des enfers..."
+#: res/data.cdb:item/#66.gameplayDesc
+msgid "Open the gates of Hell..."
+msgstr ""
+
+#. DefenseUp (name)
+#.
+#. --------
+#. msgid "Vie +1"
+#. DefenseUp (desc)
+#.
+#. --------
+#. msgid "VIE +1"
+#: res/data.cdb:item/#67.name
+msgid "+1 Health"
+msgstr ""
+
+#. DefenseUp (gameplayDesc)
+#.
+#. --------
+#. msgid "Augmente les points de vie."
+#: res/data.cdb:item/#67.gameplayDesc
+msgid "Increase health."
+msgstr ""
+
+#. WeaponUp (name)
+#.
+#. --------
+#. msgid "Force +1"
+#. WeaponUp (desc)
+#.
+#. --------
+#. msgid "FORCE +1"
+#: res/data.cdb:item/#68.name
+msgid "+1 Strength"
+msgstr ""
+
+#. WeaponUp (gameplayDesc)
+#.
+#. --------
+#. msgid "Augmente les dégâts des armes."
+#: res/data.cdb:item/#68.gameplayDesc
+msgid "Increase weapon damage."
+msgstr ""
+
+#. ActiveUp (name)
+#.
+#. --------
+#. msgid "Technique +1"
+#. ActiveUp (desc)
+#.
+#. --------
+#. msgid "TECHNIQUE +1"
+#: res/data.cdb:item/#69.name
+msgid "+1 Skills"
+msgstr ""
+
+#. ActiveUp (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Augmente les dégâts des compétences actives et réduit leur délai "
+#. "d'utilisation."
+#: res/data.cdb:item/#69.gameplayDesc
+msgid "Increase active skill damage and reduce their cooldown timer."
+msgstr ""
+
+#. LadderKey (name)
+#.
+#. --------
+#. msgid "Rune des vignes"
+#: res/data.cdb:item/#70.name
+msgid "Vine rune"
+msgstr ""
+
+#. LadderKey (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Cette RUNE PERMANENTE vous permet de faire pousser des vignes grimpantes."
+#: res/data.cdb:item/#70.gameplayDesc
+msgid "This rune PERMANENTLY gives you the ability to grow climbable vines."
+msgstr ""
+
+#. TeleportKey (name)
+#.
+#. --------
+#. msgid "Rune de téléportation"
+#: res/data.cdb:item/#71.name
+msgid "Teleportation rune"
+msgstr ""
+
+#. TeleportKey (gameplayDesc)
+#.
+#. --------
+#. msgid "Cette RUNE PERMANENTE vous permet d'utiliser les stèles."
+#: res/data.cdb:item/#71.gameplayDesc
+msgid ""
+"This rune PERMANENTLY gives you the ability to use the teleportation tombs."
+msgstr ""
+
+#. Flask1 (name)
+#.
+#. --------
+#. msgid "Potion de soin I"
+#: res/data.cdb:item/#72.name
+msgid "Healing Potion I"
+msgstr ""
+
+#. Flask1 (gameplayDesc)
+#.
+#. --------
+#. msgid "Vous disposez d'une Fiole de Soin utilisable à tout moment."
+#: res/data.cdb:item/#72.gameplayDesc
+msgid "You now own a health flask you can use at any time."
+msgstr ""
+
+#. Flask2 (name)
+#.
+#. --------
+#. msgid "Potion de soin II"
+#: res/data.cdb:item/#73.name
+msgid "Healing Potion II"
+msgstr ""
+
+#. Flask2 (gameplayDesc)
+#.
+#. --------
+#. msgid "Votre fiole de soin peut être utilisée 2 fois."
+#: res/data.cdb:item/#73.gameplayDesc
+msgid "Your health flask now has 2 charges."
+msgstr ""
+
+#. Flask3 (name)
+#.
+#. --------
+#. msgid "Potion de soin III"
+#: res/data.cdb:item/#74.name
+msgid "Healing Potion III"
+msgstr ""
+
+#. Flask3 (gameplayDesc)
+#.
+#. --------
+#. msgid "Votre fiole de soin peut être utilisée 3 fois."
+#: res/data.cdb:item/#74.gameplayDesc
+msgid "Your health flask now has 3 charges."
+msgstr ""
+
+#. Flask4 (name)
+#.
+#. --------
+#. msgid "Potion de soin IV"
+#: res/data.cdb:item/#75.name
+msgid "Healing Potion IV"
+msgstr ""
+
+#. Flask4 (gameplayDesc)
+#.
+#. --------
+#. msgid "Votre fiole de soin peut être utilisée 4 fois."
+#: res/data.cdb:item/#75.gameplayDesc
+msgid "Your health flask now has four charges."
+msgstr ""
+
+#. Money1 (name)
+#.
+#. --------
+#. msgid "Sauvetage de l'or I"
+#: res/data.cdb:item/#76.name
+msgid "Gold recovery I"
+msgstr ""
+
+#. Money1 (gameplayDesc)
+#.
+#. --------
+#. msgid "Vous conservez ::prct::% de votre or en mourrant."
+#: res/data.cdb:item/#76.gameplayDesc res/data.cdb:item/#77.gameplayDesc
+#: res/data.cdb:item/#78.gameplayDesc res/data.cdb:item/#79.gameplayDesc
+msgid "You conserve ::prct::% of your gold when you die."
+msgstr ""
+
+#. Money2 (name)
+#.
+#. --------
+#. msgid "Sauvetage de l'or II"
+#: res/data.cdb:item/#77.name
+msgid "Gold recovery II"
+msgstr ""
+
+#. Money3 (name)
+#.
+#. --------
+#. msgid "Sauvetage de l'or III"
+#: res/data.cdb:item/#78.name
+msgid "Gold recovery III"
+msgstr ""
+
+#. Money4 (name)
+#.
+#. --------
+#. msgid "Sauvetage de l'or IV"
+#: res/data.cdb:item/#79.name
+msgid "Gold recovery IV"
+msgstr ""
+
+#. RandomBow (name)
+#.
+#. --------
+#. msgid "Arc de départ aléatoire"
+#: res/data.cdb:item/#80.name
+msgid "Random starter bow"
+msgstr ""
+
+#. RandomBow (gameplayDesc)
+#.
+#. --------
+#. msgid "L'arc de départ est tiré aléatoirement parmi vos arcs débloqués."
+#: res/data.cdb:item/#80.gameplayDesc
+msgid "The starting bow is randomly drawn from those you have unlocked."
+msgstr ""
+
+#. RandomShield (name)
+#.
+#. --------
+#. msgid "Bouclier de départ aléatoire"
+#: res/data.cdb:item/#81.name
+msgid "Random starter shield"
+msgstr ""
+
+#. RandomShield (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Le bouclier de départ est tiré aléatoirement parmi vos boucliers débloqués."
+#: res/data.cdb:item/#81.gameplayDesc
+msgid "The starting shield is randomly drawn from those you have unlocked."
+msgstr ""
+
+#. RandomCC (name)
+#.
+#. --------
+#. msgid "Arme de mélée aléatoire"
+#: res/data.cdb:item/#82.name
+msgid "Random melee weapon"
+msgstr ""
+
+#. RandomCC (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "L'arme de mélée de départ est tirée aléatoirement parmi vos armes débloquées."
+#: res/data.cdb:item/#82.gameplayDesc
+msgid "The starting weapon is randomly drawn from those you have unlocked."
+msgstr ""
+
+#. GenericUp (name)
+#.
+#. --------
+#. msgid "Parchemin de puissance"
+#: res/data.cdb:item/#83.name
+msgid "Scroll of power"
+msgstr ""
+
+#. GenericUp (gameplayDesc)
+#.
+#. --------
+#. msgid "Améliore l'une de vos 3 caractéristiques au choix !"
+#: res/data.cdb:item/#83.gameplayDesc
+msgid "Choose one of your three stats to improve!"
+msgstr ""
+
+#. BigHealingPotion (name)
+#.
+#. --------
+#. msgid "Volaille"
+#: res/data.cdb:item/#84.name
+msgid "Chicken"
+msgstr ""
+
+#. BigHealingPotion (gameplayDesc)
+#.
+#. --------
+#. msgid "Soigne ::+power:: PV."
+#: res/data.cdb:item/#84.gameplayDesc res/data.cdb:item/#85.gameplayDesc
+msgid "Restores ::+power:: HP."
+msgstr ""
+
+#. SmallHealingPotion (name)
+#.
+#. --------
+#. msgid "Carotte"
+#: res/data.cdb:item/#85.name
+msgid "Carrot"
+msgstr ""
+
+#. DeathMoney (name)
+#.
+#. --------
+#. msgid "Sac du déchu"
+#: res/data.cdb:item/#86.name
+msgid "Dead man's purse"
+msgstr ""
+
+#. DeathMoney (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Ce sac contient l'or que vous aviez lors de votre précédente... tentative."
+#: res/data.cdb:item/#86.gameplayDesc
+msgid "This bag contains some of the gold from a previous life."
+msgstr ""
+
+#. GemPack (name)
+#.
+#. --------
+#. msgid "NOT MEANT TO BE SEEN"
+#: res/data.cdb:item/#87.name res/data.cdb:item/#87.gameplayDesc
+msgid "NOT MEANT TO BE SEEN"
+msgstr ""
+
+#. HugeGem (name)
+#.
+#. --------
+#. msgid "Rubis"
+#: res/data.cdb:item/#88.name
+msgid "Ruby"
+msgstr ""
+
+#. HugeGem (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Une pierre précieuse d'une pureté rarissime, qui vous rapportera la "
+#. "bagatelle de ::$power:: OR !"
+#: res/data.cdb:item/#88.gameplayDesc
+msgid "An precious gem worth ::$power:: GOLD!"
+msgstr ""
+
+#. BigGem (name)
+#.
+#. --------
+#. msgid "Saphir bleu"
+#: res/data.cdb:item/#89.name
+msgid "Blue saphire"
+msgstr ""
+
+#. BigGem (gameplayDesc)
+#.
+#. --------
+#. msgid "Une magnifique pierre d'une valeur de ::$power:: OR !"
+#: res/data.cdb:item/#89.gameplayDesc
+msgid "A magnificent jewel worth ::$power:: GOLD!"
+msgstr ""
+
+#. MediumGem (name)
+#.
+#. --------
+#. msgid "Améthyste"
+#: res/data.cdb:item/#90.name
+msgid "Amethyst"
+msgstr ""
+
+#. MediumGem (gameplayDesc)
+#.
+#. --------
+#. msgid "Cette jolie pierre vous rapportera ::$power:: OR ! Ma précieuuuuse..."
+#: res/data.cdb:item/#90.gameplayDesc
+msgid "This purple stone is worth ::$power:: GOLD! My precioooouuuusssss..."
+msgstr ""
+
+#. SmallGem (name)
+#.
+#. --------
+#. msgid "Malachite"
+#: res/data.cdb:item/#91.name
+msgid "Malachite"
+msgstr ""
+
+#. SmallGem (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Bien que commune, vous en tirerez ::$power:: OR sans trop de difficulté."
+#: res/data.cdb:item/#91.gameplayDesc
+msgid ""
+"Probably fake, but you should be able to trick a poor soul into buying it "
+"for ::$power:: GOLD."
+msgstr ""
+
+#. MinorGem (name)
+#.
+#. --------
+#. msgid "Caillou brillant"
+#: res/data.cdb:item/#92.name
+msgid "Shiny rock"
+msgstr ""
+
+#. MinorGem (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Franchement, ça vaut que dalle. Vous n'allez pas ramasser cette merde quand "
+#. "même ?"
+#: res/data.cdb:item/#92.gameplayDesc
+msgid "Seriously? Is this even worth picking up?"
+msgstr ""
+
+#. SpawnerGem (name)
+#.
+#. --------
+#. msgid "Coeur noir"
+#: res/data.cdb:item/#93.name
+msgid "Black heart"
+msgstr ""
+
+#. SpawnerGem (gameplayDesc)
+#.
+#. --------
+#. msgid ""
+#. "Ca se vend relativement bien, vous pourrez en tirer ::$power:: OR au moins."
+#: res/data.cdb:item/#93.gameplayDesc
+msgid "This sells quite well! Easiest ::$power:: you'll ever make..."
+msgstr ""
+
+#. GreedGem (name)
+#.
+#. --------
+#. msgid "Dent en or"
+#: res/data.cdb:item/#94.name
+msgid "Gold tooth"
+msgstr ""
+
+#. GreedGem (gameplayDesc)
+#.
+#. --------
+#. msgid "Une dent d'une valeur de ::$power:: OR, il l'avait bien cherché..."
+#: res/data.cdb:item/#94.gameplayDesc
+msgid "A gold tooth worth ::$power:: GOLD. He had it coming to him anyway..."
+msgstr ""
+
+#. CellGold (name)
+#.
+#. --------
+#. msgid "Cellule en or"
+#: res/data.cdb:item/#95.name
+msgid "Golden cell"
+msgstr ""
+
+#. CellGold (gameplayDesc)
+#.
+#. --------
+#. msgid "Une petite cellule en or d'une valeur de ::$power:: OR."
+#: res/data.cdb:item/#95.gameplayDesc
+msgid "A nice prize worth ::$power:: GOLD."
+msgstr ""
+
+#. Zombie (name)
+#.
+#. --------
+#. msgid "Zombie"
+#: res/data.cdb:mob/#0.name res/data.cdb:mob/#1.name
+msgid "Zombie"
+msgstr ""
+
+#. FastZombie (name)
+#.
+#. --------
+#. msgid "Zombie coureur"
+#: res/data.cdb:mob/#2.name
+msgid "Running zombie"
+msgstr ""
+
+#. SpawnerZombie (name)
+#.
+#. --------
+#. msgid "Zombie purulent"
+#: res/data.cdb:mob/#3.name
+msgid "Host zombie"
+msgstr ""
+
+#. SpawnerFly (name)
+#.
+#. --------
+#. msgid "Mouche à caca"
+#: res/data.cdb:mob/#4.name res/data.cdb:mob/#16.name
+msgid "Flying biter."
+msgstr ""
+
+#. EliteSideKick (name)
+#.
+#. --------
+#. msgid "Lieutenant"
+#: res/data.cdb:mob/#5.name
+msgid "Lieutenant"
+msgstr ""
+
+#. Scorpio (name)
+#.
+#. --------
+#. msgid "Scorpion"
+#: res/data.cdb:mob/#6.name
+msgid "Scorpion"
+msgstr ""
+
+#. Hammer (name)
+#.
+#. --------
+#. msgid "Hammer"
+#: res/data.cdb:mob/#7.name
+msgid "Mechanical spider"
+msgstr ""
+
+#. Grenader (name)
+#.
+#. --------
+#. msgid "Grenadier"
+#. RootGrenader (name)
+#.
+#. --------
+#. msgid "Emprisonneur"
+#: res/data.cdb:mob/#8.name
+msgid "Grenadier"
+msgstr ""
+
+#. Archer (name)
+#.
+#. --------
+#. msgid "Archer mort-vivant"
+#: res/data.cdb:mob/#9.name
+msgid "Undead archer"
+msgstr ""
+
+#. Runner (name)
+#.
+#. --------
+#. msgid "Coureur"
+#: res/data.cdb:mob/#10.name
+msgid "Phazer"
+msgstr ""
+
+#. Behemoth (name)
+#.
+#. --------
+#. msgid "Incomplete one"
+#: res/data.cdb:mob/#11.name
+msgid "Incomplete One"
+msgstr ""
+
+#. Shield (name)
+#.
+#. --------
+#. msgid "Porteur de bouclier"
+#: res/data.cdb:mob/#12.name
+msgid "Shield bearer"
+msgstr ""
+
+#. Worm (name)
+#.
+#. --------
+#. msgid "Ver dégoutant"
+#: res/data.cdb:mob/#13.name
+msgid "Ugly worm"
+msgstr ""
+
+#. BatDasher (name)
+#.
+#. --------
+#. msgid "Chauve-souris"
+#: res/data.cdb:mob/#14.name
+msgid "Bat"
+msgstr ""
+
+#. BatKamikaze (name)
+#.
+#. --------
+#. msgid "Kamikaze"
+#: res/data.cdb:mob/#15.name
+msgid "Kamikaze"
+msgstr ""
+
+#. Scarecrow (name)
+#.
+#. --------
+#. msgid "Scarecrow"
+#: res/data.cdb:mob/#17.name
+msgid "Scarecrow"
+msgstr ""
+
+#. BuriedBat (name)
+#.
+#. --------
+#. msgid "Oiseau des sables"
+#: res/data.cdb:mob/#18.name
+msgid "Sand bird"
+msgstr ""
+
+#. Shielder (name)
+#.
+#. --------
+#. msgid "Protecteur"
+#: res/data.cdb:mob/#19.name
+msgid "Defender"
+msgstr ""
+
+#. Comboter (name)
+#.
+#. --------
+#. msgid "Lascérateur"
+#. Spinner (name)
+#.
+#. --------
+#. msgid "Fouetard"
+#: res/data.cdb:mob/#20.name
+msgid "Slasher"
+msgstr ""
+
+#. Hooker (name)
+#.
+#. --------
+#. msgid "Attrapeur"
+#: res/data.cdb:mob/#21.name
+msgid "Catcher"
+msgstr ""
+
+#. Spawner (name)
+#.
+#. --------
+#. msgid "Charnier"
+#: res/data.cdb:mob/#23.name res/data.cdb:level/#7.name
+msgid "Ossuary"
+msgstr ""
+
+#. Spawnling (name)
+#.
+#. --------
+#. msgid "Fluide de cadavre"
+#: res/data.cdb:mob/#24.name
+msgid "Spawnling"
+msgstr ""
+
+#. PirateChief (name)
+#.
+#. --------
+#. msgid "Chef Pirate"
+#: res/data.cdb:mob/#26.name
+msgid "Pirate captain"
+msgstr ""
+
+#. Spiker (name)
+#.
+#. --------
+#. msgid "Empalleur"
+#: res/data.cdb:mob/#27.name
+msgid "Spiker"
+msgstr ""
+
+#. Shocker (name)
+#.
+#. --------
+#. msgid "Electrocuteur"
+#: res/data.cdb:mob/#28.name
+msgid "Shocker"
+msgstr ""
+
+#. Mage360 (name)
+#.
+#. --------
+#. msgid "Inquisiteur"
+#: res/data.cdb:mob/#29.name
+msgid "Inquisitor"
+msgstr ""
+
+#. Fogger (name)
+#.
+#. --------
+#. msgid "Masqueur"
+#: res/data.cdb:mob/#30.name
+msgid "Fogger"
+msgstr ""
+
+#. Elite (name)
+#.
+#. --------
+#. msgid "Créature élite"
+#: res/data.cdb:mob/#31.name
+msgid "Elite monster"
+msgstr ""
+
+#. Beholder (name)
+#.
+#. --------
+#. msgid "The Watcher"
+#: res/data.cdb:mob/#32.name
+msgid "The Watcher"
+msgstr ""
+
+#. BeholderTtcl (name)
+#.
+#. --------
+#. msgid "Tentacle"
+#: res/data.cdb:mob/#33.name
+msgid "Tentacle"
+msgstr ""
+
+#. SideWorm (name)
+#.
+#. --------
+#. msgid "Ver de cadavre"
+#: res/data.cdb:mob/#34.name
+msgid "Body worm"
+msgstr ""
+
+#. FlyingPoison (name)
+#.
+#. --------
+#. msgid "Fantôme"
+#: res/data.cdb:mob/#35.name
+msgid "Ghost"
+msgstr ""
+
+#. Bull (name)
+#.
+#. --------
+#. msgid "Boeuf"
+#: res/data.cdb:mob/#37.name
+msgid "Bull"
+msgstr ""
+
+#. FrostArcher (name)
+#.
+#. --------
+#. msgid "Archer gelé"
+#: res/data.cdb:mob/#38.name
+msgid "Frozen archer"
+msgstr ""
+
+#. VolteWarrior (name)
+#.
+#. --------
+#. msgid "Duelliste"
+#: res/data.cdb:mob/#39.name
+msgid "Duelist"
+msgstr ""
+
+#. Lancer (name)
+#.
+#. --------
+#. msgid "Lancier"
+#: res/data.cdb:mob/#40.name
+msgid "Lancer"
+msgstr ""
+
+#. Test (name)
+#.
+#. --------
+#. msgid "Monstre de test (admin)"
+#: res/data.cdb:mob/#41.name
+msgid "Test monster (admin)"
+msgstr ""
+
+#. LavaWorm (name)
+#.
+#. --------
+#. msgid "Larve de feu"
+#: res/data.cdb:mob/#42.name
+msgid "Lava Worm"
+msgstr ""
+
+#. GoldEater (name)
+#.
+#. --------
+#. msgid "MangeMonOr"
+#: res/data.cdb:mob/#43.name
+msgid "EatMyGold"
+msgstr ""
+
+#. BombJump (name)
+#.
+#. --------
+#. msgid "Double saut piégé"
+#: res/data.cdb:passive/#0.name
+msgid "Booby trapped double jump"
+msgstr ""
+
+#. BombJump (desc)
+#.
+#. --------
+#. msgid ""
+#. "Vous lachez une bombe infligeant ::+damage:: dégâts quand vous utilisez "
+#. "votre double-saut (cet effet a un temps de recharge)."
+#: res/data.cdb:passive/#0.desc
+msgid ""
+"Drop a bomb when double jumping, inflicting ::+damage:: damage. (this "
+"ability has a cooldown period)."
+msgstr ""
+
+#. BombJumpDown (name)
+#.
+#. --------
+#. msgid "Descente piégée"
+#: res/data.cdb:passive/#1.name
+msgid "Booby trapped drop"
+msgstr ""
+
+#. BombJumpDown (desc)
+#.
+#. --------
+#. msgid ""
+#. "Vous lachez une bombe infligeant ::+damage:: dégâts quand vous descendez "
+#. "d'une plate-forme (cet effet a un temps de recharge)."
+#: res/data.cdb:passive/#1.desc
+msgid ""
+"Drop a bomb when dropping down from a platform inflicting ::+damage:: "
+"damage. (this ability has a cooldown period)."
+msgstr ""
+
+#. FireDeath (name)
+#.
+#. --------
+#. msgid "Déflagration"
+#: res/data.cdb:passive/#2.name
+msgid "Explosion"
+msgstr ""
+
+#. FireDeath (desc)
+#.
+#. --------
+#. msgid ""
+#. "Si un ennemi meurt alors qu'il est enflammé, il explose et inflige ::"
+#. "+damage:: dégâts aux ennemis proches (ces dégâts augmentent avec le niveau "
+#. "de vos armes)."
+#: res/data.cdb:passive/#2.desc
+msgid ""
+"Burning enemies explode upon death inflicting ::+damage:: damage to nearby "
+"enemies (damage depends on your strength level). "
+msgstr ""
+
+#. LowDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts"
+#: res/data.cdb:affix/#3.desc res/data.cdb:affix/#4.desc
+msgid "+::prct::% damage"
+msgstr ""
+
+#. FireDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts sur une cible enflammée"
+#: res/data.cdb:affix/#5.desc
+msgid "+::prct::% on a burning target"
+msgstr ""
+
+#. BleedDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts sur une cible qui saigne"
+#: res/data.cdb:affix/#6.desc
+msgid "+::prct::% damage on a bleeding target"
+msgstr ""
+
+#. IceDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts sur une cible gelée."
+#: res/data.cdb:affix/#7.desc
+msgid "+::prct::% on a burning target."
+msgstr ""
+
+#. SlowDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts sur une cible ralentie."
+#: res/data.cdb:affix/#8.desc
+msgid "+::prct::% on a stunned target."
+msgstr ""
+
+#. PoisonDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts sur une cible empoisonnée."
+#: res/data.cdb:affix/#9.desc
+msgid "+::prct::% damage on a poisoned target."
+msgstr ""
+
+#. StunDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts sur une cible étourdie"
+#: res/data.cdb:affix/#10.desc
+msgid "+::prct::% on a stunned target"
+msgstr ""
+
+#. PoisonSkin (desc)
+#.
+#. --------
+#. msgid "Vous empoisonnez les ennemis qui vous blessent."
+#: res/data.cdb:affix/#11.desc
+msgid "Poison enemies that hurt you."
+msgstr ""
+
+#. PoisonSkinArea (desc)
+#.
+#. --------
+#. msgid ""
+#. "Vous empoisonnez tous les ennemis proches quand vous subissez une blessure."
+#: res/data.cdb:affix/#12.desc
+msgid "Poison all nearby enemies when you take damage."
+msgstr ""
+
+#. PoisonShield (desc)
+#.
+#. --------
+#. msgid "Empoisonne les ennemis bloqués."
+#: res/data.cdb:affix/#13.desc
+msgid "Poison enemies when you parry."
+msgstr ""
+
+#. FireShield (desc)
+#.
+#. --------
+#. msgid "Enflamme les ennemis bloqués."
+#: res/data.cdb:affix/#14.desc
+msgid "Burn enemies when you parry."
+msgstr ""
+
+#. FrostShield (desc)
+#.
+#. --------
+#. msgid "Congèle les ennemis bloqués."
+#: res/data.cdb:affix/#15.desc
+msgid "Freeze enemies when you parry."
+msgstr ""
+
+#. LowArmor (desc)
+#.
+#. --------
+#. msgid "Dégâts réduits de ::prct::%"
+#: res/data.cdb:affix/#16.desc res/data.cdb:affix/#17.desc
+#: res/data.cdb:affix/#18.desc
+msgid "Damage taken reduced by ::prct::%"
+msgstr ""
+
+#. BulletArmor (desc)
+#.
+#. --------
+#. msgid "Dégâts des tirs réduits de ::prct::%"
+#: res/data.cdb:affix/#19.desc
+msgid "Damage from projectiles reduced by ::prct::%"
+msgstr ""
+
+#. SuperCrit (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts pour les Coups Critiques."
+#: res/data.cdb:affix/#20.desc
+msgid "+::prct::% damage when inflicting a CRITICAL HIT."
+msgstr ""
+
+#. Pierce (desc)
+#.
+#. --------
+#. msgid "Les tirs transpercent la première victime."
+#: res/data.cdb:affix/#21.desc
+msgid "Shots pierce the first target."
+msgstr ""
+
+#. SuperPierce (desc)
+#.
+#. --------
+#. msgid "Les tirs transpercent tous les ennemis."
+#: res/data.cdb:affix/#22.desc
+msgid "Shots pierce all enemies."
+msgstr ""
+
+#. UpArrow (desc)
+#.
+#. --------
+#. msgid "Tire une flèche vers le haut (::+power:: dégâts)"
+#: res/data.cdb:affix/#23.desc
+msgid "Fires an arrow upward (::+power:: damage)"
+msgstr ""
+
+#. FrontArrow (desc)
+#.
+#. --------
+#. msgid "Tire une flèche devant vous (::+power:: dégâts)"
+#: res/data.cdb:affix/#24.desc
+msgid "Fires an arrow in front of you (::+power:: damage)"
+msgstr ""
+
+#. ArrowSalve (desc)
+#.
+#. --------
+#. msgid "Tire une volée de flèches (::+power:: dégâts / flèche)"
+#: res/data.cdb:affix/#25.desc
+msgid "Fires a volley of arrows (::+power:: damage / arrow)"
+msgstr ""
+
+#. BackArrow (desc)
+#.
+#. --------
+#. msgid "Tire une flèche en arrière (::+power:: dégâts)"
+#: res/data.cdb:affix/#26.desc
+msgid "Fires an arrow behind you (::+power:: damage)"
+msgstr ""
+
+#. ExtraAmmo (desc)
+#.
+#. --------
+#. msgid "Munitions +::power::"
+#: res/data.cdb:affix/#27.desc
+msgid "Ammo +::power::"
+msgstr ""
+
+#. BombDodge (desc)
+#.
+#. --------
+#. msgid "Pose une bombe (::+power:: dégâts) quand vous esquivez."
+#: res/data.cdb:affix/#28.desc
+msgid "Drops a bomb (::+power:: damage) when you roll."
+msgstr ""
+
+#. Grenade (desc)
+#.
+#. --------
+#. msgid "Lance une grenade (::+power:: dégâts)"
+#: res/data.cdb:affix/#29.desc
+msgid "Throws a grenade (::+power:: damage)"
+msgstr ""
+
+#. CadaverWorm (desc)
+#.
+#. --------
+#. msgid "Des vers sortent des ennemis tués."
+#: res/data.cdb:affix/#30.desc
+msgid "A swarm of biters crawls from your victims."
+msgstr ""
+
+#. CadaverDamage (desc)
+#.
+#. --------
+#. msgid "Les ennemis touchés explosent en mourant (::+power:: dégâts)"
+#: res/data.cdb:affix/#31.desc
+msgid "Enemies hit explode upon death (::+power:: damage)"
+msgstr ""
+
+#. CadaverFreeze (desc)
+#.
+#. --------
+#. msgid ""
+#. "Les ennemis touchés explosent en mourant (congélation pendant ::duration::s)"
+#: res/data.cdb:affix/#32.desc
+msgid "Enemies hit explode upon death (freeze effect for ::duration::s)"
+msgstr ""
+
+#. DiveAttackFire (desc)
+#.
+#. --------
+#. msgid "Vos attaques plongeantes enflamment les ennemis."
+#: res/data.cdb:affix/#33.desc
+msgid "Jump attacks burn enemies."
+msgstr ""
+
+#. TripleJump (desc)
+#.
+#. --------
+#. msgid "Vous bénéficiez d'un saut supplémentaire dans les airs."
+#: res/data.cdb:affix/#34.desc
+msgid "You can jump three times in the air."
+msgstr ""
+
+#. QuadrupleJump (desc)
+#.
+#. --------
+#. msgid "Vous bénéficiez de 2 sauts supplémentaires dans les airs."
+#: res/data.cdb:affix/#35.desc
+msgid "You get 2 bonus jump in the air."
+msgstr ""
+
+#. LootMagnet (desc)
+#.
+#. --------
+#. msgid "Récupère l'or et les cellules sans limite de distance."
+#: res/data.cdb:affix/#36.desc
+msgid "Collect cells and gold without needing to be in range."
+msgstr ""
+
+#. CellGold (desc)
+#.
+#. --------
+#. msgid "Vous obtenez de l'or quand vous obtenez une Cellule d'un monstre."
+#: res/data.cdb:affix/#37.desc
+msgid "You get gold when you get a Dead Cell from an enemy."
+msgstr ""
+
+#. Poison (desc)
+#.
+#. --------
+#. msgid "Empoisonne la victime."
+#: res/data.cdb:affix/#38.desc
+msgid "Poison the victim."
+msgstr ""
+
+#. LongThaw (desc)
+#.
+#. --------
+#. msgid "Le ralentissement après le dégel dure ::power::x plus longtemps."
+#: res/data.cdb:affix/#39.desc
+msgid "Frost related slowdown lasts ::power::x longer."
+msgstr ""
+
+#. ThawArea (desc)
+#.
+#. --------
+#. msgid ""
+#. "Le ralentissement après le dégel est propagé à tous les monstres proches."
+#: res/data.cdb:affix/#40.desc
+msgid "Slows down all nearby enemies when the victim thaws out."
+msgstr ""
+
+#. IceBleed (desc)
+#.
+#. --------
+#. msgid "La victime subit un saignement lorsqu'elle dégèle."
+#: res/data.cdb:affix/#41.desc
+msgid "The victim suffers bleed damage when it thaws out."
+msgstr ""
+
+#. StrongIce (desc)
+#.
+#. --------
+#. msgid "La victime a moins de chance de dégeler en cas de dégât."
+#: res/data.cdb:affix/#42.desc
+msgid "Reduces the chance of unfreezing an enemy when attacking."
+msgstr ""
+
+#. CounterAttack (desc)
+#.
+#. --------
+#. msgid "Attaquer immédiatement après un blocage inflige ::prct::% de dégâts."
+#: res/data.cdb:affix/#43.desc
+msgid "Attacking immediately after parrying inflicts ::prct::% damage."
+msgstr ""
+
+#. IceArmor (desc)
+#.
+#. --------
+#. msgid "Vous gelez les ennemis qui vous touchent."
+#: res/data.cdb:affix/#44.desc
+msgid "Any enemy that touches you is frozen."
+msgstr ""
+
+#. Retaliation (desc)
+#.
+#. --------
+#. msgid ""
+#. "Tous les dégâts que vous subissez sont infligés également à leur auteur."
+#: res/data.cdb:affix/#45.desc
+msgid "All the damage you take is also dealt to nearby enemies."
+msgstr ""
+
+#. Cursed (desc)
+#.
+#. --------
+#. msgid "Dégâts infligés x::power::, dégâts subis x::power:: !"
+#: res/data.cdb:affix/#46.desc
+msgid "Damage dealt x::power::, damage received x::power::!"
+msgstr ""
+
+#. Leech (desc)
+#.
+#. --------
+#. msgid ""
+#. "Vous récupérez ::prct::% de vie par attaque infligée au corps à corps, mais "
+#. "vous subissez des dégâts x::power:: !"
+#: res/data.cdb:affix/#47.desc
+msgid ""
+"Recover ::prct::% of your life with each hand to hand attack, but take x::"
+"power:: damage!"
+msgstr ""
+
+#. PoisonImmunity (desc)
+#.
+#. --------
+#. msgid "Le poison n'a aucun effet sur vous."
+#: res/data.cdb:affix/#48.desc
+msgid "Poison no longer affects you. Sewers, here we come..."
+msgstr ""
+
+#. FireDodge (desc)
+#.
+#. --------
+#. msgid "Vos esquives enflamment les ennemis."
+#: res/data.cdb:affix/#49.desc
+msgid "Rolling burns your enemies."
+msgstr ""
+
+#. FullLifeDamage (desc)
+#.
+#. --------
+#. msgid "+::prct::% de dégâts si votre vie est à son maximum."
+#: res/data.cdb:affix/#50.desc
+msgid "+::prct::% when your health is at its maximum."
+msgstr ""
+
+#. Invisibility (desc)
+#.
+#. --------
+#. msgid "Vous devez invisible après ::duration::s sans attaquer."
+#: res/data.cdb:affix/#51.desc
+msgid "If you don't attack for ::duration::s, you become invisible."
+msgstr ""
+
+#. BleedPoison (desc)
+#.
+#. --------
+#. msgid "Les saignements provoquent des empoisonnements."
+#: res/data.cdb:affix/#52.desc
+msgid "Bleeding now inflicts poison damage too."
+msgstr ""
+
+#. BleedPropagation (desc)
+#.
+#. --------
+#. msgid "Si un ennemi sous Saignement meurt, le saignement se propage."
+#: res/data.cdb:affix/#53.desc
+msgid ""
+"If an enemy dies while bleeding, nearby ennemies will begin to bleed too."
+msgstr ""
+
+#. HealShield (desc)
+#.
+#. --------
+#. msgid ""
+#. "Prodigue un soin en cas de blocage (ne fonctionne qu'une fois par ennemi)"
+#: res/data.cdb:affix/#54.desc
+msgid "Heals you when you parry (once per enemy)"
+msgstr ""
+
+#. SecretHint (desc)
+#.
+#. --------
+#. msgid "Révèle les passages secrets."
+#: res/data.cdb:affix/#55.desc
+msgid "Reveals secret passages."
+msgstr ""
+
+#. PrisonStart (name)
+#.
+#. --------
+#. msgid "Quartier des prisonniers"
+#: res/data.cdb:level/#0.name res/data.cdb:level/#1.name
+msgid "The Prisoners' Cells"
+msgstr ""
+
+#. PrisonCourtyard (name)
+#.
+#. --------
+#. msgid "Promenade des condamnés"
+#: res/data.cdb:level/#2.name
+msgid "The Promenade of the Condemned"
+msgstr ""
+
+#. PrisonCourtyard2 (name)
+#.
+#. --------
+#. msgid "--DEPRECATED--"
+#: res/data.cdb:level/#3.name res/data.cdb:level/#6.name
+#: res/data.cdb:level/#16.name res/data.cdb:level/#17.name
+msgid "--DEPRECATED--"
+msgstr ""
+
+#. PrisonDepths (name)
+#.
+#. --------
+#. msgid "Profondeurs de la Prison"
+#: res/data.cdb:level/#4.name
+msgid "The Prison Depths"
+msgstr ""
+
+#. PrisonRoof (name)
+#.
+#. --------
+#. msgid "Toits de la Prison"
+#: res/data.cdb:level/#5.name
+msgid "The Ramparts"
+msgstr ""
+
+#. Bridge (name)
+#.
+#. --------
+#. msgid "Pont noir"
+#: res/data.cdb:level/#8.name
+msgid "The Black Bridge"
+msgstr ""
+
+#. SewerShort (name)
+#.
+#. --------
+#. msgid "Egouts toxiques"
+#: res/data.cdb:level/#9.name
+msgid "The Toxic sewers"
+msgstr ""
+
+#. SewerDepths (name)
+#.
+#. --------
+#. msgid "Ancien réseau d'égouts"
+#: res/data.cdb:level/#10.name
+msgid "The Old Sewers"
+msgstr ""
+
+#. FocusTestBoss (name)
+#.
+#. --------
+#. msgid "L'Antre..."
+#: res/data.cdb:level/#11.name
+msgid "The Den..."
+msgstr ""
+
+#. StiltVillage (name)
+#.
+#. --------
+#. msgid "Gué des Brumes"
+#: res/data.cdb:level/#12.name
+msgid "The Fog Fjord"
+msgstr ""
+
+#. Cemetery (name)
+#.
+#. --------
+#. msgid "Cimetière du Val"
+#: res/data.cdb:level/#13.name
+msgid "Graveyard"
+msgstr ""
+
+#. BeholderPit (name)
+#.
+#. --------
+#. msgid "Crypte nauséabonde"
+#: res/data.cdb:level/#14.name
+msgid "The Insufferable Crypt"
+msgstr ""
+
+#. BoatDock (name)
+#.
+#. --------
+#. msgid "Embarcadère"
+#: res/data.cdb:level/#15.name
+msgid "The Warf"
+msgstr ""
+
+#. DebugTipyx (name)
+#.
+#. --------
+#. msgid "Debug Tipyx"
+#: res/data.cdb:level/#32.name
+msgid "Debug Tipyx"
+msgstr ""
+
+#. DebugSeb (name)
+#.
+#. --------
+#. msgid "Debug Seb"
+#: res/data.cdb:level/#33.name
+msgid "debug seb"
+msgstr ""
+
+#. DebugThomas (name)
+#.
+#. --------
+#. msgid "Debug Thomas"
+#: res/data.cdb:level/#34.name
+msgid "Debug Thomas"
+msgstr ""
+
+#. DebugSkool (name)
+#.
+#. --------
+#. msgid "Debug Skool"
+#: res/data.cdb:level/#35.name
+msgid "Debug Skool"
+msgstr ""
+
+#. Chall_1 (name)
+#.
+#. --------
+#. msgid "Défi"
+#: res/data.cdb:level/#36.name res/data.cdb:level/#37.name
+#: res/data.cdb:level/#38.name
+msgid "Challenge."
+msgstr ""
