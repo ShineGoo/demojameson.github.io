@@ -4273,7 +4273,7 @@ msgstr "藏骨堂"
 #. msgid "Charnier"
 #: res/data.cdb:mob/#23.name
 msgid "Charnier"
-msgstr "电骨罐"
+msgstr "骨罐"
 
 
 #. Spawnling (name)
