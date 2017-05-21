@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.demojameson.com/"/>
-  <updated>2017-05-20T17:03:00.000Z</updated>
+  <updated>2017-05-21T16:09:00.000Z</updated>
   <id>http://www.demojameson.com/</id>
   
   <author>
@@ -14,6 +14,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 与 Kotlin 中各种 findViewById 的方式</title>
+    <link href="http://www.demojameson.com/2017/05/22/best-way-to-find-view-by-id/"/>
+    <id>http://www.demojameson.com/2017/05/22/best-way-to-find-view-by-id/</id>
+    <published>2017-05-21T16:09:00.000Z</published>
+    <updated>2017-05-21T16:09:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2017/05/22/best-way-to-find-view-by-id/cover.png" alt="cover.png" title="">
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">private</span> Button mButton;</div><div class="line">...</div><div class="line">mButton = (Button) findViewById(R.id.button);</div></pre></td></tr></table></figure>
+<p>findBiewById 是 Android 开发中必须使用，但是写起来又很无聊的语句，所以逐渐出现了各种代替它的方式，下面让我们看看都有哪些。</p>
+<a id="more"></a>
+<h1 id="Java-中的方式"><a href="#Java-中的方式" class="headerlink" title="Java 中的方式"></a>Java 中的方式</h1><ol>
+<li><p>从 <a href="https://developer.android.google.cn/topic/libraries/support-library/rev-archive.html" target="_blank" rel="external">Android Support Library 26.0.0 Beta 1</a> 开始 findViewById 将不再需要强转了。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">private</span> Button mButton;</div><div class="line">...</div><div class="line">mButton = findViewById(R.id.button);</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用注解来注入对应类型的 View，最流行的非 <a href="https://jakewharton.github.io/butterknife/" target="_blank" rel="external">ButterKnife</a> 莫属，搭配 <a href="https://github.com/avast/android-butterknife-zelezny" target="_blank" rel="external">Android Butterknife Zelezny</a> 插件自动生成以下的代码，不再需要手写 findViewById 了。需要注意的是重构布局时，如果 id 对应的 View 类型发生了变化而又忘记修改代码，则会在运行时产生异常。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="meta">@BindView</span>(R.id.button)</div><div class="line">Button mButton;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用 <a href="https://developer.android.google.cn/topic/libraries/data-binding/index.html" target="_blank" rel="external">Data Binding Library</a> 自动查找所有 View 并缓存到 binding 实例中以供访问。性能超过手写的 findViewById，因为它只遍历了一遍 XML 布局，而 findViewById 每次都会去遍历 XML 布局；include 布局中的 view 也能同样能访问，并且保留结构。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><div class="line">ActivityMainBinding binding = DataBindingUtil.setContentView(<span class="keyword">this</span>, R.layout.activity_main);</div><div class="line">binding.button.setText(<span class="string">"DataBinding 是坠吼的"</span>);</div><div class="line">binding.include_layout_id.textView.setText(<span class="string">"对对对"</span>);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="Kotlin-中的方式"><a href="#Kotlin-中的方式" class="headerlink" title="Kotlin 中的方式"></a>Kotlin 中的方式</h1><p>Java 中的方式 Kotlin 当然也能用了，下面介绍一些 Kotlin 特有的写法。</p>
+<ol>
+<li><p>对应 Java 中的方式 1，并将 View 优化为非空类型。lateinit 关键字代表延迟初始化，假如没有初始化就访问会抛异常。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">private</span> <span class="keyword">lateinit</span> <span class="keyword">var</span> button:Button</div><div class="line">...</div><div class="line">button = findViewById(R.id.button)</div></pre></td></tr></table></figure>
+</li>
+<li><p>改为使用 lazy 代理延迟初始化，使用 val 限制属性不可重新赋值，并做些许封装。这时长得就比较像 Java 中的方式 2 了。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">private</span> <span class="keyword">val</span> button <span class="keyword">by</span> bindView&lt;Button&gt;(R.id.button)</div><div class="line"><span class="comment">// 或者</span></div><div class="line"><span class="keyword">private</span> <span class="keyword">val</span> button:Button <span class="keyword">by</span> bindView(R.id.button)</div><div class="line">...</div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="type">&lt;T : View&gt;</span> Activity.<span class="title">bindView</span><span class="params">(<span class="meta">@IdRes</span> res: <span class="type">Int</span>)</span></span>: Lazy&lt;T&gt; &#123;</div><div class="line">    <span class="keyword">return</span> lazy &#123; findViewById&lt;T&gt;(res) &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用 <a href="https://kotlinlang.org/docs/tutorials/android-plugin.html" target="_blank" rel="external">Kotlin Android Extensions</a> 直接生成对应的 View 作为属性。不需要 findViewById，不需要定义变量，直接使用。使用时需要注意访问的 View 属于哪个 Layout，因为智能提示的候选项会提供所有布局中的 View 供你选择，然后帮你 import 对应包以便你访问这个 View；假如 import 的多个同一层级的 layout 中具有相同的 id，则这个 id 对应的 View 将无法访问。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> kotlinx.android.synthetic.main.activity_kotlin_main.*</div><div class="line"><span class="keyword">import</span> kotlinx.android.synthetic.main.activity_kotlin_main.view.*</div><div class="line">...</div><div class="line">button.setText(<span class="string">"Kotlin Android Extensions 我不太喜欢"</span>)</div><div class="line">inflateView.textView.setText(<span class="string">"因为比较混乱，容易出错"</span>)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>就目前来说，以上这么多方式我最喜欢的还是使用 Data Binding Library，具有性能强，类型安全，结构化等优点。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/2017/05/22/best-way-to-find-view-by-id/cover.png&quot; alt=&quot;cover.png&quot; title=&quot;&quot;&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; Button mButton;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;mButton = (Button) findViewById(R.id.button);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;findBiewById 是 Android 开发中必须使用，但是写起来又很无聊的语句，所以逐渐出现了各种代替它的方式，下面让我们看看都有哪些。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Kotlin" scheme="http://www.demojameson.com/tags/Kotlin/"/>
+    
+      <category term="Android" scheme="http://www.demojameson.com/tags/Android/"/>
+    
+      <category term="Java" scheme="http://www.demojameson.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>游戏《死亡细胞 Dead Cells》道具敌人关卡速查表</title>
