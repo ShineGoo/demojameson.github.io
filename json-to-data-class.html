@@ -91,16 +91,58 @@
 
 
 
-<meta name="description" content="热爱技术热爱生活，一枚回炉重修中的程序员">
+<meta name="description" content="JSON to Data Class
+    
+        textarea {
+            margin: 10px;
+            width: 600px;
+            height: 400px;
+        }
+    
+
+
+
+{
+  &quot;type&quot;:&quot;object&quot;,
+    &quot;hasNext&quot;: false,
+    &quot;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://www.demojameson.com/categories/index.html">
+<meta property="og:title" content="DemoJameson's Blog">
+<meta property="og:url" content="http://www.demojameson.com/json-to-data-class.html">
 <meta property="og:site_name" content="DemoJameson's Blog">
-<meta property="og:description" content="热爱技术热爱生活，一枚回炉重修中的程序员">
-<meta property="og:updated_time" content="2015-10-20T12:47:03.000Z">
+<meta property="og:description" content="JSON to Data Class
+    
+        textarea {
+            margin: 10px;
+            width: 600px;
+            height: 400px;
+        }
+    
+
+
+
+{
+  &quot;type&quot;:&quot;object&quot;,
+    &quot;hasNext&quot;: false,
+    &quot;">
+<meta property="og:updated_time" content="2017-05-25T09:22:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="热爱技术热爱生活，一枚回炉重修中的程序员">
+<meta name="twitter:title" content="DemoJameson's Blog">
+<meta name="twitter:description" content="JSON to Data Class
+    
+        textarea {
+            margin: 10px;
+            width: 600px;
+            height: 400px;
+        }
+    
+
+
+
+{
+  &quot;type&quot;:&quot;object&quot;,
+    &quot;hasNext&quot;: false,
+    &quot;">
 
 
 
@@ -128,7 +170,7 @@
 
 
 
-  <link rel="canonical" href="http://www.demojameson.com/categories/"/>
+  <link rel="canonical" href="http://www.demojameson.com/json-to-data-class.html"/>
 
 
 
@@ -138,7 +180,7 @@
   
 
   
-    categories | DemoJameson's Blog
+     | DemoJameson's Blog
   
 </title>
 </head>
@@ -302,7 +344,7 @@
   <div id="posts" class="posts-expand">
   <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline">categories</h2>
+	<h2 class="post-title" itemprop="name headline"></h2>
 
 
 
@@ -310,14 +352,139 @@
 
     
     
-      <div class="category-all-page">
-        <div class="category-all-title">
-            目前共计 5 个分类
-        </div>
-        <div class="category-all">
-          <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/博客/">博客</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/游戏/">游戏</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/软件/">软件</a><span class="category-list-count">1</span></li></ul>
-        </div>
-      </div>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON to Data Class</title>
+    <style>
+        textarea {
+            margin: 10px;
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<textarea id="json" title="JSON" placeholder="JSON">
+{
+  "type":"object",
+    "hasNext": false,
+    "price": 1.23,
+  "properties": {
+    "foo": {
+      "type": "string",
+        "otherClass": { "field": "string" }
+    },
+    "bar": {
+      "type": 1
+    },
+    "baz": [
+      {"haha": ["hhehe"]}
+    ],
+    "arrayInArray": [
+        [
+            [
+                { "Array": {"ckjkdf": 1234} }
+            ]
+        ]
+    ]
+  }
+}
+</textarea>
+<textarea id="dataclass" title="Data Class" placeholder="Data Class"></textarea>
+<input id="convert" type="button" value="转换" onclick="convertJson2DataClass()">
+<script type="text/ecmascript">
+    function convert(parseObj, className, level) {
+        result = '';
+        className = className ? capitalizeFirstLetter(className) + 'Bean' : 'DataClass';
+        level = level || 1;
+        var indent = "";
+        var i = 0;
+        while (i < level) {
+            indent += "  ";
+            i++;
+        }
+
+        if (Array.isArray(parseObj)) {
+
+        } else if (typeof parseObj === 'object') {
+            var innerClassArr = [];
+            result += '\ndata class ' + className + '(';
+            for (var prop in parseObj) {
+                var obj = parseObj[prop];
+                var typeStr = getType(obj, prop);
+                if (Array.isArray(obj) && obj.length > 0) {
+                    obj = obj[0];
+                    while (Array.isArray(obj) && obj.length > 0) {
+                        obj = obj[0];
+                    }
+                    if (!Array.isArray(obj) && typeof obj === 'object') {
+                        innerClassArr.push({'obj': obj, 'prop': prop});
+                    }
+                } else if (typeof obj === 'object' && obj != undefined) {
+                    innerClassArr.push({'obj': obj, 'prop': prop});
+                }
+                var modifier = typeStr === 'Any?' ? 'var' : 'val';
+                result += modifier + ' ' + prop + ': ' + typeStr + ',\n';
+            }
+            result = result.slice(0, -2) + ')';
+
+            if (innerClassArr.length > 0) {
+                result += ' {';
+                innerClassArr.forEach(function (data) {
+                    result += "\n" + indent + convert(data.obj, data.prop, ++level);
+                });
+                result += '\n' + indent.slice(2) + '}';
+            }
+        }
+
+        return result;
+    }
+
+    function getType(obj, prop) {
+        var typeStr = '';
+        var typeofResult = typeof obj;
+
+        if (Array.isArray(obj)) {
+            if (obj.length > 0) {
+                typeStr = 'List<' + getType(obj[0], prop) + '>';
+            } else {
+                typeStr = 'List<Any?>';
+            }
+        } else if (typeofResult === 'object') {
+            if (obj != undefined) {
+                typeStr = capitalizeFirstLetter(prop) + 'Bean';
+            } else {
+                typeStr = "Any?"
+            }
+        } else if (typeofResult === 'string') {
+            typeStr = "String";
+        } else if (typeofResult === 'boolean') {
+            typeStr = "Boolean";
+        } else if (typeofResult === 'number') {
+            if (obj.toString().indexOf('.') !== -1) {
+                typeStr = "Double";
+            } else {
+                typeStr = "Int";
+            }
+        }
+        return typeStr;
+    }
+
+    function convertJson2DataClass() {
+        var jsonText = document.querySelector('#json').value;
+        var parseObj = JSON.parse(jsonText);
+        var dataClassText = convert(parseObj).slice(1);
+        document.querySelector('#dataclass').textContent = dataClassText;
+    }
+
+    function capitalizeFirstLetter(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+</script>
+</body>
+</html>
     
   </div>
 
@@ -327,6 +494,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
 
         </div>
         
