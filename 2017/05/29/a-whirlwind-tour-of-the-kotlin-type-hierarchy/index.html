@@ -1,0 +1,1041 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="PaxlLPbUKdotLhqUxwiOUCOaKVrScE_3A0yub5zGWZQ" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Kotlin,Java," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="DemoJameson's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="作者
+原文
+
+
+
+
+Nat Pryce
+A Whirlwind Tour of the Kotlin Type Hierarchy
+
+
+
+Kotlin 有大量优秀的语言文档和教程。但是我没有找到任何描述 Kotlin 类型层级结构（type hierarchy）是如何组成的文章。那真是太可惜了，因为我觉得这个类型系统很棒1。
+关于 Kotlin 的类型层级结构只有很少的几条规则需要了解，这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【译】Kotlin 类型层级结构一览">
+<meta property="og:url" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/index.html">
+<meta property="og:site_name" content="DemoJameson's Blog">
+<meta property="og:description" content="作者
+原文
+
+
+
+
+Nat Pryce
+A Whirlwind Tour of the Kotlin Type Hierarchy
+
+
+
+Kotlin 有大量优秀的语言文档和教程。但是我没有找到任何描述 Kotlin 类型层级结构（type hierarchy）是如何组成的文章。那真是太可惜了，因为我觉得这个类型系统很棒1。
+关于 Kotlin 的类型层级结构只有很少的几条规则需要了解，这">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/entire-hierarchy.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/any-intrinsics.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/any-user-defined-type.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/any-user-defined-type-hierarchy.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/interfaces.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/parallel-nullable-and-non-nullable-hierarchies.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-string.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-hierarchy.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-unit.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nothing.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-nothing.png">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/entire-hierarchy.png">
+<meta property="og:updated_time" content="2017-05-28T21:10:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【译】Kotlin 类型层级结构一览">
+<meta name="twitter:description" content="作者
+原文
+
+
+
+
+Nat Pryce
+A Whirlwind Tour of the Kotlin Type Hierarchy
+
+
+
+Kotlin 有大量优秀的语言文档和教程。但是我没有找到任何描述 Kotlin 类型层级结构（type hierarchy）是如何组成的文章。那真是太可惜了，因为我觉得这个类型系统很棒1。
+关于 Kotlin 的类型层级结构只有很少的几条规则需要了解，这">
+<meta name="twitter:image" content="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/entire-hierarchy.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/"/>
+
+
+
+
+
+  <title> 【译】Kotlin 类型层级结构一览 | DemoJameson's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?aca76279b37859f804fdc464e85add45";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">DemoJameson's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">LIFE IS A GAME , SO LEVEL UP</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'MqYhydxAdd7N3kwHWLgt','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DemoJameson">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DemoJameson's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                【译】Kotlin 类型层级结构一览
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-29T05:10:00+08:00">
+                2017-05-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/entire-hierarchy.png" alt="entire-hierarchy.png" title="">
+<table>
+<thead>
+<tr>
+<th>作者</th>
+<th>原文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://natpryce.com/bio.html" target="_blank" rel="external">Nat Pryce</a></td>
+<td><a href="http://natpryce.com/articles/000818.html" target="_blank" rel="external">A Whirlwind Tour of the Kotlin Type Hierarchy</a></td>
+</tr>
+</tbody>
+</table>
+<p>Kotlin 有大量优秀的<a href="https://kotlinlang.org/docs/reference/" target="_blank" rel="external">语言文档</a>和<a href="https://kotlinlang.org/docs/tutorials/" target="_blank" rel="external">教程</a>。但是我没有找到任何描述 Kotlin 类型层级结构（type hierarchy）是如何组成的文章。那真是太可惜了，因为我觉得这个类型系统很棒<sup><a href="#neat">1</a></sup>。</p>
+<p>关于 Kotlin 的类型层级结构只有很少的几条规则需要了解，这些规则一致和可预测地结合在一起。得益于这些规则，Kotlin 可以提供一些有用的语言特性——空安全性（null safety）、多态性（polymorphism）、不可达代码分析（unreachable code analysis），而不需要在编译器和 IDE 中使用一些手段进行特殊处理。</p>
+<a id="more"></a>
+<h1 id="顶层类型"><a href="#顶层类型" class="headerlink" title="顶层类型"></a>顶层类型</h1><p>Kotlin 中所有类型被组织成父类型/子类型（supertype/subtype）关系的层级结构。</p>
+<p>这个层级结构的<strong>顶层</strong>是 <code>Any</code> 类型。例如 <code>String</code> 和 <code>Int</code> 都是 <code>Any</code> 的子类型。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/any-intrinsics.png" alt="any-intrinsics.png" title="">
+<p><code>Any</code> 相当于 Java 的 <code>Object</code> 类型。与 Java 不同的是 Kotlin 不区分<strong>原始类型</strong>（primitive type）和其它的类型。它们都是同一类型层级结构的一部分。</p>
+<p>如果定义了一个没有指定父类的类型，则该类型将是 <code>Any</code> 的直接子类型。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Fruit</span></span>(<span class="keyword">val</span> ripeness: <span class="built_in">Double</span>)</div></pre></td></tr></table></figure>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/any-user-defined-type.png" alt="any-user-defined-type.png" title="">
+<p>如果你为定义的类型指定了父类，则该父类将是新类型的直接父类型，并且新类型的最终祖先为 <code>Any</code>。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Fruit</span></span>(<span class="keyword">val</span> ripeness: <span class="built_in">Double</span>)</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Banana</span></span>(ripeness: <span class="built_in">Double</span>, <span class="keyword">val</span> bendiness: <span class="built_in">Double</span>): </div><div class="line">    Fruit(ripeness)</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Peach</span></span>(ripeness: <span class="built_in">Double</span>, <span class="keyword">val</span> fuzziness: <span class="built_in">Double</span>): </div><div class="line">    Fruit(ripeness)</div></pre></td></tr></table></figure>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/any-user-defined-type-hierarchy.png" alt="any-user-defined-type-hierarchy.png" title="">
+<p>如果你的类型实现了多个接口，那么它将具有多个直接的父类型，而 <code>Any</code> 同样是最终的祖先。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="class"><span class="keyword">interface</span> <span class="title">ICanGoInASalad</span></span></div><div class="line"><span class="class"><span class="keyword">interface</span> <span class="title">ICanBeSunDried</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tomato</span></span>(ripeness: <span class="built_in">Double</span>): </div><div class="line">    Fruit(ripeness), </div><div class="line">    ICanGoInASalad, </div><div class="line">    ICanBeSunDried</div></pre></td></tr></table></figure>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/interfaces.png" alt="interfaces.png" title="">
+<p>Kotlin 的类型检查器实施父类型/子类型关系。</p>
+<p>例如你可以将子类型值存储到父类型变量中：</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> f: Fruit = Banana(bendiness=<span class="number">0.5</span>)</div><div class="line">f = Peach(fuzziness=<span class="number">0.8</span>)</div></pre></td></tr></table></figure>
+<p>但是你不能将父类型值存储到子类型变量中：</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">val</span> b = Banana(bendiness=<span class="number">0.5</span>)</div><div class="line"><span class="keyword">val</span> f: Fruit = b</div><div class="line"><span class="keyword">val</span> b2: Banana = f</div><div class="line"><span class="comment">// Error: Type mismatch: inferred type is Fruit but Banana was expected</span></div></pre></td></tr></table></figure>
+<h1 id="可空类型（Nullable-Types）"><a href="#可空类型（Nullable-Types）" class="headerlink" title="可空类型（Nullable Types）"></a>可空类型（Nullable Types）</h1><p>与 Java 不同，Kotlin 区分<strong>非空</strong>（non-null）和<strong>可空</strong>（nullable）类型。到目前为止，我们看到的类型都是<strong>非空类型</strong>，Kotlin 不允许 <code>null</code> 作为这些类型的值。访问<strong>非空类型</strong>的变量将永远不会抛出空指针异常。</p>
+<p>类型检查器拒绝尝试在非空类型上使用 <code>null</code> 或可空类型的代码。</p>
+<p>例如：</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> s : String = <span class="literal">null</span></div><div class="line"><span class="comment">// Error: Null can not be a value of a non-null type String</span></div></pre></td></tr></table></figure>
+<p>如果一个变量存储的值可能为空，则需要使用与值对应的可空类型。例如 <code>String?</code> 类型是与 <code>String</code> 对应的可空类型，<code>String?</code> 类型的变量可以为任意的 <code>String</code> 值或者 <code>null</code>。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> s : String? = <span class="literal">null</span></div><div class="line">s = <span class="string">"foo"</span></div><div class="line">s = <span class="literal">null</span></div><div class="line">s = bar</div></pre></td></tr></table></figure>
+<p>类型检查器能确保你在使用一个可空类型的变量前不会忘记检查是否非空。Kotlin 提供了一些操作符用以便捷的使用可空类型。有关例子请参阅 <a href="https://kotlinlang.org/docs/reference/null-safety.html" target="_blank" rel="external">Kotlin 语言文档的 Null Safety 部分</a>。</p>
+<p>可空类型具有与对应的非空类型相同的层级结构。例如 <code>String</code> 是 <code>Any</code> 的子类型，则 <code>String?</code> 是 <code>Any?</code> 的子类型；<code>Banana</code> 是 <code>Fruit</code> 的子类型，则 <code>Banana?</code> 是 <code>Fruit?</code> 的子类型。</p>
+<p> <code>Any</code> 是非空类型层级结构的顶层，<code>Any?</code> 则是可空类型层级结构的顶层。因为 <code>Any?</code> 是 <code>Any</code> 的父类型，所以 <code>Any?</code> 是 Kotlin 类型层级结构的最顶端。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/parallel-nullable-and-non-nullable-hierarchies.png" alt="parallel-nullable-and-non-nullable-hierarchies.png" title="">
+<p>非空类型是其对应可空类型的子类型。例如 <code>String</code> 作为 <code>Any</code> 的子类型，同时也是 <code>String?</code> 的子类型。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-string.png" alt="nullable-string.png" title="">
+<p>这就是为什么可以将非空的 <code>String</code> 值存储到可空的 <code>String?</code> 变量中，但是不能将可空的 <code>String?</code> 值存储到非空的 <code>String</code> 变量中。Kotlin 的空安全性不是由特殊规则实施的，而是可空类型与非空类型之间父类型/子类型关系的结果。</p>
+<p>这一规则也适用于自定义的类型。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-hierarchy.png" alt="nullable-hierarchy.png" title="">
+<h1 id="Unit"><a href="#Unit" class="headerlink" title="Unit"></a>Unit</h1><p>Kotlin 是一种表达式导向的语言，所有流程控制语句都是表达式。它没有 Java 和 C 中的 void 函数，函数总是会返回一个值。通常我们为了副作用（side effect）而调用的那些没有实际计算任何东西的函数，将会返回 <code>Unit</code>——一种只有一个值的类型。</p>
+<p>大多数情况下，你不需要明确指定 <code>Unit</code> 作为返回类型或从函数返回 <code>Unit</code>。如果编写的函数具有块代码体，并且不指定返回类型，则编译器会将其视为返回 <code>Unit</code> 类型，否则编译器会使用推断的类型。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">example</span><span class="params">()</span></span> &#123;</div><div class="line">    println(<span class="string">"block body and no explicit return type, so returns Unit"</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">val</span> u: <span class="built_in">Unit</span> = example()</div></pre></td></tr></table></figure>
+<p><code>Unit</code> 并没什么特别之处。就像任何其他类型，它是 <code>Any</code> 的子类型，而 <code>Unit?</code> 是 <code>Any?</code> 的子类型。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-unit.png" alt="nullable-unit.png" title="">
+<p><code>Unit?</code> 类型是一个奇怪的特殊例子，这是 Kotlin 的类型系统一致性的结果。<code>Unit?</code> 类型只有两个值：<code>Unit</code> 单例和 <code>null</code>。我从来没有发现需要明确使用 <code>Unit?</code> 类型的地方，但是在类型系统中没有特殊的 <code>void</code> 这一事实，使得处理各种函数泛型变得更加容易。</p>
+<h1 id="Nothing"><a href="#Nothing" class="headerlink" title="Nothing"></a>Nothing</h1><p>在 Kotlin 类型层级结构的最底层是 <code>Nothing</code> 类型。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nothing.png" alt="nothing.png" title="">
+<p>顾名思义，<code>Nothing</code> 是没有实例的类型。<code>Nothing</code> 类型的表达式不会产生任何值。</p>
+<p>注意 <code>Unit</code> 和 <code>Nothing</code> 之间的区别，对 <code>Unit</code> 类型的表达式求值将返回 <code>Unit</code> 的单例，而对 <code>Nothing</code> 类型的表达式求值则永远都不会返回。</p>
+<p>这意味着任何类型为 <code>Nothing</code> 的表达式之后的所有代码都是无法得到执行的（unreachable code），编译器和 IDE 会向你发出警告。</p>
+<p>什么样的表达式类型为 <code>Nothing</code> 呢？<a href="https://kotlinlang.org/docs/reference/grammar.html#jump" target="_blank" rel="external">流程控制中与跳转相关的表达式</a>。</p>
+<p>例如 <code>throw</code> 关键字打断表达式的计算，并从函数中抛出异常。因此 <code>throw</code> 就是 <code>Nothing</code> 类型的表达式。</p>
+<p>通过将 <code>Nothing</code> 作为所有类型的子类型，类型系统允许程序中的任何表达求值失败。这是真实世界的模型，例如 JVM 在计算表达式时内存不足，或者是有人拔掉了计算机的电源插头。这也意味着我们可以从任何表达式中抛出异常。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">formatCell</span><span class="params">(value: <span class="type">Double</span>)</span></span>: String =</div><div class="line">    <span class="keyword">if</span> (value.isNaN()) </div><div class="line">        <span class="keyword">throw</span> IllegalArgumentException(<span class="string">"<span class="subst">$value</span> is not a number"</span>) </div><div class="line">    <span class="keyword">else</span> </div><div class="line">        value.toString()</div></pre></td></tr></table></figure>
+<p>你可能会惊奇地发现，<code>return</code> 语句的类型也为 <code>Nothing</code>。<code>return</code> 是一个流程控制语句，它立即从函数中返回一个值，打断其所在表达式的求值。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">formatCellRounded</span><span class="params">(value: <span class="type">Double</span>)</span></span>: String =</div><div class="line">    <span class="keyword">val</span> rounded: <span class="built_in">Long</span> = <span class="keyword">if</span> (value.isNaN()) <span class="keyword">return</span> <span class="string">"#ERROR"</span> <span class="keyword">else</span> Math.round(value)</div><div class="line">    rounded.toString()</div></pre></td></tr></table></figure>
+<p>进入无限循环或杀死当前进程的函数返回类型也为 <code>Nothing</code>。例如 Kotlin 标准库将 <code>exitProcess</code> 函数声明为：</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">exitProcess</span><span class="params">(status: <span class="type">Int</span>)</span></span>: <span class="built_in">Nothing</span></div></pre></td></tr></table></figure>
+<p>如果你编写自己的返回 <code>Nothing</code> 的函数，编译器同样能检查出调用函数后无法得到执行的代码，就像使用语言本身的流程控制语句一样。</p>
+<figure class="highlight kotlin"><table><tr><td class="code"><pre><div class="line"><span class="keyword">inline</span> <span class="function"><span class="keyword">fun</span> <span class="title">forever</span><span class="params">(action: ()</span></span>-&gt;<span class="built_in">Unit</span>): <span class="built_in">Nothing</span> &#123;</div><div class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) action()</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">fun</span> <span class="title">example</span><span class="params">()</span></span> &#123;</div><div class="line">    forever &#123;</div><div class="line">        println(<span class="string">"doing..."</span>)</div><div class="line">    &#125;</div><div class="line">    println(<span class="string">"done"</span>) <span class="comment">// Warning: Unreachable code</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>与空安全一样，不可达代码分析是类型系统的一个特性。无需像 Java 一样在编译器和 IDE 中使用一些手段进行特殊处理。</p>
+<h1 id="可空的-Nothing"><a href="#可空的-Nothing" class="headerlink" title="可空的 Nothing?"></a>可空的 Nothing?</h1><p><code>Nothing</code> 像任何其他类型一样，如果允许其为空则可以得到对应的类型 <code>Nothing?</code>。<code>Nothing?</code> <strong>只能</strong>包含一个值：<code>null</code>。事实上 <code>Nothing?</code> 就是 <code>null</code> 的类型。</p>
+<p><code>Nothing?</code> 是所有可空类型的最终子类型，所以我们可以使用 <code>null</code> 作为任何可空类型的值。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/nullable-nothing.png" alt="nullable-nothing.png" title="">
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>当你同时考虑这一切时，可能会觉得 Kotlin 的整个类型层级结构相当复杂。</p>
+<img src="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/entire-hierarchy.png" alt="entire-hierarchy.png" title="">
+<p>但不要害怕！</p>
+<p>我希望这篇文章能证明 Kotlin 有一个简单而一致的类型系统。只有很少的几条规则需要了解：这是一个父类型/子类型关系的层级结构，而 <code>Any?</code> 在顶层，<code>Nothing</code> 在底层，以及非空类型是对应可空类型的子类型。就这么多了，没有其它特殊规则。一些有用语言特性，如空安全性、面向对象多态性、不可达代码分析都是由这些简单，可预测的规则引起的。得益于这种一致性，Kotlin 的类型检查器是一个强有力的工具，可以帮助你编写简洁正确的程序。</p>
+<hr>
+<p><span id="neat">1. “很棒（neat）” 的意思是 “优雅巧妙高效”，而不是<a href="https://www.youtube.com/watch?v=wvZhW47mGNE" target="_blank" rel="external">凯文 · 科斯特纳在麦当娜的舞台上表现出的含义</a></span></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      DemoJameson
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/" title="【译】Kotlin 类型层级结构一览">http://www.demojameson.com/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/22/best-way-to-find-view-by-id/" rel="next" title="Java 与 Kotlin 中各种 findViewById 的方式">
+                <i class="fa fa-chevron-left"></i> Java 与 Kotlin 中各种 findViewById 的方式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="DemoJameson" />
+          <p class="site-author-name" itemprop="name">DemoJameson</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">28</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/demojameson" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/demojameson" target="_blank" title="twitter">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/demojameson" target="_blank" title="weibo">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://ice1000.org/" title="千里冰封" target="_blank">千里冰封</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#顶层类型"><span class="nav-number">1.</span> <span class="nav-text">顶层类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可空类型（Nullable-Types）"><span class="nav-number">2.</span> <span class="nav-text">可空类型（Nullable Types）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Unit"><span class="nav-number">3.</span> <span class="nav-text">Unit</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Nothing"><span class="nav-number">4.</span> <span class="nav-text">Nothing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可空的-Nothing"><span class="nav-number">5.</span> <span class="nav-text">可空的 Nothing?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结论"><span class="nav-number">6.</span> <span class="nav-text">结论</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DemoJameson</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "a1cbc26e9d0d4faf8848e7bb83e99567",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+</body>
+</html>
