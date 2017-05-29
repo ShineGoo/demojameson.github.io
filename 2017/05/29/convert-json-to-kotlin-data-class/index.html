@@ -73,7 +73,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Windows,系统," />
+  <meta name="keywords" content="Kotlin,Java,JSON," />
 
 
 
@@ -91,18 +91,18 @@
 
 
 
-<meta name="description" content="升级到 Win 10 后才遇到的问题，上网一搜发现 Win 8 时已经有同病相怜的人了，可是直到如今依然没法解决 -_-">
+<meta name="description" content="在 Kotlin 中数据类（Data Class）能帮我们减少许多样板代码，自动生成 equals/hashCode/toString 等很多必要的方法。与后端通讯时流行的 JSON 数据十分适合用数据类来存储，如果有个工具能自动将 JSON 转化为数据类就好了。所以退化到只会用原生 Javascript DOM 的我就写了这个工具，没有花太多精力只做了点微小的工作（+1s）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="随机莫名无法输入中文的问题 “IME 已停用” 治标法">
-<meta property="og:url" content="http://www.demojameson.com/2015/12/02/windows-ime-stop/index.html">
+<meta property="og:title" content="JSON 转换为 Kotlin Data Class 工具">
+<meta property="og:url" content="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/index.html">
 <meta property="og:site_name" content="DemoJameson's Blog">
-<meta property="og:description" content="升级到 Win 10 后才遇到的问题，上网一搜发现 Win 8 时已经有同病相怜的人了，可是直到如今依然没法解决 -_-">
-<meta property="og:image" content="http://www.demojameson.com/2015/12/02/windows-ime-stop/windows-10-logo.gif">
-<meta property="og:updated_time" content="2015-12-03T09:07:51.000Z">
+<meta property="og:description" content="在 Kotlin 中数据类（Data Class）能帮我们减少许多样板代码，自动生成 equals/hashCode/toString 等很多必要的方法。与后端通讯时流行的 JSON 数据十分适合用数据类来存储，如果有个工具能自动将 JSON 转化为数据类就好了。所以退化到只会用原生 Javascript DOM 的我就写了这个工具，没有花太多精力只做了点微小的工作（+1s）。">
+<meta property="og:image" content="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/cover.png">
+<meta property="og:updated_time" content="2017-05-19T08:13:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="随机莫名无法输入中文的问题 “IME 已停用” 治标法">
-<meta name="twitter:description" content="升级到 Win 10 后才遇到的问题，上网一搜发现 Win 8 时已经有同病相怜的人了，可是直到如今依然没法解决 -_-">
-<meta name="twitter:image" content="http://www.demojameson.com/2015/12/02/windows-ime-stop/windows-10-logo.gif">
+<meta name="twitter:title" content="JSON 转换为 Kotlin Data Class 工具">
+<meta name="twitter:description" content="在 Kotlin 中数据类（Data Class）能帮我们减少许多样板代码，自动生成 equals/hashCode/toString 等很多必要的方法。与后端通讯时流行的 JSON 数据十分适合用数据类来存储，如果有个工具能自动将 JSON 转化为数据类就好了。所以退化到只会用原生 Javascript DOM 的我就写了这个工具，没有花太多精力只做了点微小的工作（+1s）。">
+<meta name="twitter:image" content="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/cover.png">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://www.demojameson.com/2015/12/02/windows-ime-stop/"/>
+  <link rel="canonical" href="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/"/>
 
 
 
 
 
-  <title> 随机莫名无法输入中文的问题 “IME 已停用” 治标法 | DemoJameson's Blog </title>
+  <title> JSON 转换为 Kotlin Data Class 工具 | DemoJameson's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -309,7 +309,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.demojameson.com/2015/12/02/windows-ime-stop/">
+    <link itemprop="mainEntityOfPage" href="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DemoJameson">
@@ -330,7 +330,7 @@
             
             
               
-                随机莫名无法输入中文的问题 “IME 已停用” 治标法
+                JSON 转换为 Kotlin Data Class 工具
               
             
           </h2>
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-02T20:40:34+08:00">
-                2015-12-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-29T16:13:00+08:00">
+                2017-05-29
               </time>
             
 
@@ -368,8 +368,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Windows/" itemprop="url" rel="index">
-                    <span itemprop="name">Windows</span>
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
                   </a>
                 </span>
 
@@ -386,7 +386,7 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a class="cloud-tie-join-count" href="/2015/12/02/windows-ime-stop/#comments" itemprop="discussionUrl">
+                <a class="cloud-tie-join-count" href="/2017/05/29/convert-json-to-kotlin-data-class/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count join-count" itemprop="commentCount"></span>
                 </a>
               </span>
@@ -418,19 +418,112 @@
       
 
       
-        <img src="/2015/12/02/windows-ime-stop/windows-10-logo.gif" alt="windows-10-logo.gif" title="">
-<p>升级到 Win 10 后才遇到的问题，上网一搜发现 Win 8 时已经有同病相怜的人了，可是直到如今依然没法解决 -_-</p>
+        <img src="/2017/05/29/convert-json-to-kotlin-data-class/cover.png" alt="cover.png" title="">
+<p>在 Kotlin 中数据类（Data Class）能帮我们减少许多样板代码，自动生成 <code>equals</code>/<code>hashCode</code>/<code>toString</code> 等很多必要的方法。与后端通讯时流行的 JSON 数据十分适合用数据类来存储，如果有个工具能自动将 JSON 转化为数据类就好了。所以退化到只会用原生 Javascript DOM 的我就写了这个工具，没有花太多精力只做了点微小的工作（+1s）。</p>
 <a id="more"></a>
-<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>时不时，通常是倒杯水坐下后就发现打不了中文了。屏幕右下角还十分好意的打着一个叉叉提醒人“IME 已停用”。那我回来了你是不是应该正常工作了呢，Windows 大爷，可是无论怎么捣鼓他就不是不给你打中文。</p>
-<h3 id="治标之法"><a href="#治标之法" class="headerlink" title="治标之法"></a>治标之法</h3><p>所以说网络搜索引擎是多么伟大的发明，上网搜索后还是有那么两招能够缓解一下这个问题产生的蛋疼：</p>
-<ol>
-<li>Win + X 打开 “计算机管理”</li>
-<li>来跟着我点开系统工具 - 任务计划程序 - 任务计划程序库 - Microsoft - Windows - TextServiceFramework</li>
-<li>看到右边那 MsCtfMonitor 的字样没，对就是他，右键狠狠的点，然后运行</li>
-<li>Windows 大爷终于又肯让你输入中文了</li>
-</ol>
-<p>补充：如果第 2 步你就已经进行不下去了，可能是 Windows 大爷发功把 Task Scheduler 关了，请在 “计算机管理” 界面找到 “Task Scheduler” 这个服务并运行之再继续第 2 步</p>
+<h1 id="JSON-to-Data-Class-工具"><a href="#JSON-to-Data-Class-工具" class="headerlink" title="JSON to Data Class 工具"></a>JSON to Data Class 工具</h1><p><textarea style="margin: 10px; width: 600px; height: 300px;" id="json" title="JSON" placeholder="JSON"></textarea></p>
+<p><textarea style="margin: 10px; width: 600px; height: 300px;" id="dataclass" title="Data Class" placeholder="Kotlin Data Class"></textarea></p>
+<p><input id="convert" type="button" value="转换" onclick="convertJson2DataClass()"></p>
+<script type="text/ecmascript">
+  function convert(parseObj, className, level) {
+    var result = '';
+    className = className ? capitalizeFirstLetter(className) + 'Bean' : 'DataClass';
+    level = level || 1;
+    var indent = "";
+    var i = 0;
+    while (i < level) {
+      indent += "  ";
+      i++;
+    }
 
+    if (Array.isArray(parseObj)) {
+
+    } else if (typeof parseObj === 'object') {
+      var innerClassArr = [];
+      result += '\ndata class ' + className + '(';
+      for (var prop in parseObj) {
+        var obj = parseObj[prop];
+        var typeStr = getType(obj, prop);
+        if (Array.isArray(obj) && obj.length > 0) {
+          obj = obj[0];
+          while (Array.isArray(obj) && obj.length > 0) {
+            obj = obj[0];
+          }
+          if (!Array.isArray(obj) && typeof obj === 'object') {
+            innerClassArr.push({'obj': obj, 'prop': prop});
+          }
+        } else if (typeof obj === 'object' && obj != undefined) {
+          innerClassArr.push({'obj': obj, 'prop': prop});
+        }
+        var modifier = typeStr === 'Any?' ? 'var' : 'val';
+        result += modifier + ' ' + prop + ': ' + typeStr + ',\n';
+      }
+      result = result.slice(0, -2) + ')';
+
+      if (innerClassArr.length > 0) {
+        result += ' {';
+        innerClassArr.forEach(function (data) {
+          result += "\n" + indent + convert(data.obj, data.prop, ++level);
+        });
+        result += '\n' + indent.slice(2) + '}';
+      }
+    }
+
+    return result;
+  }
+
+  function getType(obj, prop) {
+    var typeStr = '';
+    var typeofResult = typeof obj;
+
+    if (Array.isArray(obj)) {
+      if (obj.length > 0) {
+        typeStr = 'List<' + getType(obj[0], prop) + '>';
+      } else {
+        typeStr = 'List<Any?>';
+      }
+    } else if (typeofResult === 'object') {
+      if (obj != undefined) {
+        typeStr = capitalizeFirstLetter(prop) + 'Bean';
+      } else {
+        typeStr = "Any?"
+      }
+    } else if (typeofResult === 'string') {
+      typeStr = "String";
+    } else if (typeofResult === 'boolean') {
+      typeStr = "Boolean";
+    } else if (typeofResult === 'number') {
+      if (obj.toString().indexOf('.') !== -1) {
+        typeStr = "Double";
+      } else {
+        typeStr = "Int";
+      }
+    }
+    return typeStr;
+  }
+
+  function convertJson2DataClass() {
+    var jsonText = document.querySelector('#json').value;
+    if (!jsonText) {
+      alert("请先输入 JSON 数据");
+      return;
+    }
+
+    try {
+      var parseObj = JSON.parse(jsonText);
+    } catch(e) {
+      alert("JSON 数据转换异常，请先校验数据是否合法");
+      return;
+    }
+
+    var dataClassText = convert(parseObj).slice(1);
+    document.querySelector('#dataclass').value = dataClassText;
+  }
+
+  function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+</script>
       
     </div>
 
@@ -458,7 +551,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://www.demojameson.com/2015/12/02/windows-ime-stop/" title="随机莫名无法输入中文的问题 “IME 已停用” 治标法">http://www.demojameson.com/2015/12/02/windows-ime-stop/</a>
+      <a href="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/" title="JSON 转换为 Kotlin Data Class 工具">http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -474,9 +567,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Windows/" rel="tag"># Windows</a>
+            <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
           
-            <a href="/tags/系统/" rel="tag"># 系统</a>
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/JSON/" rel="tag"># JSON</a>
           
         </div>
       
@@ -489,8 +584,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/26/about-hexo/" rel="next" title="搭建使用 Hexo 的些许经验">
-                <i class="fa fa-chevron-left"></i> 搭建使用 Hexo 的些许经验
+              <a href="/2017/05/29/a-whirlwind-tour-of-the-kotlin-type-hierarchy/" rel="next" title="【译】Kotlin 类型层级结构一览">
+                <i class="fa fa-chevron-left"></i> 【译】Kotlin 类型层级结构一览
               </a>
             
           </div>
@@ -498,10 +593,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/04/binding-of-isaac-plugin/" rel="prev" title="曾经造过的轮子——《以撒的结合》Roll 不崩插件">
-                曾经造过的轮子——《以撒的结合》Roll 不崩插件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -720,7 +811,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#治标之法"><span class="nav-number">2.</span> <span class="nav-text">治标之法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JSON-to-Data-Class-工具"><span class="nav-number">1.</span> <span class="nav-text">JSON to Data Class 工具</span></a></li></ol></div>
             
 
           </div>

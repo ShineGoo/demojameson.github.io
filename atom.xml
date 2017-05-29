@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.demojameson.com/"/>
-  <updated>2017-05-28T21:10:00.000Z</updated>
+  <updated>2017-05-19T08:13:00.000Z</updated>
   <id>http://www.demojameson.com/</id>
   
   <author>
@@ -14,6 +14,138 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JSON 转换为 Kotlin Data Class 工具</title>
+    <link href="http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/"/>
+    <id>http://www.demojameson.com/2017/05/29/convert-json-to-kotlin-data-class/</id>
+    <published>2017-05-29T08:13:00.000Z</published>
+    <updated>2017-05-19T08:13:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2017/05/29/convert-json-to-kotlin-data-class/cover.png" alt="cover.png" title="">
+<p>在 Kotlin 中数据类（Data Class）能帮我们减少许多样板代码，自动生成 <code>equals</code>/<code>hashCode</code>/<code>toString</code> 等很多必要的方法。与后端通讯时流行的 JSON 数据十分适合用数据类来存储，如果有个工具能自动将 JSON 转化为数据类就好了。所以退化到只会用原生 Javascript DOM 的我就写了这个工具，没有花太多精力只做了点微小的工作（+1s）。</p>
+<a id="more"></a>
+<h1 id="JSON-to-Data-Class-工具"><a href="#JSON-to-Data-Class-工具" class="headerlink" title="JSON to Data Class 工具"></a>JSON to Data Class 工具</h1><p><textarea style="margin: 10px; width: 600px; height: 300px;" id="json" title="JSON" placeholder="JSON"></textarea></p>
+<p><textarea style="margin: 10px; width: 600px; height: 300px;" id="dataclass" title="Data Class" placeholder="Kotlin Data Class"></textarea></p>
+<p><input id="convert" type="button" value="转换" onclick="convertJson2DataClass()"></p>
+<script type="text/ecmascript">
+  function convert(parseObj, className, level) {
+    var result = '';
+    className = className ? capitalizeFirstLetter(className) + 'Bean' : 'DataClass';
+    level = level || 1;
+    var indent = "";
+    var i = 0;
+    while (i < level) {
+      indent += "  ";
+      i++;
+    }
+
+    if (Array.isArray(parseObj)) {
+
+    } else if (typeof parseObj === 'object') {
+      var innerClassArr = [];
+      result += '\ndata class ' + className + '(';
+      for (var prop in parseObj) {
+        var obj = parseObj[prop];
+        var typeStr = getType(obj, prop);
+        if (Array.isArray(obj) && obj.length > 0) {
+          obj = obj[0];
+          while (Array.isArray(obj) && obj.length > 0) {
+            obj = obj[0];
+          }
+          if (!Array.isArray(obj) && typeof obj === 'object') {
+            innerClassArr.push({'obj': obj, 'prop': prop});
+          }
+        } else if (typeof obj === 'object' && obj != undefined) {
+          innerClassArr.push({'obj': obj, 'prop': prop});
+        }
+        var modifier = typeStr === 'Any?' ? 'var' : 'val';
+        result += modifier + ' ' + prop + ': ' + typeStr + ',\n';
+      }
+      result = result.slice(0, -2) + ')';
+
+      if (innerClassArr.length > 0) {
+        result += ' {';
+        innerClassArr.forEach(function (data) {
+          result += "\n" + indent + convert(data.obj, data.prop, ++level);
+        });
+        result += '\n' + indent.slice(2) + '}';
+      }
+    }
+
+    return result;
+  }
+
+  function getType(obj, prop) {
+    var typeStr = '';
+    var typeofResult = typeof obj;
+
+    if (Array.isArray(obj)) {
+      if (obj.length > 0) {
+        typeStr = 'List<' + getType(obj[0], prop) + '>';
+      } else {
+        typeStr = 'List<Any?>';
+      }
+    } else if (typeofResult === 'object') {
+      if (obj != undefined) {
+        typeStr = capitalizeFirstLetter(prop) + 'Bean';
+      } else {
+        typeStr = "Any?"
+      }
+    } else if (typeofResult === 'string') {
+      typeStr = "String";
+    } else if (typeofResult === 'boolean') {
+      typeStr = "Boolean";
+    } else if (typeofResult === 'number') {
+      if (obj.toString().indexOf('.') !== -1) {
+        typeStr = "Double";
+      } else {
+        typeStr = "Int";
+      }
+    }
+    return typeStr;
+  }
+
+  function convertJson2DataClass() {
+    var jsonText = document.querySelector('#json').value;
+    if (!jsonText) {
+      alert("请先输入 JSON 数据");
+      return;
+    }
+
+    try {
+      var parseObj = JSON.parse(jsonText);
+    } catch(e) {
+      alert("JSON 数据转换异常，请先校验数据是否合法");
+      return;
+    }
+
+    var dataClassText = convert(parseObj).slice(1);
+    document.querySelector('#dataclass').value = dataClassText;
+  }
+
+  function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+</script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/2017/05/29/convert-json-to-kotlin-data-class/cover.png&quot; alt=&quot;cover.png&quot; title=&quot;&quot;&gt;
+&lt;p&gt;在 Kotlin 中数据类（Data Class）能帮我们减少许多样板代码，自动生成 &lt;code&gt;equals&lt;/code&gt;/&lt;code&gt;hashCode&lt;/code&gt;/&lt;code&gt;toString&lt;/code&gt; 等很多必要的方法。与后端通讯时流行的 JSON 数据十分适合用数据类来存储，如果有个工具能自动将 JSON 转化为数据类就好了。所以退化到只会用原生 Javascript DOM 的我就写了这个工具，没有花太多精力只做了点微小的工作（+1s）。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="编程" scheme="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Kotlin" scheme="http://www.demojameson.com/tags/Kotlin/"/>
+    
+      <category term="Java" scheme="http://www.demojameson.com/tags/Java/"/>
+    
+      <category term="JSON" scheme="http://www.demojameson.com/tags/JSON/"/>
+    
+  </entry>
   
   <entry>
     <title>【译】Kotlin 类型层级结构一览</title>
