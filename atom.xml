@@ -54,6 +54,8 @@
       <category term="编程" scheme="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
+      <category term="工具" scheme="http://www.demojameson.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
       <category term="JavaScript" scheme="http://www.demojameson.com/tags/JavaScript/"/>
     
       <category term="UserScript" scheme="http://www.demojameson.com/tags/UserScript/"/>
@@ -531,7 +533,7 @@
     
     </summary>
     
-      <category term="游戏" scheme="http://www.demojameson.com/categories/%E6%B8%B8%E6%88%8F/"/>
+      <category term="编程" scheme="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
       <category term="iOS" scheme="http://www.demojameson.com/tags/iOS/"/>

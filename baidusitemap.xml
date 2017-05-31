@@ -10,6 +10,8 @@
         <title>自动识别 B 站排行榜类视频中的 av 号</title>
         <pubTime>2017-05-29T21:21:00.000Z</pubTime>
         
+        <tag>工具 </tag>
+         
         <tag>JavaScript </tag>
          
         <tag>UserScript </tag>
@@ -153,7 +155,7 @@
          
            
              
-              <breadCrumb title="游戏" url="http://www.demojameson.com/categories/%E6%B8%B8%E6%88%8F/"/>
+              <breadCrumb title="编程" url="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
           
         </display>
     </data>
