@@ -377,25 +377,25 @@
     <link href="http://www.demojameson.com/2017/05/21/dead-cells-cheat-sheet/"/>
     <id>http://www.demojameson.com/2017/05/21/dead-cells-cheat-sheet/</id>
     <published>2017-05-20T17:03:00.000Z</published>
-    <updated>2017-05-20T17:03:00.000Z</updated>
+    <updated>2017-06-03T09:49:00.000Z</updated>
     
     <content type="html"><![CDATA[<img src="/2017/05/21/dead-cells-cheat-sheet/cover.jpg" alt="cover.jpg" title="">
-<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><blockquote>
+<p>给《<a href="http://store.steampowered.com/app/588650/Dead_Cells/" target="_blank" rel="external">死亡细胞</a>》这个游戏做了个速查表页面，数据来自游戏内解包的文件，<a href="http://www.demojameson.com/deadcells/dead-cells-data.html?lang=zh">点击直达</a>（需要等待一会加载数据）。</p>
+<h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><blockquote>
 <p>欢迎来到《<a href="http://store.steampowered.com/app/588650/Dead_Cells/" target="_blank" rel="external">死亡细胞</a>》，这是一款将 Roguelite 与银河战士恶魔城类特点融为一炉的 2D 平台动作游戏。游戏中并无检查点，玩家将体验魂味战斗，一路挑战诸多守卫，在杀戮与死亡的反复轮回中探索一座房间不断变化的巨大城堡。</p>
 </blockquote>
 <p>游戏在 5 月 10 日发售后立马获得了好评如潮的评价。虽然目前还是<a href="http://store.steampowered.com/earlyaccessfaq/?snr=1_5_9_" target="_blank" rel="external">抢先体验</a>状态，但已经有了较为不错的官方中文支持，因为有谜之声和 indienova 的协助汉化。游戏凭借精美的像素风，畅快的打击感，多样的武器和技能再加上 Roguelike 元素，让人百玩不厌。</p>
-<a id="more"></a>
-<h1 id="速查表"><a href="#速查表" class="headerlink" title="速查表"></a>速查表</h1><p>在花了几天通关（目前只有 11 个不同关卡，两个 BOSS）和收集所有道具后，我尝试挖掘更多的信息，通过 <a href="https://forum.xentax.com/viewtopic.php?f=10&amp;t=16244" target="_blank" rel="external">QuickBMS</a> 将游戏里的 res.pak 文件解包得到了一些有趣的东西。其中包括描述道具敌人关卡的数据，相关的图标，以及不同语言的文本。于是我将其整理了一下，写了个简单的网页来展示这些信息，充当游戏的速查表，<a href="http://www.demojameson.com/deadcells/dead-cells-data.html?lang=zh">点击查看</a>。可以了解到游戏道具的掉落率，从何处掉落，关卡的难度级别，掉落物品级别等内容。</p>
-<h1 id="关于更新"><a href="#关于更新" class="headerlink" title="关于更新"></a>关于更新</h1><p>月底游戏会添加新内容，如果没有意外会同步更新，毕竟只是重新解包提取一下文件而已。</p>
+<h1 id="速查表"><a href="#速查表" class="headerlink" title="速查表"></a>速查表</h1><p>在花了几天通关（目前只有 11 个不同关卡，两个 BOSS）和收集所有道具后，我尝试挖掘更多的信息，通过 <a href="https://forum.xentax.com/viewtopic.php?f=10&amp;t=16244" target="_blank" rel="external">QuickBMS</a> 将游戏里的 res.pak 文件解包得到了一些有趣的东西。其中包括描述道具敌人关卡的数据，相关的图标，以及不同语言的文本。于是我将其整理了一下，写了个简单的网页来展示这些信息，充当游戏的速查表。可以了解到游戏道具的掉落率，从何处掉落，关卡的难度级别，掉落物品级别等内容。</p>
+<h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><ul>
+<li>2017年6月3日 更新到游戏版本 (e2c7b364)，但是解包的资源中没有未编译的文本文件了，所以以后新增的内容只能显示原文法文。</li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
       &lt;img src=&quot;/2017/05/21/dead-cells-cheat-sheet/cover.jpg&quot; alt=&quot;cover.jpg&quot; title=&quot;&quot;&gt;
-&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;欢迎来到《&lt;a href=&quot;http://store.steampowered.com/app/588650/Dead_Cells/&quot;&gt;死亡细胞&lt;/a&gt;》，这是一款将 Roguelite 与银河战士恶魔城类特点融为一炉的 2D 平台动作游戏。游戏中并无检查点，玩家将体验魂味战斗，一路挑战诸多守卫，在杀戮与死亡的反复轮回中探索一座房间不断变化的巨大城堡。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;游戏在 5 月 10 日发售后立马获得了好评如潮的评价。虽然目前还是&lt;a href=&quot;http://store.steampowered.com/earlyaccessfaq/?snr=1_5_9_&quot;&gt;抢先体验&lt;/a&gt;状态，但已经有了较为不错的官方中文支持，因为有谜之声和 indienova 的协助汉化。游戏凭借精美的像素风，畅快的打击感，多样的武器和技能再加上 Roguelike 元素，让人百玩不厌。&lt;/p&gt;
+&lt;p&gt;给《&lt;a href=&quot;http://store.steampowered.com/app/588650/Dead_Cells/&quot;&gt;死亡细胞&lt;/a&gt;》这个游戏做了个速查表页面，数据来自游戏内解包的文件，&lt;a href=&quot;http://www.demojameson.com/deadcells/dead-cells-data.html?lang=zh&quot;&gt;点击直达&lt;/a&gt;（需要等待一会加载数据）。&lt;/p&gt;
+&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
     
     </summary>
     
