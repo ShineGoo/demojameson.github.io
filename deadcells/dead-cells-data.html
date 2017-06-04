@@ -61,7 +61,7 @@
 <div id="jqGridPagerLevel"></div>
 <img id="cardIcons" src="resource/cardIcons.png"/>
 <script type="text/ecmascript">
-  $(document).ready(function () {
+  $(window).on("load", function() {
     // 充当 Loading 界面
     $("#jqGridTemp").jqGrid({
       datatype: 'json',
