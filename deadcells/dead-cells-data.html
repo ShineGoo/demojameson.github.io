@@ -61,45 +61,44 @@
 <div id="jqGridPagerLevel"></div>
 <img id="cardIcons" src="resource/cardIcons.png"/>
 <script type="text/ecmascript">
+  // 充当 Loading 界面
+  $("#jqGridTemp").jqGrid({
+    datatype: 'json',
+    url: 'resource/data_min.cdb',
+    jsonReader: {root: "sheets[1].lines"},
+    cmTemplate: {
+      width: 65
+    },
+    colModel: [
+      {name: 'icon', align: 'center'},
+      {name: 'name'},
+      {name: 'gameplayDesc', width: 200},
+      {name: 'blueprint', width: 200},
+      {name: 'cellCost', align: 'right'},
+      {name: 'moneyCost', align: 'right'},
+      {name: 'droppable', align: 'center'},
+      {name: 'hasLevels', align: 'center'},
+      {name: 'hasTier', align: 'center'},
+      {name: 'castCD', align: 'right'},
+      {name: 'tags', width: 100}
+    ],
+    caption: 'Item',
+    viewrecords: true,
+    height: 600,
+    width: 1280,
+    rownumbers: true,
+    rowNum: 9999,
+    pager: "#jqGridPagerTemp"
+  });
+
+
   $(window).on("load", function() {
-    // 充当 Loading 界面
-    $("#jqGridTemp").jqGrid({
-      datatype: 'json',
-      url: 'resource/data_min.cdb',
-      jsonReader: {root: "sheets[1].lines"},
-      cmTemplate: {
-        width: 65
-      },
-      colModel: [
-        {name: 'icon', formatter: showIcon, align: 'center'},
-        {name: 'name', formatter: translateByMsgid},
-        {name: 'gameplayDesc', formatter: translateDesc, width: 200},
-        {name: 'blueprint', formatter: findBlueprint, width: 200},
-        {name: 'cellCost', align: 'right'},
-        {name: 'moneyCost', align: 'right'},
-        {name: 'droppable', align: 'center'},
-        {name: 'hasLevels', align: 'center'},
-        {name: 'hasTier', align: 'center'},
-        {name: 'castCD', align: 'right'},
-        {name: 'tags', formatter: formatTag, width: 100}
-      ],
-      caption: 'Item',
-      viewrecords: true,
-      height: 600,
-      width: 1280,
-      rownumbers: true,
-      rowNum: 9999,
-      pager: "#jqGridPagerTemp"
-    });
-
-
     var jsonData;
     $.getJSON("resource/data_min.cdb", function (result) {
       jsonData = result;
 
       // 隐藏 Loading 界面
       document.body.removeChild(document.querySelector("#gbox_jqGridTemp"));
-
 
       // 去除无用数据和排序
       jsonData.sheets[12].lines = jsonData.sheets[12].lines.filter(function (level) {
