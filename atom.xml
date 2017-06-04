@@ -387,7 +387,8 @@
 <p>游戏在 5 月 10 日发售后立马获得了好评如潮的评价。虽然目前还是<a href="http://store.steampowered.com/earlyaccessfaq/?snr=1_5_9_" target="_blank" rel="external">抢先体验</a>状态，但已经有了较为不错的官方中文支持，因为有谜之声和 indienova 的协助汉化。游戏凭借精美的像素风，畅快的打击感，多样的武器和技能再加上 Roguelike 元素，让人百玩不厌。</p>
 <h1 id="速查表"><a href="#速查表" class="headerlink" title="速查表"></a>速查表</h1><p>在花了几天通关（目前只有 11 个不同关卡，两个 BOSS）和收集所有道具后，我尝试挖掘更多的信息，通过 <a href="https://forum.xentax.com/viewtopic.php?f=10&amp;t=16244" target="_blank" rel="external">QuickBMS</a> 将游戏里的 res.pak 文件解包得到了一些有趣的东西。其中包括描述道具敌人关卡的数据，相关的图标，以及不同语言的文本。于是我将其整理了一下，写了个简单的网页来展示这些信息，充当游戏的速查表。可以了解到游戏道具的掉落率，从何处掉落，关卡的难度级别，掉落物品级别等内容。</p>
 <h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><ul>
-<li>2017年6月3日 更新到游戏版本 (e2c7b364)，但是解包的资源中没有未编译的文本文件了，所以以后新增的内容只能显示原文法文。</li>
+<li>2017年6月3日——更新到游戏版本 (e2c7b364)，但是解包的资源中没有未编译的文本文件了，所以以后新增的内容只能显示原文法文。</li>
+<li>2017年6月4日——增加 Loading 界面；裁剪压缩数据文件提高加载速度（3MB 变 100KB）</li>
 </ul>
 ]]></content>
     
