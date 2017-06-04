@@ -59,76 +59,34 @@
 <br/>
 <table id="jqGridLevel"></table>
 <div id="jqGridPagerLevel"></div>
+<br/>
+<table id="jqGridAffix"></table>
+<div id="jqGridPagerAffix"></div>
 <img id="cardIcons" src="resource/cardIcons.png"/>
 <script type="text/ecmascript">
-  // 充当 Loading 界面
-  $("#jqGridTemp").jqGrid({
-    datatype: 'json',
-    url: 'resource/data_min.cdb',
-    jsonReader: {root: "sheets[1].lines"},
-    cmTemplate: {
-      width: 65
-    },
-    colModel: [
-      {name: 'icon', align: 'center'},
-      {name: 'name'},
-      {name: 'gameplayDesc', width: 200},
-      {name: 'blueprint', width: 200},
-      {name: 'cellCost', align: 'right'},
-      {name: 'moneyCost', align: 'right'},
-      {name: 'droppable', align: 'center'},
-      {name: 'hasLevels', align: 'center'},
-      {name: 'hasTier', align: 'center'},
-      {name: 'castCD', align: 'right'},
-      {name: 'tags', width: 100}
-    ],
-    caption: 'Item',
-    viewrecords: true,
-    height: 600,
-    width: 1280,
-    rownumbers: true,
-    rowNum: 9999,
-    pager: "#jqGridPagerTemp"
-  });
+    // 语言参数，通过 url 传入，默认英文
+    var lang = getParameterByName('lang') || "zh";
 
-
-  $(window).on("load", function() {
-    var jsonData;
-    $.getJSON("resource/data_min.cdb", function (result) {
-      jsonData = result;
-
-      // 隐藏 Loading 界面
-      document.body.removeChild(document.querySelector("#gbox_jqGridTemp"));
-
-      // 去除无用数据和排序
-      jsonData.sheets[12].lines = jsonData.sheets[12].lines.filter(function (level) {
-        return level.name && !/debug/i.test(level.name) && level.biome !== 'SecretRooms'
-      }).sort(function (first, second) {
-        if (first.mobTier - second.mobTier === 0) {
-          return first.lootLevel - second.lootLevel;
-        } else {
-          return first.mobTier - second.mobTier;
-        }
-      });
-
-      $("#jqGridItem").jqGrid({
-        datatype: 'local',
-        data: jsonData.sheets[1].lines,
+    // 充当 Loading 界面
+    $("#jqGridTemp").jqGrid({
+        datatype: 'json',
+        url: 'resource/data_min.cdb',
+        jsonReader: {root: "sheets[1].lines"},
         cmTemplate: {
-          width: 65
+            width: 65
         },
         colModel: [
-          {name: 'icon', formatter: showIcon, align: 'center'},
-          {name: 'name', formatter: translateByMsgid},
-          {name: 'gameplayDesc', formatter: translateDesc, width: 200},
-          {name: 'blueprint', formatter: findBlueprint, width: 200},
-          {name: 'cellCost', align: 'right'},
-          {name: 'moneyCost', align: 'right'},
-          {name: 'droppable', align: 'center'},
-          {name: 'hasLevels', align: 'center'},
-          {name: 'hasTier', align: 'center'},
-          {name: 'castCD', align: 'right'},
-          {name: 'tags', formatter: formatTag, width: 100}
+            {name: 'icon', align: 'center'},
+            {name: 'name'},
+            {name: 'gameplayDesc', width: 200},
+            {name: 'blueprint', width: 200},
+            {name: 'cellCost', align: 'right'},
+            {name: 'moneyCost', align: 'right'},
+            {name: 'droppable', align: 'center'},
+            {name: 'hasLevels', align: 'center'},
+            {name: 'hasTier', align: 'center'},
+            {name: 'castCD', align: 'right'},
+            {name: 'tags', width: 100}
         ],
         caption: 'Item',
         viewrecords: true,
@@ -136,233 +94,378 @@
         width: 1280,
         rownumbers: true,
         rowNum: 9999,
-        pager: "#jqGridPagerItem"
-      });
-
-      $("#jqGridMob").jqGrid({
-        datatype: 'local',
-        data: jsonData.sheets[2].lines,
-        cmTemplate: {
-          width: 65
-        },
-        colModel: [
-          {name: 'icon', formatter: showIcon, align: 'center'},
-          {name: 'name', formatter: translateByMsgid},
-          {name: 'life', align: 'right'},
-          {name: 'canBeElite', align: 'center'},
-          {name: 'cells', formatter: formatCells, width: 120},
-          {name: 'blueprints', formatter: formatBlueprints, width: 200},
-          {name: 'level', formatter: findLevel, width: 200}
-        ],
-        caption: 'Monster',
-        viewrecords: true,
-        height: 600,
-        width: 1280,
-        rownumbers: true,
-        rowNum: 9999,
-        pager: "#jqGridPagerMob"
-      });
-
-      $("#jqGridLevel").jqGrid({
-        datatype: 'local',
-        data: jsonData.sheets[12].lines,
-        cmTemplate: {
-          width: 65
-        },
-        colModel: [
-          {label: 'name', name: 'id', formatter: translateByName, width: 80},
-          {name: 'mobTier', align: 'right'},
-          {name: 'lootLevel', align: 'right'},
-          {name: 'eliteWanderChance', formatter: formatChance, align: 'right', width: 120},
-          {name: 'eliteRoomChance', formatter: formatChance, align: 'right', width: 120},
-          {name: 'mobs', formatter: formatMobs}
-        ],
-        caption: 'Level',
-        viewrecords: true,
-        height: 600,
-        width: 1280,
-        rownumbers: true,
-        rowNum: 9999,
-        pager: "#jqGridPagerLevel"
-      });
+        pager: "#jqGridPagerTemp"
     });
 
-    function showIcon(cellValue, options, rowObject) {
-      var cardIconsImage = document.querySelector("#cardIcons");
-      var size = cellValue.size;
-      var displaySize = size * 2;
+    $(window).on("load", function () {
+        $.getJSON("resource/data_min.cdb", function (jsonData) {
+            var jsonItems = jsonData.sheets[1].lines;
+            var jsonMobs = jsonData.sheets[2].lines;
+            var jsonLevels = jsonData.sheets[12].lines;
+            var jsonAffixs = jsonData.sheets[10].lines;
+            var jsonTags = jsonData.sheets[11].lines;
+            var jsonChances = jsonData.sheets[42].lines;
 
-      var canvas = $('<canvas width="' + size + '" height="' + size + '"></canvas>')[0],
-        ctx = canvas.getContext('2d');
-      ctx.drawImage(cardIconsImage, cellValue.x * size, cellValue.y * size, size, size, 0, 0, size, size);
-      return '<img style="width:' + displaySize + 'px;" class="icon" src="' + canvas.toDataURL() + '"/>';
-    }
+            var MobFormatter = {
+                genTags: function (cellValue, options, rowObject) {
+                    return jsonTags[cellValue].id;
+                }
+            };
 
-    var langContent;
-    var lang = getParameterByName('lang') || "fr";
+            var AffixFormatter = {
+                forbiddenAffixes: function (cellValue, options, rowObject) {
+                    return cellValue.map(function (elem) {
+                        return elem.affix;
+                    }).join("<br/>");
+                },
+                forbiddenItem: function (cellValue, options, rowObject) {
+                    return cellValue.map(function (elem) {
+                        return translate(findItemName(elem.item));
+                    }).join("<br/>");
+                }
+            };
 
-    function translate(cellValue, options, rowObject, prefix, suffix) {
-      prefix = prefix || "";
-      suffix = suffix || "";
+            // 隐藏 Loading 界面
+            document.body.removeChild(document.querySelector("#gbox_jqGridTemp"));
 
-      if (!langContent) {
-        jQuery.ajax({
-          url: 'resource/lang/main.' + lang + '.po',
-          success: function (result) {
-            langContent = result;
-          },
-          async: false
+            // 去除无用数据和排序
+            jsonLevels = jsonLevels.filter(function (level) {
+                return level.name && !/debug/i.test(level.name) && level.biome !== 'SecretRooms'
+            }).sort(function (first, second) {
+                if (first.mobTier - second.mobTier === 0) {
+                    return first.lootLevel - second.lootLevel;
+                } else {
+                    return first.mobTier - second.mobTier;
+                }
+            });
+
+            // 道具表格
+            $("#jqGridItem").jqGrid({
+                datatype: 'local',
+                data: jsonItems,
+                cmTemplate: {
+                    width: 65
+                },
+                colModel: [
+                    {name: 'id', hidden: true},
+                    {name: 'icon', formatter: showIcon, align: 'center'},
+                    {name: 'name', formatter: translate},
+                    {name: 'gameplayDesc', formatter: translateDesc, width: 200},
+                    {name: 'blueprint', formatter: findBlueprint, width: 200},
+                    {name: 'cellCost', align: 'right'},
+                    {name: 'moneyCost', align: 'right'},
+                    {name: 'droppable', align: 'center'},
+                    {name: 'hasLevels', align: 'center'},
+                    {name: 'castCD', align: 'center'},
+                    {name: 'tags', formatter: formatTags, width: 100}
+                ],
+                caption: 'Item',
+                viewrecords: true,
+                height: 600,
+                width: 1200,
+                rownumbers: true,
+                rowNum: 9999,
+                pager: "#jqGridPagerItem"
+            });
+
+
+            // 怪物表格
+            $("#jqGridMob").jqGrid({
+                datatype: 'local',
+                data: jsonMobs,
+                cmTemplate: {
+                    width: 65
+                },
+                colModel: [
+                    {name: 'icon', formatter: showIcon, align: 'center', hidden: true},
+                    {name: 'name', formatter: translate},
+                    {name: 'life', align: 'right'},
+                    {name: 'canBeElite', align: 'center'},
+                    {name: 'cells', formatter: formatCells, width: 120, hidden: true},
+                    {name: 'blueprints', formatter: formatBlueprints, width: 200},
+                    {name: 'genTags', formatter: MobFormatter.genTags, hidden: true},
+                    {name: 'level', formatter: findLevel, width: 200}
+                ],
+                caption: 'Monster',
+                viewrecords: true,
+                height: 600,
+                width: 1200,
+                rownumbers: true,
+                rowNum: 9999,
+                pager: "#jqGridPagerMob"
+            });
+
+            // 关卡表格
+            $("#jqGridLevel").jqGrid({
+                datatype: 'local',
+                data: jsonLevels,
+                cmTemplate: {
+                    width: 65
+                },
+                colModel: [
+                    {name: 'name', formatter: formatLevelName, width: 80},
+                    {name: 'mobTier', align: 'center'},
+                    {name: 'lootLevel', align: 'center'},
+                    {name: 'eliteWanderChance', formatter: formatChance, align: 'center'},
+                    {name: 'eliteRoomChance', formatter: formatChance, align: 'center'},
+                    {name: 'mobs', formatter: formatMobs}
+                ],
+                caption: 'Level',
+                viewrecords: true,
+                height: 600,
+                width: 1200,
+                rownumbers: true,
+                rowNum: 9999,
+                pager: "#jqGridPagerLevel"
+            });
+
+
+            // 词缀表格
+            $("#jqGridAffix").jqGrid({
+                datatype: 'local',
+                data: jsonAffixs,
+                cmTemplate: {
+                    width: 65
+                },
+                colModel: [
+                    {name: 'id'},
+                    {name: 'desc', formatter: formatAffixDesc, width: 200},
+                    {name: 'chance', formatter: formatAffixChance, hidden: false},
+                    {name: 'itemRestriction', hidden: false},
+                    {name: 'requiredTags', formatter: formatTags},
+                    {name: 'forbiddenTags', formatter: formatTags},
+                    {name: 'forbiddenAffixes', formatter: AffixFormatter.forbiddenAffixes},
+                    {name: 'forbiddenItem', formatter: AffixFormatter.forbiddenItem}
+                ],
+                caption: 'Affix',
+                viewrecords: true,
+                height: 600,
+                width: 1200,
+                rownumbers: true,
+                rowNum: 9999,
+                pager: "#jqGridPagerAffix"
+            });
+
+            function showIcon(cellValue, options, rowObject) {
+                var cardIconsImage = document.querySelector("#cardIcons");
+                var size = cellValue.size;
+                var displaySize = size * 2;
+
+                var canvas = $('<canvas width="' + size + '" height="' + size + '"></canvas>')[0],
+                    ctx = canvas.getContext('2d');
+                ctx.drawImage(cardIconsImage, cellValue.x * size, cellValue.y * size, size, size, 0, 0, size, size);
+                return '<img style="width:' + displaySize + 'px;" class="icon" src="' + canvas.toDataURL() + '"/>';
+            }
+
+            var langContentEng;
+            var langContentZh;
+
+            // 读取英文中文文本
+            function translate(text) {
+                function loadLang(lang) {
+                    var result = {};
+                    jQuery.ajax({
+                        url: 'resource/lang/main.' + lang + '.po',
+                        success: function (resultText) {
+                            var langs = resultText.split(/\n\n/).slice(1);
+                            langs.forEach(function (lang) {
+                                var key;
+                                var keyMatchSingleLine = lang.match(/^msgid "(.+)"$/m);
+                                var keyMatchMultiLine = lang.match(/^msgid ""\n([\s\S]+)\nmsgstr/);
+                                if (keyMatchSingleLine) {
+                                    key = keyMatchSingleLine[1];
+                                } else if (keyMatchMultiLine) {
+                                    key = keyMatchMultiLine[1].replace(/^"|"$|\n/mg, "");
+                                }
+
+                                var value;
+                                var valueMatchSingleLine = lang.match(/^msgstr "(.+)"$/m);
+                                var valueMatchMultiLine = lang.match(/msgstr ""\n([\s\S]+)/);
+                                if (valueMatchSingleLine) {
+                                    value = valueMatchSingleLine[1];
+                                } else if (valueMatchMultiLine) {
+                                    value = valueMatchMultiLine[1].replace(/^"|"$|\n/mg, "");
+                                }
+
+                                if (key && value) {
+                                    key.replace(/\\"/g, '"');
+                                    value.replace(/\\"/g, '"');
+                                    result[key] = value;
+                                }
+                            });
+                        },
+                        async: false
+                    });
+                    return result;
+                }
+
+                if (!text) {
+                    return "";
+                }
+
+                if (!langContentEng) {
+                    langContentEng = loadLang('en');
+                }
+
+                if (!langContentZh && lang === 'zh') {
+                    langContentZh = loadLang('zh');
+                }
+
+                if (lang === 'en') {
+                    return langContentEng[text] || text;
+                } else if (lang === 'zh') {
+                    var translatedEn = langContentEng[text];
+                    var translatedZh = langContentZh[text];
+
+                    if (translatedZh) {
+                        return translatedZh;
+                    } else if (translatedEn) {
+                        return langContentZh[translatedEn] || translatedEn;
+                    }
+
+                    return text;
+                }
+            }
+
+            function replaceProps(translateStr, rowObject) {
+                translateStr = translateStr.replace(/\*([^*]+)\*/g, '<b>$1</b>');
+
+                var matchResult = translateStr.match(/::.+?::/g);
+                if (!matchResult) {
+                    return translateStr;
+                }
+
+                matchResult.forEach(function (prop) {
+                    var propName = prop.replace(/::[^a-z]?(.+)::/g, '$1');
+                    if (propName === 'prct' && rowObject.props[propName] > 0) {
+                        rowObject.props[propName] *= 100;
+                    }
+                    translateStr = translateStr.replace(prop, rowObject.props[propName] || '???');
+                });
+
+                return translateStr;
+            }
+
+            function translateDesc(cellValue, options, rowObject) {
+                return replaceProps(translate(cellValue), rowObject) + translate(rowObject.ambiantDesc);
+            }
+
+            function formatTags(cellValue) {
+                return cellValue.map(function (elem) {
+                    return elem.tag;
+                }).join("<br/>");
+            }
+
+            function findItemName(itemId) {
+                var items = jsonItems.filter(function (item) {
+                    return item.id === itemId;
+                });
+
+                if (items && items.length > 0) {
+                    return items[0].name;
+                } else {
+                    return itemId;
+                }
+            }
+
+            function findMobName(mobId) {
+                var mobs = jsonMobs.filter(function (mob) {
+                    return mob.id === mobId;
+                });
+
+                if (mobs && mobs.length > 0) {
+                    return mobs[0].name;
+                } else {
+                    return mobId;
+                }
+            }
+
+            function formatBlueprints(cellValue) {
+                return cellValue.map(function (blueprint) {
+                    return translate(findItemName(blueprint.item)) + ': ' + formatChance(findBlueprintChance(blueprint.rarity));
+                }).join("<br/>");
+            }
+
+            function formatCells(cellValue, options, rowObject) {
+                if (!cellValue || !rowObject.cellChance) {
+                    return "";
+                }
+                return cellValue + " cell " + rowObject.cellChance * 100 + "% chance";
+            }
+
+            function formatMobs(cellValue, options, rowObject) {
+                return cellValue.map(function (elem) {
+                    return translate(findMobName(elem.mob));
+                }).join("<br/>");
+            }
+
+            function findBlueprint(cellValue, options, rowObject) {
+                var result = jsonMobs.filter(function (monster) {
+                    return monster.blueprints.some(function (blueprint) {
+                        if (blueprint.item === rowObject.id) {
+                            monster.blueprintChance = formatChance(findBlueprintChance(blueprint.rarity));
+                        }
+                        return blueprint.item === rowObject.id;
+                    })
+                }).map(function (monster) {
+                    return translate(monster.name) + ': ' + monster.blueprintChance;
+                });
+
+                return result.join("<br/>");
+            }
+
+            // 根据单词查询具体概率
+            function findBlueprintChance(rarity) {
+                var result = jsonChances.filter(function (blueprintDrop) {
+                    return blueprintDrop.id === rarity;
+                });
+                if (result.length > 0) {
+                    return result[0].chance;
+                }
+            }
+
+            function formatLevelName(cellValue, options, rowObject) {
+                return translate(cellValue);
+            }
+
+            function formatChance(chance) {
+                return (chance * 100).toFixed(2) * 100 / 100 + "%";
+            }
+
+            function formatAffixChance(chance) {
+                return chance + "%";
+            }
+
+            function formatAffixDesc(cellValue, options, rowObject) {
+                return replaceProps(translate(cellValue), rowObject);
+            }
+
+            function findLevel(cellValue, options, rowObject) {
+                var result = jsonLevels.filter(function (level) {
+                    return level.mobs.some(function (mob) {
+                        return mob.mob === rowObject.id;
+                    })
+                }).sort(function (first, second) {
+                    return first.lootLevel - second.lootLevel;
+                })
+                    .map(function (level) {
+                        return translate(level.name);
+                    });
+
+                return result.join("<br/>");
+            }
         });
-      }
-
-      if (!cellValue) {
-        return "";
-      }
-
-      if (lang === "fr") {
-        return replaceProps(cellValue, rowObject);
-      }
-
-      var fromIndex = langContent.indexOf(prefix + cellValue.substr(0, 60) + suffix);
-      if (fromIndex < 0) {
-        return cellValue;
-      }
-
-      var localStrStartFlag = 'msgstr "';
-      var localStrIndexStart = langContent.indexOf(localStrStartFlag, fromIndex);
-      if (localStrIndexStart < 0) {
-        return cellValue;
-      }
-
-      localStrIndexStart += localStrStartFlag.length;
-
-      var localStrLength = langContent.indexOf('"', localStrIndexStart) - localStrIndexStart;
-      var translateStr = langContent.substr(localStrIndexStart, localStrLength);
-
-      return replaceProps(translateStr, rowObject);
-    }
-
-    function replaceProps(translateStr, rowObject) {
-      translateStr = translateStr.replace(/\*([^*]+)\*/g, '<b>$1</b>');
-
-      var matchResult = translateStr.match(/::.+?::/g);
-      if (!matchResult) {
-        return translateStr;
-      }
-
-      matchResult.forEach(function (prop) {
-        var propName = prop.replace(/::[^a-z]?(.+)::/g, '$1');
-        if (propName === 'prct' && rowObject.props[propName] > 0) {
-          rowObject.props[propName] *= 100;
-        }
-        translateStr = translateStr.replace(prop, rowObject.props[propName] || '???');
-      });
-
-      return translateStr;
-    }
-
-    function translateDesc(cellValue, options, rowObject) {
-      return translate(cellValue, options, rowObject, '', '') + translate(rowObject.ambiantDesc, options, rowObject, '', '');
-    }
-
-    function translateByMsgid(cellValue, options, rowObject) {
-      return translate(cellValue, options, rowObject, 'msgid "', '"');
-    }
-
-    function translateByName(cellValue, options, rowObject) {
-      return translate(cellValue, options, rowObject, '#. ', ' (name)');
-    }
-
-    function formatTag(cellValue) {
-      return cellValue.map(function (elem) {
-        return elem.tag;
-      }).join("<br/>");
-    }
-
-    function formatChance(cellValue) {
-      return cellValue * 100 + "%";
-    }
-
-    function formatBlueprints(cellValue) {
-      return cellValue.map(function (blueprint) {
-        return translateByName(blueprint.item) + ': ' + formatChance(findBlueprintChance(blueprint.rarity));
-      }).join("<br/>");
-    }
-
-    function formatCells(cellValue, options, rowObject) {
-      if (!cellValue || !rowObject.cellChance) {
-        return "";
-      }
-      return cellValue + " cell " + rowObject.cellChance * 100 + "% chance";
-    }
-
-    function formatMobs(cellValue, options, rowObject) {
-      return cellValue.map(function (elem) {
-        return translateByName(elem.mob);
-      }).join("<br/>");
-    }
-
-    function findBlueprint(cellValue, options, rowObject) {
-      var monsters = jsonData.sheets[2].lines;
-      var result = monsters.filter(function (monster) {
-        return monster.blueprints.some(function (blueprint) {
-          if (blueprint.item === rowObject.id) {
-            monster.blueprintChance = formatChance(findBlueprintChance(blueprint.rarity));
-          }
-          return blueprint.item === rowObject.id;
-        })
-      }).map(function (monster) {
-        return translateByMsgid(monster.name) + ': ' + monster.blueprintChance;
-      });
-
-      return result.join("<br/>");
-    }
-
-    // 根据单词查询具体概率
-    function findBlueprintChance(rarity) {
-      var chances = jsonData.sheets[42].lines;
-      var result = chances.filter(function (blueprintDrop) {
-        return blueprintDrop.id === rarity;
-      });
-      if (result.length > 0) {
-        return result[0].chance;
-      }
-    }
-
-    function formatChance(chance) {
-      return (chance * 100).toFixed(2) * 100 / 100 + "%";
-    }
-
-    function findLevel(cellValue, options, rowObject) {
-      var levels = jsonData.sheets[12].lines;
-      var result = levels.filter(function (level) {
-        return level.mobs.some(function (mob) {
-          return mob.mob === rowObject.id;
-        })
-      }).sort(function (first, second) {
-        return first.lootLevel - second.lootLevel;
-      })
-        .map(function (level) {
-          return translateByName(level.id);
-        });
-
-      return result.join("<br/>");
-    }
-
-    function unique(value, index, self) {
-      return self.indexOf(value) === index;
-    }
+    });
 
     function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
-  });
 </script>
 </body>
 </html>
