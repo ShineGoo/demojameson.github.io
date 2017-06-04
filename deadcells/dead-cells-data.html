@@ -327,7 +327,8 @@
                 }
             }
 
-            function replaceProps(translateStr, rowObject) {
+            function replaceProps(translateStr, rowObject, isFloat) {
+                isFloat = isFloat || true;
                 translateStr = translateStr.replace(/\*([^*]+)\*/g, '<b>$1</b>');
 
                 var matchResult = translateStr.match(/::.+?::/g);
@@ -338,7 +339,9 @@
                 matchResult.forEach(function (prop) {
                     var propName = prop.replace(/::[^a-z]?(.+)::/g, '$1');
                     if (propName === 'prct' && rowObject.props[propName] > 0) {
-                        rowObject.props[propName] *= 100;
+                        if (isFloat) {
+                            rowObject.props[propName] *= 100;
+                        }
                     }
                     translateStr = translateStr.replace(prop, rowObject.props[propName] || '???');
                 });
@@ -437,7 +440,7 @@
             }
 
             function formatAffixDesc(cellValue, options, rowObject) {
-                return replaceProps(translate(cellValue), rowObject);
+                return replaceProps(translate(cellValue), rowObject, true);
             }
 
             function findLevel(cellValue, options, rowObject) {
