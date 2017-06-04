@@ -122,6 +122,35 @@
                     return cellValue.map(function (elem) {
                         return translate(findItemName(elem.item));
                     }).join("<br/>");
+                },
+                itemRestriction: function (cellValue, options, rowObject) {
+                    if (cellValue === undefined) {
+                        cellValue = 'undefined';
+                    }
+                    var restrictionType = {
+                        0: {
+                            'en': 'weapon',
+                            'zh': '武器'
+                        },
+                        1: {
+                            'en': 'skill',
+                            'zh': '技能'
+                        },
+                        2: {
+                            'en': 'weapon<br/>skill',
+                            'zh': '武器<br/>技能'
+                        },
+                        3: {
+                            'en': 'amulet',
+                            'zh': '护符'
+                        },
+                        'undefined': {
+                            'en': 'all items',
+                            'zh': '任意道具'
+                        }
+                    };
+
+                    return restrictionType[cellValue][lang];
                 }
             };
 
@@ -167,7 +196,6 @@
                 rowNum: 9999,
                 pager: "#jqGridPagerItem"
             });
-
 
             // 怪物表格
             $("#jqGridMob").jqGrid({
@@ -219,7 +247,6 @@
                 pager: "#jqGridPagerLevel"
             });
 
-
             // 词缀表格
             $("#jqGridAffix").jqGrid({
                 datatype: 'local',
@@ -231,7 +258,7 @@
                     {name: 'id'},
                     {name: 'desc', formatter: formatAffixDesc, width: 200},
                     {name: 'chance', formatter: formatAffixChance, hidden: false},
-                    {name: 'itemRestriction', hidden: false},
+                    {name: 'itemRestriction', formatter: AffixFormatter.itemRestriction, hidden: false},
                     {name: 'requiredTags', formatter: formatTags},
                     {name: 'forbiddenTags', formatter: formatTags},
                     {name: 'forbiddenAffixes', formatter: AffixFormatter.forbiddenAffixes},
@@ -327,8 +354,7 @@
                 }
             }
 
-            function replaceProps(translateStr, rowObject, isFloat) {
-                isFloat = isFloat || true;
+            function replaceProps(translateStr, rowObject) {
                 translateStr = translateStr.replace(/\*([^*]+)\*/g, '<b>$1</b>');
 
                 var matchResult = translateStr.match(/::.+?::/g);
@@ -338,12 +364,14 @@
 
                 matchResult.forEach(function (prop) {
                     var propName = prop.replace(/::[^a-z]?(.+)::/g, '$1');
+                    var percent
                     if (propName === 'prct' && rowObject.props[propName] > 0) {
-                        if (isFloat) {
-                            rowObject.props[propName] *= 100;
-                        }
+                        percent = rowObject.props[propName] * 100;
+                        translateStr = translateStr.replace(prop, percent || '???');
+
+                    } else {
+                        translateStr = translateStr.replace(prop, rowObject.props[propName] || '???');
                     }
-                    translateStr = translateStr.replace(prop, rowObject.props[propName] || '???');
                 });
 
                 return translateStr;
@@ -440,7 +468,7 @@
             }
 
             function formatAffixDesc(cellValue, options, rowObject) {
-                return replaceProps(translate(cellValue), rowObject, false);
+                return replaceProps(translate(cellValue), rowObject);
             }
 
             function findLevel(cellValue, options, rowObject) {
