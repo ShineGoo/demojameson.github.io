@@ -14,10 +14,12 @@
   <script type="text/ecmascript" src="js/grid.locale-en.js"></script>
 
   <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
-  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.min.css"/>
 
   <!-- The link to the CSS that the grid needs -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css"/>
+
+  <link rel="stylesheet" type="text/css" href="css/application-4d0d3f2fbf.css"/>
 
   <meta charset="utf-8"/>
   <title>Dead Cells Data</title>
@@ -54,22 +56,6 @@
 
   .zero-height {
     height: 0;
-  }
-
-  #search_cells {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-    width: 150px;
-    height: 30px;
-    font-size: medium;
-    border-radius: 3px;
-  }
-
-  #table_layout {
-    position: relative;
-    z-index: 1;
   }
 
   .ui-jqgrid-title {
@@ -116,24 +102,67 @@
   body.loading .modal {
     display: block;
   }
+
+  .md-container {
+    background-color: #fcfcfc;
+  }
 </style>
 <body>
-<h1>Dead Cells Cheat Sheet</h1>
-<span>version: 2017-06-02 (e2c7b364)</span>
-<div id="table_layout">
-  <table id="jqGridItem"></table>
-  <div id="jqGridPagerItem"></div>
-  <br/>
-  <table id="jqGridMob"></table>
-  <div id="jqGridPagerMob"></div>
-  <br/>
-  <table id="jqGridLevel"></table>
-  <div id="jqGridPagerLevel"></div>
-  <br/>
-  <table id="jqGridAffix"></table>
-  <div id="jqGridPagerAffix"></div>
+<header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+                Dead Cells Cheat Sheet
+                <span class="md-header-nav__parent">version: 2017-06-02 (e2c7b364)</span>
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
 
-  <input id="search_cells" type="search" placeholder="search"/>
+        <label class="md-icon md-icon--search md-header-nav__button" for="search_cells"></label>
+
+        <div class="md-search">
+          <label class="md-search__overlay" for="search_cells"></label>
+          <div class="md-search__inner">
+            <form class="md-search__form" name="search">
+              <input id="search_cells" type="search" class="md-search__input" name="query" required=""
+                     placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off"
+                     spellcheck="false">
+              <label class="md-icon md-search__icon" for="search_cells"></label>
+              <button type="reset" class="md-icon md-search__icon">close</button>
+            </form>
+            <div class="md-search__output">
+              <div class="md-search__scrollwrap">
+                <div class="md-search-result">
+                  <div class="md-search-result__meta">
+                    Type to start searching
+                  </div>
+                  <ol class="md-search-result__list"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="md-container">
+  <main class="md-main">
+    <div class="md-main__inner md-grid">
+      <table id="jqGridItem"></table>
+      <div id="jqGridPagerItem"></div>
+      <br/>
+      <table id="jqGridMob"></table>
+      <div id="jqGridPagerMob"></div>
+      <br/>
+      <table id="jqGridLevel"></table>
+      <div id="jqGridPagerLevel"></div>
+      <br/>
+      <table id="jqGridAffix"></table>
+      <div id="jqGridPagerAffix"></div>
+    </div>
+  </main>
 </div>
 <img id="cardIcons" src="resource/cardIcons.png"/>
 <div class="modal"><!-- Loading 界面 --></div>
@@ -258,9 +287,9 @@
 
                 // 重复点击链接取消搜索
                 if (searchString === "") {
-                 setTimeout(function(){
-                     location.hash = "";
-                 }, 500)
+                    setTimeout(function () {
+                        location.hash = "";
+                    }, 500)
                 }
 
                 if (searchString === lastSearchString) {
