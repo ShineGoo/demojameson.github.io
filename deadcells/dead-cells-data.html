@@ -65,7 +65,7 @@
 
   br {
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
     content: " ";
     line-height: 22px;
   }
@@ -105,6 +105,10 @@
 
   .md-container {
     background-color: #fcfcfc;
+  }
+
+  div[id^='gbox_jqGrid'] {
+    margin-bottom: 2rem !important;
   }
 </style>
 <body>
@@ -151,14 +155,11 @@
   <main class="md-main">
     <div class="md-main__inner md-grid">
       <table id="jqGridItem"></table>
-      <div id="jqGridPagerItem"></div>
-      <br/>
+      <div id="jqGridPagerItem" class="pager"></div>
       <table id="jqGridMob"></table>
       <div id="jqGridPagerMob"></div>
-      <br/>
       <table id="jqGridLevel"></table>
       <div id="jqGridPagerLevel"></div>
-      <br/>
       <table id="jqGridAffix"></table>
       <div id="jqGridPagerAffix"></div>
     </div>
