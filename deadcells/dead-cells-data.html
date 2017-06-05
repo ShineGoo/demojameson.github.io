@@ -48,6 +48,7 @@
 
     .ui-jqgrid-bdiv {
         overflow-y: scroll !important;
+        overflow-x: hidden !important;
         max-height: 600px !important;
     }
 
@@ -69,6 +70,11 @@
     #table_layout {
         position: relative;
         z-index: 1;
+    }
+
+    .ui-jqgrid-title {
+        font-size: large;
+        padding: 10px;
     }
 
     br {
@@ -271,11 +277,13 @@
                     var rowIds = item.rowIds;
                     // You can't search unless grid values have been loaded
                     if (gridData && rowIds) {
+                        var showTable = false;
                         $.each(gridData, function (id, row) {
                             var show = false;
                             $.each(row, function (id, cell) {
                                 if (cell.toLowerCase().indexOf(searchString) >= 0) {
                                     show = true;
+                                    showTable = true;
                                     return false;
                                 }
                             });
@@ -289,6 +297,8 @@
                                 }
                             });
                         });
+
+                        $('#gbox_' + gridId).toggle(showTable);
                     }
                 });
             }));
