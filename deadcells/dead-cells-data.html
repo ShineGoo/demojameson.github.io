@@ -146,6 +146,9 @@
     var lang = getParameterByName('lang') || "en";
 
     window.searchText = function (text) {
+        if (text) {
+            text = decodeURIComponent(text);
+        }
         var $searchCells = $('#search_cells');
         if ($searchCells.val() === text) {
             $searchCells.val('').keyup();
@@ -168,7 +171,8 @@
                     return "";
                 }
 
-                return '<a onclick="searchText(\'' + text.replace(/(['"])/g, "\\$1") + '\')" href=#' + text + '>' + text + '</a>';
+                var encodeText = encodeURIComponent(text.replace(/(['"])/g, "\\$1"));
+                return '<a onclick="searchText(\'' + encodeText + '\')" href="#' + encodeText + '">' + text + '</a>';
             }
 
             function linkifyTranslation(cellValue) {
@@ -251,6 +255,14 @@
             $searchCells.on('keyup', function () {
                 lastSearchString = searchString;
                 searchString = $(this).val().toLowerCase();
+
+                // 重复点击链接取消搜索
+                if (searchString === "") {
+                 setTimeout(function(){
+                     location.hash = "";
+                 }, 500)
+                }
+
                 if (searchString === lastSearchString) {
                     return;
                 }
