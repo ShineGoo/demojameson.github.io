@@ -2,34 +2,34 @@
 
 <html lang="en">
 <head>
-    <!-- The jQuery library is a prerequisite for all jqSuite products -->
-    <script type="text/ecmascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/ecmascript" src="js/jquery.mark.min.js"></script>
+  <!-- The jQuery library is a prerequisite for all jqSuite products -->
+  <script type="text/ecmascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/ecmascript" src="js/jquery.mark.min.js"></script>
 
-    <!-- This is the Javascript file of jqGrid -->
-    <script type="text/ecmascript" src="js/jquery.jqGrid.min.js"></script>
+  <!-- This is the Javascript file of jqGrid -->
+  <script type="text/ecmascript" src="js/jquery.jqGrid.min.js"></script>
 
-    <!-- This is the localization file of the grid controlling messages, labels, etc. -->
-    <!-- We support more than 40 localizations -->
-    <script type="text/ecmascript" src="js/grid.locale-en.js"></script>
+  <!-- This is the localization file of the grid controlling messages, labels, etc. -->
+  <!-- We support more than 40 localizations -->
+  <script type="text/ecmascript" src="js/grid.locale-en.js"></script>
 
-    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css"/>
+  <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css"/>
 
-    <!-- The link to the CSS that the grid needs -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css"/>
+  <!-- The link to the CSS that the grid needs -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css"/>
 
-    <meta charset="utf-8"/>
-    <title>Dead Cells Data</title>
+  <meta charset="utf-8"/>
+  <title>Dead Cells Data</title>
 
 </head>
 <style type="text/css">
-    /*内容过长自动换行*/
-    .ui-jqgrid tr.jqgrow td {
-        white-space: normal !important;
-    }
+  /*内容过长自动换行*/
+  .ui-jqgrid tr.jqgrow td {
+    white-space: normal !important;
+  }
 
-    /*@formatter:off*/
+  /*@formatter:off*/
     /*适合像素图片的设置*/
     .icon {
         image-rendering: optimizeSpeed; /* Older versions of FF          */
@@ -42,76 +42,106 @@
 
     /*@formatter:on*/
 
-    #cardIcons {
-        display: none;
-    }
+  #cardIcons {
+    display: none;
+  }
 
-    .ui-jqgrid-bdiv {
-        overflow-y: scroll !important;
-        overflow-x: hidden !important;
-        max-height: 600px !important;
-    }
+  .ui-jqgrid-bdiv {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    max-height: 600px !important;
+  }
 
-    .zero-height {
-        height: 0;
-    }
+  .zero-height {
+    height: 0;
+  }
 
-    #search_cells {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        z-index: 100;
-        width: 150px;
-        height: 30px;
-        font-size: medium;
-        border-radius: 3px;
-    }
+  #search_cells {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    width: 150px;
+    height: 30px;
+    font-size: medium;
+    border-radius: 3px;
+  }
 
-    #table_layout {
-        position: relative;
-        z-index: 1;
-    }
+  #table_layout {
+    position: relative;
+    z-index: 1;
+  }
 
-    .ui-jqgrid-title {
-        font-size: large;
-        padding: 10px;
-    }
+  .ui-jqgrid-title {
+    font-size: large;
+    padding: 10px;
+  }
 
-    br {
-        display: block;
-        margin: 10px 0;
-        content: " ";
-        line-height: 22px;
-    }
+  br {
+    display: block;
+    margin: 10px 0;
+    content: " ";
+    line-height: 22px;
+  }
 
-    mark {
-        background: orange;
-        color: black;
-    }
+  mark {
+    background: orange;
+    color: black;
+  }
+
+  /* Start by setting display:none to make this hidden.
+ Then we position it in relation to the viewport window
+ with position:fixed. Width, height, top and left speak
+ for themselves. Background we set to 80% white with
+ our animation centered, and no-repeating */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+  }
+
+  /* When the body has the loading class, we turn
+     the scrollbar off with overflow:hidden */
+  body.loading {
+    overflow: hidden;
+  }
+
+  /* Anytime the body has the loading class, our
+     modal element will be visible */
+  body.loading .modal {
+    display: block;
+  }
 </style>
 <body>
 <h1>Dead Cells Cheat Sheet</h1>
 <span>version: 2017-06-02 (e2c7b364)</span>
 <div id="table_layout">
-    <table id="jqGridTemp"></table>
-    <div id="jqGridPagerTemp"></div>
-    <br/>
-    <table id="jqGridItem"></table>
-    <div id="jqGridPagerItem"></div>
-    <br/>
-    <table id="jqGridMob"></table>
-    <div id="jqGridPagerMob"></div>
-    <br/>
-    <table id="jqGridLevel"></table>
-    <div id="jqGridPagerLevel"></div>
-    <br/>
-    <table id="jqGridAffix"></table>
-    <div id="jqGridPagerAffix"></div>
+  <table id="jqGridItem"></table>
+  <div id="jqGridPagerItem"></div>
+  <br/>
+  <table id="jqGridMob"></table>
+  <div id="jqGridPagerMob"></div>
+  <br/>
+  <table id="jqGridLevel"></table>
+  <div id="jqGridPagerLevel"></div>
+  <br/>
+  <table id="jqGridAffix"></table>
+  <div id="jqGridPagerAffix"></div>
 
-    <input id="search_cells" type="search" placeholder="search"/>
+  <input id="search_cells" type="search" placeholder="search"/>
 </div>
 <img id="cardIcons" src="resource/cardIcons.png"/>
+<div class="modal"><!-- Loading 界面 --></div>
 <script type="text/ecmascript">
+    // 显示 Loading 界面
+    var $body = $("body");
+    $body.addClass('loading');
+
     // 语言参数，通过 url 传入，默认英文
     var lang = getParameterByName('lang') || "en";
 
@@ -123,36 +153,6 @@
             $searchCells.val(text).keyup();
         }
     };
-
-    // 充当 Loading 界面
-    $("#jqGridTemp").jqGrid({
-        datatype: 'json',
-        url: 'resource/data_min.cdb',
-        jsonReader: {root: "sheets[1].lines"},
-        cmTemplate: {
-            width: 65
-        },
-        colModel: [
-            {name: 'icon', align: 'center'},
-            {name: 'name'},
-            {name: 'gameplayDesc', width: 200},
-            {name: 'blueprint', width: 200},
-            {name: 'cellCost', align: 'right'},
-            {name: 'moneyCost', align: 'right'},
-            {name: 'droppable', align: 'center'},
-            {name: 'hasLevels', align: 'center'},
-            {name: 'hasTier', align: 'center'},
-            {name: 'castCD', align: 'right'},
-            {name: 'tags', width: 100}
-        ],
-        caption: 'Item',
-        viewrecords: true,
-        height: 600,
-        width: 1280,
-        rownumbers: true,
-        rowNum: 9999,
-        pager: "#jqGridPagerTemp"
-    });
 
     $(window).on("load", function () {
         $.getJSON("resource/data_min.cdb", function (jsonData) {
@@ -227,9 +227,6 @@
                 }
             };
 
-            // 隐藏 Loading 界面
-            document.querySelector('#table_layout').removeChild(document.querySelector("#gbox_jqGridTemp"));
-
             // 去除无用数据和排序
             jsonLevels = jsonLevels.filter(function (level) {
                 return level.name && !/debug/i.test(level.name) && level.biome !== 'SecretRooms'
@@ -241,27 +238,17 @@
                 }
             });
 
-            function throttle(f, delay) {
-                var timer = null;
-                return function () {
-                    var context = this, args = arguments;
-                    clearTimeout(timer);
-                    timer = window.setTimeout(function () {
-                            f.apply(context, args);
-                        },
-                        delay || 100);
-                };
-            }
-
             // 搜索
             var searchObjs = [];
             var searchString = '';
             var lastSearchString = '';
             var $searchCells = $('#search_cells');
-            $searchCells.on('change', function () {
-                $searchCells.keyup();
+            $searchCells.on('search', function () {
+                if ($searchCells.val() === "") {
+                    $searchCells.keyup();
+                }
             });
-            $searchCells.on('keyup', throttle(function () {
+            $searchCells.on('keyup', function () {
                 lastSearchString = searchString;
                 searchString = $(this).val().toLowerCase();
                 if (searchString === lastSearchString) {
@@ -305,7 +292,7 @@
                         $('#gbox_' + gridId).toggle(showTable);
                     }
                 });
-            }));
+            });
 
             function whenComplete() {
                 var gridId = this.id;
@@ -323,6 +310,7 @@
 
                 if (searchObjs.length === $('table[id]').length) {
                     searchHash();
+                    $body.removeClass('loading');
                 }
             }
 
