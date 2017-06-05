@@ -2,70 +2,121 @@
 
 <html lang="en">
 <head>
-  <!-- The jQuery library is a prerequisite for all jqSuite products -->
-  <script type="text/ecmascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    <script type="text/ecmascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/ecmascript" src="js/jquery.mark.min.js"></script>
 
-  <!-- This is the Javascript file of jqGrid -->
-  <script type="text/ecmascript" src="js/jquery.jqGrid.js"></script>
+    <!-- This is the Javascript file of jqGrid -->
+    <script type="text/ecmascript" src="js/jquery.jqGrid.min.js"></script>
 
-  <!-- This is the localization file of the grid controlling messages, labels, etc. -->
-  <!-- We support more than 40 localizations -->
-  <script type="text/ecmascript" src="js/grid.locale-en.js"></script>
+    <!-- This is the localization file of the grid controlling messages, labels, etc. -->
+    <!-- We support more than 40 localizations -->
+    <script type="text/ecmascript" src="js/grid.locale-en.js"></script>
 
-  <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
-  <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css"/>
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css"/>
 
-  <!-- The link to the CSS that the grid needs -->
-  <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css"/>
+    <!-- The link to the CSS that the grid needs -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css"/>
 
-  <meta charset="utf-8"/>
-  <title>Dead Cells Data</title>
+    <meta charset="utf-8"/>
+    <title>Dead Cells Data</title>
 
-  <style type="text/css">
+</head>
+<style type="text/css">
     /*内容过长自动换行*/
     .ui-jqgrid tr.jqgrow td {
-      white-space: normal !important;
+        white-space: normal !important;
     }
 
     /*@formatter:off*/
-        /*适合像素图片的设置*/
-        .icon {
-            image-rendering: optimizeSpeed; /* Older versions of FF          */
-            image-rendering: -moz-crisp-edges; /* FF 6.0+                       */
-            image-rendering: -webkit-optimize-contrast; /* Safari                        */
-            image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
-            image-rendering: pixelated; /* Awesome future-browsers       */
-            -ms-interpolation-mode: nearest-neighbor; /* IE                            */
-        }
+    /*适合像素图片的设置*/
+    .icon {
+        image-rendering: optimizeSpeed; /* Older versions of FF          */
+        image-rendering: -moz-crisp-edges; /* FF 6.0+                       */
+        image-rendering: -webkit-optimize-contrast; /* Safari                        */
+        image-rendering: -o-crisp-edges; /* OS X & Windows Opera (12.02+) */
+        image-rendering: pixelated; /* Awesome future-browsers       */
+        -ms-interpolation-mode: nearest-neighbor; /* IE                            */
+    }
 
-        /*@formatter:on*/
+    /*@formatter:on*/
 
     #cardIcons {
-      display: none;
+        display: none;
     }
-  </style>
-</head>
+
+    .ui-jqgrid-bdiv {
+        overflow-y: scroll !important;
+        max-height: 600px !important;
+    }
+
+    .zero-height {
+        height: 0;
+    }
+
+    #search_cells {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+        width: 150px;
+        height: 30px;
+        font-size: medium;
+        border-radius: 3px;
+    }
+
+    #table_layout {
+        position: relative;
+        z-index: 1;
+    }
+
+    br {
+        display: block;
+        margin: 10px 0;
+        content: " ";
+        line-height: 22px;
+    }
+
+    mark {
+        background: orange;
+        color: black;
+    }
+</style>
 <body>
 <h1>Dead Cells Cheat Sheet</h1>
 <span>version: 2017-06-02 (e2c7b364)</span>
-<table id="jqGridTemp"></table>
-<div id="jqGridPagerTemp"></div>
-<br/>
-<table id="jqGridItem"></table>
-<div id="jqGridPagerItem"></div>
-<br/>
-<table id="jqGridMob"></table>
-<div id="jqGridPagerMob"></div>
-<br/>
-<table id="jqGridLevel"></table>
-<div id="jqGridPagerLevel"></div>
-<br/>
-<table id="jqGridAffix"></table>
-<div id="jqGridPagerAffix"></div>
+<div id="table_layout">
+    <table id="jqGridTemp"></table>
+    <div id="jqGridPagerTemp"></div>
+    <br/>
+    <table id="jqGridItem"></table>
+    <div id="jqGridPagerItem"></div>
+    <br/>
+    <table id="jqGridMob"></table>
+    <div id="jqGridPagerMob"></div>
+    <br/>
+    <table id="jqGridLevel"></table>
+    <div id="jqGridPagerLevel"></div>
+    <br/>
+    <table id="jqGridAffix"></table>
+    <div id="jqGridPagerAffix"></div>
+
+    <input id="search_cells" type="search" placeholder="search"/>
+</div>
 <img id="cardIcons" src="resource/cardIcons.png"/>
 <script type="text/ecmascript">
     // 语言参数，通过 url 传入，默认英文
     var lang = getParameterByName('lang') || "en";
+
+    window.searchText = function (text) {
+        var $searchCells = $('#search_cells');
+        if ($searchCells.val() === text) {
+            $searchCells.val('').keyup();
+        } else {
+            $searchCells.val(text).keyup();
+        }
+    };
 
     // 充当 Loading 界面
     $("#jqGridTemp").jqGrid({
@@ -106,6 +157,20 @@
             var jsonTags = jsonData.sheets[11].lines;
             var jsonChances = jsonData.sheets[42].lines;
 
+            function linkify(text) {
+                if (!text) {
+                    return "";
+                }
+
+                return '<a onclick="searchText(\'' + text.replace(/(['"])/g, "\\$1") + '\')" href=#' + text + '>' + text + '</a>';
+            }
+
+            function linkifyTranslation(cellValue) {
+                return linkify(translate(cellValue));
+            }
+
+            var ItemFormatter = {};
+
             var MobFormatter = {
                 genTags: function (cellValue, options, rowObject) {
                     return jsonTags[cellValue].id;
@@ -115,12 +180,12 @@
             var AffixFormatter = {
                 forbiddenAffixes: function (cellValue, options, rowObject) {
                     return cellValue.map(function (elem) {
-                        return elem.affix;
+                        return linkify(elem.affix);
                     }).join("<br/>");
                 },
                 forbiddenItem: function (cellValue, options, rowObject) {
                     return cellValue.map(function (elem) {
-                        return translate(findItemName(elem.item));
+                        return linkifyTranslation(findItemName(elem.item));
                     }).join("<br/>");
                 },
                 itemRestriction: function (cellValue, options, rowObject) {
@@ -137,8 +202,8 @@
                             'zh': '技能'
                         },
                         2: {
-                            'en': 'weapon<br/>skill',
-                            'zh': '武器<br/>技能'
+                            'en': 'weapon,skill',
+                            'zh': '武器,技能'
                         },
                         3: {
                             'en': 'amulet',
@@ -150,12 +215,14 @@
                         }
                     };
 
-                    return restrictionType[cellValue][lang];
+                    return restrictionType[cellValue][lang].split(',').map(function (text) {
+                        return linkify(text);
+                    }).join('<br/>');
                 }
             };
 
             // 隐藏 Loading 界面
-            document.body.removeChild(document.querySelector("#gbox_jqGridTemp"));
+            document.querySelector('#table_layout').removeChild(document.querySelector("#gbox_jqGridTemp"));
 
             // 去除无用数据和排序
             jsonLevels = jsonLevels.filter(function (level) {
@@ -168,6 +235,79 @@
                 }
             });
 
+            function throttle(f, delay) {
+                var timer = null;
+                return function () {
+                    var context = this, args = arguments;
+                    clearTimeout(timer);
+                    timer = window.setTimeout(function () {
+                            f.apply(context, args);
+                        },
+                        delay || 100);
+                };
+            }
+
+            // 搜索
+            var searchObjs = [];
+            var searchString = '';
+            var lastSearchString = '';
+            $('#search_cells').on('keyup', throttle(function () {
+                lastSearchString = searchString;
+                searchString = $(this).val().toLowerCase();
+                if (searchString === lastSearchString) {
+                    return;
+                }
+
+                if (searchString.length >= 2) {
+                    $('td').unmark().mark(searchString, {
+                        separateWordSearch: false
+                    });
+                } else {
+                    $('td').unmark();
+                }
+                searchObjs.forEach(function (item) {
+                    var gridId = item.gridId;
+                    var gridData = item.gridData;
+                    var rowIds = item.rowIds;
+                    // You can't search unless grid values have been loaded
+                    if (gridData && rowIds) {
+                        $.each(gridData, function (id, row) {
+                            var show = false;
+                            $.each(row, function (id, cell) {
+                                if (cell.toLowerCase().indexOf(searchString) >= 0) {
+                                    show = true;
+                                    return false;
+                                }
+                            });
+
+                            var queryString = '#' + gridId + ' #' + rowIds[id].id;
+                            document.querySelectorAll(queryString).forEach(function (element) {
+                                if (show) {
+                                    $(element).show();
+                                } else {
+                                    $(element).hide();
+                                }
+                            });
+                        });
+                    }
+                });
+            }));
+
+            function whenComplete(data) {
+                var gridId = this.id;
+                var gridData = $(this).jqGrid('getRowData');
+                var rowIds;
+                for (var key in gridData[0]) {
+                    rowIds = $(this).jqGrid('getCol', key, true);
+                    break;
+                }
+                searchObjs.push({
+                    'gridId': gridId,
+                    'gridData': gridData,
+                    'rowIds': rowIds
+                });
+            }
+
             // 道具表格
             $("#jqGridItem").jqGrid({
                 datatype: 'local',
@@ -176,11 +316,11 @@
                     width: 65
                 },
                 colModel: [
-                    {name: 'id', hidden: true},
+//                    {name: 'id', hidden: true},
                     {name: 'icon', formatter: showIcon, align: 'center'},
-                    {name: 'name', formatter: translate},
-                    {name: 'gameplayDesc', formatter: translateDesc, width: 200},
-                    {name: 'blueprint', formatter: findBlueprint, width: 200},
+                    {name: 'name', formatter: linkifyTranslation},
+                    {name: 'gameplayDesc', formatter: translateDesc, width: 300},
+                    {name: 'blueprint', formatter: findBlueprint, width: 100},
                     {name: 'cellCost', align: 'right'},
                     {name: 'moneyCost', align: 'right'},
                     {name: 'droppable', align: 'center'},
@@ -190,11 +330,12 @@
                 ],
                 caption: 'Item',
                 viewrecords: true,
-                height: 600,
+                height: 'auto',
                 width: 1200,
                 rownumbers: true,
                 rowNum: 9999,
-                pager: "#jqGridPagerItem"
+                pager: "#jqGridPagerItem",
+                loadComplete: whenComplete
             });
 
             // 怪物表格
@@ -205,22 +346,23 @@
                     width: 65
                 },
                 colModel: [
-                    {name: 'icon', formatter: showIcon, align: 'center', hidden: true},
-                    {name: 'name', formatter: translate},
+//                    {name: 'icon', formatter: showIcon, align: 'center', hidden: true},
+                    {name: 'name', formatter: linkifyTranslation},
                     {name: 'life', align: 'right'},
                     {name: 'canBeElite', align: 'center'},
-                    {name: 'cells', formatter: formatCells, width: 120, hidden: true},
+//                    {name: 'cells', formatter: formatCells, width: 120, hidden: true},
                     {name: 'blueprints', formatter: formatBlueprints, width: 200},
-                    {name: 'genTags', formatter: MobFormatter.genTags, hidden: true},
-                    {name: 'level', formatter: findLevel, width: 200}
+//                    {name: 'genTags', formatter: MobFormatter.genTags, hidden: true},
+                    {name: 'level', formatter: findLevel, width: 600}
                 ],
                 caption: 'Monster',
                 viewrecords: true,
-                height: 600,
+                height: 'auto',
                 width: 1200,
                 rownumbers: true,
                 rowNum: 9999,
-                pager: "#jqGridPagerMob"
+                pager: "#jqGridPagerMob",
+                loadComplete: whenComplete
             });
 
             // 关卡表格
@@ -231,20 +373,21 @@
                     width: 65
                 },
                 colModel: [
-                    {name: 'name', formatter: formatLevelName, width: 80},
+                    {name: 'name', formatter: linkifyTranslation, width: 80},
                     {name: 'mobTier', align: 'center'},
                     {name: 'lootLevel', align: 'center'},
                     {name: 'eliteWanderChance', formatter: formatChance, align: 'center'},
                     {name: 'eliteRoomChance', formatter: formatChance, align: 'center'},
-                    {name: 'mobs', formatter: formatMobs}
+                    {name: 'mobs', formatter: formatMobs, width: 300}
                 ],
                 caption: 'Level',
                 viewrecords: true,
-                height: 600,
+                height: 'auto',
                 width: 1200,
                 rownumbers: true,
                 rowNum: 9999,
-                pager: "#jqGridPagerLevel"
+                pager: "#jqGridPagerLevel",
+                loadComplete: whenComplete
             });
 
             // 词缀表格
@@ -255,7 +398,7 @@
                     width: 65
                 },
                 colModel: [
-                    {name: 'id'},
+                    {name: 'id', formatter: linkifyTranslation},
                     {name: 'desc', formatter: formatAffixDesc, width: 200},
                     {name: 'chance', formatter: formatAffixChance, hidden: false},
                     {name: 'itemRestriction', formatter: AffixFormatter.itemRestriction, hidden: false},
@@ -266,11 +409,12 @@
                 ],
                 caption: 'Affix',
                 viewrecords: true,
-                height: 600,
+                height: 'auto',
                 width: 1200,
                 rownumbers: true,
                 rowNum: 9999,
-                pager: "#jqGridPagerAffix"
+                pager: "#jqGridPagerAffix",
+                loadComplete: whenComplete
             });
 
             function showIcon(cellValue, options, rowObject) {
@@ -383,7 +527,7 @@
 
             function formatTags(cellValue) {
                 return cellValue.map(function (elem) {
-                    return elem.tag;
+                    return linkify(elem.tag);
                 }).join("<br/>");
             }
 
@@ -413,7 +557,7 @@
 
             function formatBlueprints(cellValue) {
                 return cellValue.map(function (blueprint) {
-                    return translate(findItemName(blueprint.item)) + ': ' + formatChance(findBlueprintChance(blueprint.rarity));
+                    return linkifyTranslation(findItemName(blueprint.item)) + ': ' + formatChance(findBlueprintChance(blueprint.rarity));
                 }).join("<br/>");
             }
 
@@ -426,7 +570,7 @@
 
             function formatMobs(cellValue, options, rowObject) {
                 return cellValue.map(function (elem) {
-                    return translate(findMobName(elem.mob));
+                    return linkifyTranslation(findMobName(elem.mob));
                 }).join("<br/>");
             }
 
@@ -439,7 +583,7 @@
                         return blueprint.item === rowObject.id;
                     })
                 }).map(function (monster) {
-                    return translate(monster.name) + ': ' + monster.blueprintChance;
+                    return linkify(translate(monster.name)) + ': ' + monster.blueprintChance;
                 });
 
                 return result.join("<br/>");
@@ -453,10 +597,6 @@
                 if (result.length > 0) {
                     return result[0].chance;
                 }
-            }
-
-            function formatLevelName(cellValue, options, rowObject) {
-                return translate(cellValue);
             }
 
             function formatChance(chance) {
@@ -480,7 +620,7 @@
                     return first.lootLevel - second.lootLevel;
                 })
                     .map(function (level) {
-                        return translate(level.name);
+                        return linkifyTranslation(level.name);
                     });
 
                 return result.join("<br/>");
