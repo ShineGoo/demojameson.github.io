@@ -71,8 +71,8 @@
   }
 
   mark {
-    background: orange;
-    color: black;
+    background: rgb(63, 81, 181);
+    color: white;
   }
 
   /* Start by setting display:none to make this hidden.
@@ -359,7 +359,7 @@
             function searchHash() {
                 var hash = location.hash;
                 if (hash) {
-                    $('#search_cells').val(hash.slice(1)).keyup();
+                    $('#search_cells').val(decodeURIComponent(hash.slice(1))).keyup();
                 }
             }
 
