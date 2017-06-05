@@ -257,7 +257,11 @@
             var searchObjs = [];
             var searchString = '';
             var lastSearchString = '';
-            $('#search_cells').on('keyup', throttle(function () {
+            var $searchCells = $('#search_cells');
+            $searchCells.on('change', function () {
+                $searchCells.keyup();
+            });
+            $searchCells.on('keyup', throttle(function () {
                 lastSearchString = searchString;
                 searchString = $(this).val().toLowerCase();
                 if (searchString === lastSearchString) {
@@ -303,7 +307,7 @@
                 });
             }));
 
-            function whenComplete(data) {
+            function whenComplete() {
                 var gridId = this.id;
                 var gridData = $(this).jqGrid('getRowData');
                 var rowIds;
@@ -316,6 +320,18 @@
                     'gridData': gridData,
                     'rowIds': rowIds
                 });
+
+                if (searchObjs.length === $('table[id]').length) {
+                    searchHash();
+                }
+            }
+
+            // 页面加载完成时自动搜索网址中 hash 的内容
+            function searchHash() {
+                var hash = location.hash;
+                if (hash) {
+                    $('#search_cells').val(hash.slice(1)).keyup();
+                }
             }
 
             // 道具表格
