@@ -36,11 +36,11 @@
         
         <tags>
             
-            <tag> 工具 </tag>
-            
             <tag> JavaScript </tag>
             
             <tag> UserScript </tag>
+            
+            <tag> 工具 </tag>
             
         </tags>
         
@@ -345,6 +345,7 @@
 <li>2017年6月3日——更新到游戏版本 (<a href="https://steamcommunity.com/app/588650/discussions/4/2741975115066406458/#c1291817837623809239" target="_blank" rel="external">e2c7b364</a>)<del>，但是解包的资源中没有未编译的文本文件了，所以以后新增的内容只能显示原文法文</del></li>
 <li>2017年6月4日——增加 Loading 界面；裁剪压缩数据文件提高加载速度（3MB 变 100KB）</li>
 <li>2017年6月5日——找到获取文本的方法了，未翻译内容显示英文；添加词缀/附魔列表；添加搜索高亮关键字功能</li>
+<li>2017年6月7日——更新到 <a href="http://steamcommunity.com/app/588650/discussions/4/2741975115066406458/#c1291817837635692966" target="_blank" rel="external">2017-06-05B (e118994b)</a> 版本</li>
 </ul>
 ]]></content>
       
@@ -480,11 +481,11 @@
         
         <tags>
             
+            <tag> 工具 </tag>
+            
             <tag> iOS </tag>
             
             <tag> 越狱 </tag>
-            
-            <tag> 工具 </tag>
             
         </tags>
         
