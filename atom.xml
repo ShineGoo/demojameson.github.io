@@ -54,11 +54,11 @@
       <category term="编程" scheme="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
+      <category term="工具" scheme="http://www.demojameson.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
       <category term="JavaScript" scheme="http://www.demojameson.com/tags/JavaScript/"/>
     
       <category term="UserScript" scheme="http://www.demojameson.com/tags/UserScript/"/>
-    
-      <category term="工具" scheme="http://www.demojameson.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -377,11 +377,12 @@
     <link href="http://www.demojameson.com/2017/05/21/dead-cells-cheat-sheet/"/>
     <id>http://www.demojameson.com/2017/05/21/dead-cells-cheat-sheet/</id>
     <published>2017-05-20T17:03:00.000Z</published>
-    <updated>2017-06-03T09:49:00.000Z</updated>
+    <updated>2017-06-07T09:49:00.000Z</updated>
     
     <content type="html"><![CDATA[<img src="/2017/05/21/dead-cells-cheat-sheet/cover.jpg" alt="cover.jpg" title="">
 <p>给《<a href="http://store.steampowered.com/app/588650/Dead_Cells/" target="_blank" rel="external">死亡细胞</a>》这个游戏做了个速查表页面，数据来自游戏内解包的文件，<a href="http://www.demojameson.com/deadcells/dead-cells-data.html?lang=zh">点击直达</a>（需要等待一会加载数据）。</p>
-<h1 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h1><h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><blockquote>
+<a id="more"></a>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><blockquote>
 <p>欢迎来到《<a href="http://store.steampowered.com/app/588650/Dead_Cells/" target="_blank" rel="external">死亡细胞</a>》，这是一款将 Roguelite 与银河战士恶魔城类特点融为一炉的 2D 平台动作游戏。游戏中并无检查点，玩家将体验魂味战斗，一路挑战诸多守卫，在杀戮与死亡的反复轮回中探索一座房间不断变化的巨大城堡。</p>
 </blockquote>
 <p>游戏在 5 月 10 日发售后立马获得了好评如潮的评价。虽然目前还是<a href="http://store.steampowered.com/earlyaccessfaq/?snr=1_5_9_" target="_blank" rel="external">抢先体验</a>状态，但已经有了较为不错的官方中文支持，因为有谜之声和 indienova 的协助汉化。游戏凭借精美的像素风，畅快的打击感，多样的武器和技能再加上 Roguelike 元素，让人百玩不厌。</p>
@@ -398,7 +399,6 @@
     
       &lt;img src=&quot;/2017/05/21/dead-cells-cheat-sheet/cover.jpg&quot; alt=&quot;cover.jpg&quot; title=&quot;&quot;&gt;
 &lt;p&gt;给《&lt;a href=&quot;http://store.steampowered.com/app/588650/Dead_Cells/&quot;&gt;死亡细胞&lt;/a&gt;》这个游戏做了个速查表页面，数据来自游戏内解包的文件，&lt;a href=&quot;http://www.demojameson.com/deadcells/dead-cells-data.html?lang=zh&quot;&gt;点击直达&lt;/a&gt;（需要等待一会加载数据）。&lt;/p&gt;
-&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
     
     </summary>
     
@@ -539,11 +539,11 @@
       <category term="编程" scheme="http://www.demojameson.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="工具" scheme="http://www.demojameson.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="iOS" scheme="http://www.demojameson.com/tags/iOS/"/>
     
       <category term="越狱" scheme="http://www.demojameson.com/tags/%E8%B6%8A%E7%8B%B1/"/>
+    
+      <category term="工具" scheme="http://www.demojameson.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -1163,7 +1163,7 @@ git clone [git地址]
 </code></pre><p>可能需要为 git 设置默认的用户名以及邮箱，下载完主题后需删除目录下的 .git 目录以及 .gitignore，以免稍后无法应用更新。</p>
 </li>
 <li><p>添加<del><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a></del>（试用多说过程中弹出了广告）<a href="https://disqus.com" target="_blank" rel="external">Disqus</a>评论区以及 <a href="https://swiftype.com/" target="_blank" rel="external">Swiftype</a> 站内搜索的代码可以放置在后台<code>Setting -&gt; Code Injection</code>中，不必修改主题。以下是我修改过的多说脚本（请将 short_name 改为自己的）：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line">&lt;script type="text/javascript"&gt;</div><div class="line">    var s = document.createElement("section");</div><div class="line">    s.className = "post-comments";</div><div class="line">    s.innerHTML = '&lt;div class="ds-thread" data-thread-key="' + location.pathname.replace(/\//g,"") + '" data-title="'+ document.title +'" data-url="' + location.href.replace(/^https/, "http") + '"&gt;&lt;/div&gt;';</div><div class="line">    document.querySelector(".post-container").parentNode.appendChild(s);</div><div class="line">    var duoshuoQuery = &#123;short_name:"xxxxxxxxx"&#125;;</div><div class="line">    (function() &#123;</div><div class="line">        var ds = document.createElement('script');</div><div class="line">        ds.type = 'text/javascript';ds.async = true;</div><div class="line">        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';</div><div class="line">        ds.charset = 'UTF-8';</div><div class="line">        (document.getElementsByTagName('head')[0]</div><div class="line">         || document.getElementsByTagName('body')[0]).appendChild(ds);</div><div class="line">    &#125;)();</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;!-- 多说公共JS代码 end --&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></span></div><div class="line">    <span class="keyword">var</span> s = <span class="built_in">document</span>.createElement(<span class="string">"section"</span>);</div><div class="line">    s.className = <span class="string">"post-comments"</span>;</div><div class="line">    s.innerHTML = <span class="string">'&lt;div class="ds-thread" data-thread-key="'</span> + location.pathname.replace(<span class="regexp">/\//g</span>,<span class="string">""</span>) + <span class="string">'" data-title="'</span>+ <span class="built_in">document</span>.title +<span class="string">'" data-url="'</span> + location.href.replace(<span class="regexp">/^https/</span>, <span class="string">"http"</span>) + <span class="string">'"&gt;&lt;/div&gt;'</span>;</div><div class="line">    <span class="built_in">document</span>.querySelector(<span class="string">".post-container"</span>).parentNode.appendChild(s);</div><div class="line">    <span class="keyword">var</span> duoshuoQuery = &#123;<span class="attr">short_name</span>:<span class="string">"xxxxxxxxx"</span>&#125;;</div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">        ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">        ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">        (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]</div><div class="line">         || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</div><div class="line">    &#125;)();</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">&lt;!-- 多说公共JS代码 end --&gt;</div></pre></td></tr></table></figure>
 </li>
 <li><p>更新应用，在 nirtous 中做的所有更改均需通过 git 同步到 OpenShift 中，使用以下命令即可：</p>
 <figure class="highlight dockerfile"><table><tr><td class="code"><pre><div class="line">cd ~/ghost</div><div class="line">git <span class="keyword">add</span><span class="bash"> .</span></div><div class="line">git commit -m <span class="string">"[随便输入什么内容]"</span></div><div class="line">git push</div></pre></td></tr></table></figure>
