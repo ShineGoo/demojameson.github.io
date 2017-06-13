@@ -31,7 +31,7 @@ msgid "+::n:: OR"
 msgstr "+::n:: GOLD"
 
 msgid "+::n:: PV"
-msgstr "+::n::PV"
+msgstr "+::n:: HP"
 
 msgid "+::n:: pt"
 msgstr "+::n:: pt"
@@ -179,7 +179,7 @@ msgid "Ah ah, oui... Evidemment que vous y travaillez."
 msgstr "Ahhh, yes... Of course you're working on it."
 
 msgid "Allez... Je mérite bien une petite fessée..."
-msgstr "Come on... Just a little slap..."
+msgstr "Come on... Just a little peek..."
 
 msgid "Alors comme ça, vous voulez la jouer difficile ?"
 msgstr "So you like to play hardball, do ya?"
@@ -338,6 +338,9 @@ msgstr "None"
 
 msgid "Aucune destination disponible."
 msgstr "You haven't unlocked another teleporter yet."
+
+msgid "Aucune pour le moment."
+msgstr "None for now."
 
 msgid "Augmente les dégâts des armes."
 msgstr "Increase weapon damage."
@@ -652,7 +655,7 @@ msgid "Collier de prisonnier"
 msgstr "Prisoner's collar"
 
 msgid "Combat"
-msgstr "Comabt"
+msgstr "Combat"
 
 msgid "Comme tous les autres."
 msgstr "Like all the rest, I guess."
@@ -734,6 +737,9 @@ msgstr "Cover the ground around you with oil and light it up!"
 
 msgid "Couvre le sol d'huile autour de vous."
 msgstr "Cover the ground around you with flammable oil."
+
+msgid "Crache-mort"
+msgstr "Death spitter"
 
 msgid "Crypte nauséabonde"
 msgstr "The Insufferable Crypt"
@@ -1076,7 +1082,7 @@ msgstr ""
 "more... experimental items."
 
 msgid "Etourdit les cibles qui ont plus de ::prct::% de vie."
-msgstr "Stuns victims that have more than ::prct::% de vie."
+msgstr "Stuns victims that have more than ::prct::% health."
 
 msgid "Evidemment que vous y travaillez."
 msgstr "of course it is..."
@@ -1598,7 +1604,7 @@ msgid "Légère mais mortelle si elle maniée comme il faut."
 msgstr "Small, but deadly if you know where to stick it."
 
 msgid "MAIS FRAPPEZ MOI BON SANG !!"
-msgstr "HIT ME GODDAMIT!"
+msgstr "Open ME GODDAMIT!"
 
 msgid "Maintenez longtemps pour infliger des coups critiques."
 msgstr ""
@@ -1888,7 +1894,7 @@ msgid "Ouvre les portes verrouillées (original, non ?)"
 msgstr "Unlocks doors. Who would have guessed?"
 
 msgid "Ouvrez moi FORT !"
-msgstr "Hit me real HARD!"
+msgstr "Open me real HARD!"
 
 msgid "Ouvrir"
 msgstr "Open"

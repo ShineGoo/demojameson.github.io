@@ -118,7 +118,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           <a href="http://store.steampowered.com/app/588650/Dead_Cells/">Dead Cells Cheat Sheet</a>
-          <span class="md-header-nav__parent">version: <a href="http://steamcommunity.com/app/588650/discussions/4/2741975115066406458/#c1291817837635692966">2017-06-05B (e118994b)</a></span>
+          <span class="md-header-nav__parent">version: 2017-06-13 (f409f35)</span>
         </span>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -189,12 +189,34 @@
 
     $(window).on("load", function () {
         $.getJSON("resource/data_min.cdb", function (jsonData) {
+            window.jsonData = jsonData;
             var jsonItems = jsonData.sheets[1].lines;
             var jsonMobs = jsonData.sheets[2].lines;
             var jsonLevels = jsonData.sheets[12].lines;
             var jsonAffixs = jsonData.sheets[10].lines;
             var jsonTags = jsonData.sheets[11].lines;
             var jsonChances = jsonData.sheets[42].lines;
+
+            // 预处理：去除无用数据和排序
+            jsonLevels = jsonLevels.filter(function (level) {
+                return level.name && !/debug/i.test(level.name) && level.biome !== 'SecretRooms'
+            }).sort(function (first, second) {
+                if (first.mobTier - second.mobTier === 0) {
+                    return first.lootLevel - second.lootLevel;
+                } else {
+                    return first.mobTier - second.mobTier;
+                }
+            });
+
+            // 预处理：将 group 分组序号改为有意义的文字
+            var hasGroups = [1, 2, 10];
+            jsonData.sheets.filter(function(_, index) {
+                return hasGroups.indexOf(index) >= 0 ;
+            }).forEach(function(sheet){
+                sheet.lines.forEach(function(line){
+                    line.group = sheet.props.separatorTitles[line.group];
+                });
+            });
 
             function linkify(text) {
                 if (!text) {
@@ -260,17 +282,6 @@
                     }).join('<br/>');
                 }
             };
-
-            // 去除无用数据和排序
-            jsonLevels = jsonLevels.filter(function (level) {
-                return level.name && !/debug/i.test(level.name) && level.biome !== 'SecretRooms'
-            }).sort(function (first, second) {
-                if (first.mobTier - second.mobTier === 0) {
-                    return first.lootLevel - second.lootLevel;
-                } else {
-                    return first.mobTier - second.mobTier;
-                }
-            });
 
             // 搜索
             var searchObjs = [];
@@ -373,6 +384,7 @@
                 },
                 colModel: [
 //                    {name: 'id', hidden: true},
+                    {name: 'group', width: 80},
                     {name: 'icon', formatter: showIcon, align: 'center'},
                     {name: 'name', formatter: linkifyTranslation},
                     {name: 'gameplayDesc', formatter: translateDesc, width: 300},
@@ -403,6 +415,7 @@
                 },
                 colModel: [
 //                    {name: 'icon', formatter: showIcon, align: 'center', hidden: true},
+                    {name: 'group'},
                     {name: 'name', formatter: linkifyTranslation},
                     {name: 'life', align: 'right'},
                     {name: 'canBeElite', align: 'center'},
@@ -454,6 +467,7 @@
                     width: 65
                 },
                 colModel: [
+                    {name: 'group'},
                     {name: 'id', formatter: linkifyTranslation},
                     {name: 'desc', formatter: formatAffixDesc, width: 200},
                     {name: 'chance', formatter: formatAffixChance, hidden: false},
