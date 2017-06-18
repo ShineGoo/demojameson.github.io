@@ -43,31 +43,31 @@ msgid "+::n:: pts"
 msgstr "增加 ::n:: pts"
 
 msgid "+::n::% Power"
-msgstr "增加 ::n:: %力量"
+msgstr "增加 ::n::%力量"
 
 msgid "+::prct::% damage on a bleeding target"
-msgstr "对流血的敌人增加 ::prct:: % 伤害."
+msgstr "对流血的敌人增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage on a burning target"
-msgstr "对燃烧的敌人增加 ::prct:: % 伤害."
+msgstr "对燃烧的敌人增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage on a frozen target."
-msgstr "对冰冻的敌人增加 ::prct:: % 伤害."
+msgstr "对冰冻的敌人增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage on a poisoned target."
-msgstr "对中毒的敌人增加 ::prct:: % 伤害."
+msgstr "对中毒的敌人增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage on a stunned target"
-msgstr "对晕眩的敌人增加 ::prct:: % 伤害."
+msgstr "对晕眩的敌人增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage on a stunned target."
-msgstr "对晕眩的敌人增加 ::prct:: % 伤害."
+msgstr "对晕眩的敌人增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage when inflicting a CRITICAL HIT."
-msgstr "暴击时,增加 ::prct:: % 伤害."
+msgstr "暴击时,增加 ::prct::% 伤害."
 
 msgid "+::prct::% damage when your health is at its maximum."
-msgstr "生命值全满时伤害增加 ::prct:: %."
+msgstr "生命值全满时伤害增加 ::prct::%."
 
 msgid "-::n:: GOLD"
 msgstr "失去 ::n:: 金币"
@@ -94,7 +94,7 @@ msgid "::m::m ::s::s"
 msgstr "::m:: 分 ::s:: 秒"
 
 msgid "::n:: GOLD recovered (::pct::%)"
-msgstr "回收 ::n:: 金币 ( ::pct:: % )"
+msgstr "回收 ::n:: 金币 ( ::pct::% )"
 
 msgid "::n:: cell left"
 msgstr "剩余 ::n:: 个细胞"
@@ -132,7 +132,7 @@ msgid ""
 msgstr "华丽的饰品.你熟练地将它戴在了你的衣服下,这给美工减少了很多麻烦."
 
 msgid "A gold tooth worth ::$power:: GOLD. He had it coming to him anyway..."
-msgstr "一颗金牙值 ::$power:: 金币. 不管怎么说他都会来找他..."
+msgstr "一颗金牙值 ::$power:: 金币. 怪物们永远也想不到他们的牙齿也能卖钱..."
 
 msgid "A little courage my man!"
 msgstr "有点勇气吧!"
@@ -144,17 +144,17 @@ msgid "A magnificent jewel worth ::$power:: GOLD!"
 msgstr "宏伟的宝石,值 ::$power:: 金币!"
 
 msgid "A nice prize worth ::$power:: GOLD."
-msgstr "::$power:: 金币是个完美的价格"
+msgstr "::$power:: 金币是个完美的价格."
 
 msgid "A rusty old weapon that gets more dangerous in a pinch..."
-msgstr "一把生锈的旧武器使困境更加危险"
+msgstr "一把生锈的旧武器使困境更加危险."
 
 msgid "A swarm of biters crawls from your victims."
 msgstr "敌人死后召唤一些食人虫."
 
 msgid ""
 "A transmuted arrow worth ::$power:: GOLD. For the aristocratic marksman."
-msgstr "对那些那些贵族射手来说,一个变形的箭值 ::$power:: 金币"
+msgstr "对那些那些贵族射手来说,一个变形的箭值 ::$power:: 金币."
 
 msgid "A weapon popularised by the Baron Valmont du Cul."
 msgstr "维蒙特家族推荐使用此鞭."
@@ -238,7 +238,7 @@ msgid "Any enemy that touches you is frozen."
 msgstr "受近战敌人攻击时使其冰冻."
 
 msgid "Any object is a deadly weapon if you apply enough velocity."
-msgstr "如果你反应够快,任何物体都将是致命的武器"
+msgstr "如果你反应够快,任何物体都将是致命的武器."
 
 msgid "Applies flammable oil to the victim upon deployment."
 msgstr "摆放时,使敌人身上和附近的地面沾满可燃油."
@@ -259,7 +259,7 @@ msgid "Assault Shield"
 msgstr "突击盾"
 
 msgid "Attacking immediately after parrying inflicts ::prct::% damage."
-msgstr "格档后攻击,伤害增加 ::prct:: %"
+msgstr "格档后攻击,伤害增加 ::prct::%"
 
 msgid "Attracts anything close to it and deals ::+dps:: damage/s."
 msgstr "攻击附近敌人,造成 ::+dps:: 伤害 / 秒."
@@ -310,7 +310,7 @@ msgid "Black heart"
 msgstr "黑心"
 
 msgid "Bleeding inflicts poison damage too."
-msgstr "出血时造成中毒"
+msgstr "出血同时造成中毒."
 
 msgid "Blocked!"
 msgstr "格挡!"
@@ -335,10 +335,10 @@ msgid "Blocks attacks and violently shoves blocked enemies backwards."
 msgstr "格档会将敌人大力击退."
 
 msgid "Blood shield"
-msgstr "鲜血盾"
+msgstr "嗜血盾"
 
 msgid "Blood sword"
-msgstr "血剑"
+msgstr "嗜血剑"
 
 msgid "Blue saphire"
 msgstr "蓝宝石"
@@ -388,7 +388,7 @@ msgstr "格挡时使敌人燃烧."
 msgid ""
 "Burning enemies explode upon death inflicting ::+damage:: damage to nearby "
 "enemies (damage depends on your strength level)."
-msgstr "敌人死于燃烧后产生爆炸,造成::+damage:: 伤害 ( 力量决定伤害 )"
+msgstr "敌人死于燃烧后产生爆炸,造成::+damage:: 伤害 ( 力量决定伤害 )."
 
 msgid "Burns nearby enemies for ::duration:: seconds (::+dps:: damage/s)."
 msgstr "烧伤附近敌人持续 ::duration:: 秒(::+dps:: 伤害 / 秒)"
@@ -421,7 +421,7 @@ msgid "Carrot"
 msgstr "胡萝卜"
 
 msgid "Catcher"
-msgstr "捕手"
+msgstr "屠夫"
 
 msgid "Causes ::count:: arrows to fall from victims."
 msgstr "敌人身上将掉落::count::支箭矢."
@@ -441,7 +441,7 @@ msgid "Caution!"
 msgstr "注意!"
 
 msgid "Ceiling turret"
-msgstr "天花板炮塔"
+msgstr "高空炮塔"
 
 msgid "Cells collected"
 msgstr "已经收集的细胞数"
@@ -586,7 +586,7 @@ msgid "Cursed treasure found"
 msgstr "发现诅咒箱"
 
 msgid "Damage +::n::%"
-msgstr "增加 ::n:: % 伤害"
+msgstr "增加 ::n::% 伤害"
 
 msgid "Damage bonus:"
 msgstr "伤害加成:"
@@ -595,10 +595,10 @@ msgid "Damage dealt x::power::, damage received x::power2::!"
 msgstr "伤害x ::power:: ,受到 ::power2:: 倍伤害!"
 
 msgid "Damage from projectiles reduced by ::prct::%"
-msgstr "减少飞行物 ::prct:: % 伤害."
+msgstr "减少飞行物 ::prct::% 伤害."
 
 msgid "Damage taken reduced by ::prct::%"
-msgstr "减少 ::prct:: % 伤害."
+msgstr "减少 ::prct::% 伤害."
 
 msgid "Dead Cells Alpha [build ::build::]"
 msgstr "Dead Cells Alpha [版本::build::]"
@@ -644,7 +644,7 @@ msgid "Death orb"
 msgstr "死亡黑球"
 
 msgid "Death spitter"
-msgstr "死亡喷吐"
+msgstr "亡者归来"
 
 msgid "Deaths"
 msgstr "死亡"
@@ -680,7 +680,7 @@ msgid "Defender"
 msgstr "防御者"
 
 msgid "Deflector"
-msgstr "Deflector"
+msgstr "导流器"
 
 msgid "Del."
 msgstr "Del."
@@ -691,7 +691,7 @@ msgstr "测试版本"
 msgid ""
 "Destroys all nearby projectiles, stuns the source for ::effectCharge:: "
 "seconds and inflicts ::+power:: damage."
-msgstr "摧毁飞行物,晕眩 ::effectCharge:: 秒并造成 ::+power:: 伤害"
+msgstr "摧毁附近所有飞行物,晕眩 ::effectCharge:: 秒并造成 ::+power:: 伤害"
 
 msgid "Did you find it yet!?"
 msgstr "你找到了吗?"
@@ -733,17 +733,17 @@ msgid "Down"
 msgstr "下"
 
 msgid "Download another language"
-msgstr "语言下载"
+msgstr "下载其他语言"
 
 msgid ""
 "Drop a bomb when double jumping, inflicting ::+damage:: damage. (this "
 "ability has a cooldown period)."
-msgstr "二连跳时投出炸弹,造成 ::+damage:: 伤害 ( 有冷却时间 )"
+msgstr "二连跳时投出炸弹,造成 ::+damage:: 伤害 ( 有冷却时间 )."
 
 msgid ""
 "Drop a bomb when dropping down from a platform inflicting ::+damage:: "
 "damage. (this ability has a cooldown period)."
-msgstr "下落震击地板时投出炸弹,造成 ::+damage:: 伤害 ( 有冷却时间 )"
+msgstr "下落震击地板时投出炸弹,造成 ::+damage:: 伤害 ( 有冷却时间 )."
 
 msgid "Drop down"
 msgstr "落下"
@@ -838,7 +838,7 @@ msgid "Filter by category"
 msgstr "依类型分类"
 
 msgid "Fire brands"
-msgstr "火焰棒"
+msgstr "火焰烙印"
 
 msgid "Fire grenade"
 msgstr "燃烧手雷"
@@ -865,7 +865,7 @@ msgstr "攻击附近的敌人 ::+dps:: 伤害 / 秒, 靠近时增加 ::prct::％
 
 msgid ""
 "Fires rapidly on any enemies passing below inflicting ::+dps:: damage/s."
-msgstr "攻击下方的敌人 ::+dps:: 伤害 / 秒."
+msgstr "高速射击下方经过的敌人 ::+dps:: 伤害 / 秒."
 
 msgid "Flamethrower turret"
 msgstr "火焰塔"
@@ -877,7 +877,7 @@ msgid "Flings enemies and bombs backwards."
 msgstr "将敌人和炸弹甩向后方."
 
 msgid "Flying biter"
-msgstr "飞行虫"
+msgstr "飞咬虫"
 
 msgid "Fogger"
 msgstr "施雾者"
@@ -892,7 +892,7 @@ msgid "Forward click."
 msgstr "Forward click."
 
 msgid "Frantic sword"
-msgstr "疯剑"
+msgstr "狂暴之刃"
 
 msgid "Freeze enemies when you parry."
 msgstr "格挡时使敌人冰冻."
@@ -901,7 +901,7 @@ msgid "Freezes enemies hit by the blast."
 msgstr "冰冻冲击范围内的敌人."
 
 msgid "Freezes enemies struck by your arrows."
-msgstr "使敌人冰冻."
+msgstr "将击中的敌人冰冻."
 
 msgid "Frost blast"
 msgstr "冰霜爆破"
@@ -931,7 +931,7 @@ msgid "Game over!"
 msgstr "游戏结束!"
 
 msgid "General"
-msgstr "通用"
+msgstr "常规"
 
 msgid "General improvement"
 msgstr "基础提升"
@@ -1024,10 +1024,10 @@ msgid "Healing flasks used"
 msgstr "血瓶使用次数"
 
 msgid "Heals ::+power:: HP in ::duration:: seconds. Single use."
-msgstr "一次性,在 ::duration:: 秒内回复 ::+power:: 生命值."
+msgstr "在 ::duration:: 秒内回复 ::+power:: 生命值.只能使用一次."
 
 msgid "Heals you when you parry (once per enemy)"
-msgstr "格挡后回复生命值 ( 单个目标触发一次 )"
+msgstr "格挡后回复生命值 ( 每个敌人只触发一次 )"
 
 msgid "Health flask refilled"
 msgstr "血瓶恢复"
@@ -1083,7 +1083,7 @@ msgstr "打我!"
 msgid ""
 "Ho ho! Thank you! It's somewhere around here in these sewers, on your side "
 "of these bars..."
-msgstr "喔,霍!谢谢你!它就在这附近的下水道里,就在这边上..."
+msgstr "啊,哈!谢谢你!它就在这附近的下水道里,就在这边上..."
 
 msgid "Hold to block attacks."
 msgstr "持盾来格挡攻击."
@@ -1196,7 +1196,7 @@ msgid ""
 msgstr "如果你的计算机有其他显卡时,我们强烈建议用该显卡执行游戏."
 
 msgid "If you're hit, you're dead."
-msgstr "受到伤害时死亡"
+msgstr "只要受到伤害直接死亡."
 
 msgid "Ignite the ground around you."
 msgstr "点燃周围地面"
@@ -1244,7 +1244,7 @@ msgid "Increase weapon damage."
 msgstr "增加武器伤害."
 
 msgid "Increase your damage by ::prct::% when you are close."
-msgstr "当你靠近塔时,增加伤害 ::prct:: %."
+msgstr "当你靠近塔时,增加伤害 ::prct::%."
 
 msgid "Infantry bow"
 msgstr "步兵短弓"
@@ -1274,7 +1274,7 @@ msgid "Inflicts a CRITICAL BLOW if the kick interrupts an attack."
 msgstr "打断敌人攻击后产生大量伤害."
 
 msgid "Inflicts a CRITICAL BLOW if the victim is bleeding."
-msgstr "敌人出血时暴击"
+msgstr "攻击出血的敌人时造成暴击."
 
 msgid "Inflicts a CRITICAL BLOW if the victime is up against a wall."
 msgstr "敌人靠近墙壁时暴击."
@@ -1304,7 +1304,7 @@ msgid ""
 msgstr "同时攻击多个敌人时暴击."
 
 msgid "Inflicts a CRITICAL HIT when you're below ::prct::% health."
-msgstr "生命值低于 ::prct:: % 造成暴击."
+msgstr "生命值低于 ::prct::% 造成暴击."
 
 msgid "Inhabit"
 msgstr "居住"
@@ -1370,7 +1370,7 @@ msgid "Keyboard/mouse"
 msgstr "键盘/鼠标"
 
 msgid "Kicks victims backwards and interrupts their attacks."
-msgstr "中断他们的攻击并将之踢飞."
+msgstr "打断敌人的攻击并将之踢飞."
 
 msgid "Kill all nearby enemies first!"
 msgstr "先杀死附近的所有敌人!"
@@ -1393,7 +1393,7 @@ msgstr "语言"
 msgid ""
 "Launches ::count:: traps which immobilize enemies for ::duration:: seconds. "
 "Increases all damage taken by trapped enemies by ::prct::%."
-msgstr "发射 ::count:: 个陷阱,夹住敌人 ::duration:: 秒. 增加 ::prct:: % 伤害."
+msgstr "发射 ::count:: 个陷阱,夹住敌人 ::duration:: 秒. 增加 ::prct::% 伤害."
 
 msgid ""
 "Launches a storm of knives around you which causes bleed damage for ::"
@@ -1421,7 +1421,7 @@ msgid "Library"
 msgstr "图书馆"
 
 msgid "Lieutenant"
-msgstr "中尉"
+msgstr "僵尸副官"
 
 msgid "Lightning bolt"
 msgstr "雷电光束"
@@ -1464,7 +1464,7 @@ msgstr "主武器"
 msgid ""
 "Make you invisible after ::duration:: without attacking. You next strike "
 "while still being invisible inflicts +::prct::% damage."
-msgstr "停止攻击后 ::duration:: 秒隐形,破隐一击伤害增加 ::prct:: %"
+msgstr "停止攻击后 ::duration:: 秒隐形,破隐一击伤害增加 ::prct::%."
 
 msgid "Malachite"
 msgstr "孔雀石"
@@ -1476,7 +1476,7 @@ msgid "Marketing"
 msgstr "销售"
 
 msgid "Meat grinder"
-msgstr "齿轮陷阱"
+msgstr "绞肉机"
 
 msgid "Mechanical spider"
 msgstr "机械蜘蛛"
@@ -1527,7 +1527,7 @@ msgid "My stuff is too good for you! Scram!"
 msgstr "我的东西都对你有益! 快买!"
 
 msgid "NOT IMPLEMENTED"
-msgstr "未实施"
+msgstr "[尚未投入使用]"
 
 msgid "NOT MEANT TO BE SEEN"
 msgstr "并不代表不会被发现"
@@ -1538,10 +1538,10 @@ msgstr "还没有呢!"
 msgid ""
 "Need more power? Damage dealt x::power::, but... damage received x::"
 "power2::!!"
-msgstr "渴望力量? 伤害x ::power:: ,但承受 ::power2:: 倍伤害!"
+msgstr "渴望力量吗?伤害x ::power:: ,但承受 ::power2:: 倍伤害!"
 
 msgid "Never mind, come closer and relax. This might sting a little."
-msgstr "别在意,靠近点 放松点, 这只会有点痛."
+msgstr "别在意,靠近点放轻松, 这只会有点痛."
 
 msgid "New amulet (::price:: Gold):"
 msgstr "新附身符 ( ::price:: 金币 ):"
@@ -1571,7 +1571,7 @@ msgid "No blueprints available."
 msgstr "无可用蓝图"
 
 msgid "No gold? NO GOODIES!"
-msgstr "没金币? 不给东西!"
+msgstr "没金币?不给东西!"
 
 msgid "No meta blueprints available."
 msgstr "无可用基础蓝图"
@@ -1667,16 +1667,16 @@ msgid "Oh... Well. Yes, I see the problem..."
 msgstr "喔,噢,是的,我发现问题了..."
 
 msgid "Ohh ho ho ho... There's nothing for you here, outsider..."
-msgstr "喔!霍霍霍!乡巴佬,我这没什么要给你的~"
+msgstr "喔!呵呵呵!乡巴佬,我这没什么要给你的~"
 
 msgid "Ohhh ho ho... The vessel you're looking for hasn't docked yet..."
-msgstr "喔!霍霍霍!你要找的船还没有靠岸..."
+msgstr "喔!呵呵呵!你要找的船还没有靠岸..."
 
 msgid "Ohhh.... I've got so much to give you..."
 msgstr "喔...我最多就给你这么多了..."
 
 msgid "Oi, losers! Over here!"
-msgstr "喔呦, 败者! 过来一下!"
+msgstr "喔呦, 弱者! 过来一下!"
 
 msgid "Oil grenade"
 msgstr "油渍手雷"
@@ -1766,7 +1766,7 @@ msgid "Poison heals you rather than hurting you."
 msgstr "中毒会治愈你,并非伤害你."
 
 msgid "Poison no longer affects you. Sewers, here we come..."
-msgstr "不再中毒.下水道,我们来了!"
+msgstr "免疫中毒.下水道,我们来了!"
 
 msgid "Poison the victim."
 msgstr "攻击使敌人中毒."
@@ -1786,7 +1786,7 @@ msgstr "囚犯项圈"
 msgid ""
 "Probably fake, but you should be able to trick a poor soul into buying it "
 "for ::$power:: GOLD."
-msgstr "这是赝品,不过你可以用 ::$power:: 金币来戏弄一个可怜的灵魂"
+msgstr "八成是赝品,但你应该能找到冤大头把它换成 ::$power:: 金币."
 
 msgid "Projectile burn the ground behind them."
 msgstr "飞行物将点燃附近地面."
@@ -1797,7 +1797,7 @@ msgstr "飞行物将释放毒雾."
 msgid ""
 "Pulls an enemy to you. Your next melee attacks on the victim deal ::prct::% "
 "extra damage."
-msgstr "把敌人拉到你身边.你对这个敌人的下一击近战攻击将额外造成::prct::%伤害."
+msgstr "把敌人拉到你身边.对这个敌人的下次近战攻击将额外造成 ::prct::% 伤害."
 
 msgid "Quick bow"
 msgstr "迅捷之弓"
@@ -1826,10 +1826,10 @@ msgstr "来份牛排?三分,七分,还是全熟?"
 msgid ""
 "Recover ::prct::% of your life with each melee attack, but take x::power:: "
 "damage!"
-msgstr "每次近战攻击恢复 ::prct::% 的生命值的,但受到 ::power:: 倍伤害!"
+msgstr "每次近战攻击恢复 ::prct::% 的生命值,但受到 ::power:: 倍伤害!"
 
 msgid "Reduce damage taken by ::prct::% as long as you are close."
-msgstr "当你靠近塔时,减少受到伤害 ::prct:: %."
+msgstr "当你靠近塔时,减少受到伤害 ::prct::%."
 
 msgid "Reduces the chance of unfreezing an enemy when attacking."
 msgstr "减少攻击敌人使其破冰而出的概率."
@@ -1934,7 +1934,7 @@ msgid "SHOULD NEVER DROP"
 msgstr "[不会掉落]"
 
 msgid "Sadist's sword"
-msgstr "哀伤之剑"
+msgstr "施虐者之刃"
 
 msgid "Sand bird"
 msgstr "沙鸟"
@@ -2078,7 +2078,7 @@ msgid "Small, but deadly if you know where to stick it."
 msgstr "匕首虽小,也能致命."
 
 msgid "So you like to play hardball, do ya?"
-msgstr "听说你想要挑战极限?"
+msgstr "听说你想要挑战极限,试试看?"
 
 msgid "So... Go on!"
 msgstr "所以,上吧!"
@@ -2108,10 +2108,10 @@ msgid "Spartan sandals"
 msgstr "斯巴达凉鞋"
 
 msgid "Spawnling"
-msgstr "小尸怪"
+msgstr "尸液怪"
 
 msgid "Speed to the detriment of accuracy."
-msgstr "可快速射击但略失准度."
+msgstr "可快速射击,但略失准度."
 
 msgid "Spiked boots"
 msgstr "尖刺靴"
@@ -2145,7 +2145,7 @@ msgid ""
 msgstr "召唤一个缓慢的能量灵球造成 ( ::+dps:: 伤害 / 秒 )."
 
 msgid "Summons a swarm of small biting creatures to attack for you."
-msgstr "召唤一群小虫来替你攻击."
+msgstr "召唤一群食人虫来替你攻击."
 
 msgid "Super Mario Mode: Jumping on an enemy's head stuns it."
 msgstr "超级马里奥模式:在敌人头上跳跃然后踩晕他们!"
@@ -2330,7 +2330,7 @@ msgid "This save requires a newer version of the game. "
 msgstr "你需要更新游戏才能读取存档."
 
 msgid "This sells quite well! Easiest ::$power:: you'll ever make..."
-msgstr "这卖得挺好!能很轻松地以 ::$power:: 金币卖掉..."
+msgstr "这货卖得挺好!能很轻松地以 ::$power:: 金币卖掉..."
 
 msgid "This version has not been optimized"
 msgstr "此版本未经优化"
@@ -2540,7 +2540,7 @@ msgid "Wrenching whip"
 msgstr "苦难鞭"
 
 msgid "Yes, just like Scorpion..."
-msgstr "如同蝎子般"
+msgstr "如屠夫一般 Oh,Fresh meat!"
 
 msgid "Yes..."
 msgstr "嗯..."
@@ -2576,7 +2576,7 @@ msgid "You can no longer die."
 msgstr "你不会再死了."
 
 msgid "You conserve ::prct::% of your gold when you die."
-msgstr "死后回收 ::prct:: % 金币."
+msgstr "死后回收 ::prct::% 金币."
 
 msgid "You could also increase its power!"
 msgstr "你也可以提升它的力量!"
@@ -2585,7 +2585,7 @@ msgid ""
 "You deal +::prct::% damage for ::duration:: seconds. You also take +::prct2::"
 "% extra damage during this period."
 msgstr ""
-"伤害增加 ::prct:: % 持续 ::duration:: 秒,但你承受 ::prct2:: % 的额外伤害伤害."
+"伤害增加 ::prct::% 持续 ::duration:: 秒,但你承受 ::prct2::% 的额外伤害伤害."
 
 msgid ""
 "You disappear for ::duration:: seconds and leave a lure in your place which "
@@ -2651,11 +2651,11 @@ msgid ""
 "You recover ::+power:: HP per melee hit that you deal for ::duration:: "
 "seconds. You also take +::prct::% extra damage during this period."
 msgstr ""
-"每次近战攻击回复 ::+power:: 生命值,持续 ::duration:: 秒,但你承受 +::prct:: % "
+"每次近战攻击回复 ::+power:: 生命值,持续 ::duration:: 秒,但你承受 +::prct::% "
 "的额外伤害."
 
 msgid "You recover your arrows when you kill your victim."
-msgstr "杀死敌人后收回弹药"
+msgstr "杀死敌人后收回箭矢."
 
 msgid "You release a toxic cloud when you take damage."
 msgstr "受到伤害时释放毒云."
@@ -2663,7 +2663,7 @@ msgstr "受到伤害时释放毒云."
 msgid ""
 "You teleport behind an enemy. The damage of your next melee attack is "
 "increased by ::prct::%."
-msgstr "传送至敌人后方,你的下一次近战伤害增加 ::prct:: %."
+msgstr "传送至敌人后方,你的下一次近战伤害增加 ::prct::%."
 
 msgid "You unlocked"
 msgstr "你解锁了"

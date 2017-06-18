@@ -118,7 +118,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           <a href="http://store.steampowered.com/app/588650/Dead_Cells/">Dead Cells Cheat Sheet</a>
-          <span class="md-header-nav__parent">version: 2017-06-13 (f409f35)</span>
+          <span class="md-header-nav__parent">version: 2017-06-15 (9c3edaa)</span>
         </span>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -210,10 +210,10 @@
 
             // 预处理：将 group 分组序号改为有意义的文字
             var hasGroups = [1, 2, 10];
-            jsonData.sheets.filter(function(_, index) {
-                return hasGroups.indexOf(index) >= 0 ;
-            }).forEach(function(sheet){
-                sheet.lines.forEach(function(line){
+            jsonData.sheets.filter(function (_, index) {
+                return hasGroups.indexOf(index) >= 0;
+            }).forEach(function (sheet) {
+                sheet.lines.forEach(function (line) {
                     line.group = sheet.props.separatorTitles[line.group];
                 });
             });
@@ -233,11 +233,7 @@
 
             var ItemFormatter = {};
 
-            var MobFormatter = {
-                genTags: function (cellValue, options, rowObject) {
-                    return jsonTags[cellValue].id;
-                }
-            };
+            var MobFormatter = {};
 
             var AffixFormatter = {
                 forbiddenAffixes: function (cellValue, options, rowObject) {
@@ -414,14 +410,11 @@
                     width: 65
                 },
                 colModel: [
-//                    {name: 'icon', formatter: showIcon, align: 'center', hidden: true},
                     {name: 'group'},
                     {name: 'name', formatter: linkifyTranslation},
                     {name: 'life', align: 'right'},
                     {name: 'canBeElite', align: 'center'},
-//                    {name: 'cells', formatter: formatCells, width: 120, hidden: true},
                     {name: 'blueprints', formatter: formatBlueprints, width: 200},
-//                    {name: 'genTags', formatter: MobFormatter.genTags, hidden: true},
                     {name: 'level', formatter: findLevel, width: 600}
                 ],
                 caption: 'Monster',
@@ -501,6 +494,9 @@
             var langContentEng;
             var langContentZh;
 
+            window.en = langContentEng;
+            window.zh = langContentZh;
+
             // 读取英文中文文本
             function translate(text) {
                 function loadLang(lang) {
@@ -529,9 +525,7 @@
                                 }
 
                                 if (key && value) {
-                                    key.replace(/\\"/g, '"');
-                                    value.replace(/\\"/g, '"');
-                                    result[key] = value;
+                                    result[key.replace(/^\s+|\s+$/g, '')] = value;
                                 }
                             });
                         },
@@ -551,6 +545,8 @@
                 if (!langContentZh && lang === 'zh') {
                     langContentZh = loadLang('zh');
                 }
+
+                text = text.replace(/^\s+|\s+$/g, '');
 
                 if (lang === 'en') {
                     return langContentEng[text] || text;
@@ -629,13 +625,6 @@
                 return cellValue.map(function (blueprint) {
                     return linkifyTranslation(findItemName(blueprint.item)) + ': ' + formatChance(findBlueprintChance(blueprint.rarity));
                 }).join("<br/>");
-            }
-
-            function formatCells(cellValue, options, rowObject) {
-                if (!cellValue || !rowObject.cellChance) {
-                    return "";
-                }
-                return cellValue + " cell " + rowObject.cellChance * 100 + "% chance";
             }
 
             function formatMobs(cellValue, options, rowObject) {
