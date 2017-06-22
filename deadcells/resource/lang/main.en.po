@@ -152,6 +152,9 @@ msgstr "Enable arrow keys to move "
 msgid "Activer VSync"
 msgstr "Enable VSync"
 
+msgid "Activer la synchronisation Steam Cloud"
+msgstr "Activate Steam Cloud synchronisation"
+
 msgid "Activer les vibrations"
 msgstr "Activate vibration"
 
@@ -255,6 +258,9 @@ msgstr "You've made it all this way! You're not going to chicken out now!"
 
 msgid "Arbalète lourde"
 msgstr "Heavy crossbow"
+
+msgid "Arbalète à répétition"
+msgstr "Repeater crossbow "
 
 msgid "Arc de départ aléatoire"
 msgstr "Random starter bow"
@@ -439,6 +445,9 @@ msgstr "Damage bonus:"
 msgid "Bottes cloutées"
 msgstr "Spiked boots"
 
+msgid "Bottes de Hayabusa"
+msgstr "Hayabusa boots"
+
 msgid "Bouclier Greedy"
 msgstr "Greed shield"
 
@@ -535,6 +544,27 @@ msgstr "Carnivore"
 
 msgid "Carotte"
 msgstr "Carrot"
+
+msgid "Carte : bas"
+msgstr "Map: down"
+
+msgid "Carte : droite"
+msgstr "Map: right"
+
+msgid "Carte : focus"
+msgstr "Map: focus"
+
+msgid "Carte : gauche"
+msgstr "Map: Left"
+
+msgid "Carte : haut"
+msgstr "Map: up"
+
+msgid "Carte : zoom arrière"
+msgstr "Map: Zoom out"
+
+msgid "Carte : zoom avant"
+msgstr "Map: Zoom in"
 
 msgid "Casse noisettes"
 msgstr "The nutcracker"
@@ -636,6 +666,9 @@ msgstr "Key"
 msgid "Clé de la crypte"
 msgstr "Crypt key"
 
+msgid "Clé du cimetière"
+msgstr "Graveyard key"
+
 msgid "Coeur noir"
 msgstr "Black heart"
 
@@ -685,6 +718,9 @@ msgstr "Condition not met: unlock 1 more item"
 msgid "Condition non remplie : débloquer ::n:: objets supplémentaires"
 msgstr "Condition not met: unlock ::n:: more items"
 
+msgid "Configuration des touches"
+msgstr "Control configuration"
+
 msgid "Configuration par défaut"
 msgstr "Restore default configuration"
 
@@ -714,6 +750,18 @@ msgstr "Continue"
 
 msgid "Continuer partie en cours"
 msgstr "Resume current run"
+
+msgid ""
+"Contrôle les différents flashes lumineux qui affectent tout l'écran en jeu "
+"(explosions, blessures subies etc.). Vous pouvez les désactiver si ces "
+"flashes présentent une gêne ou un risque pour vous."
+msgstr ""
+"Controls the different flashes that impact the entire game screen "
+"(explosions, being wounded etc.) You can deactivate them if they bother you "
+"or pose a risk to your health."
+
+msgid "Conçue pour appuyer là où ça fait mal."
+msgstr "Turn the knife..."
 
 msgid "Corps décapité"
 msgstr "Decapitated corpse"
@@ -774,6 +822,9 @@ msgstr "GIME ME THE RUNE!"
 msgid "Dague d'assassin"
 msgstr "Assassin's dagger"
 
+msgid "Dague de cultiste sadique"
+msgstr "Dagger of the sadistic cult"
+
 msgid "Dagues jumelles"
 msgstr "Twin daggers"
 
@@ -792,7 +843,7 @@ msgstr ""
 "Cinema and Animation in France."
 
 msgid "Dead Cells est développé par Motion Twin"
-msgstr "Dead Cells is developed by Motion Twin"
+msgstr "Dead Cells is the evil offspring of Motion Twin"
 
 msgid ""
 "Dead Cells est en accès anticipé ! Cela signifie que tout un tas de choses "
@@ -828,6 +879,9 @@ msgstr "Outside, peasant!"
 
 msgid "Dent en or"
 msgstr "Gold tooth"
+
+msgid "Derrière vous, la grosse LUMIERE, juste là !"
+msgstr "Behind you, THE BIG LIGHT! Right there!"
 
 msgid "Des vers sortent des ennemis tués."
 msgstr "A swarm of biters crawls from your victims."
@@ -974,6 +1028,9 @@ msgstr "Kill all nearby enemies first!"
 
 msgid "Elle est quelque part dans le coin ! Je le sais, je le SENS !"
 msgstr "It's somewhere here! I know it, I can FEEL it!"
+
+msgid "Elle semble très ancienne."
+msgstr "It seems to be very old."
 
 msgid "Embarcadère"
 msgstr "The Wharf"
@@ -1139,6 +1196,9 @@ msgstr "Health flask refilled"
 msgid "Fiole de soin remplie et santé restaurée"
 msgstr "Health flask refilled and health restored"
 
+msgid "Flash lumineux"
+msgstr "Bright flashes"
+
 msgid "Fluide de cadavre"
 msgstr "Spawnling"
 
@@ -1275,6 +1335,13 @@ msgstr ""
 msgid "Il est MORT."
 msgstr "He's DEAD."
 
+msgid ""
+"Il est conseillé de désactiver cette fonctionnalité si vous souhaitez jouer "
+"hors-ligne."
+msgstr ""
+"We strongly advise that you deactivate this functionality if you want to "
+"play offline."
+
 msgid "Il est fortement conseillé de jouer à Dead Cells avec une manette !"
 msgstr "Playing Dead Cells with a controller is strongly advised!"
 
@@ -1358,6 +1425,10 @@ msgstr ""
 
 msgid "Inflige un COUP CRITIQUE si la cible est victime d'un Saignement."
 msgstr "Inflicts a CRITICAL BLOW if the victim is bleeding."
+
+msgid "Inflige un COUP CRITIQUE si la cible saigne, brûle ou est empoisonnée."
+msgstr ""
+"Inflicts a CRITICAL BLOW if the victim is bleeding, burning or poisoned."
 
 msgid "Inflige un COUP CRITIQUE si la victime est bloquée contre un mur."
 msgstr "Inflicts a CRITICAL BLOW if the victime is up against a wall."
@@ -1487,6 +1558,9 @@ msgstr "A weapon popularised by the Baron Valmont du Cul."
 msgid "La fontaine est vide"
 msgstr "The fountain is empty"
 
+msgid "La lumière des stèles gardiennes vous accompagnera."
+msgstr "The light of the guardian colonnades will protect you."
+
 msgid "La maison ne fait pas crédit."
 msgstr "No! We don't offer credit!"
 
@@ -1615,6 +1689,9 @@ msgstr "Hold to block attacks."
 
 msgid "Maintenir pour se soigner"
 msgstr "Hold to heal"
+
+msgid "Mais pour combien de temps encore ?"
+msgstr "But for how long?"
 
 msgid ""
 "Mais vous n'êtes pas le premier dans ce cas là, si c'est votre question..."
@@ -1825,6 +1902,9 @@ msgstr "::name:: needed"
 
 msgid "Objet amélioré !"
 msgstr "Item improved!"
+
+msgid "Obscure est la voie que vous avez choisi d'emprunter..."
+msgstr "Dark is the path your choices set before you..."
 
 msgid "Oh ma chère petite rune, où te trouves-tu..."
 msgstr "My precious little rune, where are you?"
@@ -2333,6 +2413,28 @@ msgstr "Sound"
 msgid "Sortir"
 msgstr "Leave"
 
+msgid ""
+"Souhaitez-vous transférer vos sauvegardes Steam Cloud sur votre "
+"ordinateur ?\n"
+"Attention, si vous aviez déjà des sauvegarde locales, elles seront "
+"définitivement perdues !"
+msgstr ""
+"Would you like to transfer your Steam Cloud save files to your computer?\n"
+"Warning! If you already have local save files they will be permanently "
+"overwritten!"
+
+msgid ""
+"Souhaitez-vous transférer vos sauvegardes locales sur Steam Cloud ?\n"
+"Attention, si vous aviez déjà des sauvegardes sur Steam Cloud, elles seront "
+"définitivement perdues !"
+msgstr ""
+"Would you like to transfer your local save files to the Steam Cloud?\n"
+"Warning! If you already have save files in the Steam Cloud they will be "
+"permanently overwritten!"
+
+msgid "Suivez la lumière."
+msgstr "Follow the light."
+
 msgid "Suppr."
 msgstr "Del."
 
@@ -2341,6 +2443,9 @@ msgstr "Select"
 
 msgid "Sélectionner un autre"
 msgstr "Select another slot"
+
+msgid "Sépulcre oublié"
+msgstr "Forgotten Sepulchre "
 
 msgid "TECHNIQUE +1"
 msgstr "+1 Skills"
@@ -2362,6 +2467,16 @@ msgstr "Ruby amulet"
 
 msgid "Talisman de saphir"
 msgstr "Sapphire amulet"
+
+msgid "Talisman de topaze"
+msgstr "Topaz amulet"
+
+msgid ""
+"Tant que le client de jeu est actif, la souris ne peut pas quitter les "
+"limites de la zone d'affichage."
+msgstr ""
+"As long as the game window is open, the mouse cannot leave be used outside "
+"the game."
 
 msgid "Tapez moi !"
 msgstr "Hit me!"
@@ -2398,6 +2513,9 @@ msgstr "This. Is. DEAD CELLS!"
 
 msgid "Tiens, tiens. Mais qui voilà..."
 msgstr "Well well well, you're back..."
+
+msgid "Tire de puissantes rafales de carreaux."
+msgstr "Fires powerful bursts of bolts."
 
 msgid "Tire plusieurs carreaux à la fois."
 msgstr "Shoots multiple bolts at once."
@@ -2500,6 +2618,15 @@ msgstr "All of your progress with the Collector and your runes will be safe."
 msgid ""
 "Toutes vos attaques plongeantes appliquent de l'huile inflammable au sol"
 msgstr "All diving attacks leave flammable oil on the ground."
+
+msgid "Transfert"
+msgstr "Transfer"
+
+msgid "Transférer mes sauvegardes"
+msgstr "Transfer my save files"
+
+msgid "Traqueur noir"
+msgstr "The tracker"
 
 msgid "Traverser"
 msgstr "Enter"
@@ -2676,6 +2803,9 @@ msgstr "Guts"
 
 msgid "Vise automatiquement les enemis proches."
 msgstr "Automatically targets the closest enemy."
+
+msgid "Voici donc l'anomalie qu'elle recherche..."
+msgstr "You must be the anomaly she's looking for..."
 
 msgid "Voir la carte"
 msgstr "Map"
@@ -2876,6 +3006,13 @@ msgstr "Saves your life ONCE. Does NOT work against Curses."
 msgid "Vous soigne de ::+power:: PV en ::duration:: sec. Usage unique."
 msgstr "Heals ::+power:: HP in ::duration:: seconds. Single use."
 
+msgid ""
+"Vous soigne de ::+power:: PV et vous protège totalement pendant ::duration:: "
+"sec. Usage unique."
+msgstr ""
+"Heals ::+power:: HP and completely protects you for ::duration:: seconds. "
+"Single use."
+
 msgid "Vous tuez des trucs, je note."
 msgstr "You've been killing things I see..."
 
@@ -2885,6 +3022,9 @@ msgid ""
 msgstr ""
 "You teleport behind an enemy. The damage of your next melee attack is "
 "increased by ::prct::%."
+
+msgid "Vous vous êtes aventuré bien loin sous la surface, Déchu."
+msgstr "You've come adventuring far below the surface, Fallen."
 
 msgid "Vous y travaillez, n'est-ce pas ?"
 msgstr "It's your doing this isn't it?"
