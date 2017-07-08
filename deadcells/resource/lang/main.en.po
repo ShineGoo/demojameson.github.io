@@ -131,6 +131,9 @@ msgstr "ADMIN WEAPON"
 msgid "ALLEZ !"
 msgstr "GO ON!"
 
+msgid "ATTENTION: DANGER!"
+msgstr "BEWARE!"
+
 msgid "Abandonner la partie en cours"
 msgstr "Abort Current Game"
 
@@ -669,6 +672,9 @@ msgstr "Crypt key"
 msgid "Clé du cimetière"
 msgstr "Graveyard key"
 
+msgid "Clé du village"
+msgstr "Village key"
+
 msgid "Coeur noir"
 msgstr "Black heart"
 
@@ -1004,6 +1010,9 @@ msgstr "Esc"
 msgid "Eclair"
 msgstr "Lightning bolt"
 
+msgid "Eclaire votre chemin."
+msgstr "Enlighten your path."
+
 msgid ""
 "Ecrase violemment (::+power:: dégâts) les ennemis pris dans sa zone d'effet."
 msgstr "Violently crushes enemies in its area of effect (::+power:: damage)."
@@ -1096,7 +1105,7 @@ msgid "Epineux"
 msgstr "Thorny"
 
 msgid "Epée huileuse"
-msgstr "Oiled Sword"
+msgstr "Oiled sword"
 
 msgid "Epée large"
 msgstr "Broad sword"
@@ -1175,6 +1184,9 @@ msgstr "Causes ::count:: arrows to fall from victims."
 msgid "Faites pas votre chochotte..."
 msgstr "Oh, now don't be like that..."
 
+msgid "Faites une offrande ou retournez sur vos pas."
+msgstr "Make an offering and return from whence you came."
+
 msgid "Fallait que je tombe sur l'idiot de l'île."
 msgstr "He's got his head... In the clouds! Oh eh ha he haw..."
 
@@ -1221,7 +1233,7 @@ msgid "Fouet électrique"
 msgstr "Electric whip"
 
 msgid "Fouetard"
-msgstr "Slasher"
+msgstr "Spinner"
 
 msgid ""
 "Franchement, ça vaut que dalle. Vous n'allez pas ramasser cette merde quand "
@@ -1322,6 +1334,9 @@ msgid ""
 msgstr ""
 "Ho ho! Thank you! It's somewhere around here in these sewers, on your side "
 "of these bars..."
+
+msgid "Ici reposent les Architectes."
+msgstr "Here lie the Architects."
 
 msgid "Ignore les boucliers. Attire les victimes."
 msgstr "Ignores shields. Wrenches victims towards you."
@@ -1535,6 +1550,9 @@ msgstr "Play"
 msgid "Kamikaze"
 msgstr "Kamikaze"
 
+msgid "L'accès à la tour de l'horloge est interdit."
+msgstr "Access to the Clock Tower is forbidden."
+
 msgid "L'arc de départ est tiré aléatoirement parmi vos arcs débloqués."
 msgstr "The starting bow is randomly drawn from those you have unlocked."
 
@@ -1575,6 +1593,9 @@ msgstr "Reduces the chance of unfreezing an enemy when attacking."
 
 msgid "La victime subit un saignement lorsqu'elle dégèle."
 msgstr "The victim suffers bleed damage when it thaws out."
+
+msgid "Lacérateur"
+msgstr "Slasher"
 
 msgid "Lame sadique"
 msgstr "Sadist's sword"
@@ -1617,6 +1638,10 @@ msgstr "Slasher"
 msgid ""
 "Le bouclier de départ est tiré aléatoirement parmi vos boucliers débloqués."
 msgstr "The starting shield is randomly drawn from those you have unlocked."
+
+msgid "Le dernier coup inflige des dégâts de zone et repousse les ennemis."
+msgstr ""
+"The last hit of the combo inflicts area damage and pushes enemies back."
 
 msgid "Le poison n'a aucun effet sur vous."
 msgstr "Poison no longer affects you. Sewers, here we come..."
@@ -1670,6 +1695,9 @@ msgstr "Lure"
 
 msgid "Lieutenant"
 msgstr "Lieutenant"
+
+msgid "Lire"
+msgstr "Read"
 
 msgid "Lourde et lente, mais tellement violente."
 msgstr "Slow and heavy, but looks badass. The best way to compensate."
@@ -2103,6 +2131,13 @@ msgid "Potion de soin IV"
 msgstr "Healing Potion IV"
 
 msgid ""
+"Prière de ne pas vous aventurer dans ce raccourci sans une préparation "
+"adéquate."
+msgstr ""
+"Please, do not attempt to take this shortcut if you're not properly "
+"equipped... You've been warned."
+
+msgid ""
 "Prodigue un soin en cas de blocage (ne fonctionne qu'une fois par ennemi)"
 msgstr "Heals you when you parry (once per enemy)"
 
@@ -2200,6 +2235,9 @@ msgstr "Thanks"
 msgid "Rempart"
 msgstr "Force shield"
 
+msgid "Repos des architectes"
+msgstr "Repository of the Architects"
+
 msgid "Repousse les victimes et interrompt les attaques."
 msgstr "Kicks victims backwards and interrupts their attacks."
 
@@ -2238,6 +2276,9 @@ msgstr "Return to the title screen"
 
 msgid "Rien de notable, si ce n'est une odeur persistante de rat crevé."
 msgstr "Nothing worth mentioning, except maybe a vague whiff of dead rat..."
+
+msgid "Risque de mort prématurée."
+msgstr "Risk of untimely death."
 
 msgid "Roulade"
 msgstr "Roll"
@@ -2445,7 +2486,7 @@ msgid "Sélectionner un autre"
 msgstr "Select another slot"
 
 msgid "Sépulcre oublié"
-msgstr "Forgotten Sepulchre "
+msgstr "Forgotten Sepulchre"
 
 msgid "TECHNIQUE +1"
 msgstr "+1 Skills"
@@ -2498,6 +2539,12 @@ msgstr "The Watcher's tentacule"
 
 msgid "Terminez le défi afin de l'ouvrir."
 msgstr "You must to complete the challenge first."
+
+msgid "Test Seb"
+msgstr "Test Seb"
+
+msgid "Test Thomas"
+msgstr "Test Thomas"
 
 msgid "The Incomplete One"
 msgstr "The Incomplete One"
@@ -2762,6 +2809,9 @@ msgstr "Confirm the purchase"
 msgid "Vampirisme"
 msgstr "Vampirism"
 
+msgid "Veilleuse"
+msgstr "Night light"
+
 msgid "Ver de cadavre"
 msgstr "Body worm"
 
@@ -2903,8 +2953,8 @@ msgid ""
 "Vous devenez invisible après ::duration::s sans attaquer. Votre prochaine "
 "attaque en étant invisible inflige +::prct::% de dégâts."
 msgstr ""
-"Make you invisible after ::duration:: without attacking. You next strike "
-"while still being invisible inflicts +::prct::% damage."
+"Makes you invisible after ::duration::/sec without attacking. While "
+"invisible your first hit will do +::prct::% damage."
 
 msgid ""
 "Vous disparaissez pendant ::duration:: sec et laissez place à un leurre qui "
