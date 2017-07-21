@@ -1,0 +1,3107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "\"Agression\" (allié)"
+msgstr "Aggressive apparition"
+
+msgid "\"Payez le tribut, ou retournez sur vos pas !\""
+msgstr "\"Pay the tribute, or be gone!\""
+
+msgid "\"Travaux en cours\", impossible de continuer par là."
+msgstr "Under construction! You can't go any further for now."
+
+msgid "\"Ygdar Orus Li Ox !\""
+msgstr "\"Ygdar Orus Li Ox !\""
+
+msgid "(MAINTENU)"
+msgstr "(HOLD)"
+
+msgid "+::n:: OR"
+msgstr "+::n:: GOLD"
+
+msgid "+::n:: PV"
+msgstr "+::n:: HP"
+
+msgid "+::n:: pt"
+msgstr "+::n:: pt"
+
+msgid "+::n:: pts"
+msgstr "+::n:: pts"
+
+msgid "+::prct::% de dégâts pour les Coups Critiques."
+msgstr "+::prct::% damage when inflicting a CRITICAL HIT."
+
+msgid "+::prct::% de dégâts si votre vie est à son maximum."
+msgstr "+::prct::% damage when your health is at its maximum."
+
+msgid "+::prct::% de dégâts sur une cible empoisonnée."
+msgstr "+::prct::% damage on a poisoned target."
+
+msgid "+::prct::% de dégâts sur une cible enflammée"
+msgstr "+::prct::% damage on a burning target"
+
+msgid "+::prct::% de dégâts sur une cible gelée."
+msgstr "+::prct::% damage on a frozen target."
+
+msgid "+::prct::% de dégâts sur une cible qui saigne"
+msgstr "+::prct::% damage on a bleeding target"
+
+msgid "+::prct::% de dégâts sur une cible ralentie."
+msgstr "+::prct::% damage on a stunned target."
+
+msgid "+::prct::% de dégâts sur une cible étourdie"
+msgstr "+::prct::% damage on a stunned target"
+
+msgid "-::n:: OR"
+msgstr "-::n:: GOLD"
+
+msgid "..."
+msgstr "..."
+
+msgid "::d:: dég/s"
+msgstr "::d:: damage/s"
+
+msgid "::d:: dégâts/sec"
+msgstr "::d:: damage/s"
+
+msgid "::d:: sec de rechargement"
+msgstr "::d:: seconds recharge time"
+
+msgid "::h:: heure(s) ::m:: minute(s) ::s:: seconde(s)"
+msgstr "::h:: hour(s) ::m:: minute(s) ::s:: second(s)"
+
+msgid "::h::h ::m::m ::s::s"
+msgstr "::h::h ::m::m ::s::s"
+
+msgid "::m:: minute(s) ::s:: seconde(s)"
+msgstr "::m:: minute(s) ::s:: second(s)"
+
+msgid "::m::m ::s::s"
+msgstr "::m::m ::s::s"
+
+msgid "::n:: OR retrouvé (::pct::%)"
+msgstr "::n:: GOLD recovered (::pct::%)"
+
+msgid "::n:: cellule restante"
+msgstr "::n:: cell left"
+
+msgid "::n:: cellules restantes"
+msgstr "::n:: cells left"
+
+msgid "::name:: !"
+msgstr "::name::!"
+
+msgid "::s:: seconde(s)"
+msgstr "::s:: second(s)"
+
+msgid "::s::s"
+msgstr "::s::s"
+
+msgid "::val:: (::crit::) dég/s"
+msgstr "::val:: (::crit::) damage/s"
+
+msgid "A MOIIII !"
+msgstr "MINE!"
+
+msgid ""
+"A leur mort, les ennemis touchés congèlent pendant ::duration:: sec les "
+"autres ennemis."
+msgstr "Upon death, victims freeze nearby enemies for ::duration:: seconds."
+
+msgid "A suivre..."
+msgstr "To continue..."
+
+msgid "ADIEU, petit être... Rôôôôômmff..."
+msgstr "Goodbye, for no... Ohh ho ho ho ho..."
+
+msgid "ADMIN WEAPON"
+msgstr "ADMIN WEAPON"
+
+msgid "ALLEZ !"
+msgstr "GO ON!"
+
+msgid "ATTENTION: DANGER!"
+msgstr "BEWARE!"
+
+msgid "Abandonner la partie en cours"
+msgstr "Abort Current Game"
+
+msgid "Accepter"
+msgstr "OK"
+
+msgid "Accès anticipé (::date:: - ::git::)"
+msgstr "Early access (::date:: - ::git::)"
+
+msgid "Acheter"
+msgstr "Buy"
+
+msgid "Acheter pour ::price:: OR"
+msgstr "Buy for ::price:: GOLD"
+
+msgid "Active l'utilisation des flèches directionnelle pour se déplacer"
+msgstr "Enable arrow keys to move "
+
+msgid "Activer VSync"
+msgstr "Enable VSync"
+
+msgid "Activer la synchronisation Steam Cloud"
+msgstr "Activate Steam Cloud synchronisation"
+
+msgid "Activer les vibrations"
+msgstr "Activate vibration"
+
+msgid "Affiche les explications des commandes de jeu en début de partie."
+msgstr "Show the controls at the beginning of the game."
+
+msgid "Affiche un \"!\" lorsqu'un ennemi s'apprête à vous attaquer."
+msgstr "Displays a \"!\" when an enemy is about to strike."
+
+msgid ""
+"Affiche un léger feedback vous indiquant que votre compétence d'esquive est "
+"prête."
+msgstr "Displays a light visual feedback when you can roll again."
+
+msgid "Afficher les éléments indisponibles"
+msgstr "Show unavailable items"
+
+msgid "Ah ! Te revoilà !"
+msgstr "Ah ha! There you are!"
+
+msgid "Ah ! Un client !"
+msgstr "Ah ha! A customer!"
+
+msgid "Ah ah, oui... Evidemment que vous y travaillez."
+msgstr "Ahhh, yes... Of course you're working on it."
+
+msgid "Allez... Je mérite bien une petite fessée..."
+msgstr "Come on... Just a little peek..."
+
+msgid "Alors comme ça, vous voulez la jouer difficile ?"
+msgstr "So you like to play hardball, do ya?"
+
+msgid "Alors... VAS-Y !"
+msgstr "So... Go on!"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Alt D."
+msgstr "Alt R."
+
+msgid "Alt G."
+msgstr "Alt L."
+
+msgid "Ambiance garantie."
+msgstr "Sure to warm up the crowd."
+
+msgid "Amenez de l'or, ou fichez le camp !"
+msgstr "Bring the gold, or beat it!"
+
+msgid "Amenez vos Schémas au Collecteur pour débloquer de nouveaux objets."
+msgstr "Take your blueprints to the Collector to unlock new items."
+
+msgid "Amulette"
+msgstr "Amulet"
+
+msgid "Amélioration générale"
+msgstr "General improvement"
+
+msgid "Amélioration permanente obtenue !"
+msgstr "Permanent improvement unlocked!"
+
+msgid "Améliore l'une de vos 3 caractéristiques au choix !"
+msgstr "Choose one of your three stats to improve!"
+
+msgid "Améthyste"
+msgstr "Amethyst"
+
+msgid "Ancien réseau d'égouts"
+msgstr "The Old Sewers"
+
+msgid "Ancienne amulette :"
+msgstr "Old amulet:"
+
+msgid "Annonce d'attaques"
+msgstr "Show attack warning marker"
+
+msgid "Annuler"
+msgstr "Cancel"
+
+msgid "Annuler l'achat"
+msgstr "Cancel the purchase"
+
+msgid "Applique de l'huile inflammable au déploiement du piège."
+msgstr "Applies flammable oil to the victim upon deployment."
+
+msgid "Applique de l'huile inflammable aux victimes."
+msgstr "Applies flammable oil to victims."
+
+msgid "Applique de l'huile sur la victime."
+msgstr "Covers the victim in flammable oil."
+
+msgid "Appuyez sur F9 à nouveau pour revenir au menu principal !"
+msgstr "Press F9 again to return to the main menu!"
+
+msgid "Appuyez sur S à nouveau pour démarrer le mode Score EGX!"
+msgstr "Press S again to start the EGX score mode!"
+
+msgid "Après être arrivé jusqu'ici, tu n'en feras qu'une bouchée !"
+msgstr "You've made it all this way! You're not going to chicken out now!"
+
+msgid "Arbalète lourde"
+msgstr "Heavy crossbow"
+
+msgid "Arbalète à répétition"
+msgstr "Repeater crossbow "
+
+msgid "Arc de départ aléatoire"
+msgstr "Random starter bow"
+
+msgid "Arc de fantassin"
+msgstr "Infantry bow"
+
+msgid "Arc de glace"
+msgstr "Ice bow"
+
+msgid "Arc de tireur d'élite"
+msgstr "Hunter's longbow"
+
+msgid "Arc du fils du geolier"
+msgstr "Beginner's bow"
+
+msgid "Arc et carquois sans fond"
+msgstr "Bow and infinite arrows"
+
+msgid "Arc rapide"
+msgstr "Quick bow"
+
+msgid "Archer gelé"
+msgstr "Frozen archer"
+
+msgid "Archer mort-vivant"
+msgstr "Undead archer"
+
+msgid "Arme"
+msgstr "Weapon"
+
+msgid "Arme améliorée !"
+msgstr "Weapon improved!"
+
+msgid "Arme de mélée aléatoire"
+msgstr "Random melee weapon"
+
+msgid "Arme principale"
+msgstr "Main weapon"
+
+msgid "Arme secondaire"
+msgstr "Secondary weapon"
+
+msgid "Arme secondaire uniquement."
+msgstr "Secondary weapon only."
+
+msgid "Armes"
+msgstr "Weapons"
+
+msgid "Artefact meta déjà obtenu."
+msgstr "You already have this meta item."
+
+msgid "Ascenseur"
+msgstr "Elevator"
+
+msgid "Attaquer immédiatement après un blocage inflige ::prct::% de dégâts."
+msgstr "Attacking immediately after parrying inflicts ::prct::% damage."
+
+msgid ""
+"Atteindre la sortie en ayant éliminé tous les ennemis sans subir de dégâts !"
+msgstr "Kill all the enemies and make it to the exit without getting hit!"
+
+msgid "Attention !"
+msgstr "Caution!"
+
+msgid "Attire tout ce qui est proche et inflige ::+dps:: dégâts/sec."
+msgstr "Attracts anything close to it and deals ::+dps:: damage/s."
+
+msgid ""
+"Attire un ennemi à vous. La prochaine attaque de corps à corps contre la "
+"victime inflige ::prct::% dégâts supplémentaires."
+msgstr ""
+"Pulls an enemy to you. Your next melee attacks on the victim deal ::prct::% "
+"extra damage."
+
+msgid "Attrapeur"
+msgstr "Catcher"
+
+msgid "Aucune"
+msgstr "None"
+
+msgid "Aucune destination disponible."
+msgstr "You haven't unlocked another teleporter yet."
+
+msgid "Aucune pour le moment."
+msgstr "None for now."
+
+msgid "Augmente les dégâts des armes."
+msgstr "Increase weapon damage."
+
+msgid ""
+"Augmente les dégâts des compétences actives et réduit leur délai "
+"d'utilisation."
+msgstr "Increase active skill damage and reduce their cooldown timer."
+
+msgid "Augmente les points de vie."
+msgstr "Increase health."
+
+msgid "Augmenter les dégâts :"
+msgstr "Increase damage:"
+
+msgid ""
+"Autant dire que tu as tout intérêt à me ramener d'autres cellules si tu veux "
+"plus de puissance."
+msgstr "Simply put, if you want more power, then bring me more cells!"
+
+msgid "BON ! Vous m'achetez quelque chose ?!"
+msgstr "BUY SOMETHING OR GET OUT OF HERE!"
+
+msgid "Bain de sang"
+msgstr "Blood sword"
+
+msgid "Bas"
+msgstr "Down"
+
+msgid ""
+"Besoin de puissance ? Dégâts infligés x::power::, mais dégâts subis x::"
+"power2:: !!"
+msgstr ""
+"Need more power? Damage dealt x::power::, but... damage received x::"
+"power2::!!"
+
+msgid "Bibliothèque"
+msgstr "Library"
+
+msgid ""
+"Bien que commune, vous en tirerez ::$power:: OR sans trop de difficulté."
+msgstr ""
+"Probably fake, but you should be able to trick a poor soul into buying it "
+"for ::$power:: GOLD."
+
+msgid "Biomes"
+msgstr "Biomes"
+
+msgid "Biomes atteints"
+msgstr "Biomes reached"
+
+msgid ""
+"Bloque les attaques et fait tomber les dents de vos ennemis (une fois max "
+"par ennemi). Transforme aussi les flèches en or."
+msgstr ""
+"Blocks attacks and shakes out any loose gold from your enemy's teeth (once "
+"per enemy). Also transforms enemy arrows into gold."
+
+msgid "Bloque les attaques et inflige d'importants dégâts."
+msgstr "Blocks attacks and inflicts heavy damage."
+
+msgid "Bloque les attaques tout en chargeant en avant."
+msgstr "Causes you to charge forward while blocking."
+
+msgid ""
+"Bloque les attaques, tout  en infligeant des Saignements (::+dps:: dégâts/"
+"sec pendant ::duration:: sec) à tous les ennemis proches."
+msgstr ""
+"Blocks attacks and causes bleeding (::+dps:: damage/s for ::duration:: "
+"seconds) on all nearby enemies."
+
+msgid "Bloqué !"
+msgstr "Blocked!"
+
+msgid "Boeuf"
+msgstr "Bull"
+
+msgid "Bombe de lière"
+msgstr "Ivy grenade"
+
+msgid "Bombe givrante"
+msgstr "Ice grenade"
+
+msgid "Bombe incendiaire"
+msgstr "Fire grenade"
+
+msgid "Bombe à huile"
+msgstr "Oil grenade"
+
+msgid "Bon. Et maintenant, prisonnier..."
+msgstr "Now... Prisoner."
+
+msgid "Bonus aux dégâts :"
+msgstr "Damage bonus:"
+
+msgid "Bottes cloutées"
+msgstr "Spiked boots"
+
+msgid "Bottes de Hayabusa"
+msgstr "Hayabusa boots"
+
+msgid "Bouclier Greedy"
+msgstr "Greed shield"
+
+msgid "Bouclier d'assaut"
+msgstr "Assault Shield"
+
+msgid "Bouclier de dégagement"
+msgstr "Shove shield"
+
+msgid "Bouclier de départ aléatoire"
+msgstr "Random starter shield"
+
+msgid "Bouclier maintenu"
+msgstr "Held Shield"
+
+msgid "Bouclier sanguinaire"
+msgstr "Blood shield"
+
+msgid "Bouclier solide"
+msgstr "Sturdy shield"
+
+msgid "Bouclier à pointes"
+msgstr "Spiked shield"
+
+msgid "Bref approchez et détendez vous, ca risque de piquer un peu."
+msgstr "Never mind, come closer and relax. This might sting a little."
+
+msgid "Briser"
+msgstr "Break"
+
+msgid "Brochette"
+msgstr "Kebab"
+
+msgid ""
+"Brûle les ennemis proches pendant ::duration:: secondes (::+dps:: dégâts/"
+"sec)."
+msgstr "Burns nearby enemies for ::duration:: seconds (::+dps:: damage/s)."
+
+msgid "C'est MA rune !"
+msgstr "It's MY rune!"
+
+msgid "C'est ici qu'elle se trouve ! La... MA rune se trouve un peu plus bas !"
+msgstr "It's here that you'll find it, I mean, MY rune!"
+
+msgid ""
+"C'est le jouet du fils du geolier. On doit bien pouvoir tuer quelques trucs "
+"avec ça."
+msgstr "The Jailer's son was getting pretty good at hunting rats with this..."
+
+msgid "C'est mon travail."
+msgstr "That's my job."
+
+msgid "C'est parti !"
+msgstr "Go!"
+
+msgid "C'est ridicule, n'est-ce pas ?"
+msgstr "I wonder if... What do you make of all this?"
+
+msgid "Ca n'a pas l'air de s'être très bien passé pour vous on dirait."
+msgstr "Well it doesn't seem to be going all that well  for you..."
+
+msgid "Ca ne semble pas fonctionner."
+msgstr "It does not seem to work."
+
+msgid ""
+"Ca se vend relativement bien, vous pourrez en tirer ::$power:: OR au moins."
+msgstr "This sells quite well! Easiest ::$power:: you'll ever make..."
+
+msgid "Ca sera sûrement très joli quand toutes ces flasques seront illuminées."
+msgstr "It's going to be a sight to see when all of these flasks are lit up..."
+
+msgid ""
+"Ca sera sûrement très joli, quand toutes ces flasques seront remplies avec "
+"l'aide du Collecteur."
+msgstr "This is going to be very pretty when it's done..."
+
+msgid "Ca y est ? Tu l'as ?"
+msgstr "Ok! You have it?"
+
+msgid "Cacher les éléments indisponibles"
+msgstr "Hide the unavailable items"
+
+msgid "Caillou brillant"
+msgstr "Shiny rock"
+
+msgid "Capacité active"
+msgstr "Active skills"
+
+msgid "Capturer souris"
+msgstr "Mouse capture (mouse can't leave the game screen)."
+
+msgid "Carnivore"
+msgstr "Carnivore"
+
+msgid "Carotte"
+msgstr "Carrot"
+
+msgid "Carte : bas"
+msgstr "Map: down"
+
+msgid "Carte : droite"
+msgstr "Map: right"
+
+msgid "Carte : focus"
+msgstr "Map: focus"
+
+msgid "Carte : gauche"
+msgstr "Map: Left"
+
+msgid "Carte : haut"
+msgstr "Map: up"
+
+msgid "Carte : zoom arrière"
+msgstr "Map: Zoom out"
+
+msgid "Carte : zoom avant"
+msgstr "Map: Zoom in"
+
+msgid "Casse noisettes"
+msgstr "The nutcracker"
+
+msgid ""
+"Ce sac contient l'or que vous aviez lors de votre précédente... tentative."
+msgstr "This bag contains some of the gold from a previous life."
+
+msgid "Cela doit être étrange de revenir d'entre les morts."
+msgstr "I suppose you didn't think to find yourself back here..."
+
+msgid "Cellule en or"
+msgstr "Golden cell"
+
+msgid "Cellules dépensées"
+msgstr "Cells spent"
+
+msgid "Cellules gagnées"
+msgstr "Cells collected"
+
+msgid "Cellules perdus"
+msgstr "Cells lost"
+
+msgid "Cerises"
+msgstr "Cherry"
+
+msgid "Cette RUNE PERMANENTE vous permet d'utiliser les stèles."
+msgstr ""
+"This rune PERMANENTLY gives you the ability to use the teleportation tombs."
+
+msgid ""
+"Cette RUNE PERMANENTE vous permet de faire pousser des vignes grimpantes."
+msgstr "This rune PERMANENTLY gives you the ability to grow climbable vines."
+
+msgid "Cette jolie pierre vous rapportera ::$power:: OR ! Ma précieuuuuse..."
+msgstr "This purple stone is worth ::$power:: GOLD! My precioooouuuusssss..."
+
+msgid "Cette porte a été condamnée il y a ::time::. Dommage..."
+msgstr "This door was sealed ::time:: ago. Too bad..."
+
+msgid "Cette porte est bloquée..."
+msgstr "This door is blocked..."
+
+msgid "Cette porte ne s'ouvrira pas si j'ai encore des cellules sur moi."
+msgstr "This door won't open if you're still carrying cells."
+
+msgid "Cette porte s'ouvre depuis un autre endroit."
+msgstr "This door can't be opened from this side."
+
+msgid "Cette sauvegarde nécessite une version plus récente du jeu."
+msgstr "This save requires a newer version of the game. "
+
+msgid ""
+"Cette version du jeu peut être amenée à changer. Signalez les bugs sur le "
+"forum Steam. Merci pour votre soutien :)"
+msgstr ""
+"This version of the game is subject to change (lots of it). Please report "
+"bugs on the Steam forum. Thanks for your help! :)"
+
+msgid "Charnier"
+msgstr "Ossuary"
+
+msgid "Charognarde"
+msgstr "Frantic sword"
+
+msgid "Chatouiller"
+msgstr "Tickle"
+
+msgid "Chauve-souris"
+msgstr "Bat"
+
+msgid "Chef Pirate"
+msgstr "Pirate captain"
+
+msgid "Cimetière du Val"
+msgstr "Graveyard"
+
+msgid "Clavier / souris"
+msgstr "Keyboard/mouse"
+
+msgid "Clic D."
+msgstr "Right click."
+
+msgid "Clic G."
+msgstr "Left click."
+
+msgid "Clic M."
+msgstr "Middle click."
+
+msgid "Clic Préc."
+msgstr "Back click."
+
+msgid "Clic Suiv."
+msgstr "Forward click."
+
+msgid "Clé"
+msgstr "Key"
+
+msgid "Clé de la crypte"
+msgstr "Crypt key"
+
+msgid "Clé du cimetière"
+msgstr "Graveyard key"
+
+msgid "Clé du village"
+msgstr "Village key"
+
+msgid "Coeur noir"
+msgstr "Black heart"
+
+msgid "Coffre condamné"
+msgstr "Sealed chest"
+
+msgid "Coffre verrouillé"
+msgstr "Locked chest"
+
+msgid "Coffres maudits ouverts"
+msgstr "Cursed chests looted"
+
+msgid "Coffres normaux ouverts"
+msgstr "Treasure chests looted"
+
+msgid "Collier de prisonnier"
+msgstr "Prisoner's collar"
+
+msgid "Combat"
+msgstr "Combat"
+
+msgid "Comme tous les autres."
+msgstr "Like all the rest, I guess."
+
+msgid ""
+"Comme tous les boucliers, il vous permet de bloquer les attaques et vous "
+"protègera temporairement si vous subissez des dégâts."
+msgstr ""
+"Like any old shield, it allows you to block attacks and temporarily protects "
+"you if you take damage."
+
+msgid "Compétence droite"
+msgstr "Right trigger skill"
+
+msgid "Compétence gauche"
+msgstr "Left trigger skill"
+
+msgid "Compétences"
+msgstr "Skills"
+
+msgid "Condition non remplie : débloquer \"::name::\""
+msgstr "Condition not met: unlock \"::name::\""
+
+msgid "Condition non remplie : débloquer 1 objet supplémentaire"
+msgstr "Condition not met: unlock 1 more item"
+
+msgid "Condition non remplie : débloquer ::n:: objets supplémentaires"
+msgstr "Condition not met: unlock ::n:: more items"
+
+msgid "Configuration des touches"
+msgstr "Control configuration"
+
+msgid "Configuration par défaut"
+msgstr "Restore default configuration"
+
+msgid "Confirmer"
+msgstr "Confirm"
+
+msgid "Congèle les ennemis bloqués."
+msgstr "Freeze enemies when you parry."
+
+msgid "Congèle les ennemis devant vous."
+msgstr "Freezes enemies hit by the blast."
+
+msgid "Congèle les ennemis."
+msgstr "Freezes enemies struck by your arrows."
+
+msgid "Congélation"
+msgstr "Frost blast"
+
+msgid "Consommable"
+msgstr "Consumable"
+
+msgid "Continuer"
+msgstr "Continue"
+
+msgid "Continuer la partie en cours"
+msgstr "Continue"
+
+msgid "Continuer partie en cours"
+msgstr "Resume current run"
+
+msgid ""
+"Contrôle les différents flashes lumineux qui affectent tout l'écran en jeu "
+"(explosions, blessures subies etc.). Vous pouvez les désactiver si ces "
+"flashes présentent une gêne ou un risque pour vous."
+msgstr ""
+"Controls the different flashes that impact the entire game screen "
+"(explosions, being wounded etc.) You can deactivate them if they bother you "
+"or pose a risk to your health."
+
+msgid "Conçue pour appuyer là où ça fait mal."
+msgstr "Turn the knife..."
+
+msgid "Corps décapité"
+msgstr "Decapitated corpse"
+
+msgid "Corps détruit"
+msgstr "Body Desecrated"
+
+msgid "Corps détruit (dégâts x::n::)"
+msgstr "Body Desecrated (damage x::n::)"
+
+msgid "Coureur"
+msgstr "Phazer"
+
+msgid "Couteau de lancer"
+msgstr "Throwing knife"
+
+msgid ""
+"Couvre le sol d'huile autour de vous puis l'enflamme directement à vos "
+"pieds !"
+msgstr "Cover the ground around you with oil and light it up!"
+
+msgid "Couvre le sol d'huile autour de vous."
+msgstr "Cover the ground around you with flammable oil."
+
+msgid "Crache-mort"
+msgstr "Death spitter"
+
+msgid "Crypte nauséabonde"
+msgstr "The Insufferable Crypt"
+
+msgid "Créature élite"
+msgstr "Elite monster"
+
+msgid "Crédits"
+msgstr "Credits"
+
+msgid "Crée un nuage de poison autour de la victime."
+msgstr "Releases a cloud of poison around the victim."
+
+msgid "Ctrl"
+msgstr "Ctrl"
+
+msgid "Ctrl D."
+msgstr "Ctrl R."
+
+msgid "Ctrl G."
+msgstr "Ctrl L."
+
+msgid "Cuisson à coeur."
+msgstr "Rare, medium or well-done?"
+
+msgid "DONNE LA MOI !"
+msgstr "GIVE IT TO ME!"
+
+msgid "DONNE MOI LA RUNE !"
+msgstr "GIME ME THE RUNE!"
+
+msgid "Dague d'assassin"
+msgstr "Assassin's dagger"
+
+msgid "Dague de cultiste sadique"
+msgstr "Dagger of the sadistic cult"
+
+msgid "Dagues jumelles"
+msgstr "Twin daggers"
+
+msgid "Danse des couteaux"
+msgstr "Knife storm"
+
+msgid "Dead Cells Alpha [build ::build::]"
+msgstr "Dead Cells Alpha [build ::build::]"
+
+msgid ""
+"Dead Cells a été réalisé avec la participation du FAJV - Centre National du "
+"Cinéma et de l'image animée et le ministère de l'économie, de l'industrie et "
+"du numérique."
+msgstr ""
+"Dead Cells was created with the help of the FAJV - National Center for "
+"Cinema and Animation in France."
+
+msgid "Dead Cells est développé par Motion Twin"
+msgstr "Dead Cells is the evil offspring of Motion Twin"
+
+msgid ""
+"Dead Cells est en accès anticipé ! Cela signifie que tout un tas de choses "
+"risque de se produire. Des choses amusantes (finir la tête dans un mur, "
+"sauter sur 10km...), et d'autres moins (perdre toute votre sauvegarde)."
+msgstr ""
+"Dead Cells is in Early Access! This means there will be bugs... Hopefully "
+"not too many though... Some will be funny (getting your head stuck in a "
+"wall, falling through the floor etc), others won't be (losing your save in a "
+"crash and the like)."
+
+msgid ""
+"Dead Cells n'est pas encore optimisé pour ce type de processeur graphique, "
+"il est possible que vous rencontriez quelques bugs."
+msgstr ""
+"Dead Cells has not been optimized for this type of graphics card for the "
+"moment, it's possible that you will experience some bugs."
+
+msgid "Debug Seb"
+msgstr "Debug seb"
+
+msgid "Debug Skool"
+msgstr "Debug Skool"
+
+msgid "Debug Thomas"
+msgstr "Debug Thomas"
+
+msgid "Debug Tipyx"
+msgstr "Debug Tipyx"
+
+msgid "Dehors, péon !"
+msgstr "Outside, peasant!"
+
+msgid "Dent en or"
+msgstr "Gold tooth"
+
+msgid "Derrière vous, la grosse LUMIERE, juste là !"
+msgstr "Behind you, THE BIG LIGHT! Right there!"
+
+msgid "Des vers sortent des ennemis tués."
+msgstr "A swarm of biters crawls from your victims."
+
+msgid "Descendre"
+msgstr "Drop down"
+
+msgid "Descente piégée"
+msgstr "Booby trapped drop"
+
+msgid "Deux dagues pour le prix d'une, toujours plus de violence."
+msgstr "Two knives for the price of one, more violence for your dollar!"
+
+msgid "Devenez Palpatine."
+msgstr "Join the dark side."
+
+msgid "Distorsion temporelle"
+msgstr "Time bender"
+
+msgid "Dites, ça va finir par me gonfler..."
+msgstr "You know, this is going to get old..."
+
+msgid "Divers"
+msgstr "Misc"
+
+msgid "Double saut"
+msgstr "Double jump"
+
+msgid "Double saut piégé"
+msgstr "Booby trapped double jump"
+
+msgid "Droite"
+msgstr "Right"
+
+msgid "Drôle d'endroit, tout de même."
+msgstr "This is a strange place..."
+
+msgid "Duelliste"
+msgstr "Duelist"
+
+msgid "Début"
+msgstr "Home"
+
+msgid "Défense brisée !"
+msgstr "Defence breached!"
+
+msgid "Défi"
+msgstr "Challenge"
+
+msgid "Défi raté !"
+msgstr "Challenge failed!"
+
+msgid "Défi raté !"
+msgstr "Challenge failed!"
+
+msgid "Défi réussi !"
+msgstr "Challenge overcome!"
+
+msgid "Défis ratés"
+msgstr "Challenges failed"
+
+msgid "Défis réussis"
+msgstr "Challenges succeed"
+
+msgid "Déflagration"
+msgstr "Explosion"
+
+msgid "Déflecteur"
+msgstr "Deflector"
+
+msgid "Dégâts +::n::%"
+msgstr "Damage +::n::%"
+
+msgid "Dégâts des armes augmentés !"
+msgstr "Weapon damage increased!"
+
+msgid "Dégâts des tirs réduits de ::prct::%"
+msgstr "Damage from projectiles reduced by ::prct::%"
+
+msgid "Dégâts et délais des compétences actives améliorés !"
+msgstr "Skill power and cooldown improved!"
+
+msgid "Dégâts infligés x::power::, dégâts subis x::power2:: !"
+msgstr "Damage dealt x::power::, damage received x::power2::!"
+
+msgid "Dégâts réduits de ::prct::%"
+msgstr "Damage taken reduced by ::prct::%"
+
+msgid "Déjà de retour ?"
+msgstr "Back already?"
+
+msgid "Démarrer une partie"
+msgstr "New game"
+
+msgid "Déphasage"
+msgstr "Phaser"
+
+msgid "Désespoir"
+msgstr "Spiteful sword"
+
+msgid ""
+"Détruit tous les projectiles proches. Le lanceur de ce projectile subit ::"
+"+power:: dégâts et est étourdit ::effectCharge:: secondes."
+msgstr ""
+"Destroys all nearby projectiles, stuns the source for ::effectCharge:: "
+"seconds and inflicts ::+power:: damage."
+
+msgid "Dévastateur à longue portée, c'est le sniper en bois."
+msgstr "Slow, but devastating at longe range."
+
+msgid "Déverrouiller"
+msgstr "Unlock"
+
+msgid "ERROR: no target"
+msgstr "ERROR: no target"
+
+msgid "Echap"
+msgstr "Esc"
+
+msgid "Eclair"
+msgstr "Lightning bolt"
+
+msgid "Eclaire votre chemin."
+msgstr "Enlighten your path."
+
+msgid ""
+"Ecrase violemment (::+power:: dégâts) les ennemis pris dans sa zone d'effet."
+msgstr "Violently crushes enemies in its area of effect (::+power:: damage)."
+
+msgid "Ecraseur"
+msgstr "Crusher"
+
+msgid "Effaçer toute la progression de cette sauvegarde"
+msgstr "Wipe ALL the progression of this save file"
+
+msgid "Egouts toxiques"
+msgstr "The Toxic sewers"
+
+msgid "Eh voila ! Ca va mieux hein ?"
+msgstr "There! Better, no?"
+
+msgid "Electrocuteur"
+msgstr "Shocker"
+
+msgid "Eliminez d'abord les ennemis proches !"
+msgstr "Kill all nearby enemies first!"
+
+msgid "Elle est quelque part dans le coin ! Je le sais, je le SENS !"
+msgstr "It's somewhere here! I know it, I can FEEL it!"
+
+msgid "Elle semble très ancienne."
+msgstr "It seems to be very old."
+
+msgid "Embarcadère"
+msgstr "The Wharf"
+
+msgid "Empaleuse"
+msgstr "Impaler"
+
+msgid "Empalleur"
+msgstr "Spiker"
+
+msgid "Emplacement de sauvegarde ::n::"
+msgstr "Save slot ::n::"
+
+msgid "Empoisonne la victime."
+msgstr "Poison the victim."
+
+msgid "Empoisonne les ennemis bloqués."
+msgstr "Poison enemies when you parry."
+
+msgid "Emprisonneur"
+msgstr "Grenadier"
+
+msgid ""
+"En effet, d'autres niveaux viendront ci-après durant l'Accès Anticipé !\n"
+"Mais en attendant, avez-vous déja visité tout ceux existant ?"
+msgstr ""
+"We'll be adding new levels and bosses throughout the Early Access!\n"
+"While you wait, have you unlocked and explored all the side levels?"
+
+msgid ""
+"En échange des CELLULES trouvées sur tes ennemis, je peux t'obtenir quelques "
+"petites choses utiles..."
+msgstr ""
+"In exchange for the CELLS you pillage from your foes, I can provide you with "
+"a few useful items..."
+
+msgid "Encore mort ?"
+msgstr "Dead again eh?"
+
+msgid "Enflamme le sol autour de vous."
+msgstr "Ignite the ground around you."
+
+msgid ""
+"Enflamme le sol et les victimes (::+dps:: dégâts/sec pendant ::duration:: "
+"sec)."
+msgstr ""
+"Ignites the ground and your enemies inflicting ::+dps:: damage/sec for ::"
+"duration:: seconds."
+
+msgid "Enflamme les ennemis bloqués."
+msgstr "Burn enemies when you parry."
+
+msgid ""
+"Enflamme vos ennemis et inflige ::+dps:: dégâts/sec pendant ::duration:: sec)"
+msgstr ""
+"Ignites your enemies and inflicts ::+dps:: damage/sec for ::duration:: "
+"seconds."
+
+msgid "Entrée"
+msgstr "Enter"
+
+msgid "Epineux"
+msgstr "Thorny"
+
+msgid "Epée huileuse"
+msgstr "Oiled sword"
+
+msgid "Epée large"
+msgstr "Broad sword"
+
+msgid "Epée maudite"
+msgstr "Cursed sword"
+
+msgid "Epée rouillée"
+msgstr "Rusty sword"
+
+msgid "Epée équilibrée"
+msgstr "Balanced blade"
+
+msgid "Equiper"
+msgstr "Equip"
+
+msgid "Espace"
+msgstr "Space"
+
+msgid "Esquiver"
+msgstr "Roll"
+
+msgid "Est-ce que... tu l'as récupérée ?"
+msgstr "Did you... Find it?"
+
+msgid "Et c'est récent..."
+msgstr "And that's recent..."
+
+msgid "Et j'ai BESOIN de ma rune..."
+msgstr "And I NEED my rune you see..."
+
+msgid "Et je les consigne dans mon grimoire."
+msgstr "And I'm noting it all down in my little book."
+
+msgid ""
+"Et si tu trouves des SCHEMAS, je te donnerai accès à des objets plus... "
+"expérimentaux, dirons-nous."
+msgstr ""
+"If you uncover any BLUEPRINTS, I may be able to provide you with some "
+"more... experimental items."
+
+msgid "Etourdit les cibles qui ont plus de ::prct::% de vie."
+msgstr "Stuns victims that have more than ::prct::% health."
+
+msgid "Evidemment que vous y travaillez."
+msgstr "of course it is..."
+
+msgid "Examiner"
+msgstr "Look"
+
+msgid "Exploration"
+msgstr "Exploration"
+
+msgid ""
+"Explose en ::count:: petites bombes infligeant ::+power:: dégâts chacune."
+msgstr "Explodes into ::count:: mini bombs inflicting ::+power:: damage each."
+
+msgid "Explose en infligeant ::+power:: dégâts."
+msgstr "Explodes, inflicting ::+power:: damage."
+
+msgid "Explose en infligeant ::+power:: dégâts. Gèle les victimes."
+msgstr "Explodes freezing nearby enemies and inflicting ::+power:: damage."
+
+msgid "FORCE +1"
+msgstr "+1 Strength"
+
+msgid "Faille de défi découverte"
+msgstr "Challenge area opened"
+
+msgid "Fait de très gros dégâts."
+msgstr "Does massive damage."
+
+msgid "Fait tomber ::count:: flêches plantées sur les victimes."
+msgstr "Causes ::count:: arrows to fall from victims."
+
+msgid "Faites pas votre chochotte..."
+msgstr "Oh, now don't be like that..."
+
+msgid "Faites une offrande ou retournez sur vos pas."
+msgstr "Make an offering and return from whence you came."
+
+msgid "Fallait que je tombe sur l'idiot de l'île."
+msgstr "He's got his head... In the clouds! Oh eh ha he haw..."
+
+msgid "Fantôme"
+msgstr "Ghost"
+
+msgid "Fermer"
+msgstr "Close"
+
+msgid "Filtrer par catégorie"
+msgstr "Filter by category"
+
+msgid "Fin"
+msgstr "End"
+
+msgid "Fiole de soin remplie"
+msgstr "Health flask refilled"
+
+msgid "Fiole de soin remplie et santé restaurée"
+msgstr "Health flask refilled and health restored"
+
+msgid "Flash lumineux"
+msgstr "Bright flashes"
+
+msgid "Fluide de cadavre"
+msgstr "Spawnling"
+
+msgid "Flêche en or"
+msgstr "Golden arrow"
+
+msgid "Force +1"
+msgstr "+1 Strength"
+
+msgid "Forum Accès anticipé"
+msgstr "Early Access Forum"
+
+msgid "Fouet d'entrave"
+msgstr "Wrenching whip"
+
+msgid "Fouet de Valmont"
+msgstr "Valmont's whip"
+
+msgid "Fouet électrique"
+msgstr "Electric whip"
+
+msgid "Fouetard"
+msgstr "Spinner"
+
+msgid ""
+"Franchement, ça vaut que dalle. Vous n'allez pas ramasser cette merde quand "
+"même ?"
+msgstr "Seriously? Is this even worth picking up?"
+
+msgid "Franchir"
+msgstr "Enter"
+
+msgid "Frotter"
+msgstr "Rub"
+
+msgid "Frugivore"
+msgstr "Fruitarian"
+
+msgid "Félicitations !"
+msgstr "Congratulations!"
+
+msgid "Félicitations ! Vous avez atteint la fin de cette demo !"
+msgstr "Congratulations! You have reached the end of the demo!"
+
+msgid "Gauche"
+msgstr "Left"
+
+msgid "Grappe explosive"
+msgstr "Cluster bomb"
+
+msgid "Grappin"
+msgstr "Grappling hook"
+
+msgid "Grenade"
+msgstr "Grenade"
+
+msgid "Grenade magnétique"
+msgstr "Magnetic grenade"
+
+msgid "Grenade étourdissante"
+msgstr "Flashbang"
+
+msgid "Grenadier"
+msgstr "Grenadier"
+
+msgid "Gros oeil"
+msgstr "Monster's eye"
+
+msgid "Gros radis"
+msgstr "Big ol' radish"
+
+msgid "Grosse volaille"
+msgstr "Chicken"
+
+msgid "Gué des Brumes"
+msgstr "The Fog Fjord"
+
+msgid ""
+"Génère un large nuage de poison infligeant ::+dps:: dégâts/sec pendant ::"
+"duration:: sec."
+msgstr ""
+"Releases a toxic cloud of poison which inflicts ::+dps:: damage/s for ::"
+"duration:: seconds."
+
+msgid "Génère un nuage toxique autour de vous."
+msgstr "Release a cloud of poisonous gas around you."
+
+msgid "Général"
+msgstr "General"
+
+msgid "HEY TOI !"
+msgstr "HEY, YOU!"
+
+msgid "HORS DE MA VUE ! Ta présence m'ennuie."
+msgstr "OUT OF MY SIGHT! Your presence grows tiring."
+
+msgid "Hachoir"
+msgstr "Meat grinder"
+
+msgid "Hammer"
+msgstr "Mechanical spider"
+
+msgid "Haut"
+msgstr "Up"
+
+msgid "Hey bande de nazes !"
+msgstr "Oi, losers! Over here!"
+
+msgid "Hey, par ici !"
+msgstr "Hey! Over here!"
+
+msgid "Hmmm... J'ai tant à vous donner..."
+msgstr "Ohhh.... I've got so much to give you..."
+
+msgid "Hé ! Vous là ! Ouvrez moi !"
+msgstr "Hey! You there! Open me!"
+
+msgid ""
+"Hé hé, merci. Elle est quelque part dans ces égouts, de ton côté de la "
+"grille."
+msgstr ""
+"Ho ho! Thank you! It's somewhere around here in these sewers, on your side "
+"of these bars..."
+
+msgid "Ici reposent les Architectes."
+msgstr "Here lie the Architects."
+
+msgid "Ignore les boucliers. Attire les victimes."
+msgstr "Ignores shields. Wrenches victims towards you."
+
+msgid ""
+"Ignore les boucliers. Inflige un COUP CRITIQUE si le coup est porté par "
+"l'extrêmité du fouet."
+msgstr ""
+"Ignores shields and deals a CRITICAL HIT when striking at maximum range."
+
+msgid "Il est MORT."
+msgstr "He's DEAD."
+
+msgid ""
+"Il est conseillé de désactiver cette fonctionnalité si vous souhaitez jouer "
+"hors-ligne."
+msgstr ""
+"We strongly advise that you deactivate this functionality if you want to "
+"play offline."
+
+msgid "Il est fortement conseillé de jouer à Dead Cells avec une manette !"
+msgstr "Playing Dead Cells with a controller is strongly advised!"
+
+msgid "Il est mort."
+msgstr "He's dead."
+
+msgid "Il me faut une clé..."
+msgstr "I need a key..."
+
+msgid "Il me manque quelque chose pour pouvoir lire."
+msgstr "I don't have a head, remember?"
+
+msgid "Il n'y a personne..."
+msgstr "There is no one..."
+
+msgid "Il n'y a plus personne..."
+msgstr "There's no one else..."
+
+msgid "Il n'y connaît rien..."
+msgstr "They don't know what they're on about..."
+
+msgid ""
+"Immobilise toutes les cibles proches pendant ::duration:: secondes. Elles "
+"subissent ::+dps:: dégâts / sec tant qu'elles sont emprisonnées."
+msgstr ""
+"Immobilizes all nearby enemies for ::duration:: seconds and inflicts ::"
+"+dps::  damage/s while they are trapped."
+
+msgid ""
+"Inflige ::+dps:: dégâts/sec ainsi que des saignements (::+dotDps:: dégâts/"
+"sec) aux ennemis qui posent le pied dessus."
+msgstr ""
+"Inflicts ::+dps:: damage/s and bleeding (::+dotDps:: damage/s) to enemies "
+"walking on it."
+
+msgid ""
+"Inflige ::+power:: dégats et enflamme les ennemis proches pendant ::"
+"duration:: secondes (::+dps:: dégâts / sec)."
+msgstr ""
+"Inflicts ::+power:: damage and burns nearby enemies for ::duration:: seconds "
+"(::+dps:: damage/s)."
+
+msgid ""
+"Inflige ::+power:: dégâts et applique de l'huile inflammable dans sa zone "
+"d'effet."
+msgstr ""
+"Inflicts ::+power:: damage and covers nearby enemies with flammable oil."
+
+msgid ""
+"Inflige ::+power:: dégâts et étourdit les ennemis proches pendant ::"
+"duration:: secondes."
+msgstr ""
+"Inflicts ::+power:: damage and stuns nearby enemies for ::duration:: seconds."
+
+msgid "Inflige un COUP CRITIQUE juste après une roulade."
+msgstr "Inflicts a CRITICAL HIT immediately after rolling."
+
+msgid "Inflige un COUP CRITIQUE lorsque vous avez moins de ::prct::% de vie."
+msgstr "Inflicts a CRITICAL HIT when you're below ::prct::% health."
+
+msgid "Inflige un COUP CRITIQUE lorsque vous frappez dans le dos."
+msgstr "Inflicts a CRITICAL BLOW when you backstab your enemies."
+
+msgid "Inflige un COUP CRITIQUE lorsque vous tirez à courte portée."
+msgstr "Inflicts a CRITICAL BLOW  when you strike at close range."
+
+msgid "Inflige un COUP CRITIQUE lorsque vous tirez à longue portée."
+msgstr "Inflicts a CRITICAL BLOW if you strike from far away."
+
+msgid ""
+"Inflige un COUP CRITIQUE lorsque vous touchez plusieurs cibles à la fois."
+msgstr ""
+"Inflicts a CRITICAL HIT when you strike several enemies at the same time."
+
+msgid ""
+"Inflige un COUP CRITIQUE si la cible a ::count:: flèches ou plus plantées "
+"dans le corps."
+msgstr ""
+"Inflicts a CRITICAL HIT if the target has ::count:: or more arrows in its "
+"body."
+
+msgid "Inflige un COUP CRITIQUE si la cible est victime d'un Saignement."
+msgstr "Inflicts a CRITICAL BLOW if the victim is bleeding."
+
+msgid "Inflige un COUP CRITIQUE si la cible saigne, brûle ou est empoisonnée."
+msgstr ""
+"Inflicts a CRITICAL BLOW if the victim is bleeding, burning or poisoned."
+
+msgid "Inflige un COUP CRITIQUE si la victime est bloquée contre un mur."
+msgstr "Inflicts a CRITICAL BLOW if the victime is up against a wall."
+
+msgid "Inflige un COUP CRITIQUE si vous avez subi des dégâts récemment."
+msgstr "Inflicts a CRITICAL BLOW if you have been hurt recently."
+
+msgid "Inflige un COUP CRITIQUE à la 3ème attaque consécutive."
+msgstr "Inflicts a CRITICAL BLOW on the third consecutive hit."
+
+msgid "Inflige un coup critique si le coup de pied interrompt une attaque."
+msgstr "Inflicts a CRITICAL BLOW if the kick interrupts an attack."
+
+msgid "Inquisiteur"
+msgstr "Inquisitor"
+
+msgid "Insér."
+msgstr "Insert."
+
+msgid "Inutile pour l'instant"
+msgstr "Can't do that right now"
+
+msgid "Inverser"
+msgstr "Swap"
+
+msgid "Investir des cellules (maintenir)"
+msgstr "Invest cells (hold A)"
+
+msgid "Invoque un allié attaquant les ennemis proches."
+msgstr "Conjures an apparition that attacks nearby enemies."
+
+msgid "Invoque un groupe de créatures à votre service."
+msgstr "Summons a swarm of small biting creatures to attack for you."
+
+msgid ""
+"Invoque une orbe dévastatrice (::+dps:: dégâts/sec) qui se déplace lentement."
+msgstr ""
+"Summons a slow moving but devastating orb of energy (::+dps:: damage/s)."
+
+msgid "J'ai dit..."
+msgstr "I said..."
+
+msgid "J'ai noté vos \"exploits\". Enfin si on peut appeler ça comme ça."
+msgstr ""
+"I noticed your... \"achievements\", if that's what you want to call them."
+
+msgid "J'ai perdu une r... Je veux dire MA rune. Du coup, je suis coincé ici."
+msgstr "I lost a ru.. I mean MY rune. So you see I'm a little stuck..."
+
+msgid "J'ai vu ton combat, c'était plutôt impressionant."
+msgstr "I saw you fight... Not bad at all."
+
+msgid "J'ai été TRÈS vilain."
+msgstr "I've been naughty."
+
+msgid "J'en étais sûr... Tu es comme tout les autres, après tout..."
+msgstr "I knew it! You're just like all the rest!"
+
+msgid "J'ignore pourquoi..."
+msgstr "I still don't understand..."
+
+msgid "Je VEUX ma rune !"
+msgstr "I WANT MY RUNE!"
+
+msgid "Je la récupèrerai, sois-en sûr..."
+msgstr "Sure and certain, I'll get it back..."
+
+msgid "Je n'en ai pas besoin pour l'instant."
+msgstr "I don't need that now."
+
+msgid "Je ne peux pas l'ouvrir d'ici."
+msgstr "I cannot open it from here."
+
+msgid "Je ne suis pas comme ce charlatan d'alchimiste !"
+msgstr "I'm not one of those rip-off merchant alchemists!"
+
+msgid "Je récupèrerai ma rune, sois-en sûr..."
+msgstr "Don't think I won't get my rune back..."
+
+msgid "Je sais ce que vous avez fait."
+msgstr "I know what you've done."
+
+msgid "Je sais que c'est bon, mais il ne faut pas en abuser..."
+msgstr "I know it's good, but you be abusing it..."
+
+msgid "Je suis là !"
+msgstr "Here I am!"
+
+msgid "Je suis sans défense !"
+msgstr "I'm defenceless..."
+
+msgid "Je suis un coffre très cachotier vous savez."
+msgstr "You know I'm hiding a lot inside..."
+
+msgid "Je suis un homme de science moi !"
+msgstr "I 'm a man of science!"
+
+msgid "Je suis un vilain coffre qui mérite d'être puni..."
+msgstr "I'm a naughty chest. I deserve to be punished."
+
+msgid "Jouer"
+msgstr "Play"
+
+msgid "Kamikaze"
+msgstr "Kamikaze"
+
+msgid "L'accès à la tour de l'horloge est interdit."
+msgstr "Access to the Clock Tower is forbidden."
+
+msgid "L'arc de départ est tiré aléatoirement parmi vos arcs débloqués."
+msgstr "The starting bow is randomly drawn from those you have unlocked."
+
+msgid "L'arme de choix des combattants qui aiment vivre dangereusement."
+msgstr "The weapon of choice for those who like to live dangerously."
+
+msgid ""
+"L'arme de mélée de départ est tirée aléatoirement parmi vos armes débloquées."
+msgstr "The starting weapon is randomly drawn from those you have unlocked."
+
+msgid ""
+"L'important, c'est que vous vous amusiez pendant que nous, on s'occupe de "
+"corriger les problèmes."
+msgstr ""
+"The important part is that you have fun playing the game, while we get to "
+"work adding new content and fixing any problems..."
+
+msgid "La famille Valmont recommande ce fouet."
+msgstr "A weapon popularised by the Baron Valmont du Cul."
+
+msgid "La fontaine est vide"
+msgstr "The fountain is empty"
+
+msgid "La lumière des stèles gardiennes vous accompagnera."
+msgstr "The light of the guardian colonnades will protect you."
+
+msgid "La maison ne fait pas crédit."
+msgstr "No! We don't offer credit!"
+
+msgid "La porte a été condamnée..."
+msgstr "This door has been sealed..."
+
+msgid "La rapidité au détriment de la précision."
+msgstr "Speed to the detriment of accuracy."
+
+msgid "La victime a moins de chance de dégeler en cas de dégât."
+msgstr "Reduces the chance of unfreezing an enemy when attacking."
+
+msgid "La victime subit un saignement lorsqu'elle dégèle."
+msgstr "The victim suffers bleed damage when it thaws out."
+
+msgid "Lacérateur"
+msgstr "Slasher"
+
+msgid "Lame sadique"
+msgstr "Sadist's sword"
+
+msgid ""
+"Lance ::count:: pièges qui immobilisent les ennemis pendant ::duration:: "
+"sec. Augmente tous les dégâts subis par les victimes de ::prct::%."
+msgstr ""
+"Launches ::count:: traps which immobilize enemies for ::duration:: seconds. "
+"Increases all damage taken by trapped enemies by ::prct::%."
+
+msgid "Lance de guerre"
+msgstr "War spear"
+
+msgid ""
+"Lance tout autour de vous des couteaux provoquant des Saignements pendant ::"
+"duration:: secondes (::+dps:: dégâts/sec)."
+msgstr ""
+"Launches a storm of knives around you which causes bleed damage for ::"
+"duration:: seconds (::+dps:: damage/s)."
+
+msgid "Lance une grenade (::+power:: dégâts)"
+msgstr "Throws a grenade (::+power:: damage)"
+
+msgid "Lance-flammes"
+msgstr "Fire torrent"
+
+msgid "Lancier"
+msgstr "Lancer"
+
+msgid "Langue"
+msgstr "Language"
+
+msgid "Larve de feu"
+msgstr "Lava Worm"
+
+msgid "Lascérateur"
+msgstr "Slasher"
+
+msgid ""
+"Le bouclier de départ est tiré aléatoirement parmi vos boucliers débloqués."
+msgstr "The starting shield is randomly drawn from those you have unlocked."
+
+msgid "Le dernier coup inflige des dégâts de zone et repousse les ennemis."
+msgstr ""
+"The last hit of the combo inflicts area damage and pushes enemies back."
+
+msgid "Le poison n'a aucun effet sur vous."
+msgstr "Poison no longer affects you. Sewers, here we come..."
+
+msgid "Le poison vous soigne au lieu de vous blesser."
+msgstr "Poison heals you rather than hurting you."
+
+msgid "Le ralentissement après le dégel dure ::power::x plus longtemps."
+msgstr "Frost related slowdown lasts ::power::x longer."
+
+msgid ""
+"Le ralentissement après le dégel est propagé à tous les monstres proches."
+msgstr "Slows down all nearby enemies when the victim thaws out."
+
+msgid "Les ennemis brûlent en mourant."
+msgstr "Enemies burn when they die."
+
+msgid "Les ennemis dégagent un nuage toxique en mourant."
+msgstr "Enemies release a toxic cloud when they die."
+
+msgid "Les munitions se récupèrent quand vous achevez vos victimes."
+msgstr "You recover your arrows when you kill your victim."
+
+msgid ""
+"Les pendentifs n'occupent pas d'emplacement d'équipement, mais vous ne "
+"pouvez en avoir qu'un à la fois."
+msgstr ""
+"You may only equip one amulet at a time, but their effects are powerful..."
+
+msgid ""
+"Les restes des ennemis touchés explosent en infligeant ::+power:: dégâts."
+msgstr "The viscera of dead victims explodes inflicting ::+power:: damage."
+
+msgid "Les saignements provoquent des empoisonnements."
+msgstr "Bleeding inflicts poison damage too."
+
+msgid "Les tirs explosent en un nuage toxique."
+msgstr "Projectiles explode in a cloud of toxic gas."
+
+msgid "Les tirs laissent une trainée de flammes."
+msgstr "Projectile burn the ground behind them."
+
+msgid "Les tirs transpercent la première victime."
+msgstr "Shots pierce the first target."
+
+msgid "Les tirs transpercent tous les ennemis."
+msgstr "Shots pierce all enemies."
+
+msgid "Leurre"
+msgstr "Lure"
+
+msgid "Lieutenant"
+msgstr "Lieutenant"
+
+msgid "Lire"
+msgstr "Read"
+
+msgid "Lourde et lente, mais tellement violente."
+msgstr "Slow and heavy, but looks badass. The best way to compensate."
+
+msgid "Légère mais mortelle si elle maniée comme il faut."
+msgstr "Small, but deadly if you know where to stick it."
+
+msgid "MAIS FRAPPEZ MOI BON SANG !!"
+msgstr "Open ME GODDAMIT!"
+
+msgid "Maintenez longtemps pour infliger des coups critiques."
+msgstr ""
+"Continuously casting deals critical hits. But be wary of too much power..."
+
+msgid "Maintenez pour bloquer les attaques."
+msgstr "Hold to block attacks."
+
+msgid "Maintenir pour se soigner"
+msgstr "Hold to heal"
+
+msgid "Mais pour combien de temps encore ?"
+msgstr "But for how long?"
+
+msgid ""
+"Mais vous n'êtes pas le premier dans ce cas là, si c'est votre question..."
+msgstr "It was like this with the others, for a while..."
+
+msgid "Maj"
+msgstr "Shift"
+
+msgid "Maj. D."
+msgstr "Shift. R."
+
+msgid "Maj. G."
+msgstr "Shift. L."
+
+msgid "Malachite"
+msgstr "Malachite"
+
+msgid "Manette"
+msgstr "Controller"
+
+msgid "MangeMonOr"
+msgstr "EatMyGold"
+
+msgid "Marketing"
+msgstr "Marketing"
+
+msgid "Masquer contrôles"
+msgstr "Hide controls in UI"
+
+msgid "Masquer les noms des boutons dans l'interface."
+msgstr "Hides button names in the interface."
+
+msgid "Masqueur"
+msgstr "Fogger"
+
+msgid "Mode Super Mario : sauter sur un ennemi l'étourdit."
+msgstr "Super Mario Mode: Jumping on an enemy's head stuns it."
+
+msgid "Mode Time Attack"
+msgstr "Time Attack Mode"
+
+msgid "Mode classement"
+msgstr "Competitive mode"
+
+msgid "Monstre de test (admin)"
+msgstr "Test monster (admin)"
+
+msgid "Monstres"
+msgstr "Monsters"
+
+msgid "Monstrueux"
+msgstr "Monster"
+
+msgid "Mort"
+msgstr "Deaths"
+
+msgid "Mort depuis un moment."
+msgstr "Dead for a while now."
+
+msgid "Mort par malédiction"
+msgstr "Death by curse!"
+
+msgid "Mort évitée."
+msgstr "Death cheated."
+
+msgid "Morts"
+msgstr "Deaths"
+
+msgid "Morts par chute mortelle"
+msgstr "Deaths by fall"
+
+msgid "Morts par suicide"
+msgstr "Suicides"
+
+msgid "Morts par un ennemi"
+msgstr "Deaths by monster"
+
+msgid "Morts par un piège"
+msgstr "Deaths by trap"
+
+msgid "Mouche à caca"
+msgstr "Flying biter"
+
+msgid "Mouche à cadavre"
+msgstr "Corpse biter"
+
+msgid "Muet"
+msgstr "Mute"
+
+msgid "Munitions +::power::"
+msgstr "Ammo +::power::"
+
+msgid "Munitions accrochées sur cet ennemi"
+msgstr "Ammo stuck in this enemy"
+
+msgid "Munitions illimitées."
+msgstr "Unlimited ammo."
+
+msgid "Munitions: ::n::"
+msgstr "Ammo: ::n::"
+
+msgid "Musique"
+msgstr "Music"
+
+msgid "Mutation"
+msgstr "Mutation"
+
+msgid "NOT IMPLEMENTED"
+msgstr "NOT IMPLEMENTED"
+
+msgid "NOT MEANT TO BE SEEN"
+msgstr "NOT MEANT TO BE SEEN"
+
+msgid "Ne plus afficher"
+msgstr "Don't show this anymore"
+
+msgid "Ne vous inquiétez pas, je sais comment soigner les gens."
+msgstr "Don't you worry though! I know how to take care of people."
+
+msgid "Niveau supplémentaire !"
+msgstr "Extra level!"
+
+msgid "Nombre total de parties"
+msgstr "Total number of runs"
+
+msgid "Nombre total de parties terminées"
+msgstr "Total number of completed runs"
+
+msgid "Notes de mise à jour"
+msgstr "Patchnotes"
+
+msgid ""
+"Nous avons detecté que vous utilisez un processeur graphique Intel HD "
+"Graphics."
+msgstr "We've detected that you're using an Intel HD Graphics card."
+
+msgid "Nouveau défi"
+msgstr "New challenge"
+
+msgid "Nouvel objet débloqué !"
+msgstr "New item unlocked!"
+
+msgid "Nouvelle amulette (::price:: OR) :"
+msgstr "New amulet (::price:: Gold):"
+
+msgid "Nouvelle amulette :"
+msgstr "New amulet:"
+
+msgid "Nouvelle arme débloquée !"
+msgstr "New weapon unlocked!"
+
+msgid "Nuage toxique"
+msgstr "Toxic cloud"
+
+msgid "Num. *"
+msgstr "Num. *"
+
+msgid "Num. +"
+msgstr "Num. +"
+
+msgid "Num. -"
+msgstr "Num. -"
+
+msgid "Num. ."
+msgstr "Num. ."
+
+msgid "Num. /"
+msgstr "Num. /"
+
+msgid "Num. 0"
+msgstr "Num. 0"
+
+msgid "Num. 1"
+msgstr "Num. 1"
+
+msgid "Num. 2"
+msgstr "Num. 2"
+
+msgid "Num. 3"
+msgstr "Num. 3"
+
+msgid "Num. 4"
+msgstr "Num. 4"
+
+msgid "Num. 5"
+msgstr "Num. 5"
+
+msgid "Num. 6"
+msgstr "Num. 6"
+
+msgid "Num. 7"
+msgstr "Num. 7"
+
+msgid "Num. 8"
+msgstr "Num. 8"
+
+msgid "Num. 9"
+msgstr "Num. 9"
+
+msgid "Num. Entrée"
+msgstr "Num. Entrée"
+
+msgid "Nuée"
+msgstr "Biter swarm"
+
+msgid "Nécessite : ::name::"
+msgstr "::name:: needed"
+
+msgid "Objet amélioré !"
+msgstr "Item improved!"
+
+msgid "Obscure est la voie que vous avez choisi d'emprunter..."
+msgstr "Dark is the path your choices set before you..."
+
+msgid "Oh ma chère petite rune, où te trouves-tu..."
+msgstr "My precious little rune, where are you?"
+
+msgid "Oh. Bonjour."
+msgstr "Oh. Hello."
+
+msgid "Oh. Oui, pardon. Vous AVEZ perdu votre langue."
+msgstr "I guess my usual gag is not use here..."
+
+msgid "Oh. Oui, pardon. Vous N'AVEZ PLUS de langue."
+msgstr "Oh... Well. Yes, I see the problem..."
+
+msgid "Oh... Intéressant !"
+msgstr "Oh... Interesting!"
+
+msgid "Oiseau des sables"
+msgstr "Sand bird"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "On croirait presque que cette île est vivante."
+msgstr "One could think the island is alive..."
+
+msgid ""
+"On m'appelle le Collecteur. Je suis ce qui se rapproche le plus d'un type "
+"fréquentable ici-bas."
+msgstr ""
+"I am the Collector and I'm about the closest thing to company you will get "
+"down here."
+
+msgid "On n'a jamais trop de flèches - Legolas"
+msgstr "There is no such thing as \"too many arrows\"."
+
+msgid "Options"
+msgstr "Settings"
+
+msgid "Options par défaut"
+msgstr "Restore default options"
+
+msgid "Or total dépensé"
+msgstr "Total gold spent"
+
+msgid "Or total gagné"
+msgstr "Total gold collected"
+
+msgid "Orbe de mort"
+msgstr "Death orb"
+
+msgid "Oui, comme Scorpion dans Mortal Kombat."
+msgstr "Yes, just like Scorpion..."
+
+msgid "Oui. Je connais TOUS vos petits secrets."
+msgstr "Yes... I know of ALL your little secrets."
+
+msgid "Oui..."
+msgstr "Yes..."
+
+msgid "Ouvert avec : ::key:: !"
+msgstr "Opened with: ::key::!"
+
+msgid "Ouvre les portes des enfers..."
+msgstr "Open the gates of Hell..."
+
+msgid "Ouvre les portes verrouillées (original, non ?)"
+msgstr "Unlocks doors. Who would have guessed?"
+
+msgid "Ouvrez moi FORT !"
+msgstr "Open me real HARD!"
+
+msgid "Ouvrir"
+msgstr "Open"
+
+msgid "Page préc."
+msgstr "Previous page."
+
+msgid "Page suiv."
+msgstr "Next page."
+
+msgid "Parchemin de puissance"
+msgstr "Scroll of power"
+
+msgid "Parler"
+msgstr "Talk"
+
+msgid "Partie terminée!"
+msgstr "Game over!"
+
+msgid "Pas assez d'or !"
+msgstr "Not enough gold!"
+
+msgid "Pas besoin de soin"
+msgstr "Your health is already full"
+
+msgid "Pas d'or ? Pas de matos."
+msgstr "No gold? NO GOODIES!"
+
+msgid "Pas de SCHEMA d'actif disponible !"
+msgstr "No active skill blueprints available."
+
+msgid "Pas de SCHEMA d'arme disponible !"
+msgstr "No weapon blueprints available."
+
+msgid "Pas de SCHEMA disponible!"
+msgstr "No blueprints available."
+
+msgid "Pas de SCHEMA méta disponible !"
+msgstr "No meta blueprints available."
+
+msgid "Pas utile pour l'instant"
+msgstr "Not useful for now"
+
+msgid "Pas utile pour l'instant."
+msgstr "Not useful for now"
+
+msgid "Pastèque"
+msgstr "Watermelon"
+
+msgid "Pause"
+msgstr "Pause"
+
+msgid "Payer ::price:: OR"
+msgstr "Pay ::price:: GOLD"
+
+msgid "Pelle"
+msgstr "Shovel"
+
+msgid "Pendentif"
+msgstr "Pendant"
+
+msgid "Permet de bloquer les attaques et d'étourdir les ennemis."
+msgstr "Blocks attacks and stuns the attacker."
+
+msgid ""
+"Permet de bloquer les attaques et de repousser fortement les ennemis bloqués."
+msgstr "Blocks attacks and violently shoves blocked enemies backwards."
+
+msgid ""
+"Permet de bloquer les attaques. Génère un champ de force quand vous y "
+"parvenez."
+msgstr "Triggers a force field when you parry."
+
+msgid "Peut servir à tuer des gens."
+msgstr "Kills things. Sometimes..."
+
+msgid "Piège à loups"
+msgstr "Bear trap"
+
+msgid "Plein écran"
+msgstr "Full screen mode"
+
+msgid "Plus de munitions"
+msgstr "Out of ammo"
+
+msgid "Plus grande quantité d'Or obtenue en même temps"
+msgstr "Most gold held at any time"
+
+msgid "Plus grande quantité de Cellules obtenue en même temps"
+msgstr "Most cells held at any time"
+
+msgid "Pont noir"
+msgstr "The Black Bridge"
+
+msgid "Portails secrets ouverts"
+msgstr "Secret areas discovered"
+
+msgid "Porte minutée déverrouillée !"
+msgstr "Timed door unlocked!"
+
+msgid "Porte ouverte"
+msgstr "Door opened"
+
+msgid "Porteur de bouclier"
+msgstr "Shield bearer"
+
+msgid "Pose une bombe (::+power:: dégâts) quand vous esquivez."
+msgstr "Drops a bomb (::+power:: damage) when you roll."
+
+msgid "Potion de soin"
+msgstr "Health potion"
+
+msgid "Potion de soin (::n:: PV)"
+msgstr "Health potion (::n:: HP)"
+
+msgid "Potion de soin I"
+msgstr "Healing Potion I"
+
+msgid "Potion de soin II"
+msgstr "Healing Potion II"
+
+msgid "Potion de soin III"
+msgstr "Healing Potion III"
+
+msgid "Potion de soin IV"
+msgstr "Healing Potion IV"
+
+msgid ""
+"Prière de ne pas vous aventurer dans ce raccourci sans une préparation "
+"adéquate."
+msgstr ""
+"Please, do not attempt to take this shortcut if you're not properly "
+"equipped... You've been warned."
+
+msgid ""
+"Prodigue un soin en cas de blocage (ne fonctionne qu'une fois par ennemi)"
+msgstr "Heals you when you parry (once per enemy)"
+
+msgid "Profondeurs de la Prison"
+msgstr "The Prison Depths"
+
+msgid "Projette les ennemis et les bombes."
+msgstr "Flings enemies and bombs backwards."
+
+msgid "Promenade des condamnés"
+msgstr "The Promenade of the Condemned"
+
+msgid "Protecteur"
+msgstr "Defender"
+
+msgid ""
+"Provoque des Saignements (::+dps:: dégâts/sec pendant ::duration:: sec). "
+"L'attaque cible automatiquement l'ennemi le plus proche."
+msgstr ""
+"Causes bleeding (::+dps:: damage/s for ::duration:: seconds). The attack "
+"automatically targets the closest enemy."
+
+msgid "Provoque des Saignements (::+dps:: dégâts/sec)."
+msgstr "Causes bleeding (::+dps:: damage/s)."
+
+msgid "Puissance +::n::%"
+msgstr "+::n::% Power"
+
+msgid "Puissance corrompue"
+msgstr "Corrupted power"
+
+msgid "Pénétrer"
+msgstr "Inhabit"
+
+msgid "Qu'est ce que tu attends ?! Vas-y !"
+msgstr "What are you waiting for? Get out there!"
+
+msgid "Qu'est-ce qu'il vous faut ?"
+msgstr "What can I do for you?"
+
+msgid "Quartier des prisonniers"
+msgstr "The Prisoners' Cells"
+
+msgid "Que vous avez tué : ::n::"
+msgstr "That you have killed ::n::"
+
+msgid "Quel objet remplacer ?"
+msgstr "Swap which item?"
+
+msgid "Qui a dit qu'on ne pouvait pas tromper la mort ?"
+msgstr "Who says you can't cheat Death?"
+
+msgid "Qui vous ont tué : ::n::"
+msgstr "That have killed you ::n::"
+
+msgid "Quitter le jeu"
+msgstr "Quit"
+
+msgid "Quoi ? Mais non, tu n'as rien à craindre !"
+msgstr "What? No!, You have nothing to fear!"
+
+msgid "Quoi ? Une bonne petite saignée ca marche à tous les coups !"
+msgstr "What? A little blood letting always does the trick!"
+
+msgid "RAH !"
+msgstr "AHHHH!"
+
+msgid "Ralenti"
+msgstr "Slowed down"
+
+msgid "Ralenti tous les ennemis pendant ::duration::s."
+msgstr "Slows the movement of all nearby enemies for ::duration::s."
+
+msgid "Ramasser"
+msgstr "Pick up"
+
+msgid "Rapière"
+msgstr "Rapier"
+
+msgid "Rapporte la moi vite !"
+msgstr "Bring it to me now!"
+
+msgid "Recommencer dans la prison"
+msgstr "Start again from the Prisoners' Cells"
+
+msgid "Regarder"
+msgstr "Look"
+
+msgid "Regardez qui voilà..."
+msgstr "You again... Interesting..."
+
+msgid "Remerciements"
+msgstr "Thanks"
+
+msgid "Rempart"
+msgstr "Force shield"
+
+msgid "Repos des architectes"
+msgstr "Repository of the Architects"
+
+msgid "Repousse les victimes et interrompt les attaques."
+msgstr "Kicks victims backwards and interrupts their attacks."
+
+msgid "Reprendre"
+msgstr "Resume"
+
+msgid "Requiert votre présence pour fonctionner."
+msgstr "You need to be close by for this to work."
+
+msgid "Restaurer la configuration clavier par défaut"
+msgstr "Restore the default keyboard configuration"
+
+msgid "Restaurer les valeurs par défaut pour toutes les options"
+msgstr "Restores default values  for all options"
+
+msgid "Retour"
+msgstr "Back"
+
+msgid "Retour au menu"
+msgstr "Back to menu"
+
+msgid "Retour à l'écran titre"
+msgstr "Return to the main menu"
+
+msgid "Retourner à l'entrée"
+msgstr "Return to the entry"
+
+msgid "Revenir au jeu"
+msgstr "Return to the game"
+
+msgid "Revenir au menu principal"
+msgstr "Return to the main menu"
+
+msgid "Revenir à l'écran-titre"
+msgstr "Return to the title screen"
+
+msgid "Rien de notable, si ce n'est une odeur persistante de rat crevé."
+msgstr "Nothing worth mentioning, except maybe a vague whiff of dead rat..."
+
+msgid "Risque de mort prématurée."
+msgstr "Risk of untimely death."
+
+msgid "Roulade"
+msgstr "Roll"
+
+msgid "Roulade prête"
+msgstr "Show the roll cooldown feedback"
+
+msgid "Rubis"
+msgstr "Ruby"
+
+msgid "Rune de téléportation"
+msgstr "Teleportation rune"
+
+msgid "Rune des vignes"
+msgstr "Vine rune"
+
+msgid "Rune permanente obtenue"
+msgstr "Permanent rune acquired"
+
+msgid "Runes"
+msgstr "Runes"
+
+msgid "Récompense"
+msgstr "Reward"
+
+msgid "Récupère l'or et les cellules sans limite de distance."
+msgstr "Collect cells and gold without needing to be in range."
+
+msgid ""
+"Réduit les dégâts que vous subissez de ::prct::% quand vous êtes proches."
+msgstr "Reduce damage taken by ::prct::% as long as you are close."
+
+msgid "Réessayer"
+msgstr "Retry"
+
+msgid "Régime alimentaire"
+msgstr "Diet"
+
+msgid "Régénère ::n:: points de santé."
+msgstr "Regenerates ::n:: health."
+
+msgid "Réinitialiser"
+msgstr "Reset"
+
+msgid "Révèle les passages secrets."
+msgstr "Reveals secret passages."
+
+msgid "Rôôôôômmff....Le vaisseau qui doit t'emmener n'est pas encore là..."
+msgstr "Ohhh ho ho... The vessel you're looking for hasn't docked yet..."
+
+msgid "Rôôôôômmff....tu n'as rien à faire ici, étranger..."
+msgstr "Ohh ho ho ho... There's nothing for you here, outsider..."
+
+msgid "SHOULD NEVER DROP"
+msgstr "SHOULD NEVER DROP"
+
+msgid "Sac du déchu"
+msgstr "Dead man's purse"
+
+msgid "Sandales de spartiate"
+msgstr "Spartan sandals"
+
+msgid "Santé augmentée !"
+msgstr "Health increased!"
+
+msgid "Santé restaurée"
+msgstr "Health restored"
+
+msgid "Saphir bleu"
+msgstr "Blue saphire"
+
+msgid "Sauter"
+msgstr "Jump"
+
+msgid "Sauvegarde : ::name::"
+msgstr "Save ::name::"
+
+msgid "Sauvegarde inaccessible"
+msgstr "Save inaccessible"
+
+msgid "Sauvetage de l'or I"
+msgstr "Gold recovery I"
+
+msgid "Sauvetage de l'or II"
+msgstr "Gold recovery II"
+
+msgid "Sauvetage de l'or III"
+msgstr "Gold recovery III"
+
+msgid "Sauvetage de l'or IV"
+msgstr "Gold recovery IV"
+
+msgid "Scarecrow"
+msgstr "Scarecrow"
+
+msgid "Schéma RARE obtenu :"
+msgstr "You found a RARE blueprint:"
+
+msgid "Schéma déjà obtenu (::name::)"
+msgstr "You already have the ::name:: blueprint."
+
+msgid "Schéma obtenu :"
+msgstr "Blueprint acquired:"
+
+msgid "Schémas d'actifs ramenés au Collecteur"
+msgstr "Active skill blueprints recovered"
+
+msgid "Schémas d'armes ramenés au Collecteur"
+msgstr "Weapon blueprints recoverd"
+
+msgid "Schémas trouvés"
+msgstr "Blueprints found"
+
+msgid "Score : ::score::"
+msgstr "Score : ::score::"
+
+msgid "Scorpion"
+msgstr "Scorpion"
+
+msgid "Se déplacer avec le D-Pad"
+msgstr "Use the D-Pad to move"
+
+msgid "Se soigner"
+msgstr "Heal"
+
+msgid "Se suicider"
+msgstr "Suicide"
+
+msgid "Se téléporter"
+msgstr "Teleport"
+
+msgid "Secret découvert"
+msgstr "Secret discovered"
+
+msgid ""
+"Si un ennemi meurt alors qu'il est enflammé, il explose et inflige ::"
+"+damage:: dégâts aux ennemis proches (ces dégâts augmentent avec le niveau "
+"de vos armes)."
+msgstr ""
+"Burning enemies explode upon death inflicting ::+damage:: damage to nearby "
+"enemies (damage depends on your strength level)."
+
+msgid "Si un ennemi sous Saignement meurt, le saignement se propage."
+msgstr ""
+"If an enemy dies while bleeding, nearby enemies will begin to bleed too."
+
+msgid ""
+"Si votre ordinateur dispose d'un autre processeur graphique, nous vous "
+"conseillons de forcer son utilisation pour Dead Cells dans vos paramètres de "
+"carte vidéo."
+msgstr ""
+"If you're computer has a dedicated 3rd party graphics card, we strongly "
+"recommend that you force the game to run on that card in the card's settings."
+
+msgid "Si vous subissez le moindre dégât, vous mourrez immédiatement."
+msgstr "If you're hit, you're dead."
+
+msgid "Slot ::index::"
+msgstr "Slot ::index::"
+
+msgid "Soigne ::+power:: PV."
+msgstr "Restores ::+power:: HP."
+
+msgid "Soigneusement équilibrée pour enchainer des attaques rapides."
+msgstr "Carefully balanced to allow consecutive rapid strikes."
+
+msgid "Soins utilisés"
+msgstr "Healing flasks used"
+
+msgid "Sons"
+msgstr "Sound"
+
+msgid "Sortir"
+msgstr "Leave"
+
+msgid ""
+"Souhaitez-vous transférer vos sauvegardes Steam Cloud sur votre "
+"ordinateur ?\n"
+"Attention, si vous aviez déjà des sauvegarde locales, elles seront "
+"définitivement perdues !"
+msgstr ""
+"Would you like to transfer your Steam Cloud save files to your computer?\n"
+"Warning! If you already have local save files they will be permanently "
+"overwritten!"
+
+msgid ""
+"Souhaitez-vous transférer vos sauvegardes locales sur Steam Cloud ?\n"
+"Attention, si vous aviez déjà des sauvegardes sur Steam Cloud, elles seront "
+"définitivement perdues !"
+msgstr ""
+"Would you like to transfer your local save files to the Steam Cloud?\n"
+"Warning! If you already have save files in the Steam Cloud they will be "
+"permanently overwritten!"
+
+msgid "Suivez la lumière."
+msgstr "Follow the light."
+
+msgid "Suppr."
+msgstr "Del."
+
+msgid "Sélectionner"
+msgstr "Select"
+
+msgid "Sélectionner un autre"
+msgstr "Select another slot"
+
+msgid "Sépulcre oublié"
+msgstr "Forgotten Sepulchre"
+
+msgid "TECHNIQUE +1"
+msgstr "+1 Skills"
+
+msgid "Tab"
+msgstr "Tab"
+
+msgid "Talisman aurifère"
+msgstr "Golden amulet"
+
+msgid "Talisman de glace"
+msgstr "Ice amulet"
+
+msgid "Talisman de pierre de lune"
+msgstr "Moonstone amulet"
+
+msgid "Talisman de rubis"
+msgstr "Ruby amulet"
+
+msgid "Talisman de saphir"
+msgstr "Sapphire amulet"
+
+msgid "Talisman de topaze"
+msgstr "Topaz amulet"
+
+msgid ""
+"Tant que le client de jeu est actif, la souris ne peut pas quitter les "
+"limites de la zone d'affichage."
+msgstr ""
+"As long as the game window is open, the mouse cannot leave be used outside "
+"the game."
+
+msgid "Tapez moi !"
+msgstr "Hit me!"
+
+msgid "Technique +1"
+msgstr "+1 Skills"
+
+msgid "Temps : ::time::"
+msgstr "Time: ::time::"
+
+msgid "Temps restant :"
+msgstr "Time left:"
+
+msgid "Tenez prenez un bonbon, c'est offert par la maison."
+msgstr "Here, have a lolly, it's on the house."
+
+msgid "Tentacule du Watcher"
+msgstr "The Watcher's tentacule"
+
+msgid "Terminez le défi afin de l'ouvrir."
+msgstr "You must to complete the challenge first."
+
+msgid "Test Seb"
+msgstr "Test Seb"
+
+msgid "Test Thomas"
+msgstr "Test Thomas"
+
+msgid "The Incomplete One"
+msgstr "The Incomplete One"
+
+msgid "The Incomplete one"
+msgstr "The Incomplete One"
+
+msgid "The Watcher"
+msgstr "The Watcher"
+
+msgid "This. Is. DEAD CELLS!"
+msgstr "This. Is. DEAD CELLS!"
+
+msgid "Tiens, tiens. Mais qui voilà..."
+msgstr "Well well well, you're back..."
+
+msgid "Tire de puissantes rafales de carreaux."
+msgstr "Fires powerful bursts of bolts."
+
+msgid "Tire plusieurs carreaux à la fois."
+msgstr "Shoots multiple bolts at once."
+
+msgid ""
+"Tire rapidement sur tous les ennemis proches, infligeant ::+dps:: dégâts/sec."
+msgstr "Rapid fires on nearby enemies, inflicting ::+dps:: damage/s."
+
+msgid ""
+"Tire sur tous les ennemis proches et inflige ::+dps:: dégâts/sec. Vos "
+"propres dégâts sont augmentés de ::prct::% si vous êtes proche de la "
+"tourelle."
+msgstr ""
+"Fires on all nearby enemies and inflicts ::+dps:: damage/s. Your own damage "
+"is increased by ::prct::% if you are close to the turret."
+
+msgid ""
+"Tire sur tous les ennemis qui passent en dessous, infligeant ::+dps:: dégâts/"
+"sec."
+msgstr ""
+"Fires rapidly on any enemies passing below inflicting ::+dps:: damage/s."
+
+msgid "Tire une flèche devant vous (::+power:: dégâts)"
+msgstr "Fires an arrow in front of you (::+power:: damage)"
+
+msgid "Tire une flèche en arrière (::+power:: dégâts)"
+msgstr "Fires an arrow behind you (::+power:: damage)"
+
+msgid "Tire une flèche vers le haut (::+power:: dégâts)"
+msgstr "Fires an arrow upward (::+power:: damage)"
+
+msgid "Tire une volée de flèches (::+power:: dégâts / flèche)"
+msgstr "Fires a volley of arrows (::+power:: damage / arrow)"
+
+msgid "Toits de la Prison"
+msgstr "The Ramparts"
+
+msgid "Tonique"
+msgstr "Tonic"
+
+msgid "Torche"
+msgstr "Torch"
+
+msgid "Torches de lancer"
+msgstr "Fire brands"
+
+msgid "Total d'actif débloqué"
+msgstr "Total Active Skills unlocked"
+
+msgid "Total d'arme débloquée"
+msgstr "Total weapons unlocked"
+
+msgid "Total de monstres occis"
+msgstr "Total monsters slain"
+
+msgid "Total de monstres élites occis"
+msgstr "Total elite monsters slain"
+
+msgid "Tourelle de plafond"
+msgstr "Ceiling turret"
+
+msgid "Tourelle horizontale"
+msgstr "Horizontal turret"
+
+msgid "Tourelle lance-flammes"
+msgstr "Flamethrower turret"
+
+msgid "Tourelle lourde"
+msgstr "Heavy turret"
+
+msgid ""
+"Tous les dégâts que vous subissez sont infligés également à leur auteur."
+msgstr "All the damage you take is also dealt to nearby enemies."
+
+msgid ""
+"Tout ce que tu achètes chez moi est PERMANENT. Même la mort ne saurait t'en "
+"priver."
+msgstr ""
+"Everything you buy here is yours FOREVER. Not even Death can take it from "
+"you."
+
+msgid "Tout en finesse."
+msgstr "It's all in the wrist..."
+
+msgid "Tout est trop cher pour vous ici, dégagez."
+msgstr "My stuff is too good for you! Scram!"
+
+msgid "Tout est à vendre !"
+msgstr "Everything is for sale!"
+
+msgid "Tout objet peut devenir une arme mortelle avec une vélocité suffisante."
+msgstr "Any object is a deadly weapon if you apply enough velocity."
+
+msgid "Tout va bien se passer !"
+msgstr "Don't panic!"
+
+msgid "Toute votre progression débloquée auprès du Collecteur sera conservée."
+msgstr "All of your progress with the Collector and your runes will be safe."
+
+msgid ""
+"Toutes vos attaques plongeantes appliquent de l'huile inflammable au sol"
+msgstr "All diving attacks leave flammable oil on the ground."
+
+msgid "Transfert"
+msgstr "Transfer"
+
+msgid "Transférer mes sauvegardes"
+msgstr "Transfer my save files"
+
+msgid "Traqueur noir"
+msgstr "The tracker"
+
+msgid "Traverser"
+msgstr "Enter"
+
+msgid "Tri : Coût"
+msgstr "Sort order: cost"
+
+msgid "Tri : Niveau croissant"
+msgstr "Sort order: Level, increasing"
+
+msgid "Tri : Niveau décroissant"
+msgstr "Sort order: Level, decreasing"
+
+msgid "Tri : Taux de complétion"
+msgstr "Sort order: Completion"
+
+msgid "Très bien. Maintenant, donne la moi."
+msgstr "Excellent! Now give it to me!"
+
+msgid "Trésor maudit découvert"
+msgstr "Cursed treasure found"
+
+msgid "Tu l'as trouvée ?"
+msgstr "Did you find it yet!?"
+
+msgid "Tu ne perds rien pour attendre..."
+msgstr "This isn't over!"
+
+msgid "Tu ne voudrais pas abandonner une pauvre âme en peine, hein, dis moi ?"
+msgstr "You wouldn't abandon a friend in need now would you, huh?"
+
+msgid "Tu ne voudrais pas aller me la chercher ?"
+msgstr "You wouldn't mind finding it for me now would you?"
+
+msgid "Tu vas le regretter..."
+msgstr "You're going to regret this!"
+
+msgid "Tutorial contrôles"
+msgstr "Show a tutorial for the controls"
+
+msgid "Télécharger une autre langue"
+msgstr "Download another language"
+
+msgid "Téléportations utilisés"
+msgstr "Teleporters used"
+
+msgid "Téléporteur"
+msgstr "Teleporter"
+
+msgid "Un arc spécialement conçu pour le corps à corps."
+msgstr "A bow designed for close combat."
+
+msgid ""
+"Un bel objet habilement dissimulé sous vos vêtements, pour que les "
+"graphistes aient moins de boulot."
+msgstr ""
+"A fine object, adroitly hidden under your clothes to make less work for the "
+"artists."
+
+msgid "Un carnage à courte portée."
+msgstr "For short range bloodshed."
+
+msgid "Un des engrenages est cassé."
+msgstr "It's missing some parts"
+
+msgid "Un mécanisme bloque la porte."
+msgstr "Something is blocking the door."
+
+msgid "Un peu de courage !"
+msgstr "A little courage my man!"
+
+msgid "Un peu de nerf !"
+msgstr "Show a little nerve!"
+
+msgid "Un peu lent, mais t'as l'air de comprendre ce que je dis..."
+msgstr "A little slow... But you seem to understand what I'm saying..."
+
+msgid ""
+"Un seul coup reçu... et vous êtes MORT. Eliminez ::n:: ennemis pour lever "
+"cette malédiction."
+msgstr ""
+"Take one little hit... and you're DEAD. Eliminate ::n:: enemies to lift the "
+"curse."
+
+msgid "Une arme offrant une grande allonge au détriment de la rapidité."
+msgstr "Trade in some speed, for a little range."
+
+msgid ""
+"Une arme rouillée dont la puissance se révèle dans les moments difficiles."
+msgstr "A rusty old weapon that gets more dangerous in a pinch..."
+
+msgid "Une dent d'une valeur de ::$power:: OR, il l'avait bien cherché..."
+msgstr "A gold tooth worth ::$power:: GOLD. He had it coming to him anyway..."
+
+msgid ""
+"Une flêche transmutée d'une valeur de ::$power:: OR. Pour un carquois "
+"bourgeois."
+msgstr ""
+"A transmuted arrow worth ::$power:: GOLD. For the aristocratic marksman."
+
+msgid "Une lame forgée dans le sang."
+msgstr "A blade tempered in blood."
+
+msgid "Une magnifique pierre d'une valeur de ::$power:: OR !"
+msgstr "A magnificent jewel worth ::$power:: GOLD!"
+
+msgid "Une petite cellule en or d'une valeur de ::$power:: OR."
+msgstr "A nice prize worth ::$power:: GOLD."
+
+msgid ""
+"Une pierre précieuse d'une pureté rarissime, qui vous rapportera la "
+"bagatelle de ::$power:: OR !"
+msgstr "An precious gem worth ::$power:: GOLD!"
+
+msgid "Utiliser"
+msgstr "Use/Interact"
+
+msgid "Utiliser la rune"
+msgstr "Use the rune"
+
+msgid "Utilisé : ::name::"
+msgstr "::name:: used"
+
+msgid "VIE +1"
+msgstr "+1 Health"
+
+msgid "Valider"
+msgstr "OK"
+
+msgid "Valider l'achat"
+msgstr "Confirm the purchase"
+
+msgid "Vampirisme"
+msgstr "Vampirism"
+
+msgid "Veilleuse"
+msgstr "Night light"
+
+msgid "Ver de cadavre"
+msgstr "Body worm"
+
+msgid "Ver dégoutant"
+msgstr "Ugly worm"
+
+msgid "Ver à cadavre"
+msgstr "Corpse worm"
+
+msgid "Vers la salle des fioles inférieure"
+msgstr "To the lower room"
+
+msgid "Vers la salle des fioles supérieure"
+msgstr "To the upper room"
+
+msgid "Version demo"
+msgstr "Demo version"
+
+msgid "Version non optimisée"
+msgstr "This version has not been optimized"
+
+msgid "Vide !"
+msgstr "Nada!"
+
+msgid "Vidéo"
+msgstr "Video"
+
+msgid "Vie +1"
+msgstr "+1 Health"
+
+msgid "Viens voir un peu là !"
+msgstr "Come over here for a bit!"
+
+msgid "Vieux bouclier en bois"
+msgstr "Good ol' wooden shield"
+
+msgid "Viscères"
+msgstr "Guts"
+
+msgid "Vise automatiquement les enemis proches."
+msgstr "Automatically targets the closest enemy."
+
+msgid "Voici donc l'anomalie qu'elle recherche..."
+msgstr "You must be the anomaly she's looking for..."
+
+msgid "Voir la carte"
+msgstr "Map"
+
+msgid "Volume ambiance"
+msgstr "Ambient noise volume"
+
+msgid "Volume effets"
+msgstr "SFX volume"
+
+msgid "Volume musique"
+msgstr "Music volume"
+
+msgid "Volume principal"
+msgstr "Main volume"
+
+msgid "Vos attaques plongeantes longues enflamment le sol."
+msgstr "Long dive attacks cause the ground to ignite."
+
+msgid "Vos dégâts augmentent de ::prct::% quand vous êtes proches."
+msgstr "Increase your damage by ::prct::% when you are close."
+
+msgid "Vos esquives enflamment le sol pendant ::duration:: sec."
+msgstr "Rolling ignites the ground for ::duration:: seconds."
+
+msgid "Votre fiole de soin peut être utilisée 2 fois."
+msgstr "Your health flask now has 2 charges."
+
+msgid "Votre fiole de soin peut être utilisée 3 fois."
+msgstr "Your health flask now has 3 charges."
+
+msgid "Votre fiole de soin peut être utilisée 4 fois."
+msgstr "Your health flask now has four charges."
+
+msgid "Vous achetez quelque chose ou bien ?"
+msgstr "Are you going to buy something, or are you just hanging around?"
+
+msgid "Vous avez débloqué"
+msgstr "You unlocked"
+
+msgid "Vous avez la peau bien pâle, vous avez dû attraper la maladie..."
+msgstr "You're looking a little... pale. You must have the sickness..."
+
+msgid "Vous avez mieux à faire..."
+msgstr "You can do better than this..."
+
+msgid "Vous avez mis fin à votre malédiction."
+msgstr "Curse lifted."
+
+msgid "Vous avez offensé les Dieux !"
+msgstr "You have outraged the gods!"
+
+msgid "Vous avez perdu ::n:: cellules !"
+msgstr "You lost ::n:: cells!"
+
+msgid "Vous avez perdu votre langue ?"
+msgstr "Well? Nothing to say for yourself?"
+
+msgid "Vous avez ramassé"
+msgstr "You've looted"
+
+msgid "Vous avez remarqué que tout semble différent à chaque fois ?"
+msgstr "Have you noticed how everything seems a little different each time?"
+
+msgid "Vous avez sûrement remarqué non ?"
+msgstr "But surely, you must have noticed!?"
+
+msgid "Vous avez vaincu le Boss !"
+msgstr "You vanquished the boss!"
+
+msgid "Vous avez échoué lors de ce défi, le coffre n'est plus accessible."
+msgstr "You failed. The treasure has been sealed. Forever."
+
+msgid "Vous avez échoué..."
+msgstr "You failed."
+
+msgid "Vous avez été lamentable."
+msgstr "You weren't all that good now were you?"
+
+msgid "Vous bénéficiez d'un saut supplémentaire dans les airs."
+msgstr "You can jump three times in the air."
+
+msgid "Vous bénéficiez de 2 sauts supplémentaires dans les airs."
+msgstr "You get 2 bonus jump in the air."
+
+msgid "Vous conservez ::prct::% de votre or en mourrant."
+msgstr "You conserve ::prct::% of your gold when you die."
+
+msgid ""
+"Vous conservez toute votre progression auprès du Collecteur ainsi que vos "
+"runes."
+msgstr "All of your progress with the Collector and your runes will be safe."
+
+msgid ""
+"Vous devenez invisible après ::duration::s sans attaquer. Votre prochaine "
+"attaque en étant invisible inflige +::prct::% de dégâts."
+msgstr ""
+"Makes you invisible after ::duration::/sec without attacking. While "
+"invisible your first hit will do +::prct::% damage."
+
+msgid ""
+"Vous disparaissez pendant ::duration:: sec et laissez place à un leurre qui "
+"attire tous les ennemis proches."
+msgstr ""
+"You disappear for ::duration:: seconds and leave a lure in your place which "
+"attracts all nearby enemies."
+
+msgid "Vous disposez d'une Fiole de Soin utilisable à tout moment."
+msgstr "You now own a health flask you can use at any time."
+
+msgid "Vous empoisonnez les ennemis qui vous blessent."
+msgstr "Poison enemies that hurt you."
+
+msgid "Vous enflammez le sol sous vos pas pendant ::duration:: sec."
+msgstr "Every step you take burns the ground for ::duration:: seconds."
+
+msgid "Vous gelez les ennemis qui vous touchent."
+msgstr "Any enemy that touches you is frozen."
+
+msgid ""
+"Vous infligez +::prct::% dégâts pendant ::duration:: sec. Vous subissez "
+"également +::prct2::% dégâts supplémentaires pendant cette période."
+msgstr ""
+"You deal +::prct::% damage for ::duration:: seconds. You also take +::prct2::"
+"% extra damage during this period."
+
+msgid ""
+"Vous lachez une bombe infligeant ::+damage:: dégâts quand vous descendez "
+"d'une plate-forme (cet effet a un temps de recharge)."
+msgstr ""
+"Drop a bomb when dropping down from a platform inflicting ::+damage:: "
+"damage. (this ability has a cooldown period)."
+
+msgid ""
+"Vous lachez une bombe infligeant ::+damage:: dégâts quand vous utilisez "
+"votre double-saut (cet effet a un temps de recharge)."
+msgstr ""
+"Drop a bomb when double jumping, inflicting ::+damage:: damage. (this "
+"ability has a cooldown period)."
+
+msgid "Vous laissez un nuage de poison quand vous esquivez."
+msgstr "You leave behind a cloud of toxic gas when you roll."
+
+msgid "Vous mourez de plus en plus vite à ce que je vois."
+msgstr "You really aren't getting any better are you?"
+
+msgid "Vous n'avez perdu qu'une cellule."
+msgstr "You lost one cell."
+
+msgid "Vous ne pouvez plus mourir."
+msgstr "You can no longer die."
+
+msgid "Vous ne seriez pas le prisonnier décapité vous ?"
+msgstr "Are you the same one?"
+
+msgid "Vous ne seriez pas le prisonnier décapité, vous ?"
+msgstr "Lost our head now did we..."
+
+msgid "Vous ne voulez pas voir ce que je vous réserve ?"
+msgstr "You don't want to see what I've got for you?"
+
+msgid "Vous obtenez de l'or quand vous obtenez une Cellule d'un monstre."
+msgstr "You get gold when you get a Dead Cell from an enemy."
+
+msgid "Vous perdrez votre progression depuis le début du niveau en cours"
+msgstr "You will lose your progress from the beginning of the current level"
+
+msgid "Vous pourrez aussi augmenter sa puissance !"
+msgstr "You could also increase its power!"
+
+msgid "Vous pouvez acheter pour ::price::"
+msgstr "You can buy for ::price::"
+
+msgid "Vous produisez un nuage toxique quand vous subissez une blessure."
+msgstr "You release a toxic cloud when you take damage."
+
+msgid "Vous revoila. Evidemment."
+msgstr "You. Back again. Of course."
+
+msgid ""
+"Vous récupérez ::+power:: PV par coup que vous portez au corps à corps "
+"pendant ::duration:: sec. Vous subissez également +::prct::% dégâts "
+"supplémentaires pendant cette période."
+msgstr ""
+"You recover ::+power:: HP per melee hit that you deal for ::duration:: "
+"seconds. You also take +::prct::% extra damage during this period."
+
+msgid ""
+"Vous récupérez ::prct::% de vie par attaque infligée au corps à corps, mais "
+"vous subissez des dégâts x::power:: !"
+msgstr ""
+"Recover ::prct::% of your life with each melee attack, but take x::power:: "
+"damage!"
+
+msgid "Vous sauve la vie UNE fois (inefficace contre les Malédictions)."
+msgstr "Saves your life ONCE. Does NOT work against Curses."
+
+msgid "Vous soigne de ::+power:: PV en ::duration:: sec. Usage unique."
+msgstr "Heals ::+power:: HP in ::duration:: seconds. Single use."
+
+msgid ""
+"Vous soigne de ::+power:: PV et vous protège totalement pendant ::duration:: "
+"sec. Usage unique."
+msgstr ""
+"Heals ::+power:: HP and completely protects you for ::duration:: seconds. "
+"Single use."
+
+msgid "Vous tuez des trucs, je note."
+msgstr "You've been killing things I see..."
+
+msgid ""
+"Vous vous téléportez dans le dos de votre victime. Les dégâts de votre "
+"prochaine attaque au corps à corps sont augmentés de ::prct::%."
+msgstr ""
+"You teleport behind an enemy. The damage of your next melee attack is "
+"increased by ::prct::%."
+
+msgid "Vous vous êtes aventuré bien loin sous la surface, Déchu."
+msgstr "You've come adventuring far below the surface, Fallen."
+
+msgid "Vous y travaillez, n'est-ce pas ?"
+msgstr "It's your doing this isn't it?"
+
+msgid "Vous êtes ici !"
+msgstr "You are here!"
+
+msgid "Vous êtes venus à bout du dernier Boss... pour l'instant !"
+msgstr "You've made it past the last boss... for now..."
+
+msgid "Végétarien"
+msgstr "Vegetarian"
+
+msgid "Yolo!"
+msgstr "Yolo!"
+
+msgid "Zombie"
+msgstr "Zombie"
+
+msgid "Zombie coureur"
+msgstr "Running zombie"
+
+msgid "Zombie purulent"
+msgstr "Host zombie"
+
+msgid "Ça n'est pas en restant ici que tu vas récupérer la... ma rune..."
+msgstr "You're not going to find the... my... rune, sitting there like that!"
+
+msgid "Équipement"
+msgstr "Equipment"
