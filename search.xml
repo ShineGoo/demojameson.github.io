@@ -26,9 +26,13 @@
 <li>识别成功后执行的操作可开关</li>
 </ul>
 <h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1><ul>
-<li>2017 年 6 月 20 日更新到 v0.2<ol>
+<li>2017年6月20日更新到 v0.2<ol>
 <li>本脚本不支持 Flash 播放器，使用时检测并提示换 HTML5 播放器</li>
 <li>在浏览器标签显示识别进度</li>
+</ol>
+</li>
+<li>2017年12月25日更新到 v0.3<ol>
+<li>因新版 Chrome 浏览器不再支持 dataURI 弹窗，所以改为在本页弹出确认截图</li>
 </ol>
 </li>
 </ul>
@@ -349,11 +353,17 @@
 </blockquote>
 <p>游戏在 5 月 10 日发售后立马获得了好评如潮的评价。虽然目前还是<a href="http://store.steampowered.com/earlyaccessfaq/?snr=1_5_9_" target="_blank" rel="external">抢先体验</a>状态，但已经有了较为不错的官方中文支持，因为有谜之声和 indienova 的协助汉化。游戏凭借精美的像素风，畅快的打击感，多样的武器和技能再加上 Roguelike 元素，让人百玩不厌。</p>
 <h1 id="速查表"><a href="#速查表" class="headerlink" title="速查表"></a>速查表</h1><p>在花了几天通关（目前只有 11 个不同关卡，两个 BOSS）和收集所有道具后，我尝试挖掘更多的信息，通过 <a href="https://forum.xentax.com/viewtopic.php?f=10&amp;t=16244" target="_blank" rel="external">QuickBMS</a> 将游戏里的 res.pak 文件解包得到了一些有趣的东西。其中包括描述道具敌人关卡的数据，相关的图标，以及不同语言的文本。于是我将其整理了一下，写了个简单的网页来展示这些信息，充当游戏的速查表。可以了解到游戏道具的掉落率，从何处掉落，关卡的难度级别，掉落物品级别等内容。</p>
+<h1 id="相关工具"><a href="#相关工具" class="headerlink" title="相关工具"></a>相关工具</h1><ol>
+<li><a href="https://forum.xentax.com/viewtopic.php?f=10&amp;t=16244" target="_blank" rel="external">res.pak 文件解包工具</a></li>
+<li><a href="http://tools.konstruktors.com/" target="_blank" rel="external">语言文件格式 mo 转换为 po</a></li>
+<li><a href="http://castledb.org/" target="_blank" rel="external">data.crd 数据预览工具</a>，使用前需先将 data.crd 文件中的 <code>&quot;typeStr&quot;: &quot;17&quot;</code> 批量替换为 <code>&quot;typeStr&quot;: &quot;8&quot;</code></li>
+</ol>
 <h1 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h1><ul>
 <li>2017年6月3日——更新到游戏版本 (<a href="https://steamcommunity.com/app/588650/discussions/4/2741975115066406458/#c1291817837623809239" target="_blank" rel="external">e2c7b364</a>)<del>，但是解包的资源中没有未编译的文本文件了，所以以后新增的内容只能显示原文法文</del></li>
 <li>2017年6月4日——增加 Loading 界面；裁剪压缩数据文件提高加载速度（3MB 变 100KB）</li>
 <li>2017年6月5日——找到获取文本的方法了，未翻译内容显示英文；添加词缀/附魔列表；添加搜索高亮关键字功能</li>
 <li>2017年6月7日——更新到 <a href="http://steamcommunity.com/app/588650/discussions/4/2741975115066406458/#c1291817837635692966" target="_blank" rel="external">2017-06-05B (e118994b)</a> 版本</li>
+<li>2017年12月25日——更新到 <a href="steam://openurl_external/http://store.steampowered.com/news/externalpost/steam_community_announcements/2284879949510879205" target="_blank" rel="external">2017-12-22 (4a8c1404c)</a> 版本，添加开发过程中使用的相关工具说明</li>
 </ul>
 ]]></content>
       

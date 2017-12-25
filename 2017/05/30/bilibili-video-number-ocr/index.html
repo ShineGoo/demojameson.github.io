@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="DemoJameson's Blog">
 <meta property="og:description" content="B 站有个非官方的周刊排行榜做的很好，到现在已经有 362 期持续 7 年了。曾经有段时间视频中的视频编号可以点击跳转到对应的视频，目测是通过高级弹幕实现的，但不知为何后来又没了。为了让自己在看到感兴趣的视频时，免去从全屏状态退出然后手输视频编号的麻烦，写了一个油猴脚本自动提取视频编号，然后在后台打开视频或者在页面上插入视频链接，以便稍后观看。">
 <meta property="og:image" content="http://www.demojameson.com/2017/05/30/bilibili-video-number-ocr/cover.jpg">
-<meta property="og:updated_time" content="2017-05-29T21:21:00.000Z">
+<meta property="og:updated_time" content="2017-12-25T15:42:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自动识别 B 站排行榜类视频中的 av 号">
 <meta name="twitter:description" content="B 站有个非官方的周刊排行榜做的很好，到现在已经有 362 期持续 7 年了。曾经有段时间视频中的视频编号可以点击跳转到对应的视频，目测是通过高级弹幕实现的，但不知为何后来又没了。为了让自己在看到感兴趣的视频时，免去从全屏状态退出然后手输视频编号的麻烦，写了一个油猴脚本自动提取视频编号，然后在后台打开视频或者在页面上插入视频链接，以便稍后观看。">
@@ -440,9 +440,13 @@
 <li>识别成功后执行的操作可开关</li>
 </ul>
 <h1 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h1><ul>
-<li>2017 年 6 月 20 日更新到 v0.2<ol>
+<li>2017年6月20日更新到 v0.2<ol>
 <li>本脚本不支持 Flash 播放器，使用时检测并提示换 HTML5 播放器</li>
 <li>在浏览器标签显示识别进度</li>
+</ol>
+</li>
+<li>2017年12月25日更新到 v0.3<ol>
+<li>因新版 Chrome 浏览器不再支持 dataURI 弹窗，所以改为在本页弹出确认截图</li>
 </ol>
 </li>
 </ul>

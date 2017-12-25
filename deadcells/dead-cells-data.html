@@ -118,7 +118,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           <a href="http://store.steampowered.com/app/588650/Dead_Cells/">Dead Cells Cheat Sheet</a>
-          <span class="md-header-nav__parent">version: 2017-07-02</span>
+          <span class="md-header-nav__parent">version: 2017-12-22</span>
         </span>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -189,13 +189,12 @@
 
     $(window).on("load", function () {
         $.getJSON("resource/data_min.cdb", function (jsonData) {
-            window.jsonData = jsonData;
+            // window.jsonData = jsonData;
             var jsonItems = jsonData.sheets[1].lines;
             var jsonMobs = jsonData.sheets[2].lines;
-            var jsonLevels = jsonData.sheets[12].lines;
-            var jsonAffixs = jsonData.sheets[10].lines;
-            var jsonTags = jsonData.sheets[11].lines;
-            var jsonChances = jsonData.sheets[42].lines;
+            var jsonAffixs = jsonData.sheets[8].lines;
+            var jsonLevels = jsonData.sheets[10].lines;
+            var jsonBludeprintDrops = jsonData.sheets[39].lines;
 
             // 预处理：去除无用数据和排序
             jsonLevels = jsonLevels.filter(function (level) {
@@ -209,7 +208,7 @@
             });
 
             // 预处理：将 group 分组序号改为有意义的文字
-            var hasGroups = [1, 2, 10];
+            var hasGroups = [1, 2, 8];
             jsonData.sheets.filter(function (_, index) {
                 return hasGroups.indexOf(index) >= 0;
             }).forEach(function (sheet) {
@@ -230,10 +229,6 @@
             function linkifyTranslation(cellValue) {
                 return linkify(translate(cellValue));
             }
-
-            var ItemFormatter = {};
-
-            var MobFormatter = {};
 
             var AffixFormatter = {
                 forbiddenAffixes: function (cellValue, options, rowObject) {
@@ -386,6 +381,7 @@
                     {name: 'gameplayDesc', formatter: translateDesc, width: 300},
                     {name: 'blueprint', formatter: findBlueprint, width: 100},
                     {name: 'cellCost', align: 'right'},
+                    {name: 'tier', formatter:findTier},
                     {name: 'moneyCost', align: 'right'},
                     {name: 'droppable', align: 'center'},
                     {name: 'hasLevels', align: 'center'},
@@ -494,8 +490,8 @@
             var langContentEng;
             var langContentZh;
 
-            window.en = langContentEng;
-            window.zh = langContentZh;
+            // window.en = langContentEng;
+            // window.zh = langContentZh;
 
             // 读取英文中文文本
             function translate(text) {
@@ -555,9 +551,9 @@
                     var translatedZh = langContentZh[text];
 
                     if (translatedZh) {
-                        return translatedZh;
+                        text  = translatedZh;
                     } else if (translatedEn) {
-                        return langContentZh[translatedEn] || translatedEn;
+                        text = langContentZh[translatedEn] || translatedEn;
                     }
 
                     return text;
@@ -576,9 +572,8 @@
                     var propName = prop.replace(/::[^a-z]?(.+)::/g, '$1');
                     var percent
                     if (propName === 'prct' && rowObject.props[propName] > 0) {
-                        percent = rowObject.props[propName] * 100;
+                        percent = (rowObject.props[propName] * 100).toFixed(0);
                         translateStr = translateStr.replace(prop, percent || '???');
-
                     } else {
                         translateStr = translateStr.replace(prop, rowObject.props[propName] || '???');
                     }
@@ -648,9 +643,17 @@
                 return result.join("<br/>");
             }
 
+            function findTier(cellValue, options, rowObject) {
+                var result = linkify(rowObject.tier1);
+                if (rowObject.tier2) {
+                    result += '\n' + linkify(rowObject.tier2);
+                }
+                return result;
+            }
+
             // 根据单词查询具体概率
             function findBlueprintChance(rarity) {
-                var result = jsonChances.filter(function (blueprintDrop) {
+                var result = jsonBludeprintDrops.filter(function (blueprintDrop) {
                     return blueprintDrop.id === rarity;
                 });
                 if (result.length > 0) {
